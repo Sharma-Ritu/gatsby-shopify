@@ -40,7 +40,7 @@ module.exports = {
         // The domain name of your Shopify shop. This is required.
         // Example: 'gatsby-source-shopify-test-shop' if your Shopify address is
         // 'gatsby-source-shopify-test-shop.myshopify.com'.
-        shopName:'chirofoam.myshopify.com',
+        shopName:'chirofoam.myshopify.co',
 
         // An API access token to your Shopify shop. This is required.
         // You can generate an access token in the "Manage private apps" section
@@ -48,7 +48,7 @@ module.exports = {
         // to select "Allow this app to access your storefront data using the
         // Storefront API".
         // See: https://help.shopify.com/api/custom-storefronts/storefront-api/getting-started#authentication
-        accessToken:'4d52a01cc9f9459adc48214472d0156a',
+        accessToken:'4d52a01cc9f9459adc48214472d0156',
 
         // Set verbose to true to display a verbose output on `npm run develop`
         // or `npm run build`. This prints which nodes are being fetched and how
