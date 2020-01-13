@@ -1,0 +1,477 @@
+
+body{
+		overflow-x: hidden;
+		/*background-image:url('../img/home.png');
+		opacity:0.2;*/
+}
+.container-large{
+	width:100%;
+	max-width:1210px;
+	margin:0px auto !important;
+}
+a{
+	text-decoration:none !important;
+}
+.right-0{
+	right:0;
+}
+.blue-bg{
+	background-image:url('../img/blue-bg.png');
+	position:relative;
+	background-position:center center;
+	height:300px;
+	background-repeat:repeat;
+}
+.blue-bg::before{
+    width:50.01%;
+    content: "";
+    background-color:#fff;
+    height:250px;
+    bottom:-200px;
+    position: absolute;
+    left: 0;
+    transform: skewY(5deg);
+}
+.blue-bg::after{
+    width:50.01%;
+    content: "";
+    background-color:#fff;
+    height:250px;
+    bottom:-200px;
+    position: absolute;
+    right: 0;
+    transform: skewY(-5deg);
+}
+p.cta.erbaum.position-absolute {
+    bottom: -40px;
+}
+.home-banner .shop-chir::after{
+	content:url('../img/b-ic.png');
+}
+.shop-chir::after{
+	content:url('../img/w-ic.png');
+	position: absolute;
+	top: -2px;
+	right:-60px;
+}
+.nav-link{
+	font-size:13px;
+	font-family:'PN-R';
+}
+.navbar-nav span{
+	font-size:8px;
+	color:rgb(178, 178, 178);
+}
+.navbar-nav .nav-item{
+	margin-right:22px;
+}
+.home-banner .nav-link:hover{
+	color:#fff !important;
+}
+.banner-home h3 {
+    font-size:64px;
+    padding-left:90px;
+    letter-spacing: -2px;
+}
+.banner-home .cta a {
+    font-size: 14px;
+    padding-left:35px;
+}
+.nav-link:hover{
+	color:#243B6B !important;
+}
+.space-1{
+	letter-spacing:1px;
+}
+.space-2{
+	letter-spacing:2px;
+}
+.space-3{
+	letter-spacing:3px;
+}
+.space-4{
+	letter-spacing:4px;
+}
+.space-5{
+	letter-spacing:5px;
+}
+.display-5{
+	font-size:2rem;
+}
+.bg-image{
+	width:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.color-primary{
+	color:#243B6B !important;
+}
+.color-secondary{
+	color:#777777 !important;
+}
+.bg-primary{
+	background-color:#243B6B;
+}
+.lead-text-font{
+	font-size:34px;
+}
+.home-banner{
+	background-image:url('../img/banner.jpg');
+	height:110vh;	
+}
+.banner-home {
+    position: absolute;
+    top:30%;
+    right:0%;
+    transform: translate(0%,-0%);
+}
+.card-bg{
+	position:relative;
+	height:430px;
+	transition:all ease 0.3s;
+	opacity:0.8;
+	background-size:cover;
+	background-position:center center;
+}
+.card-bg1{
+	background-image:url('../img/feat1.jpg');
+}
+.card-bg2{
+	background-image:url('../img/feat2.jpg');
+}
+.card-bg3{
+	background-image:url('../img/feat3.jpg');
+}
+.card-bg4{
+	background-image:url('../img/feat4.jpg');
+}
+.card-bg5{
+	background-image:url('../img/feat5.jpg');
+}
+.card-layer{
+	background-color:rgba(3, 40, 80,0.9);
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+}
+
+.card-bg:hover{
+	transform:scale(1.3);
+	z-index:9;
+	opacity:1;
+}
+.max-support{
+	background-image:url('../img/result.jpg');
+	background-position-x:6%;
+}
+.max-support h2{
+	line-height:100px;
+	font-size:90px;
+	letter-spacing:0px;
+}
+.max-support .btn-cta::after,.banner-home .btn-cta::after{
+	content:url('../img/b-ic.png');
+	position: absolute;
+	top: -3px;
+	right:-65px;
+}
+.approved .btn-cta::after{
+	content:url('../img/b-ic.png');
+	position: absolute;
+	top: -3px;
+	right:-55px;
+}
+.mattresses .lead-text-font{
+	letter-spacing:-1px;
+	padding-top:13px;
+}
+.mattresses .lead-sub-text{
+	font-size:20px;
+	line-height:28px;
+}
+.mattresses h3{
+	font-size:2.3rem;
+	line-height:46px;
+	letter-spacing:-1px;
+	padding-top:12px;
+}
+.mattresses h3 sup {
+    top: -14px;
+}
+.mattresses p{
+    font-size:12px;
+    line-height:16px;
+    padding-bottom:14px;
+}
+.mattresses .cta.left-btn.position-absolute {
+    right: 140px;
+}
+.mattresses .cta.right-btn.position-absolute {
+    left:80px;
+}
+.mattresses .position-relative .cta {
+    bottom:-46px;
+}
+.feat{
+	font-size:12px;
+}
+.approved{
+	background-image:url('../img/approved-banner.jpg');
+}
+.active-style h2{
+	font-size:108px;
+	font-weight:1000 !important;
+	line-height:115px;
+	letter-spacing:-3px;
+}
+.active-style p{
+	line-height:14px;
+}
+.btn-cta{
+	position:relative;
+	font-size:13px;
+}
+.btn-cta::after{
+	content:url('../img/w-ic.png');
+	position: absolute;
+	top: -3px;
+	right:-55px;
+}
+.story::after{
+	content:url('../img/i1.png');
+	position: absolute;
+	top: -3px;
+	right:-18px;
+}
+.location::after{
+	content:url('../img/i2.png');
+	position: absolute;
+	top: -3px;
+	right:-18px;
+}
+.online::after{
+	content:url('../img/i3.png');
+	position: absolute;
+	top: -3px;
+	right:-18px;
+}
+.our-customer{
+	padding:135px 0px 185px 0px;
+}
+.customer{
+	background-image:url('../img/blog1.jpg');	
+}
+.our-customer p {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 14px;
+}
+
+/*shop-chirofoam-page-css-start*/
+.card1{
+	background-image:url('../img/home4.png');
+	height:300px;
+}
+.card2{
+	background-image:url('../img/home5.png');
+	height:300px;
+}
+.card3{
+	background-image:url('../img/home6.png');
+}
+.approved-title{
+	font-size:36px;
+	letter-spacing:0px;
+}
+/*shop-chirofoam-page-css-end*/
+
+/*xf-extra-firm-page-css-start*/
+.rating{
+	background-image:url('../img/home5.png');
+	position:relative;
+	height: 500px;
+}
+.card-content {
+    top: 50%;
+    transform: translate(-0%, -50%);
+    z-index: 9;
+    left:0;
+    right:0;
+    max-width:900px;
+    margin:0px auto;
+}
+/*xf-extra-firm-page-css-end*/
+
+/*original-luxury-firm-page-css*/
+.feature{
+	background-image:url('../img/home5.png');
+	position:relative;
+}
+
+
+/*original-luxury-firm-page-css-end*/
+
+/*footer css*/
+footer .widget-1 ul li a {
+    display: block ruby;
+}
+footer .widget-1 ul li a i {
+    width: 32px;
+    height: 32px;
+    background-color:#fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    font-size: 22px;
+}
+/*end footer css*/
+
+/*our-story css*/
+.our-focus .row div img{
+	width:70%;
+}
+.our-focus .row div p{
+	line-height:30px;
+	font-size:14px;
+}
+.rating-and-review .star-small{
+	color:#e5cd34;
+	font-size:32px;
+}
+.rating-and-review .star-medium{
+	color:#e5cd34;
+	font-size:48px;
+}
+.rating-and-review .star-large{
+	color:#e5cd34;
+	font-size:64px;
+}
+.star{
+	display:table-cell;
+}
+.star i{
+	vertical-align:middle;
+}
+/*end*/
+/*location css*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*end*/
+
+/*charity css*/
+body .charity{
+	height:400px;
+}
+.charity-inner.row{
+    display:block;
+}
+.charity-inner.row div {
+    display: inline-block;
+    vertical-align: top;
+    text-align:left;
+}
+/*end*/
+.variants{
+	border-radius:3px;
+}
+.variants.active{
+	background-color:#ba2154;
+	color:#fff;
+	border-color:#ba3d67;
+}
+.review-details i{
+    padding-top: 5px;
+}
+.ratings li{
+	padding:30px;
+	background-color:#fcfcfc;
+}
+.select-mattress a{
+	background-color:#ba2154;
+	border-radius:5px;
+	color:#fff;
+	padding:15px 20px;
+	transition:all 0.3s ease;
+}
+.select-mattress .card{
+	font-size:12px;
+}
+.select-mattress a:hover{
+	background-color:transparent;
+	color:#000;
+}
+#tabs li.nav-item a {
+    border-radius:0px;
+    padding:0.8rem 1rem;
+    background-color:rgba(0, 0, 0, 0.05);
+	border:1px solid #e5e5e5 !important;
+}
+#tabs li.nav-item a.active{
+	background-color:#fff;
+}
+.height-350{
+	height:350px;
+}
+.height-400{
+	height:400px;
+}
+.height-450{
+	height:500px;
+}
+.privacy-policy .our-focus .row div p {
+    margin-bottom: 22px;
+}
+.recommend-image a img{
+    width:250px;
+}
+.difference-sizes img {
+    width:65%;
+}
+.all-mattress img {
+    width: 300px;
+}
+.globe{
+	background-image:url('../img/globe.jpg');
+	position:relative;
+	padding:150px 0px;
+	background-attachment:scroll;
+}
+.globe .shop-chir::after{
+	top:0px;
+} 
+.q-list ul li{
+	width:100%;
+	border:1px solid #e7e7e7;
+}
+.q-list ul li div{
+	width:100%;
+}
+.products-list .css-1apyjvp{
+	width:50%;
+}
+.products-list .css-1apyjvp:first-child .products{
+	border-right:1px solid #243B6B;
+}
+.products {
+    padding-right:70px;
+    text-align:right;
+}
+.products-list .css-1apyjvp:nth-child(2) .products {
+    padding-left: 70px;
+    text-align:left;
+    padding-right:0;
+}

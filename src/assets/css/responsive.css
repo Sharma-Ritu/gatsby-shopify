@@ -1,0 +1,134 @@
+@media only screen and (max-width: 767px) {
+	body .container-large{
+		padding:0px 15px !important;
+	}
+	.header-outer h2 {
+	    font-size: 46px;
+	}
+	.header-outer h3 {
+	    font-size: 22px;
+	}
+	.header-outer .leads{
+	    font-size: 10px;
+	}
+	.home-banner {
+	    background-position-x: 10%;
+	}
+	.active-style h2 {
+	    font-size: 46px;
+	}
+	.card-bg:hover{
+		transform:scale(1.2);
+	}
+	.mattresses p.cta.erbaum.position-absolute {
+	    bottom:0px;
+	}
+	.btn-2 {
+	    bottom: -30px !important;
+	}
+	.mattresses .border-right {
+	    border: none !important;
+	}
+	.max-support h2 {
+	    font-size: 46px;
+	}
+	.lead-text-font {
+	    font-size: 26px;
+	}
+	.approved .media .h4 {
+	    font-size: 22px !important;
+	}
+	.approved .media .media-body {
+	    font-size:1rem !important;
+	}
+	.left-0{
+		left:0 !important;
+	}
+	.shop-banner-title{
+		font-size:40px !important;
+		line-height:50px !important;
+	}
+	.com-card{
+		height:200px;
+	}
+	 .facilities span{
+	  	font-size:0.6rem !important;
+	  }
+	  
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px){ 
+	.card-bg .card-layer p{
+  	font-size:12px !important;
+  }
+  .card-bg .card-layer h4{
+  	font-size:14px !important;
+  }
+  .card-bg .card-layer .display-3{
+  	font-size:3.5rem !important;
+  }
+  .extra-link li a {
+    font-size: 10px !important;
+}
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-banner {
+    height: 80vh;
+    background-position:unset;
+}
+  .facilities span{
+  	font-size:0.6rem !important;
+  }
+  .card-bg .card-layer p{
+  	font-size:12px !important;
+  }
+  .card-bg .card-layer h4{
+  	font-size:14px !important;
+  }
+  .card-bg .card-layer .display-3{
+  	font-size:3.5rem !important;
+  }
+  .banner-home {
+    transform: translate(-50%,0%);
+}
+.banner-home .leads {
+    font-size: 12px;
+}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+ .facilities span{
+  	font-size:0.6rem !important;
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .card-bg .card-layer h4{
+  	font-size:20px !important;
+  }
+}

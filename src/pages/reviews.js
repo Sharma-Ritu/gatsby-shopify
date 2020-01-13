@@ -1,0 +1,194 @@
+import React from 'react';
+import Header from "../components/header"
+import Footer from "../components/footer"
+import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import "../assets/css/bootstrap.min.css"
+
+
+export default (props) => {
+  return (
+	<>
+		<Header />
+		<section>
+			<div className="container-large">
+				<Row>
+					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
+						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">Chirofoam™ Mattress Reviews </h2>
+						<p className="filson-pro-reg color-primary space-2 pt-5" style={{fontSize:'24px'}}>97% Customer Satisfaction Rate </p>
+					</Jumbotron>
+				</Row>
+			</div>
+		</section>
+		<section>
+			<div className="container-large">
+				<Row>
+					<div className="review-inner">
+						
+					</div>
+				</Row>
+			</div>
+		</section>
+		<section className="py-4">
+        <div className="container-large">
+            <div className="col-md-12">
+                <ul id="tabs" className="nav nav-tabs">
+                    <li className="nav-item"><a href="" data-target="#customer-revieew" data-toggle="tab" className="nav-link small color-secondary filson-pro-reg active">Customer Reviews</a></li>
+                    <li className="nav-item"><a href="" data-target="#leave-review" data-toggle="tab" className="nav-link small color-secondary filson-pro-reg">Leave A Review</a></li>
+                </ul>
+                <div id="tabsContent" className="tab-content border border-top-0">
+                    <div id="customer-revieew" className="tab-pane fade active show m-auto pb-5" style={{width:'85%'}}>
+                    	<Row>
+                        	<Col sm="6" className="text-center py-5">
+                        		<p className="erbaum-bold color-secondary pt-5 mt-3">4.95 out of 5 stars</p>
+                        		<p><span>175</span> reviews </p>
+                        	</Col>
+                        	<Col sm="6" className="py-5">
+                        		<div className="p-0 list-unstyled review-details w-75 float-right">
+                        			<div className="w-100 d-flex color-primary mb-4">5<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'100%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>166</div>
+                        			<div className="w-100 d-flex color-primary mb-4">4<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'75%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>5</div>
+                        			<div className="w-100 d-flex color-primary mb-4">3<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'50%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
+                        			<div className="w-100 d-flex color-primary mb-4">2<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'25%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
+                        			<div className="w-100 d-flex color-primary mb-4">1<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'5%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>2</div>
+                        		</div>
+                        	</Col>
+                   		</Row>
+                   		<Row>
+                   			<div className="w-100 m-auto">
+                   				<ul className="list-unstyled p-0 ratings">
+                   					<li className="border mb-4">
+                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Chirofoam™ XF Mattress – Extra Firm</h4>
+                   						<div class="br-widget br-readonly pt-2">
+	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<div className="br-current-rating d-none">5</div>
+                   						</div>
+                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Mina Ho–</b> September 4, 2019</p>
+                   						<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>Supports your whole body comfortably and yet u won’t feel the hardness. The mattress is just amazing. I would recommend to all my friends.</p>
+                   					</li>
+                   					<li className="border mb-4">
+                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
+                   						<div class="br-widget br-readonly pt-2">
+	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<div className="br-current-rating d-none">5</div>
+                   						</div>
+                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Emma –</b> June 1, 2016</p>
+                   						<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>I am obsessed with this mattress! I've suffered from back pain for years and I couldn't tell you the last time I slept through the night without tossing and turning. Ever since I started sleeping on my new mattress I've been sleeping throughout the entire night without waking up and my back hasn't been bothering me nearly as much as it used to. Very pleased! Thank you Chirofoam! </p>
+                   					</li>
+                   					<li className="border mb-4">
+                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
+                   						<div class="br-widget br-readonly pt-2">
+	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<div className="br-current-rating d-none">5</div>
+                   						</div>
+                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Judy –</b> June 1, 2016</p>
+                   						<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>I'm a busy mom and work full-time and although I've been in dire need of a new mattress I haven't had the time to shop around. I was so happy when my Chirofoam mattress showed up at my door. It was compact and so easy to carry into my bedroom. I honestly didn't even know what a difference this mattress would make in my life. I ordered it because I thought it would be quick and easy and cut out one of many chores on my to-do list. Since sleeping on it I feel more energized and so much happier in the mornings. Even my kids have noticed a difference in my energy levels I feel like I'm 10 years younger! </p>
+                   					</li>
+                   					<li className="border mb-4">
+                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
+                   						<div class="br-widget br-readonly pt-2">
+	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<div className="br-current-rating d-none">5</div>
+                   						</div>
+                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Hardeep –</b> June 1, 2016</p>
+                   						<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>I will recommend this mattress to everyone I know. I have had bad lower back pain for years now and Chirofoam was well worth the investment. My back pain is almost entirely gone. Best part is I haven't had to take a pain killer since my first week sleeping on this mattress. </p>
+                   					</li>
+                   					<li className="border mb-4">
+                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
+                   						<div class="br-widget br-readonly pt-2">
+	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
+	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<div className="br-current-rating d-none">5</div>
+                   						</div>
+                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Steven Wright–</b> June 2, 2016</p>
+                   						<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>Surprised my wife on our anniversary and we absolutely love it. So do our kids which isn't necessarily a good thing :P</p>
+                   					</li>
+                   				</ul>
+                   				<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-center">
+									<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">LOAD MORE</a>
+								</p>
+                   			</div>
+                   		</Row>
+                    </div>
+                    <div id="leave-review" className="tab-pane fade m-auto py-5" style={{width:'85%'}}>
+                        <Row>
+                        	<div className="w-50 m-auto d-flex no-gutters select-mattress">
+                        		<Col sm="6">
+                        			<div className="card card-body text-center border-0">
+                        				<a href="#" className="filson-pro-reg space-1">Chirofoam Premium Mattress</a>
+                        				<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our Premium Mattresses</p>
+                        			</div>
+                        		</Col>
+                        		<Col sm="6">
+                        			<div className="card card-body text-center border-0">
+                        				<a href="#" className="filson-pro-reg space-1">Chirofoam X-Firm mattress</a>
+                        				<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our X Firm Mattresses</p>
+                        			</div>
+                        		</Col>
+                        	</div>
+                        </Row>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+			<div className="container-large">
+				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
+					<div className="w-50 m-auto text-center d-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
+								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+							</p>
+							See if Chirofoam™ is right for you.
+						</Col>
+						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
+								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+							</p>
+							Start your journey to a better sleep!
+						</Col>
+					</div>
+				</Row>
+			</div>
+		</section>
+		<section className="rating-and-review py-3 py-sm-5">
+			<div className="container-large pb-0 pb-sm-5">
+				<Row>
+					<p className="text-center w-100 star">
+						<i className="fa fa-star star-small"></i>
+						<i className="fa fa-star star-medium ml-2"></i>
+						<i className="fa fa-star star-large mx-2"></i>
+						<i className="fa fa-star star-medium mr-2"></i>
+						<i className="fa fa-star star-small"></i>
+					</p>
+					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
+					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
+						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+					</p>
+					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
+				</Row>
+			</div>
+		</section>
+    
+		<Footer />
+	</>
+  );
+};

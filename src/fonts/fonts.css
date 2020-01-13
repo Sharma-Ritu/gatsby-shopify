@@ -1,0 +1,139 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * erbaum:
+ *   - http://typekit.com/eulas/00000000000000003b9aed99
+ * filson-pro:
+ *   - http://typekit.com/eulas/0000000000000000000157bf
+ *   - http://typekit.com/eulas/0000000000000000000157c0
+ *   - http://typekit.com/eulas/0000000000000000000157c9
+ *   - http://typekit.com/eulas/0000000000000000000157ca
+ * filson-soft:
+ *   - http://typekit.com/eulas/00000000000000003b9ade5c
+ *   - http://typekit.com/eulas/00000000000000003b9ade5b
+ *   - http://typekit.com/eulas/00000000000000003b9ade54
+ *   - http://typekit.com/eulas/00000000000000003b9ade63
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-12-21 04:30:03 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=yar5boa&ht=tk&f=24561.24562.24571.24572.28747.28752.28755.28762.32119&a=33869412&app=typekit&e=css");
+
+@font-face {
+font-family:"filson-pro";
+src:url("https://use.typekit.net/af/125ffe/0000000000000000000157c0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/125ffe/0000000000000000000157c0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/125ffe/0000000000000000000157c0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+font-family:"filson-pro";
+src:url("https://use.typekit.net/af/19c742/0000000000000000000157c9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/19c742/0000000000000000000157c9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/19c742/0000000000000000000157c9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"filson-soft";
+src:url("https://use.typekit.net/af/0ceada/00000000000000003b9ade5c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/0ceada/00000000000000003b9ade5c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/0ceada/00000000000000003b9ade5c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"filson-soft";
+src:url("https://use.typekit.net/af/f50b47/00000000000000003b9ade5b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/f50b47/00000000000000003b9ade5b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/f50b47/00000000000000003b9ade5b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+
+@font-face {
+font-family:"erbaum";
+src:url("https://use.typekit.net/af/05d495/00000000000000003b9aed99/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/05d495/00000000000000003b9aed99/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/05d495/00000000000000003b9aed99/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+.tk-filson-pro { font-family: "filson-pro",sans-serif; }
+.tk-filson-soft { font-family: "filson-soft",sans-serif; }
+.tk-erbaum { font-family: "erbaum",sans-serif; }
+
+
+@font-face {
+  font-family: 'PN-EB';
+  src: url('ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  url('ProximaNova-Extrabld.otf')  format('opentype'),
+  url('ProximaNova-Extrabld.woff') format('woff'), url('ProximaNova-Extrabld.ttf')  format('truetype'), url('ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'PN-R';
+  src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('ProximaNova-Regular.otf')  format('opentype'),
+  url('ProximaNova-Regular.woff') format('woff'), url('ProximaNova-Regular.ttf')  format('truetype'), url('ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PN-B';
+  src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('ProximaNova-Bold.otf')  format('opentype'),
+  url('ProximaNova-Bold.woff') format('woff'), url('ProximaNova-Bold.ttf')  format('truetype'), url('ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'PN-Thin';
+  src: url('ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),  url('ProximaNovaT-Thin.otf')  format('opentype'),
+  url('ProximaNovaT-Thin.woff') format('woff'), url('ProximaNovaT-Thin.ttf')  format('truetype'), url('ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PN-SB';
+  src: url('ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  url('ProximaNova-Semibold.otf')  format('opentype'),
+  url('ProximaNova-Semibold.woff') format('woff'), url('ProximaNova-Semibold.ttf')  format('truetype'), url('ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.erbaum{
+  font-family:'erbaum',sans-serif;
+  font-weight:400;
+}
+.erbaum-bold{
+  font-family:'erbaum',sans-serif;
+  font-weight:900 !important;
+}
+.filson-pro-reg{
+  font-family:'filson-pro',sans-serif;
+  font-weight:400;
+}
+.filson-pro-bold{
+  font-family:'filson-pro',sans-serif;
+  font-weight:700 !important;
+}
+.filson-soft-reg{
+  font-family:'filson-soft',sans-serif;
+  font-weight:400;
+}
+.filson-soft-bold{
+  font-family:'filson-soft',sans-serif;
+  font-weight:700 !important;
+}
+.proxima-eb{
+	font-family:'PN-EB';
+}
+.proxima-r{
+	font-family:'PN-R';
+}
+.proxima-b{
+	font-family:'PN-B';
+}
+.proxima-sb{
+  font-family:'PN-SB';
+}
+.proxima-t{
+	font-family:'PN-Thin';
+}
