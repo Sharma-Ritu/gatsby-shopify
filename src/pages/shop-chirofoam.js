@@ -17,7 +17,7 @@ export default (props) => {
 		<Banner/>
 		<section className="mt-4 mb py-4" style={{backgroundColor:'#fff'}}>
 				<Row className="no-gutters">
-					<Col sm="4" className="card1 com-card bg-image mx-3 mb-2 mb-sm-0 m-sm-0">
+					<Col sm="4" className="card1 com-card bg-image mx-3 mb-2 mb-sm-0 m-sm-0 m-lg-0">
 						<div className="card-layer">
 							<span className="proxima-b text-center text-white" style={{position:'absolute', top:'50%', left:'0', right:'0'}}>AENEAN SEMPER EST URNA</span>
 						</div>
