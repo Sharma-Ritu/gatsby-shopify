@@ -95,10 +95,8 @@ const ProductForm = ({ product }) => {
 
   return (
     <>
-      <h3>{price}</h3>
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
-          <label htmlFor={name}>{name} </label>
           <select
             name={name}
             key={id}
@@ -114,27 +112,28 @@ const ProductForm = ({ product }) => {
               </option>
             ))}
           </select>
+         
           <br />
         </React.Fragment>
       ))}
-      <label htmlFor="quantity">Quantity </label>
-      <input
-        type="number"
-        id="quantity"
-        name="quantity"
-        min="1"
-        step="1"
-        onChange={handleQuantityChange}
-        value={quantity}
-      />
-      <br />
-      <button
+       <div className="row text-center text-lg-left no-gutters mt-4 ml-0 all-varients">
+              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="cali" className="text-center color-secondary border d-block variants active" style={{fontSize:'0.6rem', width:'95%'}}>CALI KING</a></div>
+              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="king" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>KING</a></div>
+              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="queen" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>QUEEN</a></div>
+              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="double" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>DOUBLE FULL</a></div>
+              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="single" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>SINGLE/TWIN</a></div>
+              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="twin" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>TWIN XL</a></div>
+          </div>
+      <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
+        <span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>{price}</span> <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
         type="submit"
         disabled={!available || adding}
         onClick={handleAddToCart}
       >
-        Add to Cart
+        ADD TO CART
       </button>
+      </p>
+     
       {!available && <p>This Product is out of Stock!</p>}
     </>
   )

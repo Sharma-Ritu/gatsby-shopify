@@ -5,7 +5,7 @@ import StoreContext from '~/context/StoreContext'
 import {Grid,Product,Title,PriceTag} from './styles'
 import { Img } from '~/utils/styles'
 
-const ProductGrid = () => {
+const ProductList = () => {
   const { store: {checkout} } = useContext(StoreContext)
   const { allShopifyProduct } = useStaticQuery(
     graphql`
@@ -88,4 +88,4 @@ const ProductGrid = () => {
   )
 }
 
-export default ProductGrid
+export default ProductList

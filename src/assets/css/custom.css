@@ -12,6 +12,9 @@ body{
 a{
 	text-decoration:none !important;
 }
+.product-border-right{
+	border-right:1px solid #243B6B;
+}
 .right-0{
 	right:0;
 }
@@ -385,14 +388,7 @@ body .charity{
     text-align:left;
 }
 /*end*/
-.variants{
-	border-radius:3px;
-}
-.variants.active{
-	background-color:#ba2154;
-	color:#fff;
-	border-color:#ba3d67;
-}
+
 .review-details i{
     padding-top: 5px;
 }
@@ -453,13 +449,36 @@ body .charity{
 .globe .shop-chir::after{
 	top:0px;
 } 
-.q-list ul li{
-	width:100%;
-	border:1px solid #e7e7e7;
+.qs {
+    position: relative;
+    font-size:14px;
+    border: 1px solid #efefef;
+	padding: 20px 30px;
 }
-.q-list ul li div{
-	width:100%;
+
+.qs:hover{
+	background: rgba(0, 0, 0, 0.02);
 }
+
+.qs::before {
+    content: "\f128";
+    font-family: "FontAwesome";
+    position: absolute;
+    left:10px;
+    font-size: 16px;
+    top:18px;
+    color:rgba(0,0,0,0.2);
+}
+.qs::after{
+    content: "\f105"; 
+    font-family: "FontAwesome";
+    position: absolute;
+    right:15px;
+    font-size:18px;
+    top:15px;
+    color:rgba(0,0,0,0.2);
+}
+
 .products-list .css-1apyjvp{
 	width:50%;
 }
@@ -474,4 +493,41 @@ body .charity{
     padding-left: 70px;
     text-align:left;
     padding-right:0;
+}
+.facilities{
+	font-size:0.8rem;
+}
+.facilities a{
+	color:#243B6B !important;
+}
+.all-varients a{
+	padding:15px 0px;
+	font-style:italic;
+}
+.variants{
+	border-radius:5px;
+	transition: all 0.3s ease;
+	background-color:#f4f4f4;
+}
+.variants.active{
+	background-color:#ba2154;
+	color:#fff !important;
+	border-color:#ba3d67;
+}
+.variants:hover{
+	background-color:#243B6B;
+	color:#fff !important;
+}
+.single-product-img .gatsby-image-wrapper {
+    width: 20%;
+    display: inline-flex;
+    margin: 10px;
+}
+.single-product-img .gatsby-image-wrapper:first-child {
+
+    display: block;
+    padding: 0;
+    width: 100% !important;
+    margin-bottom: 30px;
+
 }

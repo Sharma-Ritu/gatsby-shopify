@@ -29,10 +29,10 @@ const Header = (props) => {
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 			  	<span className="pr-4">Developed & manufactured in Canada</span>
 				<NavItem>
-				  <NavLink href="/original-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</NavLink>
+				  <NavLink href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</NavLink>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/xf-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</NavLink>
+				  <NavLink href="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</NavLink>
 				</NavItem>
 				<NavItem>
 				  <NavLink href="/our-guarentees" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>OUR GUARENTEES</NavLink>

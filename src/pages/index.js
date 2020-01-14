@@ -14,7 +14,6 @@ import feat3 from "../assets/img/feat3.jpg"
 import feat4 from "../assets/img/feat4.jpg"
 import feat5 from "../assets/img/feat5.jpg"
 import { Link } from "gatsby"
-import ProductGrid from '~/components/ProductGrid'
 
 export default (props) => {
   return (
@@ -141,7 +140,7 @@ export default (props) => {
 					<Col sm="6" className="product-border-right pr-0 pr-sm-2 position-relative">
 						<div className="pr-5 mr-0 mr-sm-4">
 							<img src={product1} alt="Product1" width="100%" />
-							<a href="/original-luxury-firm/"><h3 className="text-left text-sm-right color-primary erbaum-bold pl-0">THE ORIGINAL CHIROFOAM<sup style={{fontSize:'16px'}}>TM</sup> MATTRESS - LUXURY FIRM</h3></a>
+							<a href="/product/the-original-chirofoam™-mattress-luxury-firm/"><h3 className="text-left text-sm-right color-primary erbaum-bold pl-0">THE ORIGINAL CHIROFOAM<sup style={{fontSize:'16px'}}>TM</sup> MATTRESS - LUXURY FIRM</h3></a>
 							<p className="text-left text-sm-right color-primary proxima-eb space-1 pt-1 mb-0">
 								The Original Chirofoam Memory Foam Mattress is designed to increase muscle recovery to help keep you performing at your best. Made in Toronto, ON. 
 							</p>
@@ -159,14 +158,14 @@ export default (props) => {
 							</p><br />
 						</div>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 position-absolute left-btn">
-							<a href="/original-luxury-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
+							<a href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
 						</p>
 					</Col>
 					
 					<Col sm="6" className="pl-0 pl-sm-2 position-relative">
 						<div className="pl-0 pl-sm-5 ml-0 ml-sm-4">
 							<img src={product2} alt="Product2" width="100%" />
-							<a href="/xf-extra-firm/"><h3 className="color-primary erbaum-bold pr-0">THE CHIROFOAM<sup style={{fontSize:'16px'}}>TM</sup> XF MATTRESS - EXTRA FIRM</h3></a>
+							<a href="/product/the-chirofoam™-xf-mattress-extra-firm/"><h3 className="color-primary erbaum-bold pr-0">THE CHIROFOAM<sup style={{fontSize:'16px'}}>TM</sup> XF MATTRESS - EXTRA FIRM</h3></a>
 							<p className="text-left color-primary proxima-eb space-1 pt-1 mb-0">
 								The Chirofoam XF Memory Foam Mattress is an extra firm designed maximum back support. Developed for indiduals and atheletes who suffer from back pain and require the greatest amount of stiffness for efficient recovery.
 							</p>
@@ -184,7 +183,7 @@ export default (props) => {
 							</p><br/>
 						</div>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 position-absolute right-btn">
-							<a href="/xf-extra-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
+							<a href="/product/the-chirofoam™-xf-mattress-extra-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
 						</p>
 					</Col>
 				</Row>
@@ -267,9 +266,6 @@ export default (props) => {
 						<img src={blog1} alt="Blog1" width="100%"/>
 					</Col>
 				</Row>
-		</section>
-		<section>
-			<ProductGrid />
 		</section>
 		<Footer />
 		</main>
