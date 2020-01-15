@@ -34,9 +34,9 @@ const ProductPage = ({ data }) => {
                 />
               ))}
           </Col>
-          <Col sm="6" className="pl-lg-5 pl-0 pt-3 pt-sm-0 color-primary single-product-desc">  
+          <Col sm="6" className="pl-lg-5 pl-0 pt-0 pt-sm-0 color-primary single-product-desc">  
              <h3 className="erbaum-bold pb-3 color-primary">{product.title}</h3>
-              <ProductDescription className="filson-pro-reg space-1"
+              <ProductDescription className="filson-pro-reg space-1 mt-0"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
               />
               <ProductForm product={product} />
