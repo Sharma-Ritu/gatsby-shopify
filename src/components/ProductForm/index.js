@@ -95,7 +95,7 @@ const ProductForm = ({ product }) => {
 
   return (
     <>
-      {options.map(({ id, name, values }, index) => (
+      {options.map(({ id, name, values}, index) => (
         <React.Fragment key={id}>
           <select
             name={name}
