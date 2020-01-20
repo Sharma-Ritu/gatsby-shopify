@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
-import "../assets/css/bootstrap.min.css"
-import run from "../assets/img/run.png"
+import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
+//import "../assets/css/bootstrap.min.css"
+import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 
 
 export default (props) => {
@@ -11,63 +11,129 @@ export default (props) => {
 	<>
 		<Header />
 		<section>
-			<Jumbotron className="mb-0 text-center color-primary">
-				<h1 className="font-weight-bold display-4 erbaum-bold">Coming Soon...</h1>
-			</Jumbotron>
-		</section>
-		<section className="mb-0 py-5 approved bg-image">
-			<Container>
+			<div className="container-large">
 				<Row>
-					<Col sm="4" className="align-middle">
-						<img src={run} alt="run" width="70%"/>
-					</Col>
-					<Col sm="8">
-						<div className="text-white mb-4 mt-4 pt-3 pl-3">
-							<h4 className="lead-text-font text-white erbaum-bold display-5">CUSTOMER APPROVED</h4>
-							<p className="proxima-b space-1col-12 col-sm-7 p-0" style={{fontSize:'14px'}}>Our customers have reported the following benefits after sleeping on there chirofoam mattress</p>
-							<div className="pt-3">
-								<Media className="mt-3">
-								  <Media left middle className="mr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									97%
-								  </Media>
-								  <Media body middle className="proxima-r" style={{fontSize:'1.1rem'}}>
-									  Improvement in sleep comfort and quality
-								  </Media>
-								</Media>
-								<Media className="mt-3">
-								  <Media left middle className="mr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									94%
-								  </Media>
-								  <Media body middle className="proxima-r" style={{fontSize:'1.1rem'}}>
-									  Increased energy in the morning and throughout the day
-								  </Media>
-								</Media>
-								<Media className="mt-3">
-								  <Media left middle className="mr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									86%
-								  </Media>
-								  <Media body middle className="proxima-r" style={{fontSize:'1.1rem'}}>
-									  Improved muscle recovery and/or relief in daliy experienced back pain
-								  </Media>
-								</Media>
-								<Media className="mt-3">
-								  <Media left middle className="mr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									82%
-								  </Media>
-								  <Media body middle className="proxima-r" style={{fontSize:'1.1rem'}}>
-									  Improvement in sleep comfort and quality
-								  </Media>
-								</Media>
-								<p className="cta erbaum mt-3 mt-sm-0">
-									<a href="#" className="text-white">READ CUSTOMER REVIEW <i class="fa fa-caret-right ic1"></i><i class="fa fa-caret-right ic2"></i><i class="fa fa-caret-right ic3"></i></a>
-								</p>
-							</div>
-						</div>
-					</Col>
+					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
+						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">CART</h2>
+					</Jumbotron>
 				</Row>
-			</Container>
+			</div>
 		</section>
-
+		<section className="mb-0 py-3 py-sm-5">
+			<div className="container-large">
+				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
+					<div className="col-12 cart">
+						<Table>
+							<thead>
+								<tr>
+									<th> &nbsp; </th>
+									<th> &nbsp; </th>
+									<th> Product </th>
+									<th> Price </th>
+									<th> Quantity </th>
+									<th> Total </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr className="cart_item">
+									<td className="product-remove">
+										<a href="#" title="Remove this item"><i class="fa fa-remove"></i></a> 
+									</td>
+									<td className="product-thumbnail">
+										<a href="#"><img width="30px" height="30px" src={Chirofoam_Mattress_Sleep_Quality} alt="Chirofoam Mattress Sleep Quality" /></a> 
+									</td>
+									<td className="product-name">
+										<a href="#">The Chirofoam™ XF Mattress - Extra Firm </a> 
+									</td>
+									<td className="product-price">
+										<span>CAD&nbsp;<span>$</span>840.00</span> 
+									</td>
+									<td className="product-quantity">1 </td>
+									<td className="product-subtotal">
+										<span> CAD $ 840.00 </span> 
+									</td>
+								</tr>
+								<tr>
+									<td colSpan="5">
+										<div class="coupon">
+											<input type="text" name="coupon_code" className="my-3 mr-3" placeholder="Coupon code" />
+											<input type="submit" class="btn btn-secondary" name="apply_coupon" value="Apply Coupon" />
+										</div>
+									</td>
+									<td>
+										<input type="submit" class="btn btn-secondary" name="update_cart" value="Update Cart" />
+									</td>
+								</tr> 
+							</tbody>
+						</Table>
+					</div>
+					<div className="col-12 pt-5 cart-total">
+						<Table striped cellspacing="0">
+							<thead>
+								<tr>
+									<th colSpan="2">CART TOTAL</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="cart_item">
+									<td>SUBTOTAL</td>
+									<td className="text-center">CAD $840.00</td>
+								</tr>
+								<tr class="cart_item">
+									<td>SHIPPING</td>
+									<td className="text-center">Enter your address to view shipping options.</td>
+								</tr>
+								<tr class="cart_item">
+									<td>TOTAL</td>
+									<td className="text-center color-primary font-weight-bold">CAD $840.00</td>
+								</tr>
+							</tbody>
+						</Table>
+					</div>
+					<div className="col-12 pt-5 checkout">
+						<a href="#" class="btn btn-primary float-right">Proceed to Checkout</a>
+					</div>
+				</Row>
+			</div>
+		</section>
+		<section>
+			<div className="container-large">
+				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
+					<div className="w-50 m-auto text-center d-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
+								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+							</p>
+							See if Chirofoam™ is right for you.
+						</Col>
+						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
+								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+							</p>
+							Start your journey to a better sleep!
+						</Col>
+					</div>
+				</Row>
+			</div>
+		</section>
+		<section className="rating-and-review py-3 py-sm-5">
+			<div className="container-large pb-0 pb-sm-5">
+				<Row>
+					<p className="text-center w-100 star">
+						<i className="fa fa-star star-small"></i>
+						<i className="fa fa-star star-medium ml-2"></i>
+						<i className="fa fa-star star-large mx-2"></i>
+						<i className="fa fa-star star-medium mr-2"></i>
+						<i className="fa fa-star star-small"></i>
+					</p>
+					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
+					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
+						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+					</p>
+					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
+				</Row>
+			</div>
+		</section>
 		<Footer />
 	</>
   );
