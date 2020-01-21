@@ -110,8 +110,8 @@ export default (props) => {
 						<p className="filson-pro-reg space-1 col-sm-12 col-lg-7 col-12 px-0" style={{fontSize:'14px'}}>Usually ships within 1 - 2 business day. </p>
 						<div className="d-flex text-center pt-3 pl-sm-0 pl-lg-5 pl-0 facilities">
 							<Col sm="4" className="px-2 px-sm-3">
-								<a href="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></a>
-								<a href="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></a>
+								<a href="./warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></a>
+								<a href="./warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></a>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
 								<img src={van} alt="van" width="60px" className="mb-3"/>
