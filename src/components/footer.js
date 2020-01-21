@@ -23,10 +23,10 @@ const Footer = () => (
 						paddingLeft:'0px',
 						paddingTop:'18px'
 					}} >
-						<li className="mr-2 pr-1"><Link to="https://facebook.com/chirofoam"><i class="fa fa-facebook color-primary"></i></Link></li>
-						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-instagram color-primary"></i></Link></li>
-						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-twitter color-primary"></i></Link></li>
-						<li className="mr-2 pr-1"><Link to="/"><i className="fa fa-youtube color-primary"></i></Link></li>
+						<li className="mr-2 pr-1"><a href="https://facebook.com/chirofoam"><i class="fa fa-facebook color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a href="https://instagram.com/chirofoam"><i class="fa fa-instagram color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a href="https://twitter.com/chirofoam"><i class="fa fa-twitter color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a href="https://www.youtube.com/channel/UCDjVpHGDY4fapKu4TnuKu6w"><i className="fa fa-youtube color-primary"></i></a></li>
 
 					</ul>
 					<p className="proxima-r space-1 pt-3 mb-0" style={{color:'#b2b2b2',fontSize:'11px'}}>Chirofoam<sup>TM</sup> Memory Foam Mattress </p>
