@@ -2,6 +2,9 @@ import React, { useState, useContext, useEffect, useCallback } from 'react'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
+import warranty from "~/assets/img/waranty.png"
+import van from "~/assets/img/van.png"
+import box from "~/assets/img/box.png"
 
 import StoreContext from '~/context/StoreContext'
 
@@ -95,6 +98,20 @@ const ProductForm = ({ product }) => {
 
   return (
     <>
+    <div className="d-flex text-center pt-3 pl-sm-0 pl-lg-5 pl-0 facilities">
+							<Col sm="4" className="px-2 px-sm-3">
+								<a href="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></a>
+								<a href="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></a>
+							</Col>
+							<Col sm="4" className="px-2 px-sm-3">
+								<img src={van} alt="van" width="60px" className="mb-3"/>
+								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <a className="color-primary" href="/return-policy/">EASY RETURNS</a></span>
+							</Col>
+							<Col sm="4" className="px-2 px-sm-3">
+								<img src={box} alt="box" width="60px" className="mb-3"/>
+								<span className="d-block erbaum-bold" style={{fontSize:'0.8rem'}}>DELIVERED IN PORTABLE BOX</span>
+							</Col>
+						</div>
       {options.map(({ id, name, values}, index) => (
         <React.Fragment key={id}>
           <select
