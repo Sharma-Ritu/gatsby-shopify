@@ -2,9 +2,9 @@ import React, { useState, useContext, useEffect, useCallback } from 'react'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
-import warranty from "~/assets/img/waranty.png"
-import van from "~/assets/img/van.png"
-import box from "~/assets/img/box.png"
+import warranty from '~/assets/img/waranty.png'
+import van from '~/assets/img/van.png'
+import box from '~/assets/img/box.png'
 
 import StoreContext from '~/context/StoreContext'
 
