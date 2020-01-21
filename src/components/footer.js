@@ -23,7 +23,7 @@ const Footer = () => (
 						paddingLeft:'0px',
 						paddingTop:'18px'
 					}} >
-						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-facebook color-primary"></i></Link></li>
+						<li className="mr-2 pr-1"><Link to="https://facebook.com/chirofoam"><i class="fa fa-facebook color-primary"></i></Link></li>
 						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-instagram color-primary"></i></Link></li>
 						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-twitter color-primary"></i></Link></li>
 						<li className="mr-2 pr-1"><Link to="/"><i className="fa fa-youtube color-primary"></i></Link></li>
