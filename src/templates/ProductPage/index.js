@@ -7,9 +7,9 @@ import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
 import {Img,TwoColumnGrid,GridLeft,GridRight,} from '~/utils/styles'
 import {ProductTitle,ProductDescription} from './styles'
-import warranty from "../assets/img/waranty.png"
-import van from "../assets/img/van.png"
-import box from "../assets/img/box.png"
+import warranty from "~/assets/img/waranty.png"
+import van from "~/assets/img/van.png"
+import box from "~/assets/img/box.png"
 import icon1 from "~/assets/img/ic1.png"
 import icon2 from "~/assets/img/ic2.png"
 import icon3 from "~/assets/img/ic3.png"
