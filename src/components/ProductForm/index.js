@@ -98,20 +98,7 @@ const ProductForm = ({ product }) => {
 
   return (
     <>
-    <div className="d-flex text-center pt-3 pl-sm-0 pl-lg-5 pl-0 facilities">
-							<Col sm="4" className="px-2 px-sm-3">
-								<a href="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></a>
-								<a href="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></a>
-							</Col>
-							<Col sm="4" className="px-2 px-sm-3">
-								<img src={van} alt="van" width="60px" className="mb-3"/>
-								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <a className="color-primary" href="/return-policy/">EASY RETURNS</a></span>
-							</Col>
-							<Col sm="4" className="px-2 px-sm-3">
-								<img src={box} alt="box" width="60px" className="mb-3"/>
-								<span className="d-block erbaum-bold" style={{fontSize:'0.8rem'}}>DELIVERED IN PORTABLE BOX</span>
-							</Col>
-						</div>
+    
       {options.map(({ id, name, values}, index) => (
         <React.Fragment key={id}>
           <select
@@ -133,6 +120,20 @@ const ProductForm = ({ product }) => {
           <br />
         </React.Fragment>
       ))}
+<div className="d-flex text-center pt-3 pl-sm-0 pl-lg-5 pl-0 facilities">
+							<Col sm="4" className="px-2 px-sm-3">
+								<a href="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></a>
+								<a href="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></a>
+							</Col>
+							<Col sm="4" className="px-2 px-sm-3">
+								<img src={van} alt="van" width="60px" className="mb-3"/>
+								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <a className="color-primary" href="/return-policy/">EASY RETURNS</a></span>
+							</Col>
+							<Col sm="4" className="px-2 px-sm-3">
+								<img src={box} alt="box" width="60px" className="mb-3"/>
+								<span className="d-block erbaum-bold" style={{fontSize:'0.8rem'}}>DELIVERED IN PORTABLE BOX</span>
+							</Col>
+						</div>
        <div className="row text-center text-lg-left no-gutters mt-4 ml-0 all-varients">
               <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="cali" className="text-center color-secondary border d-block variants active" style={{fontSize:'0.6rem', width:'95%'}}>CALI KING</a></div>
               <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="king" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>KING</a></div>
