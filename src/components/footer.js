@@ -1,10 +1,6 @@
 import React from "react"
 import {Link} from "gatsby"
-import {
-  Container,
-  Row,
-  Col
-} from 'reactstrap';
+import {Container, Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import twiter from "../assets/img/twiter.png"
 import fb from "../assets/img/fb.png"
@@ -23,10 +19,10 @@ const Footer = () => (
 						paddingLeft:'0px',
 						paddingTop:'18px'
 					}} >
-						<li className="mr-2 pr-1"><a href="https://facebook.com/chirofoam"><i class="fa fa-facebook color-primary"></i></a></li>
-						<li className="mr-2 pr-1"><a href="https://instagram.com/chirofoam"><i class="fa fa-instagram color-primary"></i></a></li>
-						<li className="mr-2 pr-1"><a href="https://twitter.com/chirofoam"><i class="fa fa-twitter color-primary"></i></a></li>
-						<li className="mr-2 pr-1"><a href="https://www.youtube.com/channel/UCDjVpHGDY4fapKu4TnuKu6w"><i className="fa fa-youtube color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-facebook color-primary"></i></Link></li>
+						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-instagram color-primary"></i></Link></li>
+						<li className="mr-2 pr-1"><Link to="/"><i class="fa fa-twitter color-primary"></i></Link></li>
+						<li className="mr-2 pr-1"><Link to="/"><i className="fa fa-youtube color-primary"></i></Link></li>
 
 					</ul>
 					<p className="proxima-r space-1 pt-3 mb-0" style={{color:'#b2b2b2',fontSize:'11px'}}>Chirofoam<sup>TM</sup> Memory Foam Mattress </p>
@@ -54,7 +50,7 @@ const Footer = () => (
 						<li className="mr-2 pb-sm-2 pb-1"><Link to="./faq" style={{color:'#b2b2b2',fontSize:'12px'}}>Frequently Asked Questions</Link></li>
 					</ul>
 				</Col>
-				<Col md="3" className="widget-4 pt-0 m-0 pl-0 pl-sm-5 pl-xl-5 pl-lg-5">
+				<Col md="3" className="widget-4 pt-0 m-0 pl-sm-5 pl-xl-5 pl-lg-5">
 					<ul className="pl-0 pl-sm-5 pl-lg-5 pl-xl-5 pb-0" style={{
 						listStyle:'none',
 					}} >
