@@ -56,12 +56,12 @@ export default (props) => {
 								<tr>
 									<td colSpan="5">
 										<div class="coupon">
-											<input type="text" name="coupon_code" className="my-3 mr-3" placeholder="Coupon code" />
-											<input type="submit" class="btn btn-secondary" name="apply_coupon" value="Apply Coupon" />
+											<input type="text" name="coupon_code" className="my-3 mr-3 p-1" placeholder="Coupon code" />
+											<button class="btn-dark p-1 text-white space-1 font-weight-bold"> APPLY COUPON </button>
 										</div>
 									</td>
 									<td>
-										<input type="submit" class="btn btn-secondary" name="update_cart" value="Update Cart" />
+										<button class="btn-dark p-1 text-white space-1"> UPDATE CART </button>
 									</td>
 								</tr> 
 							</tbody>
@@ -91,7 +91,7 @@ export default (props) => {
 						</Table>
 					</div>
 					<div className="col-12 pt-5 checkout">
-						<a href="#" class="btn btn-primary float-right">Proceed to Checkout</a>
+						<button class="btn p-2 text-white space-1 float-right font-weight-bold btn-checkout"> PROCEED TO CHECKOUT </button>
 					</div>
 				</Row>
 			</div>
@@ -99,14 +99,14 @@ export default (props) => {
 		<section>
 			<div className="container-large">
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+					<div className="w-50 m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
 							</p>
@@ -116,7 +116,7 @@ export default (props) => {
 				</Row>
 			</div>
 		</section>
-		<section className="rating-and-review py-3 py-sm-5">
+		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
 			<div className="container-large pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
@@ -127,7 +127,7 @@ export default (props) => {
 						<i className="fa fa-star star-small"></i>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
-					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
+					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
 						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
