@@ -36,7 +36,7 @@ const Example = (props) => {
 		<section className="mb-0 py-5 position-relative">
 			<div className="container-large">
 				<div className="col-md-12">
-					<Nav tabs id="tabs">
+					<Nav tabs id="tabs" className="d-block-ruby">
 						<NavItem>
 							<NavLink nav-link small color-secondary filson-pro-reg className={activeTab == '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
 								Customer Reviews
@@ -58,7 +58,7 @@ const Example = (props) => {
 											<p><span>175</span> reviews </p>
 										</Col>
 										<Col sm="6" className="py-5">
-											<div className="p-0 list-unstyled review-details w-75 float-right">
+											<div className="p-0 list-unstyled review-details w-75 float-left float-sm-right float-lg-right float-xl-right">
 												<div className="w-100 d-flex color-primary mb-4">5<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'100%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>166</div>
 												<div className="w-100 d-flex color-primary mb-4">4<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'75%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>5</div>
 												<div className="w-100 d-flex color-primary mb-4">3<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'50%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
@@ -146,18 +146,18 @@ const Example = (props) => {
 							</TabPane>
 							<TabPane tabId="2">
 								<div id="tabsContent" className="tab-content border border-top-0">
-									<div id="leave-review" className="m-auto py-5" style={{width:'85%'}}>
-										<Row>
-											<div className="w-50 m-auto d-flex no-gutters select-mattress">
-												<Col sm="6">
-													<div className="card card-body text-center border-0">
-														<a href="#" className="filson-pro-reg space-1">Chirofoam Premium Mattress</a>
+									<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+										<Row className="m-0">
+											<div className="col-12 col-sm-6 col-lg-6 col-xl-6 m-auto d-flex no-gutters select-mattress">
+												<Col className="col-6">
+													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
+														<a href="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam Premium Mattress</a>
 														<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our Premium Mattresses</p>
 													</div>
 												</Col>
-												<Col sm="6">
-													<div className="card card-body text-center border-0">
-														<a href="#" className="filson-pro-reg space-1">Chirofoam X-Firm mattress</a>
+												<Col className="col-6">
+													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
+														<a href="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam X-Firm mattress</a>
 														<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our X Firm Mattresses</p>
 													</div>
 												</Col>
@@ -294,14 +294,14 @@ const Example = (props) => {
     <section>
 			<div className="container-large">
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+					<div className="w-50 m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
 							</p>
@@ -311,7 +311,7 @@ const Example = (props) => {
 				</Row>
 			</div>
 		</section>
-		<section className="rating-and-review py-3 py-sm-5">
+		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
 			<div className="container-large pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
@@ -322,7 +322,7 @@ const Example = (props) => {
 						<i className="fa fa-star star-small"></i>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
-					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
+					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
 						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
