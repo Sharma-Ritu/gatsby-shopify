@@ -22,7 +22,7 @@ export default (props) => {
 		<section className="mb-0 py-3 py-sm-5">
 			<div className="container-large">
 				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
-					<div className="col-12 cart">
+					<div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
 						<Table>
 							<thead>
 								<tr>
@@ -37,7 +37,7 @@ export default (props) => {
 							<tbody>
 								<tr className="cart_item">
 									<td className="product-remove">
-										<a href="#" title="Remove this item"><i class="fa fa-remove"></i></a> 
+										<a href="#" title="Remove this item"><i className="fa fa-remove"></i></a> 
 									</td>
 									<td className="product-thumbnail">
 										<a href="#"><img width="30px" height="30px" src={Chirofoam_Mattress_Sleep_Quality} alt="Chirofoam Mattress Sleep Quality" /></a> 
@@ -55,35 +55,35 @@ export default (props) => {
 								</tr>
 								<tr>
 									<td colSpan="5">
-										<div class="coupon">
+										<div className="coupon">
 											<input type="text" name="coupon_code" className="my-3 mr-3 p-1" placeholder="Coupon code" />
-											<button class="btn-dark p-1 text-white space-1 font-weight-bold"> APPLY COUPON </button>
+											<button className="btn-dark p-1 text-white space-1 font-weight-bold"> APPLY COUPON </button>
 										</div>
 									</td>
 									<td>
-										<button class="btn-dark p-1 text-white space-1"> UPDATE CART </button>
+										<button className="btn-dark p-1 text-white space-1"> UPDATE CART </button>
 									</td>
 								</tr> 
 							</tbody>
 						</Table>
 					</div>
-					<div className="col-12 pt-5 cart-total">
-						<Table striped cellspacing="0">
+					<div className="col-12 col-md-12 col-sm-6 col-xs-12 pt-5 cart-total">
+						<Table striped cellSpacing="0">
 							<thead>
 								<tr>
 									<th colSpan="2">CART TOTAL</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="cart_item">
+								<tr className="cart_item">
 									<td>SUBTOTAL</td>
 									<td className="text-center">CAD $840.00</td>
 								</tr>
-								<tr class="cart_item">
+								<tr className="cart_item">
 									<td>SHIPPING</td>
 									<td className="text-center">Enter your address to view shipping options.</td>
 								</tr>
-								<tr class="cart_item">
+								<tr className="cart_item">
 									<td>TOTAL</td>
 									<td className="text-center color-primary font-weight-bold">CAD $840.00</td>
 								</tr>
@@ -91,7 +91,7 @@ export default (props) => {
 						</Table>
 					</div>
 					<div className="col-12 pt-5 checkout">
-						<button class="btn p-2 text-white space-1 float-right font-weight-bold btn-checkout"> PROCEED TO CHECKOUT </button>
+						<button className="btn p-2 text-white space-1 float-right font-weight-bold btn-checkout"> PROCEED TO CHECKOUT </button>
 					</div>
 				</Row>
 			</div>
