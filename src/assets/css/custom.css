@@ -531,3 +531,9 @@ body .charity{
     margin-bottom: 30px;
 
 }
+body .navbar{
+	padding:0px;
+}
+#tabs.d-block-ruby{
+	display:block ruby;
+}
