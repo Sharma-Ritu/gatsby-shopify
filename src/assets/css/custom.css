@@ -537,3 +537,11 @@ body .navbar{
 #tabs.d-block-ruby{
 	display:block ruby;
 }
+.btn-checkout {
+	background-color: #24336c !important;
+
+}
+.btn-checkout:hover{
+	background-color: #000000 !important;
+	
+}
