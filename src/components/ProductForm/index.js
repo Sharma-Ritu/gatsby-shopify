@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react'
+import { Button, ButtonGroup } from 'reactstrap'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
@@ -18,7 +19,7 @@ const ProductForm = ({ product }) => {
     addVariantToCart,
     store: { client, adding },
   } = useContext(StoreContext)
-
+  const [rSelected, setRSelected] = useState([])
   const productVariant =
     client.product.helpers.variantForOptions(product, variant) || variant
   const [available, setAvailable] = useState(productVariant.availableForSale)
@@ -75,7 +76,7 @@ const ProductForm = ({ product }) => {
   */
   const checkDisabled = (name, value) => {
     const match = find(variants, {
-      selectedOptions: [
+      selectedOptions:[
         {
           name: name,
           value: value,
@@ -92,40 +93,28 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-
   return (
     <>
-    
-      {options.map(({ id, name, values}, index) => (
+      {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
-          <select
-            name={name}
-            key={id}
-            onChange={event => handleOptionChange(index, event)}
-          >
+        <div>
             {values.map(value => (
-              <option
+              <Button 
                 value={value}
-                key={`${name}-${value}`}
                 disabled={checkDisabled(name, value)}
+                onClick={() => setRSelected(value)} 
+                active={rSelected === (value)}
+                color="" className=" border color-secondary variants rounded font-italic mr-1 py-3"
               >
                 {value}
-              </option>
+              </Button>
             ))}
-          </select>
          
-          <br />
+       </div>
+          <br /><br/>
         </React.Fragment>
       ))}
-
-       <div className="row text-center text-lg-left no-gutters mt-4 ml-0 all-varients">
-              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="cali" className="text-center color-secondary border d-block variants active" style={{fontSize:'0.6rem', width:'95%'}}>CALI KING</a></div>
-              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="king" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>KING</a></div>
-              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="queen" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>QUEEN</a></div>
-              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="double" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>DOUBLE FULL</a></div>
-              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="single" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>SINGLE/TWIN</a></div>
-              <div className="col-sm-6 col-lg-2 col-4 mb-2"><a href="#" id="twin" className="text-center color-secondary border d-block variants" style={{fontSize:'0.6rem', width:'95%'}}>TWIN XL</a></div>
-          </div>
+     
       <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
         <span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>{price}</span> <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
         type="submit"
@@ -166,7 +155,6 @@ ProductForm.propTypes = {
       PropTypes.shape({
         availableForSale: PropTypes.bool,
         id: PropTypes.string,
-        price: PropTypes.string,
         title: PropTypes.string,
         shopifyId: PropTypes.string,
         selectedOptions: PropTypes.arrayOf(
