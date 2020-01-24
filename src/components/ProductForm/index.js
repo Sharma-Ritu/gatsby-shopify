@@ -93,7 +93,7 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options);
+  console.log(options[0], options[0].name, options[0]['name']);
   return (
     <>
       {options.map(({ id, name, values }, index) => (
