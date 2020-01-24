@@ -102,7 +102,7 @@ const ProductForm = ({ product }) => {
             {options[0].values.map(value => (
               <Button 
                 value={value}
-                disabled={checkDisabled(name, value)}
+                disabled={checkDisabled(options[0].name, value)}
                 onClick={() => setRSelected(value)} 
                 active={rSelected === (value)}
                 color="" className=" border color-secondary variants rounded font-italic mr-1 py-3"
