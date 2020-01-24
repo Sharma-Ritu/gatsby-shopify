@@ -88,7 +88,7 @@ const ProductForm = ({ product }) => {
     return true
   }
   const get_selectedDimension = () => {
-    selectedIndex = options[0].findIndex(rSelected);
+    const selectedIndex = options[0].findIndex(rSelected);
     return options[1].values[selectedIndex]
   }
   const price = Intl.NumberFormat(undefined, {
