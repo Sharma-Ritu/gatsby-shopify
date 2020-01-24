@@ -93,9 +93,27 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options[0], options[0].name, options[0]['name']);
+  console.log(options[0], options[1]);
   return (
     <>
+      <React.Fragment key={options[0].id}>
+        <h4 className="text-center">{options[0].name}</h4>
+        <div>
+            {options[0].values.map(value => (
+              <Button 
+                value={value}
+                disabled={checkDisabled(name, value)}
+                onClick={() => setRSelected(value)} 
+                active={rSelected === (value)}
+                color="" className=" border color-secondary variants rounded font-italic mr-1 py-3"
+              >
+                {value}
+              </Button>
+            ))}
+         
+       </div>
+      <br /><br/>
+      </React.Fragment>
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
         <h4 className="text-center">{name}</h4>
