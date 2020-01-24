@@ -125,7 +125,7 @@ const ProductForm = ({ product }) => {
         type="submit"
         disabled={!available || adding}
         onClick={handleAddToCart}
-        href="/cart/"
+     
       >
         ADD TO CART
       </button>
