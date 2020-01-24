@@ -9,21 +9,18 @@ import bedkit from "../assets/img/bedkit.jpg"
 import donate from "../assets/img/donate.jpg"
 import dream from "../assets/img/dream.jpg"
 
-
-
-
 export default (props) => {
   return (
 	<>
 		<Header />
 		<section className="blue-bg charity">
-			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1">
-				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 space-2">Sleeping Children Around The World</h2>
+			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
+				<h2 className="font-weight-bold erbaum-bold text-uppercase pt-md-5 space-2 pt-sm-1">Sleeping Children Around The World</h2>
 				<p className="space-4 proxima-r text-white m-auto text-center px-0 px-sm-5 px-lg-5 px-xl-5 pt-2 pt-sm-4" style={{width:'90%',fontSize:'26px'}}>Chirofoam™ will donate 1 Bedkit for every mattress sold.</p>
 			</Jumbotron>
 		</section>
 		<section className="mb-0 py-5 position-relative">
-			<div className="container-large">
+			<div className="container-fluid">
 				<Row className="charity-inner text-center">
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5">
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 text-uppercase">The Charity’s Purpose </h5>
@@ -31,7 +28,7 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2">Their purpose is crystal clear: give every child the opportunity to have a good night’s sleep.  With sleep, the promise of a better tomorrow is realized.</p>
 						<p className="filson-pro-reg color-secondary pt-2">The consequences of deprived sleep are well documented.  It is a fact that poor sleep leads to long term issues, especially in young children.  Sleep has tremendous effects on health, memory, emotions and academic potential.  No child should ever be deprived of a peaceful sleep.</p>
 						<div className="charity-image text-center">
-							<img src={sleep_child} alt="Sleeping Child" />
+							<img className="img-fluid" src={sleep_child} alt="Sleeping Child" />
 						</div>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5">
@@ -45,7 +42,7 @@ export default (props) => {
 							<li>All donations are of “free will” giving.  They will not undertake telemarketing, door to door appeals, mass mailings or use professional fundraisers to help their cause.</li>
 						</ul>
 						<div className="charity-image text-center">
-							<img src={children} alt="Children" width="100%"/>
+							<img className="img-fluid" src={children} alt="Children" width="100%"/>
 						</div>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5">
@@ -59,7 +56,7 @@ export default (props) => {
 						</ul>
 						<p className="filson-pro-reg color-secondary pt-2">All items are sourced locally where possible, with positive economic impact to the local community.</p>
 						<div className="charity-image text-center">
-							<img src={bedkit} alt="Bedkit" width="100%"/>
+							<img className="img-fluid" src={bedkit} alt="Bedkit" width="100%"/>
 						</div>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5">
@@ -67,7 +64,7 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2">Volunteerism takes on a new definition at Sleeping Children, because it means more than just giving back. They believe their volunteers get a lot more than they give; they actually nourish their own humanity.</p>
 						<p className="filson-pro-reg color-secondary pt-2">At Sleeping Children there are three distinct kinds of volunteers required to mount a global initiative such as ours.  More than 2000 volunteers are from all over the world.</p>
 						<div className="charity-image text-center">
-							<img src={donate} alt="Donation" width="100%" />
+							<img className="img-fluid" src={donate} alt="Donation" width="100%" />
 						</div>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5">
@@ -75,27 +72,27 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2">With every purchase of a Chirofoam mattress, we will donate a Bedkit to a child in need. A bedkit provides a child with the means to go on thriving and the promise that the world holds a brighter future.</p>
 						<p className="filson-pro-reg color-secondary pt-2">These Bedkits provide a child with the basic necessities for sleep. This transforms the life of that child and these tools have a lasting effect on the entire family.</p>
 						<div className="charity-image text-center">
-							<img src={dream} alt="Dream" width="100%"/>
+							<img className="img-fluid" src={dream} alt="Dream" width="100%"/>
 						</div>
 					</Col>
 				</Row>
 			</div>
 		</section>
 		<section className="pb-2 pb-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
+			<div className="container-fluid pb-0 pb-sm-5">
 				<Row className="pb-0 pb-sm-5">
-					<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100 pt-2 pt-sm-5 mt-0 mt-sm-5">Thank you for helping to provide a child in need with better sleep. </h4>
-					<p className="filson-pro-reg pt-0 text-uppercase text-center w-100 pt-2 pt-sm-5" style={{color:'#ba2154'}}>For more information on Sleeping Children Around The World visit their website at <a href="www.scaw.org" style={{color:'#000'}}>www.scaw.org</a>.</p>
+					<h4 className="text-center color-primary erbaum-bold text-uppercase w-100 pt-2 pt-sm-5 mt-0 mt-sm-5">Thank you for helping to provide a child in need with better sleep. </h4>
+					<p className="pt-0 text-uppercase text-center w-100 pt-2 pt-md-5" style={{color:'#ba2154'}}>For more information on Sleeping Children Around The World visit their website at <a href="www.scaw.org" style={{color:'#000'}}>www.scaw.org</a>.</p>
 				</Row>
 			</div>
 		</section>
 		<section>
-			<div className="container-large">
+			<div className="container-fluid">
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</a>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
@@ -110,7 +107,7 @@ export default (props) => {
 			</div>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
-			<div className="container-large pb-0 pb-sm-5">
+			<div className="container-fluid pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>

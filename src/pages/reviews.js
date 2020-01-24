@@ -34,7 +34,7 @@ const Example = (props) => {
 			</div>
 		</section>
 		<section className="mb-0 py-5 position-relative">
-			<div className="container-large">
+			<div className="container-fluid">
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-block-ruby">
 						<NavItem>
@@ -297,7 +297,7 @@ const Example = (props) => {
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</a>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
