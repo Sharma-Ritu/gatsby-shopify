@@ -99,6 +99,7 @@ const ProductForm = ({ product }) => {
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
         <div>
+          <h4>{name}</h4>
             {values.map(value => (
               <Button 
                 value={value}
