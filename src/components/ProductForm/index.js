@@ -19,7 +19,7 @@ const ProductForm = ({ product }) => {
     addVariantToCart,
     store: { client, adding },
   } = useContext(StoreContext)
-  const [rSelected, setRSelected] = useState([])
+  const [rSelected, setRSelected] = useState(['Queen'])
   const productVariant =
     client.product.helpers.variantForOptions(product, variant) || variant
   const [available, setAvailable] = useState(productVariant.availableForSale)
@@ -96,7 +96,7 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options[0].values.indexOf(rSelected));
+  console.log(options[0].values.indexOf(rSelected), variants);
   return (
     <>
       <React.Fragment key={options[0].id}>
@@ -117,7 +117,7 @@ const ProductForm = ({ product }) => {
        </div>
       <br /><br/>
       </React.Fragment>
-      <h4>{get_selectedDimension()}</h4>
+      {<h4>{get_selectedDimension()}</h4>}
       
      
       <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
