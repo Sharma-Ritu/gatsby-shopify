@@ -117,18 +117,18 @@ const ProductForm = ({ product }) => {
        </div>
       <br /><br/>
       </React.Fragment>
-      {{<h4 className="mt-2" style={{fontSize:'14px'}}>{get_selectedDimension()}</h4>}
+      {<h4 className="mt-2" style={{fontSize:'14px'}}>{get_selectedDimension()}</h4>}
       
      
       <p className="cta mt-0 mt-sm-5 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
-        <span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>{price}</span> <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
+        <span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>{price}</span> <a className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
         type="submit"
         disabled={!available || adding}
         onClick={handleAddToCart}
-     
+        href="/cart/"
       >
         ADD TO CART
-      </button>
+      </a>
       </p>
      
       {!available && <p>This Product is out of Stock!</p>}
