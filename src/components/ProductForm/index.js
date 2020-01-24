@@ -87,13 +87,16 @@ const ProductForm = ({ product }) => {
     if (match.availableForSale === true) return false
     return true
   }
-
+  const get_selectedDimension = () => {
+    selectedIndex = options[0].findIndex(rSelected);
+    return options[1].values[selectedIndex]
+  }
   const price = Intl.NumberFormat(undefined, {
     currency: minVariantPrice.currencyCode,
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options[0], rSelected, options[1]);
+  console.log(get_selectedDimension, rSelected, options[1].values[0]);
   return (
     <>
       <React.Fragment key={options[0].id}>
