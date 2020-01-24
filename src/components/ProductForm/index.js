@@ -93,13 +93,13 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options[0], options[1]);
+  console.log(options[0], rSelected, options[1]);
   return (
     <>
       <React.Fragment key={options[0].id}>
         <h4 className="text-center">{options[0].name}</h4>
         <div>
-            {options[0].values.map(value => (
+            {options[0].values.map((value, index) => (
               <Button 
                 value={value}
                 disabled={checkDisabled(options[0].name, value)}
