@@ -93,9 +93,9 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
+  console.log(options);
   return (
     <>
-    console.log(options);
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
         <div>
