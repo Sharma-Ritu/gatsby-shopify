@@ -19,7 +19,7 @@ const ProductForm = ({ product }) => {
     addVariantToCart,
     store: { client, adding },
   } = useContext(StoreContext)
-  const [rSelected, setRSelected] = useState(['Queen'])
+  const [rSelected, setRSelected] = useState('Queen')
   const productVariant =
     client.product.helpers.variantForOptions(product, variant) || variant
   const [available, setAvailable] = useState(productVariant.availableForSale)
