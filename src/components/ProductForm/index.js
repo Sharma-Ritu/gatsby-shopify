@@ -96,7 +96,6 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variants[selectedVariantIndex].price)
-  console.log(selectedVariantIndex, variants[selectedVariantIndex].price);
   return (
     <>
       <React.Fragment key={options[0].id}>
@@ -104,6 +103,7 @@ const ProductForm = ({ product }) => {
         <div>
             {options[0].values.map((value, index) => (
               <Button 
+                key={index}
                 value={value}
                 disabled={checkDisabled(options[0].name, value)}
                 onClick={() => setRSelected(value)} 
