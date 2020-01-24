@@ -95,6 +95,7 @@ const ProductForm = ({ product }) => {
   }).format(variant.price)
   return (
     <>
+    console.log(options);
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
         <div>
