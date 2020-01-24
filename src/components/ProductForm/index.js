@@ -89,14 +89,14 @@ const ProductForm = ({ product }) => {
   }
   const get_selectedDimension = () => {
     const selectedIndex = options[0].values.indexOf(rSelected);
-    return options[1].values[selectedIndex]
+    return options[1].name+': '+options[1].values[selectedIndex]
   }
   const price = Intl.NumberFormat(undefined, {
     currency: minVariantPrice.currencyCode,
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options[0].values.indexOf(rSelected), get_selectedDimension());
+  console.log(options[0].values.indexOf(rSelected));
   return (
     <>
       <React.Fragment key={options[0].id}>
@@ -117,7 +117,7 @@ const ProductForm = ({ product }) => {
        </div>
       <br /><br/>
       </React.Fragment>
-      <h4>{options[1].name+': '}<span>{rSelected}</span></h4>
+      <h4>{get_selectedDimension()}</h4>
       
      
       <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
