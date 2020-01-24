@@ -96,7 +96,7 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(get_selectedDimension, rSelected, options[1].values[0]);
+  console.log(get_selectedDimension());
   return (
     <>
       <React.Fragment key={options[0].id}>
