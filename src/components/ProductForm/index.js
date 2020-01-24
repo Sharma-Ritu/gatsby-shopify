@@ -88,7 +88,7 @@ const ProductForm = ({ product }) => {
     return true
   }
   const get_selectedDimension = () => {
-    const selectedIndex = options[0].values.findIndex(rSelected);
+    const selectedIndex = options[0].values.indexOf(rSelected);
     return options[1].values[selectedIndex]
   }
   const price = Intl.NumberFormat(undefined, {
@@ -96,7 +96,7 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variant.price)
-  console.log(options[0].values);
+  console.log(options[0].values.indexOf(rSelected), get_selectedDimension());
   return (
     <>
       <React.Fragment key={options[0].id}>
