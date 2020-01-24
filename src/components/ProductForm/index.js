@@ -115,7 +115,7 @@ const ProductForm = ({ product }) => {
             ))}
          
        </div>
-      <br /><br/>
+ 
       </React.Fragment>
       {<h4 className="mt-2" style={{fontSize:'14px'}}>{get_selectedDimension()}</h4>}
       
