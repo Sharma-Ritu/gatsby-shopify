@@ -96,7 +96,6 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variants[selectedVariantIndex].price)
-  console.log(selectedVariantIndex, variants[selectedVariantIndex], variant.price);
   return (
     <>
       <React.Fragment key={options[0].id}>
