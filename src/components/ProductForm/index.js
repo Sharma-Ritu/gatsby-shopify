@@ -114,26 +114,8 @@ const ProductForm = ({ product }) => {
        </div>
       <br /><br/>
       </React.Fragment>
-      {options.map(({ id, name, values }, index) => (
-        <React.Fragment key={id}>
-        <h4 className="text-center">{name}</h4>
-        <div>
-            {values.map(value => (
-              <Button 
-                value={value}
-                disabled={checkDisabled(name, value)}
-                onClick={() => setRSelected(value)} 
-                active={rSelected === (value)}
-                color="" className=" border color-secondary variants rounded font-italic mr-1 py-3"
-              >
-                {value}
-              </Button>
-            ))}
-         
-       </div>
-          <br /><br/>
-        </React.Fragment>
-      ))}
+      <h4 className="text-center">{options[1].name+': '}<span>{rSelected}</span></h4>
+      
      
       <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
         <span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>{price}</span> <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
