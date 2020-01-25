@@ -89,7 +89,7 @@ export default (props) => {
 						<h4 className="space-1 color-primary erbaum-bold text-uppercase py-2 py-sm-5 mb-0">Single/Twin Mattress</h4>
 						<p className="space-4 proxima-r color-primary m-auto text-center px-0 pb-2 pb-sm-5" style={{fontSize:'26px'}}>The Chirofoam™ single/twin mattress is an ideal fit for compact living spaces and relaxing all by yourself.  Perfect for one person or growing kids, the single/twin mattress measures 39 inches wide and 75 inches in length. </p>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP CHIROFOAM – SINGLE/TWIN SIZE</a>
+							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP – SINGLE/TWIN SIZE</a>
 						</p>
 					</div>
 					<div className="all-mattress text-center mb-2 mb-sm-5 pb-0 pb-sm-5">
@@ -97,7 +97,7 @@ export default (props) => {
 						<h4 className="space-1 color-primary erbaum-bold text-uppercase py-2 py-sm-5 mb-0">Twin XL Mattress</h4>
 						<p className="space-4 proxima-r color-primary m-auto text-center px-0 pb-2 pb-sm-5" style={{fontSize:'26px'}}>Spanning 39 inches wide and 80 inches in length, the twin XL mattress is perfect for those living in an apartment with a necessity to maximize a minimal amount of bedroom space.  This size mattress is slightly bigger than the twin (by 5 inches in length) and is a popular size choice for teenagers or college students.</p>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP CHIROFOAM – SINGLE XL/TWIN XL SIZE</a>
+							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP – SINGLE XL/TWIN XL SIZE</a>
 						</p>
 					</div>
 					<div className="all-mattress text-center mb-2 mb-sm-5 pb-0 pb-sm-5">
@@ -105,7 +105,7 @@ export default (props) => {
 						<h4 className="space-1 color-primary erbaum-bold text-uppercase py-2 py-sm-5 mb-0">Double/Full Mattress </h4>
 						<p className="space-4 proxima-r color-primary m-auto text-center px-0 pb-2 pb-sm-5" style={{fontSize:'26px'}}>Larger in width than the twin & twin XL mattress, the dimensions of the double/full Chirofoam™ mattress spans 75 inches in length and 54 inches in width.  This mattress is a great choice for a couple, a smaller guest bedroom or an owner of a few pets who enjoy cozying up on a comfortable & supportive mattress.</p>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP CHIROFOAM – DOUBLE/FULL SIZE</a>
+							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP – DOUBLE/FULL SIZE</a>
 						</p>
 					</div>
 					<div className="all-mattress text-center mb-2 mb-sm-5 pb-0 pb-sm-5">
@@ -113,7 +113,7 @@ export default (props) => {
 						<h4 className="space-1 color-primary erbaum-bold text-uppercase py-2 py-sm-5 mb-0">Queen Mattress</h4>
 						<p className="space-4 proxima-r color-primary m-auto text-center px-0 pb-2 pb-sm-5" style={{fontSize:'26px'}}>Larger than a double bed and a common choice for most bedrooms, the Chirofoam Queen mattress measures out 60 inches wide and 80 inches in length. The Queen is a spacious mattress, providing more room for couples to rest than the double or individuals who enjoy an ample amount of space to get comfortable on.</p>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP CHIROFOAM – QUEEN SIZE</a>
+							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP – QUEEN SIZE</a>
 						</p>
 					</div>
 					<div className="all-mattress text-center mb-2 mb-sm-5 pb-0 pb-sm-5">
@@ -121,7 +121,7 @@ export default (props) => {
 						<h4 className="space-1 color-primary erbaum-bold text-uppercase py-2 py-sm-5 mb-0">King Mattress</h4>
 						<p className="space-4 proxima-r color-primary m-auto text-center px-0 pb-2 pb-sm-5" style={{fontSize:'26px'}}>The King mattress by Chirofoam™ is 16 inches wider than the queen mattress, measuring 76 inches wide by 80 inches long.  The main difference between the Queen, King and Cali King mattresses are the size dimensions, the amount of space available in the bedroom and how much preferred space each sleeper needs. A King requires a more spacious bedroom to fit this size mattress.</p>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP CHIROFOAM – KING SIZE</a>
+							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP – KING SIZE</a>
 						</p>
 					</div>
 					<div className="all-mattress text-center mb-2 mb-sm-5 pb-0 pb-sm-5">
@@ -129,7 +129,7 @@ export default (props) => {
 						<h4 className="space-1 color-primary erbaum-bold text-uppercase py-2 py-sm-5 mb-0">Cali King Mattress</h4>
 						<p className="space-4 proxima-r color-primary m-auto text-center px-0 pb-2 pb-sm-5" style={{fontSize:'26px'}}>The largest size mattress option available, Chirofoam’s Cali King mattress measures 72 inches wide and 84 inches long.  The luxurious Cali King mattress offers an abundance of space for sharing with multiple people, taller bodies or individuals who prefer a lot of space to move around.  In comparison to the King mattress, the Cali King mattress is 4 inches longer while the King is 4 inches wider.</p>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP CHIROFOAM – CALI KING SIZE</a>
+							<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">SHOP – CALI KING SIZE</a>
 						</p>
 					</div>
 				</Row>
