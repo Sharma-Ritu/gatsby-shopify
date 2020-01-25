@@ -18,7 +18,7 @@ const Cart = () => {
   
   return (
     <>
-    <p>{line_item}</p>
+    <p>{line_items}</p>
     <section>
       <div className="container-large">
         <Row>
