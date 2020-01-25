@@ -3,6 +3,7 @@ import { Button, ButtonGroup } from 'reactstrap'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
+import {navigate} from 'gatsby';
 
 import StoreContext from '~/context/StoreContext'
 
@@ -62,8 +63,11 @@ const ProductForm = ({ product }) => {
   }
 
   const handleAddToCart = () => {
-    addVariantToCart(productVariant.shopifyId, quantity)
+    addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity)
+     return product.title
+
   }
+  
 
   /* 
   Using this in conjunction with a select input for variants 
@@ -89,13 +93,24 @@ const ProductForm = ({ product }) => {
   }
   const selectedVariantIndex = options[0].values.indexOf(rSelected);
   const get_selectedDimension = () => {
-    return options[1].name+': '+options[1].values[selectedVariantIndex]
+    const selectedIndex = options[0].values.indexOf(rSelected);
+    return options[1].name+': '+options[1].values[selectedIndex]
   }
+
   const price = Intl.NumberFormat(undefined, {
     currency: minVariantPrice.currencyCode,
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variants[selectedVariantIndex].price)
+  console.log(selectedVariantIndex, variants[selectedVariantIndex], variant.price);
+
+   const handleAddToCarts = () => {
+    
+    return product.title
+
+  }
+
+  
   return (
     <>
       <React.Fragment key={options[0].id}>
@@ -103,32 +118,32 @@ const ProductForm = ({ product }) => {
         <div>
             {options[0].values.map((value, index) => (
               <Button 
-                key={index}
                 value={value}
                 disabled={checkDisabled(options[0].name, value)}
                 onClick={() => setRSelected(value)} 
                 active={rSelected === (value)}
-                color="" className="border color-secondary variants rounded font-italic mr-1 py-2 px-2 style={{fontSize:'.5rem'}}"
+                color="" className=" border color-secondary variants rounded font-italic mr-1 py-2 px-2 style={{fontSize:'.5rem'}}"
               >
                 {value}
               </Button>
             ))}
-         
        </div>
- 
+      
       </React.Fragment>
       {<h4 className="mt-2" style={{fontSize:'14px'}}>{get_selectedDimension()}</h4>}
+    
       
      
       <p className="cta mt-0 mt-sm-5 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
-        <span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>{price}</span> <a className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
+        <span className="proxima-b color-primary float-left display-4 v-price" style={{lineHeight:'30px'}}>{price}</span> <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
         type="submit"
         disabled={!available || adding}
         onClick={handleAddToCart}
-        href="/cart/"
+    
+
       >
         ADD TO CART
-      </a>
+      </button>
       </p>
      
       {!available && <p>This Product is out of Stock!</p>}
