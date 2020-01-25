@@ -7,7 +7,6 @@ import "../assets/css/bootstrap.min.css"
 import run from "../assets/img/run.png"
 
 export default ({ data }) => {
-  console.log(data)
   return (
 	<>
 		<Header />
