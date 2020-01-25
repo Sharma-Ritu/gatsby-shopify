@@ -58,11 +58,17 @@
 		top:7px;
 		right:60px;
 	}
+	.blue-bg{
+		height:auto;
+	}
 	.blue-bg.charity{
 		height:auto;
 	} 
 	.blue-bg::before, .blue-bg::after{
 		display:none;
+	} 
+	.btn-cta{
+		font-size:10px;
 	} 
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
