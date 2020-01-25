@@ -9,9 +9,11 @@ import run from "../assets/img/run.png"
 export default ({ data }) => {
   console.log(data)
   return (
-    <Layout>
+	<Header />
+    <Container>
       <div>Hello world</div>
-    </Layout>
+    </Container>
+	<Footer />
   )
 }
 export const query = graphql`
