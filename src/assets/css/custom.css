@@ -545,3 +545,10 @@ body .navbar{
 	background-color: #000000 !important;
 	
 }
+.cart-total li {
+    padding:15px;
+    border-top:2px solid #dee2e6;
+}
+.cart-total li:nth-child(2n+2) {
+    background-color:rgba(0,0,0,.05);
+}
