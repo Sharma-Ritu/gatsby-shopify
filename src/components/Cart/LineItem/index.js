@@ -38,12 +38,12 @@ const LineItem = props => {
           ? line_item.variant.title
           : ''}
       </p>
-      {selectedOptions}
-      {line_item.quantity}
       {line_item.variant.price}
+      {line_item.quantity}
       <button onClick={handleRemove}>Remove</button>
     </Wrapper>
   )
 }
 
 export default LineItem
+ 
