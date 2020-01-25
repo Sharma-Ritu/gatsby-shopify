@@ -6,26 +6,38 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import run from "../assets/img/run.png"
 
-export default ({ data }) => {
-  return (
-	<>
-		<Header />
-		<Container>
-		  <div>Hello world</div>
-		</Container>
-		<Footer />
-	</>
-  )
-}
+const ProductsPage = ({ data }) => (
+  <Container>
+    <h1>Products</h1>
+    <ul>
+      {data.allShopifyProduct.edges.map(({ node }) => (
+        <li key={node.shopifyId}>
+          <h3>
+            <Link to={`/product/${node.handle}`}>{node.title}</Link>
+            {" - "}${node.priceRange.minVariantPrice.amount}
+          </h3>
+          <p>{node.description}</p>
+        </li>
+      ))}
+    </ul>
+  </Container>
+)
+
+export default ProductsPage
 export const query = graphql`
-  query {
-    allFile {
+  {
+    allShopifyProduct(sort: { fields: [title] }) {
       edges {
         node {
-          relativePath
-          prettySize
-          extension
-          birthTime(fromNow: true)
+          title
+          shopifyId
+          description
+          handle
+          priceRange {
+            minVariantPrice {
+              amount
+            }
+          }
         }
       }
     }
