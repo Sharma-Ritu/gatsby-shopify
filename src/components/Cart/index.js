@@ -30,7 +30,7 @@ const Cart = () => {
               <li className="d-flex w-100 no-gutters"><div className="col-7">TOTAL</div><div className="col-5 color-primary font-weight-bold">CAD$ {checkout.totalPrice}</div></li>
           </ul>
           <div className="col-12 pt-5 checkout">
-            <button className="btn p-2 space-1 float-right font-weight-bold btn-checkout color-primary"> PROCEED TO CHECKOUT </button>
+           <button className="btn p-2 space-1 float-right font-weight-bold btn-checkout color-primary onClick={handleCheckout} disabled={checkout.lineItems.length === 0}">
           </div>
         </Row>
       </div>
