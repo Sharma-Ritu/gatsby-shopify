@@ -6,14 +6,15 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import run from "../assets/img/run.png"
 
-export default ({ data }) => {
-  console.log(data)
-  return (
+const Blog = ({ data }) =>  (
+	<Header>
     <Container>
       <div>Hello world</div>
+	  console.log(data)
     </Container>
-  )
-}
+	<Footer>
+  );
+
 
 export const query = graphql`
   query {
