@@ -40,6 +40,7 @@ const LineItem = props => {
       </p>
       {selectedOptions}
       {line_item.quantity}
+      {line_item.price}
       <button onClick={handleRemove}>Remove</button>
     </Wrapper>
   )
