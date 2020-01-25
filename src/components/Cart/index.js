@@ -18,7 +18,7 @@ const Cart = () => {
 
   return (
     <>
-    <LineItem />
+    <LineItem key=1 />
     <section>
       <div className="container-large">
         <Row>
