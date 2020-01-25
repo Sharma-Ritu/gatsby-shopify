@@ -15,7 +15,7 @@ const Cart = () => {
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
-
+  console.log (checkout)
   return (
     <>
     <LineItem key=1 />
