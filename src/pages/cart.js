@@ -4,6 +4,7 @@ import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
 //import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
+import Cart from "../components/Cart"
 
 
 export default (props) => {
@@ -67,35 +68,10 @@ export default (props) => {
 							</tbody>
 						</Table>
 					</div>
-					<div className="col-12 col-md-12 col-sm-6 col-xs-12 pt-5 cart-total">
-						<Table striped cellSpacing="0">
-							<thead>
-								<tr>
-									<th colSpan="2">CART TOTAL</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr className="cart_item">
-									<td>SUBTOTAL</td>
-									<td className="text-center">CAD $840.00</td>
-								</tr>
-								<tr className="cart_item">
-									<td>SHIPPING</td>
-									<td className="text-center">Enter your address to view shipping options.</td>
-								</tr>
-								<tr className="cart_item">
-									<td>TOTAL</td>
-									<td className="text-center color-primary font-weight-bold">CAD $840.00</td>
-								</tr>
-							</tbody>
-						</Table>
-					</div>
-					<div className="col-12 pt-5 checkout">
-						<button className="btn p-2 text-white space-1 float-right font-weight-bold btn-checkout"> PROCEED TO CHECKOUT </button>
-					</div>
 				</Row>
 			</div>
 		</section>
+		<Cart />
 		<section>
 			<div className="container-large">
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
