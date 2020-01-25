@@ -7,12 +7,10 @@ import "../assets/css/bootstrap.min.css"
 import run from "../assets/img/run.png"
 
 const Blog = ({ data }) =>  (
-	<Header>
     <Container>
       <div>Hello world</div>
 	  console.log(data)
     </Container>
-	<Footer>
   );
 
 
