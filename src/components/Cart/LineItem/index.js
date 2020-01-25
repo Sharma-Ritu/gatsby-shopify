@@ -10,13 +10,7 @@ const LineItem = props => {
     store: { client, checkout },
   } = useContext(StoreContext)
 
-  const variantImage = line_item.variant.image ? (
-    <img
-      src={line_item.variant.image.src}
-      alt={`${line_item.title} product shot`}
-      height="60px"
-    />
-  ) : null
+  const variantImage = "";
 
   const selectedOptions = line_item.variant.selectedOptions
     ? line_item.variant.selectedOptions.map(
