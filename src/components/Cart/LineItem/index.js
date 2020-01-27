@@ -27,7 +27,7 @@ const LineItem = props => {
   const handleRemove = () => {
     removeLineItem(client, checkout.id, line_item.id)
   }
-
+  console.log(line_item);
   return (
     <tr className="cart_item">
       <td className="product-remove">

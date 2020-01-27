@@ -12,7 +12,7 @@ const Cart = () => {
     window.open(checkout.webUrl)
   }
   const updateCart = () => {
-    console.log(checkout, StoreContext);
+    console.log(checkout);
   }
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
@@ -22,9 +22,9 @@ const Cart = () => {
     <>
     <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
-        <Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
+        <Row>
           <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
-            <Table>
+            <Table className="mb-0">
               <thead>
                 <tr>
                   <th> &nbsp; </th>
