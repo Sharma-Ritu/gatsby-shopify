@@ -11,7 +11,9 @@ const Cart = () => {
   const handleCheckout = () => {
     window.open(checkout.webUrl)
   }
-
+  const updateCart = () => {
+    console.log(checkout, StoreContext);
+  }
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
@@ -43,7 +45,7 @@ const Cart = () => {
                     </div>
                   </td>
                   <td>
-                    <button className="btn-dark p-1 text-white space-1"> UPDATE CART </button>
+                    <button className="btn-dark p-1 text-white space-1" onClick={updateCart}> UPDATE CART </button>
                   </td>
                 </tr> 
               </tbody>
