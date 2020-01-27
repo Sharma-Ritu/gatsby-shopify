@@ -30,7 +30,7 @@ const LineItem = props => {
   console.log(line_item);
 
   const handleQuantityChange = (event) => {
-    console.log(event, 'hello');
+    console.log(event.target.value);
   }
   return (
     <tr className="cart_item">
