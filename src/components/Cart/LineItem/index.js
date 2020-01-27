@@ -39,10 +39,8 @@ const LineItem = props => {
       <td className="product-name">
          <p>
           {line_item.title}
-          {`  `}
-          {line_item.variant.title === !'Default Title'
-            ? line_item.variant.title
-            : ''}
+          <br/>
+          {line_item.variant.title}
         </p> 
       </td>
       <td className="product-price">
