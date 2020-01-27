@@ -28,6 +28,10 @@ const LineItem = props => {
     removeLineItem(client, checkout.id, line_item.id)
   }
   console.log(line_item);
+
+  const handleQuantityChange = (event) => {
+    console.log(event, 'hello');
+  }
   return (
     <tr className="cart_item">
       <td className="product-remove">
@@ -47,7 +51,7 @@ const LineItem = props => {
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.variant.price}</span></span> 
       </td>
       <td className="product-quantity">
-      <input type="number" min={1} max={5} defaultValue={line_item.quantity} />
+      <input type="number" min={1} max={5} defaultValue={line_item.quantity} onChange={handleQuantityChange} />
       </td>
       <td className="product-subtotal">
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.quantity * line_item.variant.price}</span></span> 
