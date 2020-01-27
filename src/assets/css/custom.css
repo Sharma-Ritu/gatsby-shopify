@@ -153,7 +153,8 @@ p.cta.erbaum.position-absolute {
 	background-image:url('../img/feat5.jpg');
 }
 .card-layer{
-	background-color:rgba(3, 40, 80,0.9);
+/* 	background-color:rgba(3, 40, 80,0.9); */
+	background-color:#24336c !important;
 	height:100%;
 	width:100%;
 	position:absolute;
@@ -551,4 +552,15 @@ body .navbar{
 }
 .cart-total li:nth-child(2n+2) {
     background-color:rgba(0,0,0,.05);
+}
+.featured-image .card-layer{
+	opacity:0;
+	transition:all 0.15s ease-in-out;
+}
+.featured-image a:hover .card-layer{
+	opacity:0.85;
+}
+.featured-image a:hover img{
+	transform: scale(1.1);
+	transition:all 0.15s ease-in-out;
 }
