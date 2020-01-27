@@ -19,9 +19,9 @@ const Cart = () => {
   })
   
   return (
-    <>
     {
       (checkout.lineItems.length > 0) &&
+      <>
       <section className="mb-0 py-3 py-sm-5">
         <div className="container-large">
           <Row>
@@ -72,12 +72,14 @@ const Cart = () => {
           </Row>
         </div>
       </section>
+      </>
     }
     {
       (checkout.lineItems.length == 0) &&
+      <>
       <p>Your Cart is Empty</p>
+      </>
     }
-    </>
   )
 }
 
