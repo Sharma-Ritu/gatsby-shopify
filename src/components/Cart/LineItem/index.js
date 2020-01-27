@@ -10,6 +10,10 @@ const LineItem = props => {
     store: { client, checkout },
   } = useContext(StoreContext)
 
+  const {
+    updateQuantity,
+    store: { client, checkout },
+  } = useContext(StoreContext)
   const variantImage = line_item.variant.image ? (
     <img
       src={line_item.variant.image.src}
@@ -30,7 +34,8 @@ const LineItem = props => {
   console.log(line_item);
 
   const handleQuantityChange = (event) => {
-    console.log(event.target.value);
+    console.log(event.target.value, line_item.id, checkout.id);
+    updateQuantity();
   }
   return (
     <tr className="cart_item">
