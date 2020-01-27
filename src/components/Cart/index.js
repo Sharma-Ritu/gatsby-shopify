@@ -17,7 +17,7 @@ const Cart = () => {
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
-  console.log(checkout.lineItems.length);
+  console.log((checkout.lineItems.length > 0), (checkout.lineItems.length == 0));
   return (
     <>
     <section className="mb-0 py-3 py-sm-5">
