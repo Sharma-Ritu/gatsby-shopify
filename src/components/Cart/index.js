@@ -19,6 +19,9 @@ const Cart = () => {
   })
   console.log((checkout.lineItems.length > 0), (checkout.lineItems.length == 0));
   return (
+    { (true) && 
+      <p>Your cart is empty</p>
+    }
     <>
     <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
