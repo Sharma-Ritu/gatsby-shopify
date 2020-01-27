@@ -18,7 +18,40 @@ const Cart = () => {
   
   return (
     <>
-    <p>{line_items}</p>
+    <section className="mb-0 py-3 py-sm-5">
+      <div className="container-large">
+        <Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
+          <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
+            <Table>
+              <thead>
+                <tr>
+                  <th> &nbsp; </th>
+                  <th> &nbsp; </th>
+                  <th> Product </th>
+                  <th> Price </th>
+                  <th> Quantity </th>
+                  <th> Total </th>
+                </tr>
+              </thead>
+              <tbody>
+                {line_items}
+                <tr>
+                  <td colSpan="5">
+                    <div className="coupon">
+                      <input type="text" name="coupon_code" className="my-3 mr-3 p-1" placeholder="Coupon code" />
+                      <button className="btn-dark p-1 text-white space-1 font-weight-bold"> APPLY COUPON </button>
+                    </div>
+                  </td>
+                  <td>
+                    <button className="btn-dark p-1 text-white space-1"> UPDATE CART </button>
+                  </td>
+                </tr> 
+              </tbody>
+            </Table>
+          </div>
+        </Row>
+      </div>
+    </section>
     <section>
       <div className="container-large">
         <Row>

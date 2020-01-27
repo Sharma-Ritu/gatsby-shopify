@@ -29,19 +29,30 @@ const LineItem = props => {
   }
 
   return (
-    <Wrapper>
-      {variantImage}
-      <p>
-        {line_item.title}
-        {`  `}
-        {line_item.variant.title === !'Default Title'
-          ? line_item.variant.title
-          : ''}
-      </p>
-      {line_item.variant.price}
-      {line_item.quantity}
-      <button onClick={handleRemove}>Remove</button>
-    </Wrapper>
+    <tr className="cart_item">
+      <td className="product-remove">
+        <a onClick={handleRemove} title="Remove this item"><i className="fa fa-remove"></i></a> 
+      </td>
+      <td className="product-thumbnail">
+        {variantImage}
+      </td>
+      <td className="product-name">
+         <p>
+          {line_item.title}
+          {`  `}
+          {line_item.variant.title === !'Default Title'
+            ? line_item.variant.title
+            : ''}
+        </p> 
+      </td>
+      <td className="product-price">
+        <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.variant.price}</span></span> 
+      </td>
+      <td className="product-quantity">{line_item.quantity}</td>
+      <td className="product-subtotal">
+        <span> CAD $ 840.00 </span> 
+      </td>
+    </tr>
   )
 }
 
