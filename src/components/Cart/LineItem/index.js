@@ -6,14 +6,10 @@ import { Wrapper } from './styles'
 const LineItem = props => {
   const { line_item } = props
   const {
-    removeLineItem,
+    removeLineItem, updateQuantity,
     store: { client, checkout },
   } = useContext(StoreContext)
 
-  const {
-    updateQuantity,
-    store: { client, checkout },
-  } = useContext(StoreContext)
   const variantImage = line_item.variant.image ? (
     <img
       src={line_item.variant.image.src}
