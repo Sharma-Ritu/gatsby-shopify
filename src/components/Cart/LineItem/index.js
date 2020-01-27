@@ -27,11 +27,14 @@ const LineItem = props => {
   const handleRemove = () => {
     removeLineItem(client, checkout.id, line_item.id)
   }
+  const handleQuantityChange = () => {
+    console.log('hello');
+  }
 
   return (
     <tr className="cart_item">
       <td className="product-remove">
-        <a onClick={handleRemove} title="Remove this item"><i className="fa fa-remove"></i></a> 
+        <a onClick={handleRemove} href="javascript:void(0);" class="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></a> 
       </td>
       <td className="product-thumbnail">
         {variantImage}
@@ -49,7 +52,7 @@ const LineItem = props => {
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.variant.price}</span></span> 
       </td>
       <td className="product-quantity">{line_item.quantity}
-      <input type="number" min={1} max={5} value={line_item.quantity} />
+      <input type="number" min={1} max={5} defaultValue={line_item.quantity} onChange={handleQuantityChange}/>
       </td>
       <td className="product-subtotal">
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.quantity * line_item.variant.price}</span></span> 
