@@ -48,7 +48,9 @@ const LineItem = props => {
       <td className="product-price">
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.variant.price}</span></span> 
       </td>
-      <td className="product-quantity">{line_item.quantity}</td>
+      <td className="product-quantity">{line_item.quantity}
+      <input type="number" min={1} max={5} value={line_item.quantity} />
+      </td>
       <td className="product-subtotal">
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.quantity * line_item.variant.price}</span></span> 
       </td>
