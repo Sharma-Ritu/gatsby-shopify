@@ -33,7 +33,7 @@ const LineItem = props => {
   return (
     <tr className="cart_item">
       <td className="product-remove">
-        <a onClick={handleRemove} href="javascript:void(0);" class="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></a> 
+        <a onClick={handleRemove} href="javascript:void(0);" className="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></a> 
       </td>
       <td className="product-thumbnail">
         {variantImage}

@@ -36,30 +36,30 @@ export default (props) => {
 					<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
 						<Col sm="6" className="mb-3 mb-sm-5">
 							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">BILLING DETAILS</h5>
-							<div class="row">
-								<div class="col-6">
+							<div className="row">
+								<div className="col-6">
 									<FormGroup>
 										<Label for="fname" className="color-secondary filson-pro-reg">First Name <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="fname" name="fname" />
+										<input type="text" className="form-control" id="fname" name="fname" />
 									</FormGroup>
 								</div>
-								<div class="col-6">
+								<div className="col-6">
 									<FormGroup>
 										<Label for="lname" className="color-secondary filson-pro-reg">Last Name <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="lname" name="lname" />
+										<input type="text" className="form-control" id="lname" name="lname" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="cname" className="color-secondary filson-pro-reg">Company Name (Optional)</Label>
-										<input type="text" class="form-control" id="cname" name="cname" />
+										<input type="text" className="form-control" id="cname" name="cname" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 								        <Label for="country" className="color-secondary filson-pro-reg">Country <span style={{color:'red'}}>*</span></Label>
 								      	<Input type="select" name="select" id="country">
@@ -70,57 +70,57 @@ export default (props) => {
 								   	</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="street_address" className="color-secondary filson-pro-reg">Street Address <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="street_address_1" name="street_address_1" placeholder="House number and street name" /><br/>
-										<input type="text" class="form-control" id="street_address_2" name="street_address_2" placeholder="Apartments, suite, unit etc. (Optional)" />
+										<input type="text" className="form-control" id="street_address_1" name="street_address_1" placeholder="House number and street name" /><br/>
+										<input type="text" className="form-control" id="street_address_2" name="street_address_2" placeholder="Apartments, suite, unit etc. (Optional)" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="town_city" className="color-secondary filson-pro-reg">Town/City <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="town_city" name="town_city" />
+										<input type="text" className="form-control" id="town_city" name="town_city" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="state_country" className="color-secondary filson-pro-reg">State/Country <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="state_country" name="state_country" />
+										<input type="text" className="form-control" id="state_country" name="state_country" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="zip" className="color-secondary filson-pro-reg">Postcode/Zip <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="zip" name="zip" />
+										<input type="text" className="form-control" id="zip" name="zip" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="phone" className="color-secondary filson-pro-reg">Phone <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="phone" name="phone" />
+										<input type="text" className="form-control" id="phone" name="phone" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="email" className="color-secondary filson-pro-reg">Email Address <span style={{color:'red'}}>*</span></Label>
-										<input type="text" class="form-control" id="email" name="email" />
+										<input type="text" className="form-control" id="email" name="email" />
 									</FormGroup>
 								</div>
 							</div>
-							<div class="row pt-2">
-								<div class="col-12">
+							<div className="row pt-2">
+								<div className="col-12">
 									<FormGroup>
 										<Input type="checkbox" name="create_acc" id="create_acc" className="ml-1" />
 										<span className="color-secondary filson-pro-reg pl-4">Create an account?</span>
@@ -133,11 +133,11 @@ export default (props) => {
 								<Input type="checkbox" name="check_ship" id="check_ship"/>
 								<h5 className="color-primary pb-2 pb-sm-4 mb-0 text-uppercase">SHIP TO DIFFERENT ADDRESS</h5>
 							</FormGroup>
-							<div class="row">
-								<div class="col-12">
+							<div className="row">
+								<div className="col-12">
 									<FormGroup>
 										<Label for="order_notes" className="color-secondary filson-pro-reg">Order Notes (Optional)</Label>
-										<textarea class="form-control" rows="10" id="order_notes"></textarea>
+										<textarea className="form-control" rows="10" id="order_notes"></textarea>
 									</FormGroup>
 								</div>
 							</div>
@@ -152,19 +152,19 @@ export default (props) => {
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="cart_item">
+									<tr className="cart_item">
 										<td>The Chirofoam™ XF Mattress - Extra Firm x 1 </td>
 										<td className="text-center">CAD $840.00</td>
 									</tr>
-									<tr class="cart_item">
+									<tr className="cart_item">
 										<td>CART SUBTOTAL</td>
 										<td className="text-center">CAD $840.00</td>
 									</tr>
-									<tr class="cart_item">
+									<tr className="cart_item">
 										<td>SHIPPING</td>
 										<td className="text-center">Enter your address to view shipping options.</td>
 									</tr>
-									<tr class="cart_item">
+									<tr className="cart_item">
 										<td>ORDER TOTAL</td>
 										<td className="text-center color-primary font-weight-bold">CAD $840.00</td>
 									</tr>
@@ -185,7 +185,7 @@ export default (props) => {
 						<div className="col-12">
 							<p className="color-secondary p-2">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <Link to="/privacy-policy">privacy policy.</Link></p>
 						</div>
-						<div class="col-12">
+						<div className="col-12">
 							<FormGroup>
 								<Input type="checkbox" name="tnc" id="tnc" />
 								<span className="color-secondary filson-pro-reg">I have read and agree to the website <Link to="/term-and-conditions">terms and conditions <span style={{color:'red'}}>*</span></Link></span>

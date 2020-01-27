@@ -59,7 +59,7 @@ export default (props) => {
 								  </Media>
 								</Media>
 								<p className="cta erbaum mt-3 mt-sm-0">
-									<a href="#" className="text-white">READ CUSTOMER REVIEW <i class="fa fa-caret-right ic1"></i><i class="fa fa-caret-right ic2"></i><i class="fa fa-caret-right ic3"></i></a>
+									<a href="#" className="text-white">READ CUSTOMER REVIEW <i className="fa fa-caret-right ic1"></i><i className="fa fa-caret-right ic2"></i><i className="fa fa-caret-right ic3"></i></a>
 								</p>
 							</div>
 						</div>

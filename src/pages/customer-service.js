@@ -42,27 +42,27 @@ export default (props) => {
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 pt-5">
 						<Form>
-							<div class="row">
-								<div class="col-6">
-									<input type="text" class="form-control" id="name" placeholder="Your Name" name="name" />
+							<div className="row">
+								<div className="col-6">
+									<input type="text" className="form-control" id="name" placeholder="Your Name" name="name" />
 								</div>
-								<div class="col-6">
-									<input type="text" class="form-control" id="email" placeholder="Your Email" name="email" />
-								</div>
-							</div>
-							<div class="row pt-3">
-								<div class="col-12">
-									<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" />
+								<div className="col-6">
+									<input type="text" className="form-control" id="email" placeholder="Your Email" name="email" />
 								</div>
 							</div>
-							<div class="row pt-3">
-								<div class="col-12">
-									<textarea class="form-control" rows="8" id="message" placeholder="Your Message"></textarea>
+							<div className="row pt-3">
+								<div className="col-12">
+									<input type="text" className="form-control" id="subject" placeholder="Subject" name="subject" />
 								</div>
 							</div>
-							<div class="row pt-3">
-								<div class="col-12">
-									<button type="button" class="btn btn-danger btn-block">SEND</button>
+							<div className="row pt-3">
+								<div className="col-12">
+									<textarea className="form-control" rows="8" id="message" placeholder="Your Message"></textarea>
+								</div>
+							</div>
+							<div className="row pt-3">
+								<div className="col-12">
+									<button type="button" className="btn btn-danger btn-block">SEND</button>
 								</div>
 							</div>
 						</Form>

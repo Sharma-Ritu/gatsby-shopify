@@ -59,11 +59,11 @@ const Example = (props) => {
 										</Col>
 										<Col sm="6" className="py-5">
 											<div className="p-0 list-unstyled review-details w-75 float-left float-sm-right float-lg-right float-xl-right">
-												<div className="w-100 d-flex color-primary mb-4">5<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'100%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>166</div>
-												<div className="w-100 d-flex color-primary mb-4">4<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'75%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>5</div>
-												<div className="w-100 d-flex color-primary mb-4">3<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'50%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
-												<div className="w-100 d-flex color-primary mb-4">2<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'25%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
-												<div className="w-100 d-flex color-primary mb-4">1<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'5%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>2</div>
+												<div className="w-100 d-flex color-primary mb-4">5<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'100%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>166</div>
+												<div className="w-100 d-flex color-primary mb-4">4<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'75%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>5</div>
+												<div className="w-100 d-flex color-primary mb-4">3<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'50%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
+												<div className="w-100 d-flex color-primary mb-4">2<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'25%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
+												<div className="w-100 d-flex color-primary mb-4">1<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'5%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>2</div>
 											</div>
 										</Col>
 									</Row>
@@ -72,7 +72,7 @@ const Example = (props) => {
                    							<ul className="list-unstyled p-0 ratings">
            										<li className="border mb-4">
            											<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Chirofoam™ XF Mattress – Extra Firm</h4>
-			                   						<div class="br-widget br-readonly pt-2">
+			                   						<div className="br-widget br-readonly pt-2">
 				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -85,7 +85,7 @@ const Example = (props) => {
            										</li>
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-			                   						<div class="br-widget br-readonly pt-2">
+			                   						<div className="br-widget br-readonly pt-2">
 				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -98,7 +98,7 @@ const Example = (props) => {
 			                   					</li>
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-			                   						<div class="br-widget br-readonly pt-2">
+			                   						<div className="br-widget br-readonly pt-2">
 				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -111,7 +111,7 @@ const Example = (props) => {
 			                   					</li>
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-			                   						<div class="br-widget br-readonly pt-2">
+			                   						<div className="br-widget br-readonly pt-2">
 				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -124,7 +124,7 @@ const Example = (props) => {
 			                   					</li>
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-			                   						<div class="br-widget br-readonly pt-2">
+			                   						<div className="br-widget br-readonly pt-2">
 				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -186,11 +186,11 @@ const Example = (props) => {
                         	</Col>
                         	<Col sm="6" className="py-5">
                         		<div className="p-0 list-unstyled review-details w-75 float-right">
-                        			<div className="w-100 d-flex color-primary mb-4">5<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'100%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>166</div>
-                        			<div className="w-100 d-flex color-primary mb-4">4<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'75%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>5</div>
-                        			<div className="w-100 d-flex color-primary mb-4">3<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'50%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
-                        			<div className="w-100 d-flex color-primary mb-4">2<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'25%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
-                        			<div className="w-100 d-flex color-primary mb-4">1<i class=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'5%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>2</div>
+                        			<div className="w-100 d-flex color-primary mb-4">5<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'100%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>166</div>
+                        			<div className="w-100 d-flex color-primary mb-4">4<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'75%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>5</div>
+                        			<div className="w-100 d-flex color-primary mb-4">3<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'50%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
+                        			<div className="w-100 d-flex color-primary mb-4">2<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'25%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>1</div>
+                        			<div className="w-100 d-flex color-primary mb-4">1<i className=" pl-1 pr-3 color-primary fa fa-star"></i><div className="progress rounded-0 bg-transparent w-75 mt-1"><div className="progress-bar rounded-0 mr-4" style={{width:'5%',backgroundColor:'rgb(186, 33, 84)'}}></div></div>2</div>
                         		</div>
                         	</Col>
                    		</Row>
@@ -199,7 +199,7 @@ const Example = (props) => {
                    				<ul className="list-unstyled p-0 ratings">
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Chirofoam™ XF Mattress – Extra Firm</h4>
-                   						<div class="br-widget br-readonly pt-2">
+                   						<div className="br-widget br-readonly pt-2">
 	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -212,7 +212,7 @@ const Example = (props) => {
                    					</li>
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-                   						<div class="br-widget br-readonly pt-2">
+                   						<div className="br-widget br-readonly pt-2">
 	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -225,7 +225,7 @@ const Example = (props) => {
                    					</li>
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-                   						<div class="br-widget br-readonly pt-2">
+                   						<div className="br-widget br-readonly pt-2">
 	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -238,7 +238,7 @@ const Example = (props) => {
                    					</li>
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-                   						<div class="br-widget br-readonly pt-2">
+                   						<div className="br-widget br-readonly pt-2">
 	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
@@ -251,7 +251,7 @@ const Example = (props) => {
                    					</li>
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
-                   						<div class="br-widget br-readonly pt-2">
+                   						<div className="br-widget br-readonly pt-2">
 	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
 	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>

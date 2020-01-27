@@ -24,28 +24,28 @@ export default (props) => {
 			<div className="container-fluid">
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5 charity-inner text-center">
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5 text-center">
-						<div class="text-center">
+						<div className="text-center">
 							<img className="img-fluid" src={Chirofoam_Mattress_Sleep_Quality} alt="Chirofoam Mattress Sleep Quality" />
 						</div>
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 text-uppercase text-center">IMPROVED COMFORT AND SLEEP QUALITY</h5>
 						<p className="filson-pro-reg color-secondary pt-2 text-left">Chirofoam™ was designed and built to relieve back pain and help you get a better night’s sleep.  Our team of chiropractors and mattress experts have designed this mattress to work with your body to relieve pressure from your back, keep your spine properly aligned, and improve your overall sleep quality.  We promise that Chirofoam™ will be the best memory foam mattress you have ever owned or we will refund your money back.  Give Chirofoam™ a try for 100 nights and see for yourself what a difference it can make.</p>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5 text-center">
-						<div class="text-center">
+						<div className="text-center">
 							<img className="img-fluid" src={Chirofoam_Mattress_Quality_Materials} alt="Chirofoam Mattress Quality Materials" />
 						</div>
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 text-uppercase text-center">QUALITY MATERIALS AND SKILLED CRAFTSMANSHIP</h5>
 						<p className="filson-pro-reg color-secondary pt-2 text-left">Each and every Chirofoam™ mattress is built using the highest quality foams and fabrics which have been sourced from the best and most reputable suppliers in the industry.  Our team of highly skilled seamstresses and mattress builders ensure that every mattress meets the toughest Chirofoam™ standards and passes our thorough 18 point inspection before being shipped to your door.</p>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5 text-center">
-						<div class="text-center">
+						<div className="text-center">
 							<img className="img-fluid" src={Chirofoam_Mattress_In_Home_Trial} alt="Chirofoam Mattress In Home Trial" />
 						</div>
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 text-uppercase text-center">100 NIGHT IN HOME SLEEP TRIAL</h5>
 						<p className="filson-pro-reg color-secondary pt-2 text-left">Try the Chirofoam™ mattress in the comfort of your home for 100 nights and see what a difference it could make in the quality of your sleep.  From back pain relief, increased muscle recovery, and overall sleep comfort, we are sure Chirofoam™ is the best mattress you will ever buy.  If for whatever reason you do not feel like the Chirofoam™ mattress is right for you, you may return it and we will give you 100% of your money back.</p>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5 text-center">
-						<div class="text-center">
+						<div className="text-center">
 							<img className="img-fluid" src={Chirofoam_Mattress_Warranty_15_Years} alt="Chirofoam Mattress Warranty 15 Years" />
 						</div>
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 text-uppercase text-center">15 YEAR TOTAL WARRANTY PROTECTION</h5>
