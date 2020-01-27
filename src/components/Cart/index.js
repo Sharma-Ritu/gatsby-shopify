@@ -17,11 +17,11 @@ const Cart = () => {
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
-  console.log((checkout.lineItems.length > 0), (checkout.lineItems.length == 0));
+  console.log((checkout.lineItems.length > 0));
   return (
     <>
-    {(true) && <p>Your cart is empty</p>}
-    <section className="mb-0 py-3 py-sm-5">
+    {(checkout.lineItems.length == 0) && <p>Your cart is empty</p>}
+    {(checkout.lineItems.length > 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
         <Row>
           <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
@@ -54,8 +54,8 @@ const Cart = () => {
           </div>
         </Row>
       </div>
-    </section>
-    <section>
+    </section>}
+    {(checkout.lineItems.length > 0) && <section>
       <div className="container-large">
         <Row>
           
@@ -70,7 +70,7 @@ const Cart = () => {
           </div>
         </Row>
       </div>
-    </section>
+    </section>}
     </>
   )
 }
