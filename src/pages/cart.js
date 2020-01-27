@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
+import SEO from '~/components/seo'
 //import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Cart from "../components/Cart"
@@ -10,6 +11,7 @@ import Cart from "../components/Cart"
 export default (props) => {
   return (
 	<>
+		<SEO title="Cart" />
 		<Header />
 		<section>
 			<div className="container-large">
