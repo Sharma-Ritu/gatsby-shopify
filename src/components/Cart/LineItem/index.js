@@ -50,7 +50,7 @@ const LineItem = props => {
       </td>
       <td className="product-quantity">{line_item.quantity}</td>
       <td className="product-subtotal">
-        <span> CAD $ 840.00 </span> 
+        <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.quantity * line_item.variant.price}</span></span> 
       </td>
     </tr>
   )
