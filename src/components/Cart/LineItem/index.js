@@ -6,7 +6,7 @@ import { Wrapper } from './styles'
 const LineItem = props => {
   const { line_item } = props
   const {
-    removeLineItem, updateQuantity,
+    removeLineItem, updateLineItem,
     store: { client, checkout },
   } = useContext(StoreContext)
 
@@ -27,11 +27,8 @@ const LineItem = props => {
   const handleRemove = () => {
     removeLineItem(client, checkout.id, line_item.id)
   }
-  console.log(line_item);
-
   const handleQuantityChange = (event) => {
-    console.log(event.target.value, line_item.id, checkout.id);
-    updateQuantity();
+    updateLineItem(client, checkout.id, line_item.id, event.target.value);
   }
   return (
     <tr className="cart_item">
