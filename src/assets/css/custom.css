@@ -564,3 +564,10 @@ body .navbar{
 	transform: scale(1.1);
 	transition:all 0.15s ease-in-out;
 }
+.recent-post-image .card-layer{
+	opacity:0;
+	transition:all 0.15s ease-in-out;
+}
+.recent-post-image:hover .card-layer{
+	opacity:0.85;
+}
