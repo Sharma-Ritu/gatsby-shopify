@@ -56,20 +56,61 @@ export default (props) => {
 			</div>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
-			<div className="container-fluid pb-0 pb-sm-5">
+			<div className="container-large pb-0 pb-sm-5">
+				<h3 className="text-center mb-4" style={{fontSize:'18px'}}>RECENT POSTS</h3>
 				<Row>
-					<p className="text-center w-100 star">
-						<i className="fa fa-star star-small"></i>
-						<i className="fa fa-star star-medium ml-2"></i>
-						<i className="fa fa-star star-large mx-2"></i>
-						<i className="fa fa-star star-medium mr-2"></i>
-						<i className="fa fa-star star-small"></i>
-					</p>
-					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
-					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
-					</p>
-					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
+					<Col sm="3" className="">
+						<div className="recenet-post-inner border">
+							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
+								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+								<div className="card-layer">
+								</div>
+							</a>
+							<a href="#" className="recent-post-title">
+								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
+							</a>
+						</div>
+						
+					</Col>
+					<Col sm="3" className="">
+						<div className="recenet-post-inner border">
+							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
+								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+								<div className="card-layer">
+								</div>
+							</a>
+							<a href="#" className="recent-post-title">
+								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
+							</a>
+						</div>
+						
+					</Col>
+					<Col sm="3" className="">
+						<div className="recenet-post-inner border">
+							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
+								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+								<div className="card-layer">
+								</div>
+							</a>
+							<a href="#" className="recent-post-title">
+								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
+							</a>
+						</div>
+						
+					</Col>
+					<Col sm="3" className="">
+						<div className="recenet-post-inner border">
+							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
+								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+								<div className="card-layer">
+								</div>
+							</a>
+							<a href="#" className="recent-post-title">
+								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
+							</a>
+						</div>
+						
+					</Col>
 				</Row>
 			</div>
 		</section>
