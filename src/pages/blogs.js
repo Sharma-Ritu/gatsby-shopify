@@ -3,7 +3,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
-import blog1 from "../assets/img/blog1.jpg"
+import blogs1 from "../assets/img/blogs1.jpg"
 
 
 export default (props) => {
@@ -23,7 +23,7 @@ export default (props) => {
 						<div className="blogs-section mb-5">
 							<div className="featured-image position-relative overflow-hidden">
 								<a href="#">
-									<img src={blog1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
+									<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
 									<div className="card-layer">
 										<div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
 											<i class="fa fa-image" style={{fontSize:'50px', color:'#fff'}}></i>
@@ -50,7 +50,7 @@ export default (props) => {
 						<div className="blogs-section mb-5">
 							<div className="featured-image position-relative overflow-hidden">
 								<a href="#">
-									<img src={blog1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
+									<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
 									<div className="card-layer">
 										<div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
 											<i class="fa fa-image" style={{fontSize:'50px', color:'#fff'}}></i>
@@ -77,7 +77,7 @@ export default (props) => {
 						<div className="blogs-section mb-5">
 							<div className="featured-image position-relative overflow-hidden">
 								<a href="#">
-									<img src={blog1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
+									<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
 									<div className="card-layer">
 										<div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
 											<i class="fa fa-image" style={{fontSize:'50px', color:'#fff'}}></i>
@@ -108,7 +108,7 @@ export default (props) => {
 							<ul className="list-unstyled">
 								<li className="d-flex mb-3">
 									<div className="recent-post-image col-4">
-											<a href=""><img src={blog1} alt="Blog 1" className="w-100" /></a>
+											<a href=""><img src={blogs1} alt="Blog 1" className="w-100" /></a>
 									</div>
 									<div className="recente-posts-data col-8 px-0">
 										<p className="mb-0"><a href="" style={{fontSize:'12px', color:'#000'}} className="filson-pro-reg d-block mb-0">4 Benefits of Juicing and How it Helps Improve Sleep</a></p>
@@ -117,7 +117,7 @@ export default (props) => {
 								</li>
 								<li className="d-flex mb-3">
 									<div className="recent-post-image col-4">
-											<a href=""><img src={blog1} alt="Blog 1" className="w-100" /></a>
+											<a href=""><img src={blogs1} alt="Blog 1" className="w-100" /></a>
 									</div>
 									<div className="recente-posts-data col-8 px-0">
 										<p className="mb-0"><a href="" style={{fontSize:'12px', color:'#000'}} className="filson-pro-reg d-block mb-0">4 Benefits of Juicing and How it Helps Improve Sleep</a></p>
@@ -126,7 +126,7 @@ export default (props) => {
 								</li>
 								<li className="d-flex mb-3">
 									<div className="recent-post-image col-4">
-											<a href=""><img src={blog1} alt="Blog 1" className="w-100" /></a>
+											<a href=""><img src={blogs1} alt="Blog 1" className="w-100" /></a>
 									</div>
 									<div className="recente-posts-data col-8 px-0">
 										<p className="mb-0"><a href="" style={{fontSize:'12px', color:'#000'}} className="filson-pro-reg d-block mb-0">4 Benefits of Juicing and How it Helps Improve Sleep</a></p>
