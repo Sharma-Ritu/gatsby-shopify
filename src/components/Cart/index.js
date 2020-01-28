@@ -55,7 +55,7 @@ const Cart = () => {
                     </div>
                   </td>
                   <td>
-                    <button className="btn-dark p-1 text-white space-1" onClick={updateCart}> UPDATE CART </button>
+                    <button className="d-none btn-dark p-1 text-white space-1" onClick={updateCart}> UPDATE CART </button>
                   </td>
                 </tr> 
               </tbody>
