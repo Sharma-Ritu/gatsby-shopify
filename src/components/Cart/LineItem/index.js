@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 
 import StoreContext from '~/context/StoreContext'
-import { Wrapper } from './styles'
 
 const LineItem = props => {
   const { line_item } = props
@@ -18,12 +17,6 @@ const LineItem = props => {
     />
   ) : null
 
-  const selectedOptions = line_item.variant.selectedOptions
-    ? line_item.variant.selectedOptions.map(
-        option => `${option.name}: ${option.value} `
-      )
-    : null
-
   const handleRemove = () => {
     removeLineItem(client, checkout.id, line_item.id)
   }
@@ -33,7 +26,7 @@ const LineItem = props => {
   return (
     <tr className="cart_item">
       <td className="product-remove">
-        <a onClick={handleRemove} href="javascript:void(0);" className="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></a> 
+        <button onClick={handleRemove} href="javascript:void(0);" className="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></button> 
       </td>
       <td className="product-thumbnail">
         {variantImage}
