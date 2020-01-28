@@ -20,7 +20,16 @@ const Cart = () => {
   console.log((checkout.lineItems.length > 0));
   return (
     <>
-    {(checkout.lineItems.length == 0) && <p>Your cart is empty</p>}
+    {(checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
+      <div className="container-large">
+        <Row>
+          <div className="col text-center">
+            <p>YOUR CART IS CURRENTLY EMPTY.</p>
+            <a className="btn btn-secondary" href="/shop-chirofoam/">Return To Shop</a>
+          </div>
+        </Row>
+      </div>
+    </section>}
     {(checkout.lineItems.length > 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
         <Row>
