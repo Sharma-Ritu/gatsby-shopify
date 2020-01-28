@@ -102,7 +102,6 @@ const ProductForm = ({ product }) => {
     minimumFractionDigits: 2,
     style: 'currency',
   }).format(variants[selectedVariantIndex].price)
-  console.log(selectedVariantIndex, variants[selectedVariantIndex], variant.price);
 
    const handleAddToCarts = () => {
     
