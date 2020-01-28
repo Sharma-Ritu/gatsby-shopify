@@ -3,7 +3,8 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
-import blog1 from "../assets/img/blog1.jpg"
+import blogs1 from "../assets/img/blogs1.jpg"
+import girl from "../assets/img/girl.jpg"
 
 
 
@@ -21,7 +22,7 @@ export default (props) => {
 				<Row>
 					<Col sm="12" className="align-middle">
 						<div className="featured-image position-relative overflow-hidden">
-							<img src={blog1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+							<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
 						</div>
 						<h2 className="mb-3 color-primary text-uppercase erbaum-bold pt-4 space-1">4 Benefits of Juicing and How it Helps Improve Sleep</h2>
 						<Row>
@@ -47,7 +48,7 @@ export default (props) => {
 								</p>
 							</Col>
 							<Col sm="3">
-								<img src={blog1} alt="" className="img-fluid" />
+								<img src={girl} alt="" className="img-fluid" />
 							</Col>
 						</Row>
 					</Col>
