@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from "../components/banner"
 import Footer from "../components/footer"
 import {Container, Row, Col, Button, Media} from 'reactstrap';
+import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 import mattress1 from "../assets/img/mattress1.jpg"
 import product1 from "../assets/img/product1.jpg"
@@ -18,6 +19,7 @@ import { Link } from "gatsby"
 export default (props) => {
   return (
 	<>
+		<SEO title="Home" />
 		<main>
 		<Banner />
 		<section className="py-4 py-sm-5 py-lg-5 py-xl-5 active-style">
