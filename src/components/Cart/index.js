@@ -24,7 +24,7 @@ const Cart = () => {
       <div className="container-large">
         <Row>
           <div className="col text-center">
-            <p>YOUR CART IS CURRENTLY EMPTY.</p>
+            <p style={{color:'#ba2154'}}>YOUR CART IS CURRENTLY EMPTY.</p>
             <a className="btn btn-secondary" href="/shop-chirofoam/">Return To Shop</a>
           </div>
         </Row>
