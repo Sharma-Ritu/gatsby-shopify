@@ -20,7 +20,7 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen); 
 
   return (
-    <div className="bg-transparent pt-sm-2 pos">
+    <div className="bg-transparent pt-sm-2">
       <Navbar color="faded" light expand="lg" className="bg-transparent pt-3 pt-sm-4">
 		<div className="container-large d-sm-flex d-lg-flex d-xl-flex">
 			<NavbarBrand href="/"><img src={logo} alt="Chirofoam" width="200px"/></NavbarBrand>
