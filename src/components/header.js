@@ -20,14 +20,14 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen); 
 
   return (
-    <div className="bg-transparent pt-sm-2">
+    <div className="bg-transparent pt-sm-2 position-relative">
+	  <span className="position-absolute pr-4">Developed & manufactured in Canada</span>
       <Navbar color="faded" light expand="lg" className="bg-transparent pt-3 pt-sm-4">
 		<div className="container-large d-sm-flex d-lg-flex d-xl-flex">
 			<NavbarBrand href="/"><img src={logo} alt="Chirofoam" width="200px"/></NavbarBrand>
 			<NavbarToggler onClick={toggle} />
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
-			  	<span className="pr-4">Developed & manufactured in Canada</span>
 				<NavItem>
 				  <NavLink href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</NavLink>
 				</NavItem>
