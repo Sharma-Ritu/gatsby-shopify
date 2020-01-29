@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import LineItem from './LineItem'
@@ -14,6 +14,9 @@ const Cart = () => {
   const updateCart = () => {
     console.log(checkout);
   }
+  useEffect(() => {
+    console.log(checkout, 'ready');
+  }, [])
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
