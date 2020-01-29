@@ -23,7 +23,7 @@ const Cart = () => {
   console.log(checkout.ready)
   return (
     <>
-    {(checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
+    {(checkout.ready) && (checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
         <Row>
           <div className="col text-center">
