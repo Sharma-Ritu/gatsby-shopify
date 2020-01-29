@@ -14,8 +14,8 @@ const Cart = () => {
     console.log(checkout);
   }
   useEffect(() => {
-    const emptyCart = (checkout.lineItems.length > 0);
-    console.log(emptyCart, 'ready');
+    const cartItems = checkout.lineItems.length;
+    console.log(cartItems);
   }, [])
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
