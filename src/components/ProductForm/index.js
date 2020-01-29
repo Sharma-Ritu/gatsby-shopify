@@ -63,7 +63,7 @@ const ProductForm = ({ product }) => {
   }
 
   const handleAddToCart = () => {
-    ret = addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity);
+    const ret = addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity);
     console.log(ret);
      return product.title
 
