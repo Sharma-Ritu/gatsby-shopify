@@ -119,7 +119,7 @@ export default (props) => {
 			<Container className="p-0 pb-sm-5">
 				<Row className="">
 					<Col sm="4">
-						<h2 className="erbaum-bold text-white">MAX SUPPORT MAX RESULTS</h2>
+						<h2 className="erbaum-bold text-white ml-3">MAX SUPPORT MAX RESULTS</h2>
 						<p className="text-white proxima-r feat pt-0 pt-sm-1 ml-3">
 							COOL GEL INFUSED MEMORY FOAM<br />
 							EXTRA FIRM SUPPORT CHIROFOAM<br />
