@@ -12,7 +12,8 @@
 	    font-size: 10px;
 	}
 	.home-banner {
-	    background-position-x: 10%;
+	    	background-position-x: 10%;
+		height:140vh;
 	}
 	.active-style h2 {
 	    font-size: 46px;
