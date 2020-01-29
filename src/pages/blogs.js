@@ -5,6 +5,7 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import Blogs from "../components/Blogs"
+import RecentBlogs from "../components/Blogs/RecentBlogs"
 
 
 export default (props) => {
@@ -21,40 +22,7 @@ export default (props) => {
 			<div className="container-large">
 				<Row>
 					<Blogs />
-					<Col sm="4">
-						<div className="recent-posts">
-							<h5 className="filson-pro-reg">Recent Posts</h5>
-							<ul className="list-unstyled">
-								<li className="d-flex mb-3">
-									<div className="recent-post-image col-4">
-											<a href=""><img src={blogs1} alt="Blog 1" className="w-100" /></a>
-									</div>
-									<div className="recente-posts-data col-8 px-0">
-										<p className="mb-0"><a href="" style={{fontSize:'12px', color:'#000'}} className="filson-pro-reg d-block mb-0">4 Benefits of Juicing and How it Helps Improve Sleep</a></p>
-										<span style={{fontSize:'12px'}}>June 15, 2019</span>
-									</div>
-								</li>
-								<li className="d-flex mb-3">
-									<div className="recent-post-image col-4">
-											<a href=""><img src={blogs1} alt="Blog 1" className="w-100" /></a>
-									</div>
-									<div className="recente-posts-data col-8 px-0">
-										<p className="mb-0"><a href="" style={{fontSize:'12px', color:'#000'}} className="filson-pro-reg d-block mb-0">4 Benefits of Juicing and How it Helps Improve Sleep</a></p>
-										<span style={{fontSize:'12px'}}>June 15, 2019</span>
-									</div>
-								</li>
-								<li className="d-flex mb-3">
-									<div className="recent-post-image col-4">
-											<a href=""><img src={blogs1} alt="Blog 1" className="w-100" /></a>
-									</div>
-									<div className="recente-posts-data col-8 px-0">
-										<p className="mb-0"><a href="" style={{fontSize:'12px', color:'#000'}} className="filson-pro-reg d-block mb-0">4 Benefits of Juicing and How it Helps Improve Sleep</a></p>
-										<span style={{fontSize:'12px'}}>June 15, 2019</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</Col>
+					<RecentBlogs />
 				</Row>
 			</div>
 		</section>
