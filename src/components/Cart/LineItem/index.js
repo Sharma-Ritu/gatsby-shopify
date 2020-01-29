@@ -21,7 +21,7 @@ const LineItem = props => {
     removeLineItem(client, checkout.id, line_item.id)
   }
   const handleQuantityChange = (event) => {
-    console.log(checkout);
+    console.log(client,checkout);
     updateLineItem(client, checkout.id, line_item.id, event.target.value);
   }
   return (
