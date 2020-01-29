@@ -7,7 +7,6 @@ const Cart = () => {
   const {
     store: { checkout },
   } = useContext(StoreContext)
-
   const handleCheckout = () => {
     window.open(checkout.webUrl)
   }
@@ -15,7 +14,8 @@ const Cart = () => {
     console.log(checkout);
   }
   useEffect(() => {
-    console.log(checkout, 'ready');
+    const emptyCart = (checkout.lineItems.length > 0);
+    console.log(emptyCart, 'ready');
   }, [])
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
