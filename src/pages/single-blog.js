@@ -5,6 +5,8 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import girl from "../assets/img/girl.jpg"
+import RecentPosts from "../components/Blogs/RecentPostsFooter"
+import SingleBlogs from "../components/Blogs/SingleBlogs"
 
 
 
@@ -17,6 +19,7 @@ export default (props) => {
 				<h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h3>
 			</div>
 		</section>
+	
 		<section className="mb-0 py-5 position-relative">
 			<div className="container-large">
 				<Row>
@@ -58,60 +61,7 @@ export default (props) => {
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
 			<div className="container-large pb-0 pb-sm-5">
 				<h3 className="text-center mb-4" style={{fontSize:'18px'}}>RECENT POSTS</h3>
-				<Row>
-					<Col sm="3" className="">
-						<div className="recenet-post-inner border">
-							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
-								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
-								<div className="card-layer">
-								</div>
-							</a>
-							<a href="#" className="recent-post-title">
-								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
-							</a>
-						</div>
-						
-					</Col>
-					<Col sm="3" className="">
-						<div className="recenet-post-inner border">
-							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
-								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
-								<div className="card-layer">
-								</div>
-							</a>
-							<a href="#" className="recent-post-title">
-								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
-							</a>
-						</div>
-						
-					</Col>
-					<Col sm="3" className="">
-						<div className="recenet-post-inner border">
-							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
-								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
-								<div className="card-layer">
-								</div>
-							</a>
-							<a href="#" className="recent-post-title">
-								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
-							</a>
-						</div>
-						
-					</Col>
-					<Col sm="3" className="">
-						<div className="recenet-post-inner border">
-							<a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
-								<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
-								<div className="card-layer">
-								</div>
-							</a>
-							<a href="#" className="recent-post-title">
-								<h4 className="text-uppercase erbaum p-2 m-0" style={{fontSize:'14px', color:'#000'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h4>
-							</a>
-						</div>
-						
-					</Col>
-				</Row>
+				<RecentPosts />
 			</div>
 		</section>
 
