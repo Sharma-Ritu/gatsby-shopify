@@ -33,8 +33,12 @@
 	.mattresses .border-right {
 	    border: none !important;
 	}
+	.max-support{
+		background-position-x: center;
+	}
 	.max-support h2 {
-	    font-size: 46px;
+	    	font-size: 46px;
+		line-height:44px;
 	}
 	.lead-text-font {
 	    font-size: 26px;
