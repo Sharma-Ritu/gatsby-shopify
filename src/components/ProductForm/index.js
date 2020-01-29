@@ -63,7 +63,8 @@ const ProductForm = ({ product }) => {
   }
 
   const handleAddToCart = () => {
-    addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity)
+    ret = addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity);
+    console.log(ret);
      return product.title
 
   }
@@ -134,7 +135,8 @@ const ProductForm = ({ product }) => {
       
      
       <p className="cta mt-0 mt-sm-5 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
-        <span className="proxima-b color-primary float-left display-4 v-price" style={{lineHeight:'30px'}}>{price}</span> <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
+        <span className="proxima-b color-primary float-left display-4 v-price" style={{lineHeight:'30px'}}>{price}</span>
+        <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
         type="submit"
         disabled={!available || adding}
         onClick={handleAddToCart}
