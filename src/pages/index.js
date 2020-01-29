@@ -120,13 +120,13 @@ export default (props) => {
 				<Row className="">
 					<Col sm="4">
 						<h2 className="erbaum-bold text-white">MAX SUPPORT MAX RESULTS</h2>
-						<p className="text-white proxima-r feat pt-0 pt-sm-1">
+						<p className="text-white proxima-r feat pt-0 pt-sm-1 ml-3">
 							COOL GEL INFUSED MEMORY FOAM<br />
 							EXTRA FIRM SUPPORT CHIROFOAM<br />
 							CHIROFOAM LUMBAR SUPPORT<br />
 							BODY SUPPORT BIO FOAM CORE
 						</p>
-						<p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 mb-sm-2">
+						<p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 mb-sm-2 ml-3">
 							<a href="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </a>
 						</p>
 					</Col>
