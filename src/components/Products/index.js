@@ -56,7 +56,7 @@ const ProductGrid = () => {
       <div className="pt-0 pt-sm-5 container-large">
         <h4 className="text-center lead-text-font color-primary erbaum-bold display-5" style={{width:'100%'}}>THE COMFORT AND SUPPORT YOU NEED FOR A BETTER SLEEP</h4>
         <p className="col-12 col-sm-7 text-center pb-4 pb-sm-5 px-0 px-sm-2 pt-1 mb-5 color-primary proxima-b space-1 m-auto lead-sub-text">Aenean suscipit, lacus at handerit porta, massa sem efficitur est, quis mattis eros quam In saplen.</p>
-        <Row className="no-gutters row-eq-height pb-5 products-list">
+        <Row className="text-center no-gutters row-eq-height pb-5">
           {allShopifyProduct.edges
         ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
           <Product key={id} >
