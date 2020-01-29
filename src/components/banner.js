@@ -6,7 +6,7 @@ import "../assets/css/bootstrap.min.css"
 const Banner = () => (
 	<header className="header-outer home-banner bg-image position-relative">
 		<Header/>
-		<div className="container-large position-relative">
+		<div className="container position-relative">
 		<div className="" style={{color: '#fff',right:'0', left:'0'}}>
 			<div className="">
 				<Row>
