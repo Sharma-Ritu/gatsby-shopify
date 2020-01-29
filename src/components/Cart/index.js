@@ -7,6 +7,7 @@ const Cart = () => {
   const {
     store: { checkout },
   } = useContext(StoreContext)
+
   const handleCheckout = () => {
     window.open(checkout.webUrl)
   }
@@ -14,15 +15,15 @@ const Cart = () => {
     console.log(checkout);
   }
   useEffect(() => {
-    const cartItems = checkout.lineItems.length;
-    console.log(cartItems);
+    console.log(checkout)
   }, [])
   const line_items = checkout.lineItems.map(line_item => {
     return <LineItem key={line_item.id.toString()} line_item={line_item} />
   })
+  console.log(checkout);
   return (
     <>
-    {(cartItems == 0) && <section className="mb-0 py-3 py-sm-5">
+    {(checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
         <Row>
           <div className="col text-center">
@@ -32,7 +33,7 @@ const Cart = () => {
         </Row>
       </div>
     </section>}
-    {(cartItems > 0) && <section className="mb-0 py-3 py-sm-5">
+    {(checkout.lineItems.length > 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container-large">
         <Row>
           <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
@@ -66,7 +67,7 @@ const Cart = () => {
         </Row>
       </div>
     </section>}
-    {(cartItems > 0) && <section>
+    {(checkout.lineItems.length > 0) && <section>
       <div className="container-large">
         <Row>
           
