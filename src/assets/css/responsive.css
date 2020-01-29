@@ -16,7 +16,8 @@
 		height:140vh;
 	}
 	.active-style h2 {
-	    font-size: 46px;
+	    	font-size: 46px;
+		line-height:50px;
 	}
 	.card-bg{
 		height:285px;
