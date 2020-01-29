@@ -63,7 +63,7 @@ const ProductForm = ({ product }) => {
   }
 
   const handleAddToCart = () => {
-    console.log(addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity))
+    console.log(addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity).PromiseStatus)
      return product.title
 
   }
