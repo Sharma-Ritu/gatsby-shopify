@@ -20,7 +20,7 @@ const Cart = () => {
   return (
     <>
     {(checkout.ready) && (checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
-      <div className="container-large">
+      <div className="container">
         <Row>
           <div className="col text-center">
             <p style={{color:'#ba2154'}}>YOUR CART IS CURRENTLY EMPTY.</p>
@@ -30,10 +30,10 @@ const Cart = () => {
       </div>
     </section>}
     {(checkout.lineItems.length > 0) && <section className="mb-0 py-3 py-sm-5">
-      <div className="container-large">
+      <div className="container">
         <Row>
           <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
-            <Table className="mb-0">
+            <Table className="mb-0 table-responsive">
               <thead>
                 <tr>
                   <th> &nbsp; </th>
@@ -64,7 +64,7 @@ const Cart = () => {
       </div>
     </section>}
     {(checkout.lineItems.length > 0) && <section>
-      <div className="container-large">
+      <div className="container">
         <Row>
           
           <ul className="pl-0 list-unstyled w-100 cart-total">
