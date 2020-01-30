@@ -23,7 +23,7 @@ export default (props) => {
 		<main>
 		<Banner />
 		<section className="py-4 py-sm-5 py-lg-5 py-xl-5 active-style">
-			<div className="container-large py-0 py-sm-5 py-lg-5 py-xl-5">
+			<div className="container py-0 py-sm-5 py-lg-5 py-xl-5">
 				<Row className="pt-0 pt-sm-4 pt-lg-4 pt-xl-4 d-flex">
 					<Col sm="6" className="pt-0 pt-sm-12 pt-lg-12 pt-xl-2">
 						<small className="filson-pro-reg color-primary space-4 pl-0 pl-sm-2 pl-lg-2 pl-xl-2" style={{fontSize:'18px'}}>DESIGNED FOR YOUR</small>
@@ -135,7 +135,7 @@ export default (props) => {
 		</section>
 
 		<section className="py-4 pt-sm-4 pt-lg-4 pt-xl-4 pb-sm-4 pb-lg-4 pb-xl-4 mb-0 mb-sm-3 mb-lg-3 mb-xl-3 mattresses">
-			<div className="pt-0 pt-sm-5 container-large">
+			<div className="pt-0 pt-sm-5 container">
 				<h4 className="text-center lead-text-font color-primary erbaum-bold display-5" style={{width:'100%'}}>THE COMFORT AND SUPPORT YOU NEED FOR A BETTER SLEEP</h4>
 				<p className="col-12 col-sm-7 text-center pb-4 pb-sm-5 px-0 px-sm-2 pt-1 mb-5 color-primary proxima-b space-1 m-auto lead-sub-text">Aenean suscipit, lacus at handerit porta, massa sem efficitur est, quis mattis eros quam In saplen.</p>
 				<Row className="no-gutters row-eq-height pb-5">
@@ -193,7 +193,7 @@ export default (props) => {
 		</section>
 		
 		<section className="py-4 pt-sm-5 pb-sm-4 approved bg-image">
-			<div className="container-large">
+			<div className="container">
 				<Row className="pt-3 no-gutters">
 					<Col sm="5" className="align-middle">
 						<img src={run} alt="run" width="75%" className="mt-sm-5 pt-sm-5 pl-sm-5 ml-sm-5"/>
