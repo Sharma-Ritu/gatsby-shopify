@@ -4,9 +4,29 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
 
+const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
+
+export const query = graphql`
+  {
+    shopifyArticle {
+      id
+      content
+      title
+      url
+      excerpt
+      image {
+        src
+      }
+      publishedAt
+    }
+  }
+`
+export default ComponentName
+
+    /*
+
 const SingleBlogs = ({ $id }) => {
   const { allShopifyArticle } = useStaticQuery(
-    /*
     graphql`
       query {
          allShopifyArticle {
@@ -28,7 +48,6 @@ const SingleBlogs = ({ $id }) => {
         }
       }
     `
-    */
     graphql `
       query {
         shopifyArticle {
@@ -89,3 +108,5 @@ const SingleBlogs = ({ $id }) => {
 }
 
 export default SingleBlogs
+    */
+
