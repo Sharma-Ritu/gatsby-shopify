@@ -4,24 +4,27 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
 
-const SingleBlogs = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
-
-export const query = graphql`
-  {
-    shopifyArticle {
-      id
-      content
-      title
-      url
-      excerpt
-      image {
-        src
+const SingleBlogs = () => {
+  const data = useStaticQuery(graphql`
+    {
+      shopifyArticle {
+        id
+        content
+        title
+        url
+        excerpt
+        image {
+          src
+        }
+        publishedAt
       }
-      publishedAt
     }
-  }
-`
+  `)
+  return <pre>{JSON.stringify(data, null, 4)}</pre>
+}
+
 export default SingleBlogs
+
 
     /*
 
