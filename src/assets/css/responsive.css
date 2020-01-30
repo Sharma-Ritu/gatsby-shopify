@@ -98,6 +98,10 @@
 	.our-customer {
     		padding: 15px 10px 15px 10px;
 	}
+	.v-price{
+		line-height:60px !important;
+		font-size:3rem!important;
+	}
 	
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
