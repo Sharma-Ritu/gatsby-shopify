@@ -51,12 +51,11 @@ const SingleBlogs = ({ $id }) => {
     
 
           <Col sm="8" className="align-middle">
-            {allShopifyArticle
-            ? allShopifyArticle.map(( { id, url, title, content, excerpt, publishedAt, image } ) => (
+            
             <div className="blogs-section mb-5">
               <div className="featured-image position-relative overflow-hidden">
-                <Link to={`/single-blog/?id=${id}`} state={{ fromFeed: true }}>
-                  <img src={image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
+                <Link to={`/single-blog/?id=${allShopifyArticle.id}`} state={{ fromFeed: true }}>
+                  <img src={allShopifyArticle.image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
                   <div className="card-layer">
                     <div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
                       <i class="fa fa-image" style={{fontSize:'50px', color:'#fff'}}></i>
@@ -72,16 +71,16 @@ const SingleBlogs = ({ $id }) => {
                 </Col>
                 <Col sm="11" className="pl-4">
                   <p style={{fontSize:'12px'}}>By <span>Chirofoam</span> In <span>Sleep</span> Posted <span> {publishedAt}</span></p>
-                  <h3 className="mb-3"><a href="/single-blog/" className="text-uppercase erbaum space-1" style={{color:'#000', fontSize:'24px'}}>{title}</a></h3>
-                  <p className="filson-pro-reg" style={{fontSize:'14px'}}>{excerpt}</p>
+                  <h3 className="mb-3"><a href="/single-blog/" className="text-uppercase erbaum space-1" style={{color:'#000', fontSize:'24px'}}>{allShopifyArticle.title}</a></h3>
+                  <p className="filson-pro-reg" style={{fontSize:'14px'}}>{allShopifyArticle.excerpt}</p>
                   <p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 w-100">
                     <a href="/single-blog/" className="btn-cta color-primary erbaum-bold space-1">READ MORE</a>
                   </p>
                 </Col>
               </div>
             </div>
-             ))
-        : <p>No Products found!</p>}
+             
+        : <p>No Products found!</p>
             
           </Col>
           
