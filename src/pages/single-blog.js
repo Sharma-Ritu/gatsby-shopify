@@ -14,6 +14,9 @@ export default (props) => {
   return (
 	<>
 		<Header />
+		<section className="single-blog py-5">
+	  		<SingleBlogs />
+	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
 				<h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h3>
@@ -24,6 +27,7 @@ export default (props) => {
 			<div className="container-large">
 				<Row>
 					<Col sm="12" className="align-middle">
+	  					
 						<div className="featured-image position-relative overflow-hidden">
 							<img src={blogs1} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
 						</div>
