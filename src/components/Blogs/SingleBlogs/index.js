@@ -6,15 +6,15 @@ import blogs1 from "~/assets/img/blogs5.jpg"
 
 const SingleBlogs = ({ $id }) => {
   const { allShopifyArticle } = useStaticQuery(
+    /*
     graphql`
       query {
-         shopifyArticle {
+         allShopifyArticle {
           edges {
             node {
               id
               title
               excerpt
-              content
               url
               publishedAt(formatString: "MMM DD, YYYY")
               image {
@@ -28,6 +28,22 @@ const SingleBlogs = ({ $id }) => {
         }
       }
     `
+    */
+    graphql `
+      query {
+        shopifyArticle {
+          id
+          title
+          content
+          excerpt
+          url
+          image {
+            src
+          }
+          publishedAt
+        }
+      }
+    `
   )
 
   return (
@@ -35,8 +51,8 @@ const SingleBlogs = ({ $id }) => {
     
 
           <Col sm="8" className="align-middle">
-            {allShopifyArticle.edges
-            ? allShopifyArticle.edges.map(({ node: { id, url, title, content, excerpt, publishedAt, image } }) => (
+            {allShopifyArticle
+            ? allShopifyArticle.map(( { id, url, title, content, excerpt, publishedAt, image } ) => (
             <div className="blogs-section mb-5">
               <div className="featured-image position-relative overflow-hidden">
                 <Link to={`/single-blog/?id=${id}`} state={{ fromFeed: true }}>
