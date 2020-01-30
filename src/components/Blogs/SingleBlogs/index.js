@@ -8,12 +8,13 @@ const SingleBlogs = ({ $id }) => {
   const { allShopifyArticle } = useStaticQuery(
     graphql`
       query {
-         allShopifyArticle {
+         shopifyArticle {
           edges {
             node {
               id
               title
               excerpt
+              content
               url
               publishedAt(formatString: "MMM DD, YYYY")
               image {
