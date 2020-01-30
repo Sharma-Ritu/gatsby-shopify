@@ -36,8 +36,8 @@ const Cart = () => {
             <Table className="mb-0">
               <thead>
                 <tr>
-                  <th> &nbsp; </th>
-                  <th> &nbsp; </th>
+                  <th>  </th>
+                  <th>  </th>
                   <th> Product </th>
                   <th> Price </th>
                   <th> Quantity </th>
