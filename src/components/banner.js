@@ -13,7 +13,7 @@ const Banner = () => (
 					<Col md="6">
 					
 					</Col>
-					<Col md="6" className="text-center banner-home" style={{right:'0', marginTop:'156px'}}>			
+					<Col md="6" className="text-center banner-home" style={{right:'0'}}>			
 						<p className="leads filson-pro-reg space-4" style={{fontSize:'20px',paddingLeft:'68px'}}>CHIROFOAM MEMORY FOAM MATTRESS</p>
 						<h2 className="erbaum-bold space-4 pl-sm-0 pl-xl-4 pl-lg-4" style={{fontStyle:'italic'}}>UPGRADE</h2>
 						<h3 className="erbaum">YOUR SLEEP</h3>
