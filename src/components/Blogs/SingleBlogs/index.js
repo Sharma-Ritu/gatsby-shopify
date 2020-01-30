@@ -4,7 +4,7 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
 
-const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
+const SingleBlogs = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
 
 export const query = graphql`
   {
@@ -21,7 +21,7 @@ export const query = graphql`
     }
   }
 `
-export default ComponentName
+export default SingleBlogs
 
     /*
 
