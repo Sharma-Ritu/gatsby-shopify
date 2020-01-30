@@ -32,8 +32,8 @@ const Cart = () => {
     {(checkout.lineItems.length > 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container">
         <Row>
-          <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart">
-            <Table className="mb-0 table-responsive">
+          <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart table-responsive">
+            <Table className="mb-0">
               <thead>
                 <tr>
                   <th> &nbsp; </th>
