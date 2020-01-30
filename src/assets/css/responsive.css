@@ -22,9 +22,15 @@
 	.card-bg{
 		height:285px;
 	}
+	
 	.card-bg:hover{
 		transform:scale(1.2);
 	}
+	
+	.card-bg4{
+		margin-top:25px;
+	}
+	
 	.mattresses p.cta.erbaum.position-absolute {
 	    bottom:0px;
 	}
