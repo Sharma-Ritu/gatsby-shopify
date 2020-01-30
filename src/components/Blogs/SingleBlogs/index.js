@@ -54,7 +54,7 @@ const SingleBlogs = ({ $id }) => {
             
             <div className="blogs-section mb-5">
               <div className="featured-image position-relative overflow-hidden">
-                <Link to={`/single-blog/?id=${allShopifyArticle.id}`} state={{ fromFeed: true }}>
+                <Link to={`/single-blog/?id=${allShopifyArticle.id}`} >
                   <img src={allShopifyArticle.image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
                   <div className="card-layer">
                     <div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
