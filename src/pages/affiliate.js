@@ -40,6 +40,22 @@ export default (props) => {
 									</FormGroup>
 								</Col>
 	  						</div>
+	  						<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="uname" className="color-secondary filson-pro-reg">Username <span style={{color:'red'}}>*</span></Label>
+										<input type="text" className="form-control" id="uname" name="uname" />
+									</FormGroup>
+								</Col>
+	  						</div>
+	  						<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="pass" className="color-secondary filson-pro-reg">Password <span style={{color:'red'}}>*</span></Label>
+										<input type="password" className="form-control" id="pass" name="pass" />
+									</FormGroup>
+								</Col>
+	  						</div>
 						</Col>
 					</Row>
 				</div>
