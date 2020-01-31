@@ -12,7 +12,7 @@ const blog_id = urlParams.get('id')
 const SingleBlogs = () => {
   const data = useStaticQuery(graphql`
     {
-      shopifyArticle(id: {eq: blog_id }) {
+      shopifyArticle(id: {eq: "+blog_id+" }) {
         id
         content
         title
