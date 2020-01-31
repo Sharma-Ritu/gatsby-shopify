@@ -19,7 +19,7 @@ const Cart = () => {
   })
   return (
     <>
-  <section className="mb-0 py-3 py-sm-5">
+    {(checkout.ready) && (checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container">
         <Row>
           <div className="col text-center">
@@ -28,8 +28,8 @@ const Cart = () => {
           </div>
         </Row>
       </div>
-    </section>
-    <section className="mb-0 py-3 py-sm-5">
+    </section>}
+    {(checkout.lineItems.length > 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container">
         <Row>
           <div className="col-12 col-md-12 col-sm-6 col-xs-12 cart table-responsive">
@@ -62,8 +62,8 @@ const Cart = () => {
           </div>
         </Row>
       </div>
-    </section>
-    <section>
+    </section>}
+    {(checkout.lineItems.length > 0) && <section>
       <div className="container">
         <Row>
           
@@ -78,7 +78,7 @@ const Cart = () => {
           </div>
         </Row>
       </div>
-    </section>
+    </section>}
     </>
   )
 }
