@@ -77,8 +77,8 @@ const urlParams = new URLSearchParams(queryString);
 const blog_id = urlParams.get('id');
 
 export const query = graphql`
-  mutation ($blog_id: String) {
-    shopifyArticle(id: {eq: $blog_id}) {
+  {
+    shopifyArticle(id: {eq: ""}) {
       id
       title
       image {
