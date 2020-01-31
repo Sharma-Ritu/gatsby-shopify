@@ -11,7 +11,7 @@ const blog_id = urlParams.get('id');
 console.log (blog_id);
 
 const SingleBlogs = () => {
-  const data = useStaticQuery(graphql`
+  const data = graphql`
     {
       shopifyArticle(id: {eq: "+blog_id+" }) {
         id
@@ -25,7 +25,7 @@ const SingleBlogs = () => {
         publishedAt
       }
     }
-  `)
+  `
   return <pre>{JSON.stringify(data, null, 4)}</pre>
 }
 
