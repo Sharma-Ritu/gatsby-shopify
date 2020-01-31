@@ -75,12 +75,10 @@ export default ({data}) => {
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const blog_id = urlParams.get('id');
-{
-  "blog_id": blog_id
-}
+
 export const query = graphql`
   {
-    shopifyArticle(id: {eq: $blog_id}) {
+    shopifyArticle(id: {eq: ""}) {
       id
       title
       image {
