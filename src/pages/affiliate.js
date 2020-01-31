@@ -31,13 +31,15 @@ export default (props) => {
 										<input type="text" className="form-control" id="fname" name="fname" />
 									</FormGroup>
 								</Col>
-								<Col>
+							</div>
+	  						<div className="row">
+	  							<Col>
 									<FormGroup>
 										<Label for="lname" className="color-secondary filson-pro-reg">Last Name <span style={{color:'red'}}>*</span></Label>
 										<input type="text" className="form-control" id="lname" name="lname" />
 									</FormGroup>
 								</Col>
-							</div>
+	  						</div>
 						</Col>
 					</Row>
 				</div>
