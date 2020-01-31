@@ -107,7 +107,7 @@ export default (props) => {
 	  						</div>
 								<div className="row">
 									<Col>
-										<button type="button" class="btn btn-light">Submit</button>
+										<button type="button" class="btn btn-outline-dark">Submit</button>
 									</Col>
 								</div>
 						</Col>
