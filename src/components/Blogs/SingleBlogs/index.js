@@ -4,21 +4,15 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
 
-
-
-    
-
 const SingleBlogs = () => {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-const id = urlParams.get('id')
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const blog_id = urlParams.get('id')
 
-console.log(id);
-  const { shopifyArticle } = useStaticQuery(
-    
+const { shopifyArticle } =     
     graphql `
       query {
-        shopifyArticle(id: {eq: "Shopify__Article__Z2lkOi8vc2hvcGlmeS9BcnRpY2xlLzM4NzA2NjEwMTgxNQ=="}) {
+        shopifyArticle(id: {eq: "{blog_id}"}) {
           id
           title
           content
@@ -31,8 +25,7 @@ console.log(id);
         }
       }
     `
-  )
-
+  
   return (
    
     
