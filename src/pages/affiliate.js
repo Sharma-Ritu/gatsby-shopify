@@ -89,6 +89,23 @@ export default (props) => {
 									</FormGroup>
 								</Col>
 	  						</div>
+								<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="website" className="color-secondary filson-pro-reg">Website/Social Media URL <span style={{color:'red'}}>*</span></Label>
+										<input type="url" className="form-control" id="website" name="website" />
+									</FormGroup>
+								</Col>
+	  						</div>
+								<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="tnc" className="color-secondary filson-pro-reg">Terms & Conditions <span style={{color:'red'}}>*</span></Label>
+										<Input type="checkbox" name="tnc" id="tnc" className="form-control" />
+										<span className="color-secondary filson-pro-reg pl-4">I agree to the Terms and Conditions of the Chirofoam Mattress Company Affiliate Program.</span>
+									</FormGroup>
+								</Col>
+	  						</div>
 						</Col>
 					</Row>
 				</div>
