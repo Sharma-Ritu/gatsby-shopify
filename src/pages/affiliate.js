@@ -102,32 +102,19 @@ export default (props) => {
 									<FormGroup>
 										<Label for="tnc" className="color-secondary filson-pro-reg">Terms & Conditions <span style={{color:'red'}}>*</span></Label>
 										<Input type="checkbox" name="tnc" id="tnc" className="form-control" />
-										<span className="color-secondary filson-pro-reg pl-4">I agree to the Terms and Conditions of the Chirofoam Mattress Company Affiliate Program.</span>
+										<span className="color-secondary filson-pro-reg pl-4">I agree to the <Link to="/term-and-conditions">Terms and Conditions</Link> of the Chirofoam Mattress Company Affiliate Program.</span>
 									</FormGroup>
 								</Col>
 	  						</div>
+								<div className="row">
+									<Col>
+										<button type="button" class="btn btn-light">Submit</button>
+									</Col>
+								</div>
 						</Col>
 					</Row>
 				</div>
 			</Form>
-		</section>
-		<section className="rating-and-review py-3 py-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
-				<Row>
-					<p className="text-center w-100 star">
-						<i className="fa fa-star star-small"></i>
-						<i className="fa fa-star star-medium ml-2"></i>
-						<i className="fa fa-star star-large mx-2"></i>
-						<i className="fa fa-star star-medium mr-2"></i>
-						<i className="fa fa-star star-small"></i>
-					</p>
-					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
-					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
-					</p>
-					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
-				</Row>
-			</div>
 		</section>
 		<Footer />
 	</>
