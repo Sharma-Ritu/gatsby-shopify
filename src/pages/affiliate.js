@@ -23,7 +23,7 @@ export default (props) => {
 				<div className="container">
 					<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
 						<Col className="mb-3 mb-sm-5">
-							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">Affiliate Registration</h5>
+							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">Affiliate </h5>
 							<div className="row">
 								<Col>
 									<FormGroup>
