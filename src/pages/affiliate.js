@@ -102,7 +102,7 @@ export default (props) => {
 									<FormGroup>
 										<Label for="tnc" className="color-secondary filson-pro-reg">Terms & Conditions <span style={{color:'red'}}>*</span></Label>
 										<Input type="checkbox" name="tnc" id="tnc" className="form-control" />
-										<span className="color-secondary filson-pro-reg pl-4">I agree to the <Link to="/term-and-conditions">Terms and Conditions</Link> of the Chirofoam Mattress Company Affiliate Program.</span>
+										<p><span className="color-secondary filson-pro-reg pl-4">I agree to the <Link to="/term-and-conditions">Terms and Conditions</Link> of the Chirofoam Mattress Company Affiliate Program.</span></p>
 									</FormGroup>
 								</Col>
 	  						</div>
