@@ -4,7 +4,6 @@ import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
 
-const SingleBlogs = () => {
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const blog_id = urlParams.get('id');
