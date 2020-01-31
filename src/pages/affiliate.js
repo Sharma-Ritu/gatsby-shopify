@@ -13,7 +13,7 @@ export default (props) => {
 			<div className="container">
 				<Row>
 					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
-						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">Affiliate</h2>
+						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">AFFILIATE REGISTRATION</h2>
 					</Jumbotron>
 				</Row>
 			</div>
@@ -23,7 +23,8 @@ export default (props) => {
 				<div className="container">
 					<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
 						<Col className="mb-3 mb-sm-5">
-							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">Affiliate </h5>
+							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">AFFILIATE REGISTRATION</h5>
+	  						<p className="filson-pro-reg color-secondary" style={{fontSize:'14px'}}>Fields marked with an * are required</p>
 							<div className="row">
 								<Col>
 									<FormGroup>
