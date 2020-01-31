@@ -23,7 +23,7 @@ export default (props) => {
 				<div className="container">
 					<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
 						<Col className="mb-3 mb-sm-5">
-							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">AFFILIATE REGISTRATION</h5>
+							<h5 className="color-primary mb-0 text-uppercase">AFFILIATE REGISTRATION</h5>
 	  						<p className="filson-pro-reg color-secondary" style={{fontSize:'14px'}}>Fields marked with an <span style={{color:'red'}}>*</span> are required</p>
 							<div className="row">
 								<Col>
@@ -76,8 +76,16 @@ export default (props) => {
 								<div className="row">
 	  							<Col>
 									<FormGroup>
-										<Label for="pemail" className="color-secondary filson-pro-reg">Email <span style={{color:'red'}}>*</span></Label>
+										<Label for="pemail" className="color-secondary filson-pro-reg">Payment Email <span style={{color:'red'}}>*</span></Label>
 										<input type="email" className="form-control" id="pemail" name="pemail" />
+									</FormGroup>
+								</Col>
+	  						</div>
+								<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="pmethod" className="color-secondary filson-pro-reg">Promotion Method <span style={{color:'red'}}>*</span></Label>
+										<textarea class="form-control" rows="8" id="pmethod"></textarea>
 									</FormGroup>
 								</Col>
 	  						</div>
