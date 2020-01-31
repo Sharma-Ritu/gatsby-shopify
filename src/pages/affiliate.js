@@ -24,7 +24,7 @@ export default (props) => {
 					<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
 						<Col className="mb-3 mb-sm-5">
 							<h5 className="color-primary pb-2 pb-sm-5 mb-0 text-uppercase">AFFILIATE REGISTRATION</h5>
-	  						<p className="filson-pro-reg color-secondary" style={{fontSize:'14px'}}>Fields marked with an * are required</p>
+	  						<p className="filson-pro-reg color-secondary" style={{fontSize:'14px'}}>Fields marked with an <span style={{color:'red'}}>*</span> are required</p>
 							<div className="row">
 								<Col>
 									<FormGroup>
@@ -54,6 +54,30 @@ export default (props) => {
 									<FormGroup>
 										<Label for="pass" className="color-secondary filson-pro-reg">Password <span style={{color:'red'}}>*</span></Label>
 										<input type="password" className="form-control" id="pass" name="pass" />
+									</FormGroup>
+								</Col>
+	  						</div>
+								<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="conf_pass" className="color-secondary filson-pro-reg">Confirm Password <span style={{color:'red'}}>*</span></Label>
+										<input type="password" className="form-control" id="conf_pass" name="conf_pass" />
+									</FormGroup>
+								</Col>
+	  						</div>
+								<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="email" className="color-secondary filson-pro-reg">Email <span style={{color:'red'}}>*</span></Label>
+										<input type="email" className="form-control" id="email" name="email" />
+									</FormGroup>
+								</Col>
+	  						</div>
+								<div className="row">
+	  							<Col>
+									<FormGroup>
+										<Label for="pemail" className="color-secondary filson-pro-reg">Email <span style={{color:'red'}}>*</span></Label>
+										<input type="email" className="form-control" id="pemail" name="pemail" />
 									</FormGroup>
 								</Col>
 	  						</div>
