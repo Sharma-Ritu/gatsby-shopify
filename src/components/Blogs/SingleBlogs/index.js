@@ -8,7 +8,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const blog_id = urlParams.get('id');
 
-const SingleBlog = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
+const SingleBlogs = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
 
 export const query = graphql`
   {
@@ -24,4 +24,4 @@ export const query = graphql`
   }
 `
 
-export default SingleBlog
+export default SingleBlogs
