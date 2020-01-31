@@ -7,12 +7,12 @@ import blogs1 from "~/assets/img/blogs5.jpg"
 /* Get blog post id from url */
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const id = urlParams.get('id')
+const blog_id = urlParams.get('id')
 
 const SingleBlogs = () => {
   const data = useStaticQuery(graphql`
     {
-      shopifyArticle(id: {eq: id }) {
+      shopifyArticle(id: {eq: blog_id }) {
         id
         content
         title
