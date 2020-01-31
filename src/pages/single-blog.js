@@ -78,7 +78,7 @@ const blog_id = urlParams.get('id');
 
 export const query = graphql`
   {
-    shopifyArticle(id: {eq: "{blog_id}"}) {
+    shopifyArticle(id: {eq: }) {
       id
       title
       image {
