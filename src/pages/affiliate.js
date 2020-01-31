@@ -13,7 +13,7 @@ export default (props) => {
 			<div className="container">
 				<Row>
 					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
-						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">Affiliate Register</h2>
+						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">Affiliate</h2>
 					</Jumbotron>
 				</Row>
 			</div>
