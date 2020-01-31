@@ -8,14 +8,12 @@ import girl from "../assets/img/girl.jpg"
 import RecentPosts from "../components/Blogs/RecentPostsFooter"
 import SingleBlogs from "../components/Blogs/SingleBlogs"
 
-
-
 export default (props) => {
   return (
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  		<SingleBlogs />
+	  		<SingleBlogs title="New Title"/>
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
