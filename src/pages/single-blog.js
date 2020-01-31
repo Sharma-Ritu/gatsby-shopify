@@ -6,18 +6,18 @@ import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import girl from "../assets/img/girl.jpg"
 import RecentPosts from "../components/Blogs/RecentPostsFooter"
-import SingleBlogs from "../components/Blogs/SingleBlogs"
+/*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
 
-export default (props) => {
+export default ({data}) => {
   return (
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  		<SingleBlogs title="New Title"/>
+	  		
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
-				<h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>4 Benefits of Juicing and How it Helps Improve Sleep</h3>
+				<h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>{data.title}</h3>
 			</div>
 		</section>
 	
@@ -71,3 +71,21 @@ export default (props) => {
 	</>
   );
 };
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const blog_id = urlParams.get('id');
+
+export const query = graphql`
+  {
+    shopifyArticle(id: {eq: "{blog_id}"}) {
+      id
+      title
+      image {
+        src
+      }
+      publishedAt
+      content
+    }
+  }
+`
