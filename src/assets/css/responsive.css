@@ -1,19 +1,57 @@
 @media only screen and (max-width: 767px) {
 	body .container-large{
-		padding:0px 15px !important;
-	}
+		padding:0px 20px !important;
+}
+.threeColDescColumn {
+    text-align: center;
+    font-size: 0.6rem;
+}
+.approved p {
+    font-size: 14px !important;
+}
+.approved h4{
+    font-size: 1.4rem !important;
+}
+.mattresses h3{
+	font-size:1.4rem;
+	line-height:28px;
+}
+.five-key h3 {
+    font-size: 2.5rem;
+}
+.five-key .fixed-bottom p{
+    font-size:10px;
+}
+.mattresses .cta.right-btn.position-absolute{
+	left:0;
+}
+.cta.mt-0.pt-sm-0.pt-lg-0.pt-xl-0.position-absolute.left-btn {
+    left: 0;
+}
+.product-border-right{
+	border:none;
+}
+.animation-box .five-key {
+    width: 100%;
+}
 	.header-outer h2 {
 	    font-size: 46px;
 	}
 	.header-outer h3 {
 	    font-size: 22px;
+	    padding-left:0;
+	    text-align:center;
 	}
 	.header-outer .leads{
 	    font-size: 10px;
+	    padding-left: 0;
+	}
+	.banner-home .cta a{
+		padding-left:0;
 	}
 	.home-banner {
 	    	background-position-x: 10%;
-		height:140vh;
+		height:100vh;
 	}
 	.banner-home {
 		margin-top:140px;
@@ -76,7 +114,7 @@
 	  	font-size:0.6rem !important;
 	  }
 	  .shop-chir::after{
-		top:7px;
+		top:0px;
 		right:60px;
 	}
 	.blue-bg{
@@ -98,14 +136,39 @@
 	.our-customer {
     		padding: 15px 10px 15px 10px;
 	}
-	.v-price{
-		line-height:60px !important;
-		font-size:3rem!important;
+	
+	.collapse .nav-link{
+		padding:0;
 	}
+	.collapse li{
+		padding:10px 0px;
+	}
+	.active-style .extra-link li a{
+		font-size:10px;
+		margin-right:20px;
+	}
+	body .mattresses .cta.right-btn.position-absolute{
+		right:140px;
+	}
+	body .mattresses .cta.left-btn.position-absolute{
+	right:140px;
+}
+body .container-large{
+	padding:0px 20px;
+}
+.single-product-desc .cta span{
+	font-size:1.5rem;
+}
 	
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-	
+	body .container-large{
+	padding:0px 20px;
+}
+.mattresses h3{
+	font-size:1.4rem;
+	line-height:28px;
+}
 }
 
 /* Portrait */
@@ -122,6 +185,42 @@
   .extra-link li a {
     font-size: 10px !important;
 }
+.single-product-desc .cta span{
+	font-size:1.5rem;
+}
+.mattresses h3{
+	font-size:1.4rem;
+	line-height:28px;
+}
+.product-border-right{
+	border:none;
+}
+.mattresses .right-btn{
+	left:0 !important;
+}
+.mattresses .left-btn{
+	left:0;
+}
+.home-banner {
+
+    background-position-x: 10%;
+    height: 100vh;
+
+}
+.threeColDescColumn {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+body .mattresses .cta.right-btn.position-absolute{
+	right:140px;
+}
+body .mattresses .cta.left-btn.position-absolute{
+	right:140px;
+}
+body .container-large{
+	padding:0px 20px;
+}
 }
 
 
@@ -132,27 +231,57 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+	.single-product-desc .cta span{
+	font-size:1.5rem;
+}
   .home-banner {
-    height: 80vh;
+    height: 100vh;
     background-position:unset;
+}
+.animation-box .five-key {
+    width: 33%;
+}
+.header-outer h2 {
+
+    font-size: 60px;
+
+}
+.banner-home .leads {
+    padding-left: 0px;
+}
+.banner-home h3 {
+
+    font-size: 34px;
+    padding-left: 0px;
+
+}
+.banner-home .cta a {
+    padding-left: 0;
 }
   .facilities span{
   	font-size:0.6rem !important;
   }
   .card-bg .card-layer p{
-  	font-size:12px !important;
+  	font-size:11px !important;
   }
   .card-bg .card-layer h4{
-  	font-size:14px !important;
+  	font-size:20px !important;
   }
   .card-bg .card-layer .display-3{
   	font-size:3.5rem !important;
   }
   .banner-home {
-    transform: translate(-50%,0%);
+    transform: translate(-50%,-40%);
 }
 .banner-home .leads {
     font-size: 12px;
+}
+.active-style h2{
+		font-size:70px;
+		line-height:80px;
+	}
+	body .container-large{
+	padding:0px 20px;
 }
 }
 
@@ -162,10 +291,27 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	body .container-large{
+	padding:0px 20px;
+}
   
  .facilities span{
   	font-size:0.6rem !important;
   }
+  .collapse .nav-link{
+		padding:0;
+	}
+	.collapse li{
+		padding:10px 0px;
+	}
+
+	.active-style h2{
+		font-size:70px;
+		line-height:80px;
+	}
+	.single-product-desc .cta span{
+	font-size:1.5rem;
+}
   
 }
 
@@ -175,8 +321,17 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+  body .container-large{
+	padding:0px 20px;
+}
   .card-bg .card-layer h4{
   	font-size:20px !important;
   }
+  .banner-home {
+    -webkit-transform: translate(-50%,-0%);
+    transform: translate(-50%,-0%);
+}
+.animation-box .five-key {
+    width: 33.3%;
+}
 }
