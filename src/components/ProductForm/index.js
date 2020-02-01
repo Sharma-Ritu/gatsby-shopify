@@ -66,7 +66,6 @@ const ProductForm = ({ product }) => {
     event.preventDefault();
     addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity)
     console.log(event.target.href)
-    window.location.href = event.target.href
     return product.title
 
   }
