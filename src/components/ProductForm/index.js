@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react'
-import { navigate } from 'gatsby'
 import { Button, ButtonGroup } from 'reactstrap'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
