@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { navigate } from 'gatsby';
 import Client from 'shopify-buy'
 
 import Context from '~/context/StoreContext'
@@ -87,6 +88,7 @@ const ContextProvider = ({ children }) => {
               updateStore(prevState => {
                 return { ...prevState, checkout, adding: false }
               })
+              navigate('/cart/')
             })
         },
         removeLineItem: (client, checkoutID, lineItemID) => {

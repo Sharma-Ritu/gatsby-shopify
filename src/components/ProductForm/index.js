@@ -65,9 +65,7 @@ const ProductForm = ({ product }) => {
   const handleAddToCart = (event) => {
     event.preventDefault();
     addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity)
-    console.log(event.target.href)
     return product.title
-
   }
   
 
