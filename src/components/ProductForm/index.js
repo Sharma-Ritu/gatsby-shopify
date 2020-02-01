@@ -62,8 +62,7 @@ const ProductForm = ({ product }) => {
     setVariant({ ...selectedVariant })
   }
 
-  const handleAddToCart = (event) => {
-    event.preventDefault();
+  const handleAddToCart = () => {
     addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity)
     return product.title
   }
@@ -101,15 +100,7 @@ const ProductForm = ({ product }) => {
     currency: minVariantPrice.currencyCode,
     minimumFractionDigits: 2,
     style: 'currency',
-  }).format(variants[selectedVariantIndex].price)
-
-   const handleAddToCarts = () => {
-    
-    return product.title
-
-  }
-
-  
+  }).format(variants[selectedVariantIndex].price)  
   return (
     <>
       <React.Fragment key={options[0].id}>
@@ -135,15 +126,12 @@ const ProductForm = ({ product }) => {
      
       <p className="cta mt-0 mt-sm-5 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
         <span className="proxima-b color-primary float-left display-4 v-price" style={{lineHeight:'30px'}}>{price}</span>
-        <a className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
-        href="/cart"
+        <button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 add-to-cart"
         disabled={!available || adding}
         onClick={handleAddToCart}
-    
-
       >
         ADD TO CART
-      </a>
+      </button>
       </p>
      
       {!available && <p>This Product is out of Stock!</p>}
