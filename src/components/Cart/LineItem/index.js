@@ -43,7 +43,7 @@ const LineItem = props => {
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.variant.price}</span></span> 
       </td>
       <td className="product-quantity">
-      <input type="number" min={1} className="form-control" style={{maxWidth:'50px'}} defaultValue={line_item.quantity} onChange={handleQuantityChange} />
+      <input type="number" min={1} className="form-control" style={{maxWidth:'65px'}} defaultValue={line_item.quantity} onChange={handleQuantityChange} />
       </td>
       <td className="product-subtotal">
         <span>CAD&nbsp;<span>$&nbsp;</span><span>{line_item.quantity * line_item.variant.price}</span></span> 
