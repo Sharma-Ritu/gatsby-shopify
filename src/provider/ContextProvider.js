@@ -87,10 +87,8 @@ const ContextProvider = ({ children }) => {
             .then(checkout => {
               updateStore(prevState => {
                 return { ...prevState, checkout, adding: false }
-              }).then(() => {
-                console.log("here")
               })
-              //  navigate('/cart/')
+              navigate('/cart/')
             })
         },
         removeLineItem: (client, checkoutID, lineItemID) => {
