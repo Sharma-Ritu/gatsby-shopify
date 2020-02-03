@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Jumbotron, Row} from 'reactstrap';
+import {Container, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 
 
@@ -9,15 +10,11 @@ export default (props) => {
   return (
 	<>
 		<Header />
-		<section className="blue-bg">
-			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1">
-				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 space-2">Privacy Policy</h2>
-			</Jumbotron>
-		</section>
 		<section className="mb-0 privacy-policy py-3 py-sm-5">
-			<div className="container-large our-focus">
+			<Container className="our-focus">
 				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
-					<div className="col-12">
+					<div>
+						<h4 className="font-weight-bold erbaum-bold mt-0 mt-sm-2 mt-lg-4 mt-xl-4 py-2 py-sm-2 py-lg-5 py-xl-5 space-2 color-primary">Privacy Policy</h4>
 						<p className="filson-pro-reg color-secondary">Chirofoam<sup>TM</sup>Mattress Company (www.chirofoam.com) Privacy Policy</p>
 						<p className="filson-pro-reg color-secondary">This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally identifiable information’ (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>
 						<p className="filson-pro-reg color-secondary">What personal information do we collect from the people that visit our blog, website or app?</p>
@@ -120,10 +117,10 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary">info@chirofoam.com</p>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -134,11 +131,11 @@ export default (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>People love their Chirofoam™ mattress and you will too! </p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<Footer />
 	</>
