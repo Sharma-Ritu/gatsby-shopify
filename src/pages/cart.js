@@ -3,6 +3,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
 import SEO from '~/components/seo'
+import {Link} from "gatsby"
 //import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Cart from "../components/Cart"
@@ -29,13 +30,13 @@ export default (props) => {
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
 							Start your journey to a better sleep!
 						</Col>
@@ -55,7 +56,7 @@ export default (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
