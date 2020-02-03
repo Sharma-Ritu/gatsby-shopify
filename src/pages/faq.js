@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Link} from "gatsby"
 import {Container,Jumbotron, Row, Col, Button, Media, Card, CardBody, UncontrolledCollapse} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 
@@ -16,11 +16,11 @@ const FaqPage = (props) => {
 				<p className="space-4 proxima-r text-white m-auto text-center px-0 px-sm-5 px-lg-5 px-xl-5 pt-2 pt-sm-4" style={{width:'90%',fontSize:'26px'}}>If you require any more information about the Chirofoam™ mattress, feel free to call or email us.</p>
 			</Jumbotron>
 		</section>
-		<section className="mb-0 py-5 position-relative">
+		<section className="mb-0 py-5 mt-lg-3 mt-xl-3 position-relative">
 			<Container>
 				<Row>
-					<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100" style={{paddingBottom:'100px'}}>Frequently Asked Questions </h4>
-					<div className="q-list w-100">
+					<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100 pb-3 pb-sm-3 pb-lg-5 pb-xl-5">Frequently Asked Questions </h4>
+					<div className="q-list w-100 pt-0 pt-sm-0 pt-lg-2 pt-xl-2">
 						<ul className="list-unstyled pl-0 qs-ans">
 							<li>
 								<div id="toggler0" className="qs w-100 proxima-r">What is the difference in purchasing through you direct, or purchasing through a retail store?</div>
@@ -849,7 +849,7 @@ Cali King – 81 inches x 14.5 inches x 14.5 inches</p>
 			</div>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
-			<div className="container-fluid pb-0 pb-sm-5">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -864,8 +864,9 @@ Cali King – 81 inches x 14.5 inches x 14.5 inches</p>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
+		
 		<Footer />
 	</>
   );
