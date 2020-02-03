@@ -59,7 +59,7 @@ const ProductGrid = () => {
         <Row className="text-center no-gutters row-eq-height pb-5">
           {allShopifyProduct.edges
         ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
-          <Product key={id} className="col-6">
+          <Product key={id} className="col-12 col-sm-12 col-lg-6 col-xl-6">
           <div className="products position-relative">
             <div className="mr-0">
                 <Link to={`/product/${handle}/`}>
