@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media, Nav, NavItem, NavLink, TabContent, TabPane, Form} from 'reactstrap';
@@ -15,26 +16,26 @@ const Example = (props) => {
 	<>
 		<Header />
 		<section>
-			<div className="container-large">
+			<Container>
 				<Row>
 					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
 						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">Chirofoam™ Mattress Reviews </h2>
 						<p className="filson-pro-reg color-primary space-2 pt-5" style={{fontSize:'24px'}}>97% Customer Satisfaction Rate </p>
 					</Jumbotron>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section>
-			<div className="container-large">
+			<Container>
 				<Row>
 					<div className="review-inner">
 						
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="mb-0 py-5 position-relative">
-			<div className="container-fluid">
+			<Container>
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-block-ruby">
 						<NavItem>
@@ -73,11 +74,11 @@ const Example = (props) => {
            										<li className="border mb-4">
            											<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Chirofoam™ XF Mattress – Extra Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Mina Ho–</b> September 4, 2019</p>
@@ -86,11 +87,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Emma –</b> June 1, 2016</p>
@@ -99,11 +100,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Judy –</b> June 1, 2016</p>
@@ -112,11 +113,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Hardeep –</b> June 1, 2016</p>
@@ -125,11 +126,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-				                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Steven Wright–</b> June 2, 2016</p>
@@ -137,7 +138,7 @@ const Example = (props) => {
 			                   					</li>
            									</ul>
 			                   				<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-center">
-												<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">LOAD MORE</a>
+												<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">LOAD MORE</Link>
 											</p>
            								</div>
            							</Row>
@@ -151,13 +152,13 @@ const Example = (props) => {
 											<div className="col-12 col-sm-6 col-lg-6 col-xl-6 m-auto d-flex no-gutters select-mattress">
 												<Col className="col-6">
 													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
-														<a href="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam Premium Mattress</a>
+														<Link to="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam Premium Mattress</Link>
 														<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our Premium Mattresses</p>
 													</div>
 												</Col>
 												<Col className="col-6">
 													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
-														<a href="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam X-Firm mattress</a>
+														<Link to="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam X-Firm mattress</Link>
 														<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our X Firm Mattresses</p>
 													</div>
 												</Col>
@@ -168,14 +169,14 @@ const Example = (props) => {
 							</TabPane>
 						</TabContent>
 					</div>
-				</div>
+				</Container>
 		</section>
 		<section className="py-4 d-none">
-        <div className="container-large">
+        <Container>
             <div className="col-md-12">
                 <ul id="tabs" className="nav nav-tabs">
-                    <li className="nav-item"><a href="" data-target="#customer-revieew" data-toggle="tab" className="nav-link small color-secondary filson-pro-reg active">Customer Reviews</a></li>
-                    <li className="nav-item"><a href="" data-target="#leave-review" data-toggle="tab" className="nav-link small color-secondary filson-pro-reg">Leave A Review</a></li>
+                    <li className="nav-item"><Link to="" data-target="#customer-revieew" data-toggle="tab" className="nav-link small color-secondary filson-pro-reg active">Customer Reviews</Link></li>
+                    <li className="nav-item"><Link to="" data-target="#leave-review" data-toggle="tab" className="nav-link small color-secondary filson-pro-reg">Leave A Review</Link></li>
                 </ul>
                 <div id="tabsContent" className="tab-content border border-top-0">
                     <div id="customer-revieew" className="tab-pane fade active show m-auto pb-5" style={{width:'85%'}}>
@@ -200,11 +201,11 @@ const Example = (props) => {
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Chirofoam™ XF Mattress – Extra Firm</h4>
                    						<div className="br-widget br-readonly pt-2">
-	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 	                   						<div className="br-current-rating d-none">5</div>
                    						</div>
                    						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Mina Ho–</b> September 4, 2019</p>
@@ -213,11 +214,11 @@ const Example = (props) => {
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
                    						<div className="br-widget br-readonly pt-2">
-	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 	                   						<div className="br-current-rating d-none">5</div>
                    						</div>
                    						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Emma –</b> June 1, 2016</p>
@@ -226,11 +227,11 @@ const Example = (props) => {
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
                    						<div className="br-widget br-readonly pt-2">
-	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 	                   						<div className="br-current-rating d-none">5</div>
                    						</div>
                    						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Judy –</b> June 1, 2016</p>
@@ -239,11 +240,11 @@ const Example = (props) => {
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
                    						<div className="br-widget br-readonly pt-2">
-	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 	                   						<div className="br-current-rating d-none">5</div>
                    						</div>
                    						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Hardeep –</b> June 1, 2016</p>
@@ -252,11 +253,11 @@ const Example = (props) => {
                    					<li className="border mb-4">
                    						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
                    						<div className="br-widget br-readonly pt-2">
-	                   						<a href="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></a>
-	                   						<a href="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></a>
+	                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
+	                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
 	                   						<div className="br-current-rating d-none">5</div>
                    						</div>
                    						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Steven Wright–</b> June 2, 2016</p>
@@ -264,7 +265,7 @@ const Example = (props) => {
                    					</li>
                    				</ul>
                    				<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-center">
-									<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">LOAD MORE</a>
+									<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">LOAD MORE</Link>
 								</p>
                    			</div>
                    		</Row>
@@ -274,13 +275,13 @@ const Example = (props) => {
                         	<div className="w-50 m-auto d-flex no-gutters select-mattress">
                         		<Col sm="6">
                         			<div className="card card-body text-center border-0">
-                        				<a href="#" className="filson-pro-reg space-1">Chirofoam Premium Mattress</a>
+                        				<Link to="#" className="filson-pro-reg space-1">Chirofoam Premium Mattress</Link>
                         				<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our Premium Mattresses</p>
                         			</div>
                         		</Col>
                         		<Col sm="6">
                         			<div className="card card-body text-center border-0">
-                        				<a href="#" className="filson-pro-reg space-1">Chirofoam X-Firm mattress</a>
+                        				<Link to="#" className="filson-pro-reg space-1">Chirofoam X-Firm mattress</Link>
                         				<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our X Firm Mattresses</p>
                         			</div>
                         		</Col>
@@ -289,30 +290,30 @@ const Example = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Container>
     </section>
     <section>
-			<div className="container-large">
+			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</a>
+								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
 							Start your journey to a better sleep!
 						</Col>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
-			<div className="container-large pb-0 pb-sm-5">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -323,11 +324,11 @@ const Example = (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
     
 		<Footer />
