@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Jumbotron, Row, Col} from 'reactstrap';
+import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Chirofoam_Mattress_Quality_Materials from "../assets/img/Chirofoam-Mattress-Quality-Materials.png"
@@ -20,9 +21,9 @@ export default (props) => {
 				<p className="filson-pro-reg text-white pt-5 space-4 proxima-r text-white m-auto text-center px-0 px-sm-5 px-lg-5 px-xl-5 pt-sm-4" style={{fontSize:'26px'}}>We have your back!</p>
 			</Jumbotron>
 		</section>
-		<section className="mb-0 py-5 position-relative">
-			<div className="container-fluid">
-				<Row className="py-3 py-sm-5 mb-0 mb-sm-5 charity-inner text-center">
+		<section className="mb-0 py-3 position-relative">
+			<Container>
+				<Row className="py-3 mb-0 mb-sm-5 charity-inner text-center">
 					<Col sm="6" className="mb-3 mb-sm-5 mt-3 mt-sm-5 text-center">
 						<div className="text-center">
 							<img className="img-fluid" src={Chirofoam_Mattress_Sleep_Quality} alt="Chirofoam Mattress Sleep Quality" />
@@ -60,30 +61,30 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2">At Chirofoam we strongly believe in giving back to the less fortunate people in the world.  Many children in underdeveloped countries do not have the luxury of sleeping in a comfortable bed among other things.  We have partnered with the Sleeping Children Around The World Charity to donate 1 bed kit to children living in poverty for every Chirofoam™ mattress sold.</p>
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section>
-			<div className="container-fluid">
+			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</a>
+								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
 							Start your journey to a better sleep!
 						</Col>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
-			<div className="container-fluid pb-0 pb-sm-5">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -94,11 +95,11 @@ export default (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<Footer />
 	</>
