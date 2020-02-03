@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Link} from "gatsby"
 import {Container,Jumbotron, Row, Col, Button, Media, Form} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 
@@ -20,7 +20,7 @@ export default (props) => {
 			</div>
 		</section>
 		<section className="mb-0 py-5 position-relative">
-			<div className="container-large">
+			<Container>
 				<Row>
 					<Col sm="6" className="mb-3 mb-sm-5">
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 mb-0 text-uppercase">GET IN TOUCH</h5>
@@ -69,10 +69,10 @@ export default (props) => {
 						</Form>
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -87,7 +87,7 @@ export default (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
 
 		<Footer />
