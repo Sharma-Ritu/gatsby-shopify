@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Link} from "gatsby"
 import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import confirm from "../assets/img/confirm.png"
@@ -30,7 +30,7 @@ export default (props) => {
 			</Jumbotron>
 		</section>
 		<section className="mb-0 py-5 position-relative">
-			<div className="container-large">
+			<Container>
 				<Row className="charity-inner text-center">
 					<Col sm="6" className="mb-3 mb-sm-5">
 						<div className="charity-image text-center w-100 pb-2 pb-sm-5">
@@ -69,10 +69,10 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2">With all the conformity, support, alignment, and pressure relief a Chirofoam™ mattress offers, it is also extremely comfortable and easy for your body to adjust into. You will look forward to an incredibly comfortable nights sleep for many years to come in your new Chirofoam™ memory foam mattress. The majority of Chirofoam™ owners state that the Chirofoam™ mattress is the most comfortable mattress they have ever owned. Try one today with our 100 night risk free trial and see what a difference it can make for you.</p>
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section>
-			<div className="container-large">
+			<Container>
 				<Row className="text-center">
 					<h4 className="text-center lead-text-font color-primary erbaum-bold w-100 pb-2 pb-sm-5 text-uppercase">Chiropractor Recommended </h4>
 					<p className="filson-pro-reg color-secondary w-100 m-auto">Chirofoam™ Memory Foam Mattresses are proudly recommended by the following Chiropractors in the Greater Toronto Area and many more…</p>
@@ -119,10 +119,10 @@ export default (props) => {
 						</div>
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section>
-			<div className="container-large py-3 py-sm-5 py-lg-5 py-xl-5">
+			<Container className="py-3 py-sm-5 py-lg-5 py-xl-5">
 				<Row>
 					<h4 className="text-center lead-text-font color-primary erbaum-bold w-100 pb-2 pb-sm-5 text-uppercase">Chirofoam™ is trusted every night by: </h4>
 				</Row>
@@ -143,10 +143,10 @@ export default (props) => {
 						<p className="mb-2">✓  Thousands of customers across North America</p>
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section>
-			<div className="container-fluid">
+			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
@@ -163,10 +163,10 @@ export default (props) => {
 						</Col>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
-			<div className="container-fluid pb-0 pb-sm-5">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -181,7 +181,7 @@ export default (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
 
 		<Footer />
