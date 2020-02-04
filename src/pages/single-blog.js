@@ -9,6 +9,7 @@ import RecentPosts from "../components/Blogs/RecentPostsFooter"
 /*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
 
 export default ({data}) => {
+	console.log(data)
   return (
 	<>
 		<Header />
@@ -78,7 +79,7 @@ const blog_id = urlParams.get('id');
 
 export const query = graphql`
   {
-    shopifyArticle(id: {eq: $id}) {
+    shopifyArticle(id: {eq: "id"}) {
       id
       title
       image {
