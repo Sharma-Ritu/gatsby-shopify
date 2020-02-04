@@ -6,7 +6,7 @@ import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import girl from "../assets/img/girl.jpg"
 import RecentPosts from "../components/Blogs/RecentPostsFooter"
-import SingleArticle from "../components/Blogs/SingleArticle"
+import <SingleArticle data={"id":"hello"}/> from "../components/Blogs/SingleArticle"
 /*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
 
 export default ({data}) => {
@@ -14,7 +14,7 @@ export default ({data}) => {
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  		
+	  		<SingleArticle data={"id":"hello"}/>
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
