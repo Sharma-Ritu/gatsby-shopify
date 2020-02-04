@@ -8,7 +8,7 @@ const Blogs = ({ id }) => {
   const { allShopifyArticle } = useStaticQuery(
     graphql`
       query {
-         allShopifyArticle{
+         allShopifyArticle(sort: {fields: id, order: DESC}){
           edges {
             node {
               id
