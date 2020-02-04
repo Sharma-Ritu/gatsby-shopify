@@ -2,7 +2,6 @@ const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  console.log(createPage)
   return graphql(`
     {
       allShopifyProduct {
