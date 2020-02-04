@@ -35,7 +35,7 @@ const Blogs = ({ id }) => {
 
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
-            ? allShopifyArticle.edges.map(({ node: { id, url, title, content, excerpt, publishedAt, image } }) => (
+            ? allShopifyArticle.edges.map(({ node: { id, url, title, content, excerpt, publishedAt, image, order:[DESC] } }) => (
             <div className="blogs-section mb-5">
               <div className="featured-image position-relative overflow-hidden">
                 <Link to={`/article/${id}/`} state={{ fromFeed: true }}>
