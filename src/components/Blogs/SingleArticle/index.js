@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 const SingleArticle = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
 
 export const query = graphql`
-  articleQuery ($id: String!){
+  query articleQuery($id: String!){
     shopifyArticle(id: {eq: $id}) {
       id
       title
