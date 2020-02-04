@@ -36,7 +36,7 @@ const RecentPosts = ({ location, RecentPostsId }) => {
           <Col sm="3" className="" key={id}>
             <div className="recenet-post-inner border">
               <Link to={`/article/${id}/`} className="recent-post-image position-relative d-block" style={{height:'200px'}}>
-                <img src={image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+                <img src={image.src} alt="Blog" className="position-relative" style={{transition:'all 0.15s ease-in-out', width:'auto', height:'100%', left: '50%', transform: 'translateX(-50%)'}}/>
                 <div className="card-layer">
                 </div>
               </Link>
