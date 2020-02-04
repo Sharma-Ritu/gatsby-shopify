@@ -33,7 +33,7 @@ const RecentPosts = ({ location, RecentPostsId }) => {
           <Row>
           {allShopifyArticle.edges
             ? allShopifyArticle.edges.map(({ node: {id, url, title, content, excerpt, publishedAt, image } }) => (
-          <Col sm="3" className="">
+          <Col sm="3" className="" key={id}>
             <div className="recenet-post-inner border">
               <a href="#" className="recent-post-image position-relative d-block" style={{height:'200px'}}>
                 <img src={image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
