@@ -6,7 +6,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
 } from 'reactstrap';
@@ -24,7 +23,7 @@ const Header = (props) => {
 	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0'}}>Developed & manufactured in Canada</span>
       <Navbar color="faded" light expand="lg" className="bg-transparent pt-4 pt-sm-4 p-3 p-sm-0">
 		<div className="container d-sm-flex d-lg-flex d-xl-flex">
-			<NavbarBrand href="/"><img src={logo} alt="Chirofoam" width="200px"/></NavbarBrand>
+			<Link to="/" className="navbar-brand"><img src={logo} alt="Chirofoam" width="200px"/></Link>
 			<NavbarToggler onClick={toggle} />
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
