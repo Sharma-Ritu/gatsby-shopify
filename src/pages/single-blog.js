@@ -15,11 +15,11 @@ export default ({data}) => {
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  	<SingleBlogs />
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
 				<h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>{data.title}</h3>
+				<SingleBlogs />
 			</div>
 		</section>
 	
