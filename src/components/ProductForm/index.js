@@ -110,6 +110,7 @@ const ProductForm = ({ product }) => {
         <div>
             {options[0].values.map((value, index) => (
               <Button 
+                key={index}
                 value={value}
                 disabled={checkDisabled(options[0].name, value)}
                 onClick={() => setRSelected(value)} 
