@@ -9,7 +9,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
@@ -36,13 +35,13 @@ const Header = (props) => {
 				  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</Link>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/our-guarentees" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>OUR GUARENTEES</NavLink>
+				  <Link to="/our-guarentees/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>OUR GUARENTEES</Link>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/reviews" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>REVIEWS</NavLink>
+				  <Link to="/reviews/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>REVIEWS</Link>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/shop-chirofoam" className="space-1 p-sm-0 p-lg-0 p-xl-0 shop-chir position-relative" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</NavLink>
+				  <Link to="/shop-chirofoam/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</Link>
 				</NavItem>           
 			  </Nav>
 			</Collapse>
