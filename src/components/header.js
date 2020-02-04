@@ -1,5 +1,6 @@
 
 import React, {useState} from "react"
+import {Link} from "gatsby"
 import {
   Container,
   Collapse,
@@ -30,6 +31,7 @@ const Header = (props) => {
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 				<NavItem>
 				  <NavLink href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</NavLink>
+				  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</Link>
 				</NavItem>
 				<NavItem>
 				  <NavLink href="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</NavLink>
