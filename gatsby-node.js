@@ -2,6 +2,7 @@ const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
+  console.log(createPage)
   return graphql(`
     {
       allShopifyProduct {
@@ -13,6 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
+    console.log(result)
     result.data.allShopifyProduct.edges.forEach(({ node }) => {
       createPage({
         path: `/product/${node.handle}/`,
@@ -41,6 +43,7 @@ exports.createArticles = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
+    console.log(result)
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createArticle({
         path: `/article/${node.id}/`,
