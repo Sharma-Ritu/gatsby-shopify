@@ -2,21 +2,12 @@ const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const { createArticle } = actions
   return graphql(`
     {
       allShopifyProduct {
         edges {
           node {
             handle
-          }
-        }
-      }
-      allShopifyArticle {
-        edges {
-          node {
-            id
-            url
           }
         }
       }
@@ -33,17 +24,5 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    result.data.allShopifyArticle.edges.forEach(({ node }) => {
-      createArticle({
-        path: `/article/${node.id}/`,
-        component: path.resolve(`./src/templates/ArticlePage/index.js`),
-        context: {
-          // Data passed to context is available
-          // in article queries as GraphQL variables.
-          id: node.id,
-        },
-      })
-    })
-    
   })
 }
