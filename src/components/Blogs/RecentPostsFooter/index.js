@@ -35,7 +35,7 @@ const RecentPosts = ({ location, RecentPostsId }) => {
             ? allShopifyArticle.edges.map(({ node: {id, url, title, content, excerpt, publishedAt, image } }) => (
           <Col sm="3" className="" key={id}>
             <div className="recenet-post-inner border">
-              <Link to={`/article/${id}/`} className="recent-post-image position-relative d-block" style={{height:'200px'}}>
+              <Link to={`/article/${id}/`} className="recent-post-image position-relative overflow-hidden d-block" style={{height:'200px'}}>
                 <img src={image.src} alt="Blog" className="position-relative" style={{transition:'all 0.15s ease-in-out', width:'auto', height:'100%', left: '50%', transform: 'translateX(-50%)'}}/>
                 <div className="card-layer">
                 </div>
