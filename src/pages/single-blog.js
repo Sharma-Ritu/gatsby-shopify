@@ -9,6 +9,7 @@ import RecentPosts from "../components/Blogs/RecentPostsFooter"
 /*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
 
 export default ({data}) => {
+	console.log(data)
   return (
 	<>
 		<Header />
