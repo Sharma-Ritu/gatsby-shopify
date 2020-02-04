@@ -26,3 +26,31 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 }
+
+exports.createArticles = ({ graphql, actions }) => {
+  const { createArticle } = actions
+  return graphql(`
+    {
+      allShopifyArticle {
+        edges {
+          node {
+            id
+            url
+          }
+        }
+      }
+    }
+  `).then(result => {
+    result.data.allShopifyArticle.edges.forEach(({ node }) => {
+      createArticle({
+        path: `/article/${node.id}/`,
+        component: path.resolve(`./src/templates/ArticlePage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          id: node.id,
+        },
+      })
+    })
+  })
+}
