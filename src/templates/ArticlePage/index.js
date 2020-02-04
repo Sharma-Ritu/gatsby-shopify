@@ -17,7 +17,7 @@ const ArticlePage = ({ data }) => {
     </section>
     <section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
       <div className="container-large">
-        <h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>{data.title}</h3>
+        <h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>{article.title}</h3>
       </div>
     </section>
   
