@@ -10,8 +10,8 @@ const urlParams = new URLSearchParams(queryString);
 const SingleBlogs = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
 
 export const query = graphql`
-  {
-    shopifyArticle(id: {eq: {blog_id}}) {
+  query($id: String!) {
+    shopifyArticle(id: {eq: $id}) {
       id
       title
       image {
