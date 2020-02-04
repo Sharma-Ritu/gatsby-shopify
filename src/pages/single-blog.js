@@ -6,6 +6,7 @@ import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import girl from "../assets/img/girl.jpg"
 import RecentPosts from "../components/Blogs/RecentPostsFooter"
+import SingleArticle from "../components/Blogs/SingleArticle"
 /*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
 
 export default ({data}) => {
