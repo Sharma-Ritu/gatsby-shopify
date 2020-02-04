@@ -7,7 +7,7 @@ const RecentPosts = ({ location, RecentPostsId }) => {
   const { allShopifyArticle } = useStaticQuery(
     graphql`
       query {
-         allShopifyArticle {
+         allShopifyArticle (sort: {order: DESC, fields: publishedAt}){
           edges {
             node {
               id
