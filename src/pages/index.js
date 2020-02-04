@@ -36,7 +36,7 @@ export default (props) => {
 							Try the world-class rated mattress with free continetal USA and Caanada-wide delivery, and a 100-night sleep trial."
 						</p>
 						<p className="cta mt-0 pt-sm-2 pt-lg-2 pt-xl-2">
-							<a href="#" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </a>
+							<Link to="#" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </Link>
 						</p>
 					</Col>
 					<Col sm="12" className="col-lg-6 col-xl-6">
@@ -127,7 +127,7 @@ export default (props) => {
 							BODY SUPPORT BIO FOAM CORE
 						</p>
 						<p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 mb-sm-2 ml-3">
-							<a href="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </a>
+							<Link to="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
 						</p>
 					</Col>
 				</Row>
@@ -142,7 +142,7 @@ export default (props) => {
 					<Col sm="12" className="col-lg-6 col-xl-6 product-border-right pr-0 pr-sm-2 position-relative">
 						<div className="pr-0 pr-lg-5 pr-xl-5 mr-0 mr-sm-4">
 							<img src={product1} alt="Product1" width="100%" />
-							<a href="/product/the-original-chirofoam™-mattress-luxury-firm/"><h3 className="text-left text-sm-left text-lg-right text-xl-right color-primary erbaum-bold pl-0">THE ORIGINAL CHIROFOAM™ MATTRESS - LUXURY FIRM</h3></a>
+							<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/"><h3 className="text-left text-sm-left text-lg-right text-xl-right color-primary erbaum-bold pl-0">THE ORIGINAL CHIROFOAM™ MATTRESS - LUXURY FIRM</h3></Link>
 							<p className="text-left text-sm-left text-lg-right text-xl-right color-primary proxima-eb space-1 pt-1 mb-0">
 								The Original Chirofoam Memory Foam Mattress is designed to increase muscle recovery to help keep you performing at your best. Made in Toronto, ON. 
 							</p>
@@ -160,14 +160,14 @@ export default (props) => {
 							</p><br />
 						</div>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 position-absolute left-btn">
-							<a href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
+							<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</Link>
 						</p>
 					</Col>
 					
-					<Col sm="12" className="col-lg-6 col-xl-6 pl-0 pl-sm-0 pl-lg-2 pl-xl-2 position-relative mt-sm-5">
+					<Col sm="12" className="col-lg-6 col-xl-6 pl-0 pl-sm-0 pl-lg-2 pl-xl-2 position-relative mt-sm-5 mt-lg-0 mt-xl-0">
 						<div className="pl-0 pl-sm-0 pl-lg-5 pl-xl-5 ml-0 ml-sm-0 ml-lg-4 ml-xl-4">
 							<img src={product2} alt="Product2" width="100%" />
-							<a href="/product/the-chirofoam™-xf-mattress-extra-firm/"><h3 className="color-primary erbaum-bold pr-0">THE CHIROFOAM™ XF MATTRESS - EXTRA FIRM</h3></a>
+							<Link to="/product/the-chirofoam™-xf-mattress-extra-firm/"><h3 className="color-primary erbaum-bold pr-0">THE CHIROFOAM™ XF MATTRESS - EXTRA FIRM</h3></Link>
 							<p className="text-left color-primary proxima-eb space-1 pt-1 mb-0">
 								The Chirofoam XF Memory Foam Mattress is an extra firm designed maximum back support. Developed for indiduals and atheletes who suffer from back pain and require the greatest amount of stiffness for efficient recovery.
 							</p>
@@ -185,7 +185,7 @@ export default (props) => {
 							</p><br/>
 						</div>
 						<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 position-absolute right-btn">
-							<a href="/product/the-chirofoam™-xf-mattress-extra-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
+							<Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</Link>
 						</p>
 					</Col>
 				</Row>
@@ -203,7 +203,7 @@ export default (props) => {
 							<h4 className="approved-title text-white erbaum-bold">CHIROPRACTOR APPROVED</h4>
 							<p className="proxima-b space-1 p-0 pt-sm-1" style={{fontSize:'19px',lineHeight:'29px'}}>Chirofoam<sup style={{fontSize:'8px'}}>TM</sup> mattresses are designed by Chiropractors to improve posture, and provide incredible pressure relief. Your back will thank you.</p>
 							<p className="cta mt-3 mt-sm-0 mt-lg-0 mt-xl-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </a>
+								<Link to="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
 							</p>
 						</div>
 						
@@ -245,7 +245,7 @@ export default (props) => {
 								</Media>
 							</div>
 							<p className="cta mt-3 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0">
-								<a href="/reviews/" className="btn-cta text-white erbaum-bold space-1">READ CUSTOMER REVIEWS</a>
+								<Link to="/reviews/" className="btn-cta text-white erbaum-bold space-1">READ CUSTOMER REVIEWS</Link>
 							</p>
 						</div>
 					</Col>
@@ -260,7 +260,7 @@ export default (props) => {
 							<h5 className="filson-pro-reg color-primary pt-2" style={{fontSize:'14px'}}>CUSTOMER REVIEW</h5>
 							<p className="text-left proxima-eb space-1 pt-1 mb-0" style={{color:'#808080'}}><span className="color-primary">Chirofoam mattresses are designed by Chiropractors</span> to improve posture, and provide incredible pressure relief. Your back will thank you.</p>
 							<p className="cta mt-3 pt-sm-5 pt-lg-5 pt-xl-5 position-absolute">
-								<a href="/customer-service/" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </a>
+								<Link to="/customer-service/" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </Link>
 							</p>
 						</div>
 					</Col>
