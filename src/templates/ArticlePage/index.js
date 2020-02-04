@@ -24,12 +24,12 @@ const ArticlePage = ({ data }) => {
           <Col sm="12" className="align-middle">
               
             <div className="featured-image position-relative overflow-hidden">
-              <img src={article.image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
+              <img src={article.image.src} className="img-fluid" alt={article.image.altText} style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
             </div>
             <h2 className="mb-3 color-primary text-uppercase erbaum-bold pt-4 space-1">{article.title}</h2>
             <Row>
               <Col sm="6">
-                <p style={{fontSize:'12px'}}>By <span>Chirofoam</span> In <span>Sleep</span> Posted <span>June 15, 2019</span></p>
+                <p style={{fontSize:'12px'}}>By <span>{article.author.firstName}</span> In <span>{article.blog.title}</span> Posted <span>{article.publishedAt}</span></p>
               </Col>
               <Col sm="6" className="text-right" style={{display:'ruby'}}>
                 <span style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></span>
@@ -67,9 +67,17 @@ export const query = graphql`
       title
       image {
         src
+        altText
       }
-      publishedAt
+      author {
+        firstName
+      }
+      blog {
+        title
+      }
+      publishedAt(formatString: "MMMM DD, YYYY")
       content
+      contentHtml
     }
   }
 `
