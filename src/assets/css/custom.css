@@ -594,3 +594,64 @@ body .navbar{
 .recent-post-image:hover .card-layer{
 	opacity:0.85;
 }
+.take-test-tab .left-content input{
+	display:none;
+}
+.take-test-tab .left-content h3{
+	color:#9b0235;
+}
+
+.take-test-tab .left-content label {
+	cursor: pointer;
+	display: block;
+	padding: 1rem 1rem 1rem 3rem;
+	position: relative;
+	border: 1px solid #f7f7f7 !important;
+	border-radius: 5px;
+	margin-bottom: 9px;
+	background: white;
+	whitespace: no-wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease;
+}
+.take-test-tab .left-content input:checked + label {
+	color: #9b0235;
+	font-size: 22px;
+	background-color: #fdfdfd;
+	font-weight:700;
+	font-family:"filson-pro";
+	box-shadow: 0.5px 2.5px 4.5px #c7c7c7;
+	border-radius: 5px;
+	margin-bottom: 9px;
+}
+#take-test #tabs li.nav-item {
+	background-color: #21366e;
+	border: none;
+	text-align: center;
+	display: inline-block;
+	color: #fff !important;
+	width: 16.66%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+#take-test #tabs li.nav-item a{
+	border:none !important;
+}
+#take-test #tabs li.nav-item a.active{
+	background-color:#ba2154 !important;
+	color:#fff !important;
+}
+#take-test #tabs li.nav-item a:hover{
+	color:#fff !important;
+}
+#take-test #tabs li.nav-item a span {
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    text-transform:uppercase;
+}
+
