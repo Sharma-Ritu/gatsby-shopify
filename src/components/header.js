@@ -9,8 +9,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap'
-import {Link} from "gatsby"
+} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
 
@@ -30,19 +29,19 @@ const Header = (props) => {
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 				<NavItem>
-				  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</Link>
+				  <NavLink href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</NavLink>
 				</NavItem>
 				<NavItem>
-				  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</Link>
+				  <NavLink href="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</NavLink>
 				</NavItem>
 				<NavItem>
-				  <Link to="/our-guarentees" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>OUR GUARENTEES</Link>
+				  <NavLink href="/our-guarentees" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>OUR GUARENTEES</NavLink>
 				</NavItem>
 				<NavItem>
-				  <Link to="/reviews" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>REVIEWS</Link>
+				  <NavLink href="/reviews" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>REVIEWS</NavLink>
 				</NavItem>
 				<NavItem>
-				  <Link to="/shop-chirofoam" className="space-1 p-sm-0 p-lg-0 p-xl-0 shop-chir position-relative" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</Link>
+				  <NavLink href="/shop-chirofoam" className="space-1 p-sm-0 p-lg-0 p-xl-0 shop-chir position-relative" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</NavLink>
 				</NavItem>           
 			  </Nav>
 			</Collapse>
