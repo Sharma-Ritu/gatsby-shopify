@@ -14,7 +14,6 @@ export default ({data}) => {
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  		<SingleArticle />
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
@@ -36,9 +35,9 @@ export default ({data}) => {
 								<p style={{fontSize:'12px'}}>By <span>Chirofoam</span> In <span>Sleep</span> Posted <span>June 15, 2019</span></p>
 							</Col>
 							<Col sm="6" className="text-right" style={{display:'ruby'}}>
-								<p style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i class="fa fa-share-alt"></i><span className="pl-2">2</span></p>
-								<p className="px-2" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i class="fa fa-envelope"></i><span className="pl-2">2</span></p>
-								<p className="mb-0" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i class="fa fa-heart"></i><span className="pl-2">2</span></p>
+								<p style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></p>
+								<p className="px-2" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-envelope"></i><span className="pl-2">2</span></p>
+								<p className="mb-0" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-heart"></i><span className="pl-2">2</span></p>
 							</Col>
 						</Row>	
 						<Row className="mt-3">
