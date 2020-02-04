@@ -6,14 +6,16 @@ import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import girl from "../assets/img/girl.jpg"
 import RecentPosts from "../components/Blogs/RecentPostsFooter"
-/*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
+import SingleBlogs from "../components/Blogs/SingleBlogs"
+
+const blog_id = urlParams.get('id');
 
 export default ({data}) => {
   return (
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  		
+	  	<SingleBlogs />
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
