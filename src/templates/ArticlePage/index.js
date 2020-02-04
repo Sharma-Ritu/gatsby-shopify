@@ -12,7 +12,8 @@ const ArticlePage = ({ data }) => {
   console.log(article);
   return (
     <>
-
+    <Header />
+    <Footer />
     </>
   )
 }
