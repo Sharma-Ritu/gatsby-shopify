@@ -11,6 +11,14 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      allShopifyArticle {
+        edges {
+          node {
+            id
+            url
+          }
+        }
+      }
     }
   `).then(result => {
     console.log(result)
@@ -22,6 +30,17 @@ exports.createPages = ({ graphql, actions }) => {
           // Data passed to context is available
           // in page queries as GraphQL variables.
           handle: node.handle,
+        },
+      })
+    })
+    result.data.allShopifyArticle.edges.forEach(({ node }) => {
+      createArticle({
+        path: `/article/${node.id}/`,
+        component: path.resolve(`./src/templates/ArticlePage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          id: node.id,
         },
       })
     })
