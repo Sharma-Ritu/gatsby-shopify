@@ -14,7 +14,7 @@ export default ({data}) => {
 	<>
 		<Header />
 		<section className="single-blog py-5">
-	  		<SingleArticle data={"id":"hello"}/>
+	  		<SingleArticle />
 	  	</section>
 		<section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
 			<div className="container-large">
