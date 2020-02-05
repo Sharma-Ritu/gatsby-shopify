@@ -42,7 +42,7 @@ const ArticlePage = ({ data }) => {
                 <div
                   className="filson-pro-reg"
                   style={{color:'rgba(0,0,0,0.5)', fontSize:'13px', lineHeight:'30px'}}
-                  dangerouslySetInnerHTML={{ __html: article.contentHtml.replace(/<(\w+)\s*.*?>\s*?</\1>/g, "")}}
+                  dangerouslySetInnerHTML={{ __html: article.contentHtml}}
                 />
               </Col>
             </Row>
