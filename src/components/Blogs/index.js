@@ -52,16 +52,16 @@ const Blogs = ({ id }) => {
                   <img src={image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
                   <div className="card-layer">
                     <div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
-                      <i class="fa fa-image" style={{fontSize:'50px', color:'#fff'}}></i>
+                      <i className="fa fa-image" style={{fontSize:'50px', color:'#fff'}}></i>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className="blogs-content d-flex mt-4 pb-4">
                 <Col sm="1" className="blog-icon text-center border-right pr-0 d-table">
-                  <p style={{color:'rgba(0,0,0,0.4)'}}><i class="fa fa-share-alt"></i><span className="d-block">2</span></p>
-                  <p className="border-top border-bottom py-2" style={{color:'rgba(0,0,0,0.4)'}}><i class="fa fa-envelope"></i><span className="d-block">2</span></p>
-                  <p className="mb-0" style={{color:'rgba(0,0,0,0.4)'}}><i class="fa fa-heart"></i><span className="d-block">2</span></p>
+                  <p style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-share-alt"></i><span className="d-block">2</span></p>
+                  <p className="border-top border-bottom py-2" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-envelope"></i><span className="d-block">2</span></p>
+                  <p className="mb-0" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-heart"></i><span className="d-block">2</span></p>
                 </Col>
                 <Col sm="11" className="pl-4">
                   <p style={{fontSize:'12px'}}>By <span>{author.name}</span> In <span>{blog.title}</span> Posted <span> {publishedAt}</span></p>
