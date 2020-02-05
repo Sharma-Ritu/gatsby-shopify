@@ -11,12 +11,21 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allShopifyArticle {
+      allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 10, skip: 0) {
         edges {
           node {
             id
             url
           }
+        }
+        totalCount
+        pageInfo {
+          perPage
+          pageCount
+          itemCount
+          hasPreviousPage
+          hasNextPage
+          currentPage
         }
       }
     }
@@ -34,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
-        path: `/blogs/${node.id}/`,
+        path: `/blog/${node.id}/`,
         component: path.resolve(`./src/templates/ArticlePage/index.js`),
         context: {
           // Data passed to context is available
@@ -43,28 +52,9 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-  })
-}
-exports.createPagination = ({ graphql, actions }) => {
-  const { createPage } = actions
-  return graphql(`
-    {
-      allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 3, skip: 0) {
-        pageInfo {
-          perPage
-          pageCount
-          itemCount
-          hasPreviousPage
-          hasNextPage
-          currentPage
-        }
-      }
-    }
-  `).then(result => {
-    console.log(result.data);
     [...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
       createPage({
-        path: `/blog/page/${i+1}/`,
+        path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
         context: {
           // Data passed to context is available

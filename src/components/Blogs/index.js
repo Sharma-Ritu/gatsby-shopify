@@ -56,7 +56,7 @@ const Blogs = ({ id }) => {
             ? allShopifyArticle.edges.map(({node: { id, url, title, content, excerpt, publishedAt, image, author, blog}}, index) => (
             <div className="blogs-section mb-4" key={id}>
               <div className="featured-image position-relative overflow-hidden">
-                <Link to={`/blogs/${id}/`} state={{ fromFeed: true }}>
+                <Link to={`/blog/${id}/`} state={{ fromFeed: true }}>
                   <img src={image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
                   <div className="card-layer">
                     <div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
@@ -73,10 +73,10 @@ const Blogs = ({ id }) => {
                 </Col>
                 <Col sm="11" className="pl-4">
                   <p style={{fontSize:'12px'}}>By <span>{author.name}</span> In <span>{blog.title}</span> Posted <span> {publishedAt}</span></p>
-                  <h3 className="mb-3"><Link to={`/blogs/${id}/`} state={{ fromFeed: true }} className="text-uppercase erbaum space-1" style={{color:'#000', fontSize:'24px'}}>{title}</Link></h3>
+                  <h3 className="mb-3"><Link to={`/blog/${id}/`} state={{ fromFeed: true }} className="text-uppercase erbaum space-1" style={{color:'#000', fontSize:'24px'}}>{title}</Link></h3>
                   <p className="filson-pro-reg" style={{fontSize:'14px'}}>{excerpt}</p>
                   <p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 w-100">
-                    <Link to={`/blogs/${id}/`} state={{ fromFeed: true }} className="btn-cta color-primary erbaum-bold space-1">READ MORE</Link>
+                    <Link to={`/blog/${id}/`} state={{ fromFeed: true }} className="btn-cta color-primary erbaum-bold space-1">READ MORE</Link>
                   </p>
                 </Col>
               </div>
