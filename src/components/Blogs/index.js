@@ -58,10 +58,10 @@ const Blogs = ({ id }) => {
           // Data passed to context is available
           // in article queries as GraphQL variables.
           limit: 10
-        }
+        },
       })*/
     })
-  console.log(pageInfo, pages);
+  console.log(pageInfo);
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
