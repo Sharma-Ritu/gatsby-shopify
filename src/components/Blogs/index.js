@@ -44,7 +44,8 @@ const Blogs = ({ id }) => {
     e.preventDefault();
     console.log(e);
   }
-  console.log(allShopifyArticle.pageInfo, allShopifyArticle.pageInfo.currentPage);
+  const pageInfo = allShopifyArticle.pageInfo;
+  console.log(pageInfo, pageInfo.currentPage);
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
@@ -81,17 +82,28 @@ const Blogs = ({ id }) => {
             {(allShopifyArticle.pageInfo.pageCount > 1) &&
               <Pagination aria-label="Page navigation">
                 <PaginationItem disabled={!allShopifyArticle.pageInfo.hasPreviousPage}>
-                  <PaginationLink previous href={allShopifyArticle.pageInfo.currentPage - 1} onClick={e => handlePagination(e)} />
+                  <PaginationLink
+                    previous
+                    href={"#" + (allShopifyArticle.pageInfo.currentPage - 1)}
+                    onClick={e => handlePagination(e, (allShopifyArticle.pageInfo.currentPage - 1))}
+                  />
                 </PaginationItem>
                 {[...Array(allShopifyArticle.pageInfo.pageCount)].map((page, i) => 
                   <PaginationItem active={(i+1) === allShopifyArticle.pageInfo.currentPage} key={i}>
-                    <PaginationLink onClick={e => handlePagination(e)} href={i + 1}>
+                    <PaginationLink
+                      onClick={e => handlePagination(e)}
+                      href={"#" + (i + 1)}
+                    >
                       {i + 1}
                     </PaginationLink>
                   </PaginationItem>
                 )}
                 <PaginationItem disabled={!allShopifyArticle.pageInfo.hasNextPage}>
-                  <PaginationLink next href={allShopifyArticle.pageInfo.currentPage + 1} onClick={e => handlePagination(e)} />
+                  <PaginationLink
+                    next
+                    href={"#" + (allShopifyArticle.pageInfo.currentPage + 1)}
+                    onClick={e => handlePagination(e)}
+                  />
                 </PaginationItem>
               </Pagination>
             }
