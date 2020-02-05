@@ -74,7 +74,7 @@ exports.createPagination = ({ graphql, actions }) => {
     console.log(result.data.allShopifyArticle);
     const pageInfo = result.data.allShopifyArticle.pageInfo;
 
-    [...Array(pageInfo.pageCount)].map((page, i) => {
+    /*[...Array(pageInfo.pageCount)].map((page, i) => {
       createPage({
         path: `/blogs/page/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
@@ -84,7 +84,7 @@ exports.createPagination = ({ graphql, actions }) => {
           limit: pageInfo.perPage,
         },
       })
-    })
+    })*/
     /*
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
