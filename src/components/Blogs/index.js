@@ -49,8 +49,7 @@ const Blogs = ({ id }) => {
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
-  const pages = () => {
-    [...Array(pageInfo.pageCount)].map((page, i) => {
+  const pages = [...Array(pageInfo.pageCount)].map((page, i) => {
       console.log(i);
       /*createPage({
         path: `/blogs/${i+1}/`,
@@ -62,8 +61,7 @@ const Blogs = ({ id }) => {
         },
       })*/
     })
-  }
-  console.log(pageInfo, [...Array(allShopifyArticle.totalCount)], (allShopifyArticle.totalCount/perPage));
+  console.log(pageInfo, pages, Math.ceil(allShopifyArticle.totalCount/perPage));
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
