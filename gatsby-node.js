@@ -11,7 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allShopifyArticle{
+      allShopifyArticle {
         edges {
           node {
             id
@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
-        path: `/blog/${node.id}/`,
+        path: `/article/${node.id}/`,
         component: path.resolve(`./src/templates/ArticlePage/index.js`),
         context: {
           // Data passed to context is available
@@ -44,18 +44,5 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    /*
-    [...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
-      createPage({
-        path: `/blogs/${i+1}/`,
-        component: path.resolve(`./src/templates/BlogPage/index.js`),
-        context: {
-          // Data passed to context is available
-          // in article queries as GraphQL variables.
-          limit: result.data.allShopifyArticle.pageInfo.perPage
-        },
-      })
-    })
-    */
   })
 }
