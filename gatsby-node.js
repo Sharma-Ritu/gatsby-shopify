@@ -45,7 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    createPage({
+    /*createPage({
       path: `/blogs/2/`,
       component: path.resolve(`./src/templates/BlogPage/index.js`),
       context: {
@@ -53,9 +53,9 @@ exports.createPages = ({ graphql, actions }) => {
         // in article queries as GraphQL variables.
         skip: 10,
       },
-    })
+    })*/
     paginate.forEach((page, i) => {
-      /*
+      
       createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
@@ -65,7 +65,7 @@ exports.createPages = ({ graphql, actions }) => {
           skip: (10*i)
         },
       })
-      */
+      
     })
   })
 }
