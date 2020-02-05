@@ -18,7 +18,6 @@ exports.createPages = ({ graphql, actions }) => {
             url
           }
         }
-        totalCount
       }
     }
   `).then(result => {
