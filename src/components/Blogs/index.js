@@ -42,9 +42,6 @@ const Blogs = ({ id }) => {
   )
 
   return (
-   
-    
-
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
             ? allShopifyArticle.edges.map(({ node: { id, url, title, content, excerpt, publishedAt, image, author, blog } }) => (
@@ -79,8 +76,6 @@ const Blogs = ({ id }) => {
         : <p>No Products found!</p>}
             
           </Col>
-          
-       
   )
 }
 
