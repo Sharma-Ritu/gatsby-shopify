@@ -11,6 +11,7 @@ const ArticlePage = ({ data }) => {
   console.log(article);
   return (
     <>
+    <SEO title={article.title} description={article.excerpt} />
     <Header />
     <section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
       <div className="container-large">
@@ -76,7 +77,7 @@ export const query = graphql`
         title
       }
       publishedAt(formatString: "MMMM DD, YYYY")
-      content
+      excerpt
       contentHtml
     }
   }
