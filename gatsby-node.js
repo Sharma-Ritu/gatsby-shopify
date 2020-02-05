@@ -71,11 +71,11 @@ exports.createPagination = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    console.log(result.data);
+    console.log(result.data.allShopifyArticle);
     /*
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
-        path: `/blogs/${node.id}/`,
+        path: `/blogs/page/${node.id}/`,
         component: path.resolve(`./src/templates/ArticlePage/index.js`),
         context: {
           // Data passed to context is available
