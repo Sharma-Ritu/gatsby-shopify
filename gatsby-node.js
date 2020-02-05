@@ -19,16 +19,6 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 3, skip: 0) {
-        pageInfo {
-          perPage
-          pageCount
-          itemCount
-          hasPreviousPage
-          hasNextPage
-          currentPage
-        }
-      }
     }
   `).then(result => {
     result.data.allShopifyProduct.edges.forEach(({ node }) => {
@@ -71,11 +61,22 @@ exports.createPagination = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    console.log(result);
+    console.log(result.data);
+    /*[...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
+      createPage({
+        path: `/blogs/page/${i+1}/`,
+        component: path.resolve(`./src/templates/BlogPage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          limit: result.data.allShopifyArticle.pageInfo.perPage
+        },
+      })
+    })*/
     /*
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
-        path: `/blogs/${node.id}/`,
+        path: `/blogs/page/${node.id}/`,
         component: path.resolve(`./src/templates/ArticlePage/index.js`),
         context: {
           // Data passed to context is available
