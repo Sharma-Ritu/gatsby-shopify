@@ -5,10 +5,10 @@ const BlogPagination = (props) => {
   console.log(props.pageInfo);
   return (
     <Pagination aria-label="Page navigation">
-      <PaginationItem {props.pageInfo.hasPreviousPage && disabled}>
+      <PaginationItem disabled={props.pageInfo.hasPreviousPage}>
         <PaginationLink first href="#" />
       </PaginationItem>
-      <PaginationItem {props.pageInfo.hasPreviousPage && disabled}>
+      <PaginationItem disabled={props.pageInfo.hasPreviousPage}>
         <PaginationLink previous href="#" />
       </PaginationItem>
       <PaginationItem active>
