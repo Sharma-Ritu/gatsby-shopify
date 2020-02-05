@@ -45,6 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
     [...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
+      /*
       createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
@@ -54,6 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
           limit: 10
         },
       })
+      */
     })
   })
 }
