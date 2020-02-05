@@ -54,9 +54,9 @@ exports.createPages = ({ graphql, actions }) => {
         skip: 10,
       },
     })
-    [...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
+    /*[...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
 
-    })
+    })*/
     /*[...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
       
       createPage({
