@@ -54,8 +54,8 @@ exports.createPages = ({ graphql, actions }) => {
         skip: 10,
       },
     })
-    paginate.map((page, i) => {
-      /*
+    /*paginate.map((page, i) => {
+      
       createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
@@ -65,7 +65,7 @@ exports.createPages = ({ graphql, actions }) => {
           skip: (10*i)
         },
       })
-      */
-    })
+      
+    })*/
   })
 }
