@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container, Row, Col, Button, Media} from 'reactstrap';
@@ -40,64 +41,64 @@ export default (props) => {
 						<div className="row text-center text-lg-left no-gutters">
 
 					    <div className="col-lg-2 col-md-3 col-3 mx-2">
-					      <a href="#" className="d-block mb-4 h-100">
+					      <Link to="#" className="d-block mb-4 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol1} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-2">
-					      <a href="#" className="d-block mb-4 h-100">
+					      <Link to="#" className="d-block mb-4 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol2} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol3} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol4} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol5} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol6} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol7} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol8} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol9} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol1} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					     <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-42h-100">
+					      <Link to="#" className="d-block mb-42h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol3} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol4} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					  </div>
 					</Col>
@@ -114,7 +115,7 @@ export default (props) => {
 								<Link to="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY12</span></Link>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
-								<Link to="/return-policy/"><img src={van} alt="van" width="60px" className="mb-3"/></a>
+								<Link to="/return-policy/"><img src={van} alt="van" width="60px" className="mb-3"/></Link>
 								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <Link className="color-primary" to="/return-policy/">EASY RETURNS</Link></span>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
