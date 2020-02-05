@@ -40,18 +40,6 @@ const Blogs = ({ id }) => {
       }
     `
   )
-  [...Array((allShopifyArticle.totalCount/10))].map((page, i) => {
-    console.log(i);
-  /*    createPage({
-        path: `/blogs/${i+1}/`,
-        component: path.resolve(`./src/templates/BlogPage/index.js`),
-        context: {
-          // Data passed to context is available
-          // in article queries as GraphQL variables.
-          limit: 10
-        },
-      })*/
-  })
   const handlePagination = (e, toPage) => {
     e.preventDefault();
     console.log(toPage);
@@ -61,7 +49,11 @@ const Blogs = ({ id }) => {
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
 
-  console.log(pageInfo, pageInfo.currentPage);
+  console.log(pageInfo, pageInfo.currentPage,
+      [...Array((allShopifyArticle.totalCount/10))].map((page, i) => {
+        console.log(i);
+      })
+    );
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
