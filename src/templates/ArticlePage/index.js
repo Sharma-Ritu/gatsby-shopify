@@ -39,7 +39,11 @@ const ArticlePage = ({ data }) => {
             </Row>  
             <Row className="mt-3">
               <Col sm="9">
-                <p className="filson-pro-reg" style={{color:'rgba(0,0,0,0.5)', fontSize:'13px', lineHeight:'30px'}}>{article.content}</p>
+                <div
+                  className="filson-pro-reg"
+                  style={{color:'rgba(0,0,0,0.5)', fontSize:'13px', lineHeight:'30px'}}
+                  dangerouslySetInnerHTML={{ __html: article.contentHtml }}
+                />
               </Col>
               <Col sm="3">
                 <img src={girl} alt="" className="img-fluid" />
