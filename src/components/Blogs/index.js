@@ -50,7 +50,7 @@ const Blogs = ({ id }) => {
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/10))].map((page, i) => {
-      console.log(`/blogs/${i+1}/`, `./src/templates/BlogPage/index.js`);
+      console.log(`/blogs/${i+1}/`, `./src/templates/BlogPage/index.js`, (10*i));
       /*createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
