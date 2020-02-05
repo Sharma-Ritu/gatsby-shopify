@@ -49,6 +49,20 @@ const Blogs = ({ id }) => {
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
+  const pages = () => {
+    [...Array(pageInfo.pageCount)].map((page, i) => {
+      console.log(i);
+      /*createPage({
+        path: `/blogs/${i+1}/`,
+        component: path.resolve(`./src/templates/BlogPage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          limit: 10
+        },
+      })*/
+    })
+  }
   console.log(pageInfo, [...Array(allShopifyArticle.totalCount)], (allShopifyArticle.totalCount/perPage));
   return (
           <Col sm="8" className="align-middle">
