@@ -4,8 +4,6 @@ import Footer from "~/components/footer"
 import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import SEO from '~/components/seo'
 import "~/assets/css/bootstrap.min.css"
-import blogs1 from "~/assets/img/blogs5.jpg"
-import girl from "~/assets/img/girl.jpg"
 import RecentPosts from "~/components/Blogs/RecentPostsFooter"
 
 const ArticlePage = ({ data }) => {
@@ -39,15 +37,12 @@ const ArticlePage = ({ data }) => {
               </Col>
             </Row>  
             <Row className="mt-3">
-              <Col sm="9">
+              <Col sm="12">
                 <div
                   className="filson-pro-reg"
                   style={{color:'rgba(0,0,0,0.5)', fontSize:'13px', lineHeight:'30px'}}
                   dangerouslySetInnerHTML={{ __html: article.contentHtml }}
                 />
-              </Col>
-              <Col sm="3">
-                <img src={girl} alt="" className="img-fluid" />
               </Col>
             </Row>
           </Col>
