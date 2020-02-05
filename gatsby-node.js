@@ -64,7 +64,7 @@ exports.createPagination = ({ graphql, actions }) => {
     console.log(result.data);
     [...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
       createPage({
-        path: `/blogs/page/${i+1}/`,
+        path: `/blog/page/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
         context: {
           // Data passed to context is available
@@ -73,18 +73,5 @@ exports.createPagination = ({ graphql, actions }) => {
         },
       })
     })
-    /*
-    result.data.allShopifyArticle.edges.forEach(({ node }) => {
-      createPage({
-        path: `/blogs/page/${node.id}/`,
-        component: path.resolve(`./src/templates/ArticlePage/index.js`),
-        context: {
-          // Data passed to context is available
-          // in article queries as GraphQL variables.
-          id: node.id,
-        },
-      })
-    })
-    */
   })
 }
