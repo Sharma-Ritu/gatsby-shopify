@@ -71,7 +71,7 @@ exports.createPagination = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    console.log(result.data);
+    console.log(result);
     /*
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
