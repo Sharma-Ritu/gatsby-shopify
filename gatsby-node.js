@@ -22,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
+    const paginate = [...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))];
     result.data.allShopifyProduct.edges.forEach(({ node }) => {
       createPage({
         path: `/product/${node.handle}/`,
@@ -53,18 +54,18 @@ exports.createPages = ({ graphql, actions }) => {
         skip: 10,
       },
     })
-    /*[...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
-      
+    paginate.map((page, i) => {
+      /*
       createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
         context: {
           // Data passed to context is available
           // in article queries as GraphQL variables.
-          limit: 10
+          skip: (10*i)
         },
       })
-      
-    })*/
+      */
+    })
   })
 }
