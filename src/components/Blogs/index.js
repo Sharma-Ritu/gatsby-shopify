@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Col, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
-import BlogPagination from "~/components/Blogs/BlogPagination"
 
 const Blogs = ({ id }) => {
   const { allShopifyArticle } = useStaticQuery(
@@ -76,7 +75,30 @@ const Blogs = ({ id }) => {
              ))
         : <p>No Products found!</p>}
             {allShopifyArticle.pageInfo.hasNextPage &&
-              <BlogPagination pageInfo={allShopifyArticle.pageInfo} />
+              <Pagination aria-label="Page navigation">
+                <PaginationItem disabled={props.pageInfo.hasPreviousPage}>
+                  <PaginationLink first href="javascript:void(0);" />
+                </PaginationItem>
+                <PaginationItem disabled={props.pageInfo.hasPreviousPage}>
+                  <PaginationLink previous href="javascript:void(0);" />
+                </PaginationItem>
+                <PaginationItem active>
+                  <PaginationLink href="javascript:void(0);">
+                    1
+                  </PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink href="javascript:void(0);">
+                    2
+                  </PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink next href="javascript:void(0);" />
+                </PaginationItem>
+                <PaginationItem>
+                  <PaginationLink last href="javascript:void(0);" />
+                </PaginationItem>
+              </Pagination>
             }
           </Col>
   )
