@@ -76,10 +76,10 @@ const Blogs = ({ id }) => {
         : <p>No Products found!</p>}
             {allShopifyArticle.pageInfo.hasNextPage &&
               <Pagination aria-label="Page navigation">
-                <PaginationItem disabled={props.pageInfo.hasPreviousPage}>
+                <PaginationItem disabled={allShopifyArticle.pageInfo.hasPreviousPage}>
                   <PaginationLink first href="javascript:void(0);" />
                 </PaginationItem>
-                <PaginationItem disabled={props.pageInfo.hasPreviousPage}>
+                <PaginationItem disabled={allShopifyArticle.pageInfo.hasPreviousPage}>
                   <PaginationLink previous href="javascript:void(0);" />
                 </PaginationItem>
                 <PaginationItem active>
