@@ -19,6 +19,16 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 3, skip: 0) {
+        pageInfo {
+          perPage
+          pageCount
+          itemCount
+          hasPreviousPage
+          hasNextPage
+          currentPage
+        }
+      }
     }
   `).then(result => {
     result.data.allShopifyProduct.edges.forEach(({ node }) => {
@@ -43,5 +53,37 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+  })
+}
+exports.createPagination = ({ graphql, actions }) => {
+  const { createPage } = actions
+  return graphql(`
+    {
+      allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 3, skip: 0) {
+        pageInfo {
+          perPage
+          pageCount
+          itemCount
+          hasPreviousPage
+          hasNextPage
+          currentPage
+        }
+      }
+    }
+  `).then(result => {
+    console.log(result.data);
+    /*
+    result.data.allShopifyArticle.edges.forEach(({ node }) => {
+      createPage({
+        path: `/blogs/${node.id}/`,
+        component: path.resolve(`./src/templates/ArticlePage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          id: node.id,
+        },
+      })
+    })
+    */
   })
 }
