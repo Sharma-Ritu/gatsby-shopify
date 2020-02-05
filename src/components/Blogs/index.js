@@ -40,7 +40,10 @@ const Blogs = ({ id }) => {
       }
     `
   )
-
+  const handlePagination = (e) => {
+    e.preventDefault();
+    console.log(e);
+  }
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
@@ -77,18 +80,18 @@ const Blogs = ({ id }) => {
             {allShopifyArticle.pageInfo.hasNextPage &&
               <Pagination aria-label="Page navigation">
                 <PaginationItem disabled={allShopifyArticle.pageInfo.hasPreviousPage}>
-                  <PaginationLink first href="javascript:void(0);" />
+                  <PaginationLink first href="first" onClick={e => handlePagination(e)}/>
                 </PaginationItem>
                 <PaginationItem disabled={allShopifyArticle.pageInfo.hasPreviousPage}>
-                  <PaginationLink previous href="javascript:void(0);" />
+                  <PaginationLink previous href="previous" />
                 </PaginationItem>
                 <PaginationItem active>
-                  <PaginationLink href="javascript:void(0);">
+                  <PaginationLink href="1">
                     1
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink href="javascript:void(0);">
+                  <PaginationLink href="2">
                     2
                   </PaginationLink>
                 </PaginationItem>
