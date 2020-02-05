@@ -45,6 +45,10 @@ const Blogs = ({ id }) => {
     console.log(toPage);
   }
   const pageInfo = allShopifyArticle.pageInfo;
+  const currentPage = pageInfo.currentPage;
+  const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
+  const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
+
   console.log(pageInfo, pageInfo.currentPage);
   return (
           <Col sm="8" className="align-middle">
@@ -79,17 +83,17 @@ const Blogs = ({ id }) => {
             </div>
              ))
         : <p>No Products found!</p>}
-            {(allShopifyArticle.pageInfo.pageCount > 1) &&
+            {(pageInfo.pageCount > 1) &&
               <Pagination aria-label="Page navigation">
-                <PaginationItem disabled={!allShopifyArticle.pageInfo.hasPreviousPage}>
+                <PaginationItem disabled={!pageInfo.hasPreviousPage}>
                   <PaginationLink
                     previous
-                    href={"#" + (allShopifyArticle.pageInfo.currentPage - 1)}
-                    onClick={e => handlePagination(e, (allShopifyArticle.pageInfo.currentPage - 1))}
+                    href={"#" + (currentPage - 1)}
+                    onClick={e => handlePagination(e, previousPage)}
                   />
                 </PaginationItem>
-                {[...Array(allShopifyArticle.pageInfo.pageCount)].map((page, i) => 
-                  <PaginationItem active={(i+1) === allShopifyArticle.pageInfo.currentPage} key={i}>
+                {[...Array(pageInfo.pageCount)].map((page, i) => 
+                  <PaginationItem active={(i+1) === currentPage} key={i}>
                     <PaginationLink
                       onClick={e => handlePagination(e, (i + 1))}
                       href={"#" + (i + 1)}
@@ -98,11 +102,11 @@ const Blogs = ({ id }) => {
                     </PaginationLink>
                   </PaginationItem>
                 )}
-                <PaginationItem disabled={!allShopifyArticle.pageInfo.hasNextPage}>
+                <PaginationItem disabled={!pageInfo.hasNextPage}>
                   <PaginationLink
                     next
-                    href={"#" + (allShopifyArticle.pageInfo.currentPage + 1)}
-                    onClick={e => handlePagination(e, (allShopifyArticle.pageInfo.currentPage - 1))}
+                    href={"#" + (currentPage + 1)}
+                    onClick={e => handlePagination(e, nextPage)}
                   />
                 </PaginationItem>
               </Pagination>
