@@ -40,9 +40,9 @@ const Blogs = ({ id }) => {
       }
     `
   )
-  const handlePagination = (e) => {
+  const handlePagination = (e, toPage) => {
     e.preventDefault();
-    console.log(e);
+    console.log(toPage);
   }
   const pageInfo = allShopifyArticle.pageInfo;
   console.log(pageInfo, pageInfo.currentPage);
@@ -91,7 +91,7 @@ const Blogs = ({ id }) => {
                 {[...Array(allShopifyArticle.pageInfo.pageCount)].map((page, i) => 
                   <PaginationItem active={(i+1) === allShopifyArticle.pageInfo.currentPage} key={i}>
                     <PaginationLink
-                      onClick={e => handlePagination(e)}
+                      onClick={e => handlePagination(e, (i + 1))}
                       href={"#" + (i + 1)}
                     >
                       {i + 1}
@@ -102,7 +102,7 @@ const Blogs = ({ id }) => {
                   <PaginationLink
                     next
                     href={"#" + (allShopifyArticle.pageInfo.currentPage + 1)}
-                    onClick={e => handlePagination(e)}
+                    onClick={e => handlePagination(e, (allShopifyArticle.pageInfo.currentPage - 1))}
                   />
                 </PaginationItem>
               </Pagination>
