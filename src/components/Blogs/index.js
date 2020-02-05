@@ -48,8 +48,8 @@ const Blogs = ({ id }) => {
   const currentPage = pageInfo.currentPage;
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
-
-  console.log(pageInfo, pageInfo.currentPage, [...Array(allShopifyArticle.totalCount)]);
+  const perPage = pageInfo.perPage;
+  console.log(pageInfo, [...Array(allShopifyArticle.totalCount)], (allShopifyArticle.totalCount/perPage));
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
