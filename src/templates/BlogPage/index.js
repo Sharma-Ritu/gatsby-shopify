@@ -14,8 +14,8 @@ const BlogPage = ({ data }) => {
 }
 
 export const query = graphql`
-  query ($limit: Int!) {
-    allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: $limit, skip: 0) {
+  query ($limit: Int!, $skip: Int!) {
+    allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: $limit, skip: $skip) {
       edges {
         node {
           id
