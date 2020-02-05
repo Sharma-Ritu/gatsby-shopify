@@ -80,7 +80,7 @@ const Blogs = ({ id }) => {
         : <p>No Products found!</p>}
             {(allShopifyArticle.pageInfo.pageCount > 1) &&
               <Pagination aria-label="Page navigation">
-                <PaginationItem disabled={allShopifyArticle.pageInfo.hasPreviousPage}>
+                <PaginationItem disabled={!allShopifyArticle.pageInfo.hasPreviousPage}>
                   <PaginationLink previous href={allShopifyArticle.pageInfo.currentPage - 1} onClick={e => handlePagination(e)} />
                 </PaginationItem>
                 {[...Array(allShopifyArticle.pageInfo.pageCount)].map((page, i) => 
@@ -90,7 +90,7 @@ const Blogs = ({ id }) => {
                     </PaginationLink>
                   </PaginationItem>
                 )}
-                <PaginationItem disabled={allShopifyArticle.pageInfo.hasNextPage}>
+                <PaginationItem disabled={!allShopifyArticle.pageInfo.hasNextPage}>
                   <PaginationLink next href={allShopifyArticle.pageInfo.currentPage + 1} onClick={e => handlePagination(e)} />
                 </PaginationItem>
               </Pagination>
