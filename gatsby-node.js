@@ -18,6 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
             url
           }
         }
+        totalCount
       }
     }
   `).then(result => {
@@ -40,6 +41,17 @@ exports.createPages = ({ graphql, actions }) => {
           // Data passed to context is available
           // in article queries as GraphQL variables.
           id: node.id,
+        },
+      })
+    })
+    [...Array((result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
+      createPage({
+        path: `/blogs/${i+1}/`,
+        component: path.resolve(`./src/templates/BlogPage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          limit: 10
         },
       })
     })

@@ -40,6 +40,18 @@ const Blogs = ({ id }) => {
       }
     `
   )
+  [...Array((allShopifyArticle.totalCount/10))].map((page, i) => {
+    console.log(i);
+  /*    createPage({
+        path: `/blogs/${i+1}/`,
+        component: path.resolve(`./src/templates/BlogPage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          limit: 10
+        },
+      })*/
+  })
   const handlePagination = (e, toPage) => {
     e.preventDefault();
     console.log(toPage);
