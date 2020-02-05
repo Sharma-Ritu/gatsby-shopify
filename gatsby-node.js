@@ -72,6 +72,19 @@ exports.createPagination = ({ graphql, actions }) => {
     }
   `).then(result => {
     console.log(result.data.allShopifyArticle);
+    const pageInfo = result.data.allShopifyArticle.pageInfo;
+
+    [...Array(pageInfo.pageCount)].map((page, i) => {
+      createPage({
+        path: `/blogs/page/${i+1}/`,
+        component: path.resolve(`./src/templates/BlogPage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in article queries as GraphQL variables.
+          limit: pageInfo.perPage,
+        },
+      })
+    })
     /*
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
