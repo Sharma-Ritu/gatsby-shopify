@@ -50,8 +50,8 @@ const Blogs = ({ id }) => {
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/perPage))].map((page, i) => {
-      console.log(i);
-      createPage({
+      console.log(`/blogs/${i+1}/`, `./src/templates/BlogPage/index.js`);
+      /*createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
         context: {
@@ -59,7 +59,7 @@ const Blogs = ({ id }) => {
           // in article queries as GraphQL variables.
           limit: 10
         }
-      })
+      })*/
     })
   console.log(pageInfo, pages);
   return (
