@@ -57,7 +57,7 @@ const Blogs = ({ id }) => {
                   </div>
                 </Link>
               </div>
-              <div className="blogs-content d-flex mt-4 pb-4">
+              <div className="blogs-content d-flex mt-4">
                 <Col sm="1" className="blog-icon text-center border-right pr-0 d-table">
                   <p style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-share-alt"></i><span className="d-block">2</span></p>
                   <p className="border-top border-bottom py-2" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-envelope"></i><span className="d-block">2</span></p>
