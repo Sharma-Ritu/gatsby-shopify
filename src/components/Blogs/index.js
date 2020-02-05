@@ -44,7 +44,7 @@ const Blogs = ({ id }) => {
     e.preventDefault();
     console.log(e);
   }
-  console.log(allShopifyArticle.pageInfo);
+  console.log(allShopifyArticle.pageInfo, allShopifyArticle.pageInfo.hasPreviousPage, [...Array(allShopifyArticle.pageInfo.pageCount)]);
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
