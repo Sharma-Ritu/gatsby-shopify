@@ -62,7 +62,7 @@ exports.createPagination = ({ graphql, actions }) => {
     }
   `).then(result => {
     console.log(result.data);
-    /*[...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
+    [...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
       createPage({
         path: `/blogs/page/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
@@ -72,7 +72,7 @@ exports.createPagination = ({ graphql, actions }) => {
           limit: result.data.allShopifyArticle.pageInfo.perPage
         },
       })
-    })*/
+    })
     /*
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
       createPage({
