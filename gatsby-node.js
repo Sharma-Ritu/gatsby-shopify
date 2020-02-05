@@ -11,7 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-      allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 10, skip: 0) {
+      allShopifyArticle{
         edges {
           node {
             id
@@ -19,14 +19,6 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
         totalCount
-        pageInfo {
-          perPage
-          pageCount
-          itemCount
-          hasPreviousPage
-          hasNextPage
-          currentPage
-        }
       }
     }
   `).then(result => {
@@ -52,6 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+    /*
     [...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
       createPage({
         path: `/blogs/${i+1}/`,
@@ -63,5 +56,6 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+    */
   })
 }
