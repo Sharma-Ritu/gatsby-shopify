@@ -50,13 +50,9 @@ exports.createPages = ({ graphql, actions }) => {
       context: {
         // Data passed to context is available
         // in article queries as GraphQL variables.
-        limit: 10,
         skip: 10,
       },
     })
-    /*[...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
-
-    })*/
     /*[...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].map((page, i) => {
       
       createPage({
