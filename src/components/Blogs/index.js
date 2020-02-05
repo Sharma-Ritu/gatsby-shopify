@@ -44,6 +44,7 @@ const Blogs = ({ id }) => {
     e.preventDefault();
     console.log(e);
   }
+  console.log(allShopifyArticle.pageInfo);
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
@@ -83,23 +84,23 @@ const Blogs = ({ id }) => {
                   <PaginationLink first href="first" onClick={e => handlePagination(e)}/>
                 </PaginationItem>
                 <PaginationItem disabled={allShopifyArticle.pageInfo.hasPreviousPage}>
-                  <PaginationLink previous href="previous" />
+                  <PaginationLink previous href="previous" onClick={e => handlePagination(e)} />
                 </PaginationItem>
                 <PaginationItem active>
-                  <PaginationLink href="1">
+                  <PaginationLink href="1" onClick={e => handlePagination(e)}>
                     1
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink href="2">
+                  <PaginationLink href="2" onClick={e => handlePagination(e)}>
                     2
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink next href="next" />
+                  <PaginationLink next href="next" onClick={e => handlePagination(e)} />
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink last href="last" />
+                  <PaginationLink last href="last" onClick={e => handlePagination(e)} />
                 </PaginationItem>
               </Pagination>
             }
