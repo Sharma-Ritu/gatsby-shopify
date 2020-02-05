@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
-import BlogPagination from "../components/Blogs/BlogPagination"
+import BlogPagination from "~/components/Blogs/BlogPagination"
 
 const Blogs = ({ id }) => {
   const { allShopifyArticle } = useStaticQuery(
