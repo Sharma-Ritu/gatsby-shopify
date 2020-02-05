@@ -39,7 +39,7 @@ const RecentBlogs = () => {
               <ul className="list-unstyled">
             {allShopifyArticle.edges
             ? allShopifyArticle.edges.map(({ node: { id, url, title, content, excerpt, publishedAt, image } }) => (
-            <li className="d-flex mb-3">
+            <li className="d-flex mb-3" key={id}>
                   <div className="recent-post-image col-4">
                       <a href=""><img src={image.src} className="img-fluid" alt="Blog w-100" style={{transition:'all 0.15s ease-in-out'}}/></a>
                   </div>
