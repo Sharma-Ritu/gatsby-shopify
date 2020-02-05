@@ -71,32 +71,17 @@ exports.createPagination = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    console.log(result.data.allShopifyArticle);
-    const pageInfo = result.data.allShopifyArticle.pageInfo;
-
-    /*[...Array(pageInfo.pageCount)].map((page, i) => {
+    console.log(result.data);
+    /*[...Array(result.data.allShopifyArticle.pageInfo.pageCount)].map((page, i) => {
       createPage({
         path: `/blogs/page/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
         context: {
           // Data passed to context is available
           // in article queries as GraphQL variables.
-          limit: pageInfo.perPage,
+          limit: result.data.allShopifyArticle.pageInfo.perPage,
         },
       })
     })*/
-    /*
-    result.data.allShopifyArticle.edges.forEach(({ node }) => {
-      createPage({
-        path: `/blogs/page/${node.id}/`,
-        component: path.resolve(`./src/templates/ArticlePage/index.js`),
-        context: {
-          // Data passed to context is available
-          // in article queries as GraphQL variables.
-          id: node.id,
-        },
-      })
-    })
-    */
   })
 }
