@@ -7,8 +7,8 @@ import blogs1 from "~/assets/img/blogs5.jpg"
 const Blogs = ({ id }) => {
   const { allShopifyArticle } = useStaticQuery(
     graphql`
-      query {
-         allShopifyArticle(sort: {order: DESC, fields: publishedAt}){
+      {
+        allShopifyArticle(sort: {order: DESC, fields: publishedAt}, limit: 10, skip: 0) {
           edges {
             node {
               id
@@ -17,8 +17,8 @@ const Blogs = ({ id }) => {
               url
               publishedAt(formatString: "MMM DD, YYYY")
               image {
-                  src
-                }
+                src
+              }
               author {
                 name
               }
@@ -27,6 +27,15 @@ const Blogs = ({ id }) => {
               }
             }
           }
+          pageInfo {
+            perPage
+            pageCount
+            itemCount
+            hasPreviousPage
+            hasNextPage
+            currentPage
+          }
+          totalCount
         }
       }
     `
