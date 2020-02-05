@@ -96,10 +96,10 @@ const Blogs = ({ id }) => {
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink next href="javascript:void(0);" />
+                  <PaginationLink next href="next" />
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink last href="javascript:void(0);" />
+                  <PaginationLink last href="last" />
                 </PaginationItem>
               </Pagination>
             }
