@@ -49,11 +49,7 @@ const Blogs = ({ id }) => {
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
 
-  console.log(pageInfo, pageInfo.currentPage,
-      [...Array((allShopifyArticle.totalCount/10))].map((page, i) => {
-        console.log(i);
-      })
-    );
+  console.log(pageInfo, pageInfo.currentPage, [...Array(allShopifyArticle.totalCount)]);
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
