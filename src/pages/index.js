@@ -67,7 +67,7 @@ export default (props) => {
 								</div>
 							</div>
 						</Col>
-						<Col col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
+						<Col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
 							<div className="card-bg2 card-bg bg-image mb-4 mb-sm-0">
 								<div className="card-layer">
 									<h3 className="pt-0 pt-sm-3 text-right text-white pr-3 erbaum-bold">02</h3>
@@ -78,7 +78,7 @@ export default (props) => {
 								</div>
 							</div>
 						</Col>
-						<Col col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
+						<Col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
 							<div className="card-bg3 card-bg bg-image">
 								<div className="card-layer">
 									<h3 className="pt-0 pt-sm-3 text-right text-white pr-3 erbaum-bold">03</h3>
@@ -89,7 +89,7 @@ export default (props) => {
 								</div>
 							</div>
 						</Col>
-						<Col col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
+						<Col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
 							<div className="card-bg4 card-bg bg-image mb-4 mb-sm-0">
 								<div className="card-layer">
 									<h3 className="pt-0 pt-sm-3 text-right text-white pr-3 erbaum-bold">04</h3>
@@ -100,7 +100,7 @@ export default (props) => {
 								</div>
 							</div>
 						</Col>
-						<Col col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
+						<Col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
 							<div className="card-bg5 card-bg bg-image mb-4 mb-sm-0">
 								<div className="card-layer">
 									<h3 className="pt-0 pt-sm-3 text-right text-white pr-3 erbaum-bold">05</h3>
