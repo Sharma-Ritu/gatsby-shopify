@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
-import StoreContext from '~/context/StoreContext'
+import {Row, Col} from 'reactstrap';
 
 const RecentPosts = ({ location, RecentPostsId }) => {
   const { allShopifyArticle } = useStaticQuery(
