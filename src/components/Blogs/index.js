@@ -115,6 +115,7 @@ const Blogs = ({ id }) => {
                     <button
                       onClick={e => handlePagination(e, (i + 1))}
                       className="page-link"
+                      disabled={(i+1) === currentPage}
                     >
                       {i + 1}
                     </button>
