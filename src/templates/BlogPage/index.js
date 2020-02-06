@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "~/components/header"
 import Footer from "~/components/footer"
 import { graphql, Link, navigate} from 'gatsby'
-import {Jumbotron, Row, Col, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
+import {Jumbotron, Row, Col, Pagination, PaginationItem} from 'reactstrap';
 import SEO from '~/components/seo'
 import "~/assets/css/bootstrap.min.css"
 import RecentBlogs from "~/components/Blogs/RecentBlogs"
@@ -73,17 +73,17 @@ const BlogPage = ({ data }) => {
                     disabled={!pageInfo.hasPreviousPage}
                   >
                     <span aria-hidden="true">‹</span>
-                    <span class="sr-only">Previous</span>
+                    <span className="sr-only">Previous</span>
                   </button>
                 </PaginationItem>
                 {[...Array(pageInfo.pageCount)].map((page, i) => 
                   <PaginationItem active={(i+1) === currentPage} key={i}>
-                    <PaginationLink
+                    <button
                       onClick={e => handlePagination(e, (i + 1))}
-                      href={"#" + (i + 1)}
+                      className="page-link"
                     >
                       {i + 1}
-                    </PaginationLink>
+                    </button>
                   </PaginationItem>
                 )}
                 <PaginationItem disabled={!pageInfo.hasNextPage}>
@@ -94,7 +94,7 @@ const BlogPage = ({ data }) => {
                     disabled={!pageInfo.hasNextPage}
                   >
                     <span aria-hidden="true">›</span>
-                    <span class="sr-only">Next</span>
+                    <span className="sr-only">Next</span>
                   </button>
                 </PaginationItem>
               </Pagination>
