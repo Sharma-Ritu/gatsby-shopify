@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col} from 'reactstrap';
+import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 import sleep_child from "../assets/img/sleep-child.jpg"
 import children from "../assets/img/children.jpg"
@@ -13,6 +14,7 @@ import dream from "../assets/img/dream.jpg"
 export default (props) => {
   return (
 	<>
+		<SEO title="SLEEPING CHILDREN AROUND THE WORLD" description="Chirofoam™ will donate 1 Bedkit for every mattress sold." />
 		<Header />
 		<section className="blue-bg charity">
 			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
