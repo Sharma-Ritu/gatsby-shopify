@@ -16,7 +16,6 @@ const BlogPage = ({ data }) => {
   const handlePagination = (e, toPage) => {
     e.preventDefault();
     navigate(`/blogs/${toPage}/`)
-    console.log(toPage);
   }
   console.log(allShopifyArticle, pageInfo);
   return (
