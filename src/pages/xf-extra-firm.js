@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container, Row, Col, Media} from 'reactstrap';
+import {Link} from 'gatsby'
 import "../assets/css/bootstrap.min.css"
 import O_img1 from "../assets/img/home4.png"
 import O_img4 from "../assets/img/home55.png"
