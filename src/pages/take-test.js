@@ -9,16 +9,21 @@ import "../assets/css/bootstrap.min.css"
 const Example = (props) => {
 	const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState('1');
-  const startTest = () => setShowTest(!showTest);
+  const startTest = () => {
+  	console.log(document.getElementByID('start-test'))
+  	setShowTest(!showTest)
+  };
+  /*
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
   }
+  */
 //export default (props) => {
   return (
 	<>
 		<SEO title="TAKE THE TEST" description="We understand that everyone has different needs and there is no such thing as the perfect mattress that works for everyone. This is why we have created the Chirofoam test to see if the Chirofoam mattress is the right fit for you." />
 		<Header />
-		<section className="mb-0 py-3 pb-lg-5 pb-xl-5 position-absolute w-100">
+		<section className="mb-0 py-3 pb-lg-5 pb-xl-5" id="start-test">
 			<Container className="pb-lg-5 pb-xl-5">
 				<Row>
 					<h4 className="text-center color-primary erbaum-bold text-uppercase w-100 pt-2 pt-sm-5 mt-0 mt-sm-5">See if the Chirofoam mattress is right for you. Take the test!</h4>
