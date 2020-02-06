@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import O_img1 from "../assets/img/home4.png"
-import O_img2 from "../assets/img/home5.png"
 import O_img4 from "../assets/img/home55.png"
 import O_img3 from "../assets/img/home6.png"
 import product1 from "../assets/img/product1.jpg"
@@ -31,62 +30,62 @@ export default (props) => {
 						<div className="row text-center text-lg-left no-gutters">
 
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={product1} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={product2} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={mattress1} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						           <img className="img-fluid img-thumbnail border-0" src={O_img1} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						           <img className="img-fluid img-thumbnail border-0" src={O_img4} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						           <img className="img-fluid img-thumbnail border-0" src={O_img3} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={mattress1} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={product1} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={product2} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={O_img3} alt=""/>
 						          </a>
 						    </div>
 						     <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						            <img className="img-fluid img-thumbnail border-0" src={O_img4} alt=""/>
 						          </a>
 						    </div>
 						    <div className="col-lg-2 col-md-3 col-3 mx-1">
-						      <a href="#" className="d-block mb-2 h-100">
+						      <a className="d-block mb-2 h-100">
 						           <img className="img-fluid img-thumbnail border-0" src={O_img1} alt=""/>
 						          </a>
 						    </div>

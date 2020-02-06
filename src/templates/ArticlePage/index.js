@@ -33,8 +33,8 @@ const ArticlePage = ({ data }) => {
               </Col>
               <Col sm="6" className="text-right" style={{display:'ruby'}}>
                 <span style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></span>
-                <span className="px-2" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-envelope"></i><span className="pl-2">2</span></span>
-                <span className="mb-0" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-heart"></i><span className="pl-2">2</span></span>
+                <span className="px-2 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-envelope"></i><span className="pl-2">2</span></span>
+                <span className="mb-0 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-heart"></i><span className="pl-2">2</span></span>
               </Col>
             </Row>  
             <Row className="mt-3">

@@ -2,11 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col, Media} from 'reactstrap';
 import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
-import {Img,TwoColumnGrid,GridLeft,GridRight,} from '~/utils/styles'
-import {ProductTitle,ProductDescription} from './styles'
+import {Img} from '~/utils/styles'
+import {ProductDescription} from './styles'
 import icon1 from "~/assets/img/ic1.png"
 import icon2 from "~/assets/img/ic2.png"
 import icon3 from "~/assets/img/ic3.png"

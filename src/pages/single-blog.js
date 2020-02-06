@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import blogs1 from "../assets/img/blogs5.jpg"
 import girl from "../assets/img/girl.jpg"
 import RecentPosts from "../components/Blogs/RecentPostsFooter"
-import SingleArticle from "../components/Blogs/SingleArticle"
+/*import SingleArticle from "../components/Blogs/SingleArticle"*/
 /*import SingleBlogs from "../components/Blogs/SingleBlogs"*/
 
 export default ({data}) => {
@@ -36,8 +36,8 @@ export default ({data}) => {
 							</Col>
 							<Col sm="6" className="text-right" style={{display:'ruby'}}>
 								<p style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></p>
-								<p className="px-2" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-envelope"></i><span className="pl-2">2</span></p>
-								<p className="mb-0" style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-heart"></i><span className="pl-2">2</span></p>
+								<p className="px-2 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-envelope"></i><span className="pl-2">2</span></p>
+								<p className="mb-0 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-heart"></i><span className="pl-2">2</span></p>
 							</Col>
 						</Row>	
 						<Row className="mt-3">
@@ -71,10 +71,6 @@ export default ({data}) => {
 	</>
   );
 };
-
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const blog_id = urlParams.get('id');
 
 export const query = graphql`
   {

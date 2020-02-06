@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Banner from "../components/banner-shop-chirofoam"
-import {Container, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import mattress1 from "../assets/img/mattress1.jpg"
 import run from "../assets/img/run.png"
@@ -97,7 +97,7 @@ export default (props) => {
 							<b className="proxima-eb">Our specilized layer of chirofoam<sup style={{fontSize:'7px'}}>TM</sup> lumbar support</b> provides an additional 20% of conforming support in the centre third of mattress for improved lumbar support and increased life span of the mattress. The majority of your body's weight rests in the centre third of the mattress where you need the most support to keep your spine in optimal alignment while relieving back pain. The pro Lumbar Support layer is also designed to resist sagging and keeps your mattress comfortable and more supportive even far boyond our 15 years warranty period.
 						</p>
 						<p className="cta erbaum pt-3">
-							<a href="#" className="color-primary">CALL TO ACTION <i className="fa fa-caret-right ic1"></i><i className="fa fa-caret-right ic2"></i><i className="fa fa-caret-right ic3"></i></a>
+							<Link to="#" className="color-primary">CALL TO ACTION <i className="fa fa-caret-right ic1"></i><i className="fa fa-caret-right ic2"></i><i className="fa fa-caret-right ic3"></i></Link>
 						</p>
 					</Col>
 					<Col sm="6">
