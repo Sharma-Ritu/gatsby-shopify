@@ -51,16 +51,11 @@ const Blogs = ({ id }) => {
   const perPage = pageInfo.perPage;
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/10))];
   pages.forEach((page, i) => {
-      console.log(`/blogs/${i+1}/`, `./src/templates/BlogPage/index.js`, (10*i));
-      /*createPage({
-        path: `/blogs/${i+1}/`,
-        component: path.resolve(`./src/templates/BlogPage/index.js`),
-        context: {
-          // Data passed to context is available
-          // in article queries as GraphQL variables.
-          limit: 10
-        },
-      })*/
+      const path = `/blogs/${i+1}/`;
+      if(i===0){
+        path = `/blogs/`;
+      }
+      console.log(path, (10*i));
     })
   console.log(pageInfo);
   return (
