@@ -40,17 +40,19 @@ const Blogs = ({ id }) => {
       }
     `
   )
-  const handlePagination = (e, toPage) => {
-    e.preventDefault();
-    let path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
-    console.log(path);
-    navigate(path)
-  }
   const pageInfo = allShopifyArticle.pageInfo;
   const currentPage = pageInfo.currentPage;
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
+  const handlePagination = (e, toPage) => {
+    if(currentPage !== toPage){
+      e.preventDefault();
+      let path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
+      console.log(path);
+      navigate(path)
+    }
+  }
   /*
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/10))];
   pages.forEach((page, i) => {

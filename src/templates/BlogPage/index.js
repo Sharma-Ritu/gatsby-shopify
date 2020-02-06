@@ -14,10 +14,12 @@ const BlogPage = ({ data }) => {
   const previousPage = (currentPage === 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage === pageInfo.pageCount)? currentPage : (currentPage + 1);
   const handlePagination = (e, toPage) => {
-    e.preventDefault();
-    let path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
-    console.log(path);
-    navigate(path)
+    if(currentPage !== toPage){
+      e.preventDefault();
+      let path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
+      console.log(path);
+      navigate(path)
+    }
   }
   return (
     <>
