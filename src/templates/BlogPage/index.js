@@ -11,9 +11,8 @@ const BlogPage = ({ data }) => {
   const allShopifyArticle = data.allShopifyArticle;
   const pageInfo = allShopifyArticle.pageInfo;
   const currentPage = pageInfo.currentPage;
-  const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
-  const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
-  const perPage = pageInfo.perPage;
+  const previousPage = (currentPage === 1)? currentPage : (currentPage - 1);
+  const nextPage = (currentPage === pageInfo.pageCount)? currentPage : (currentPage + 1);
   console.log(allShopifyArticle, pageInfo);
   return (
     <>
