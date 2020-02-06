@@ -654,4 +654,11 @@ body .navbar{
     font-size: 30px;
     text-transform:uppercase;
 }
-
+.load div {
+	position: unset !important;
+	height: unset !important;
+}
+.load .btn-cta{
+	background-color: transparent;
+	border: none;
+}
