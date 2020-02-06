@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "../components/banner"
 import Footer from "../components/footer"
-import {Container, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col, Media} from 'reactstrap';
 import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 import mattress1 from "../assets/img/mattress1.jpg"
@@ -55,7 +55,7 @@ export default (props) => {
 				<Row className="pb-sm-3 pb-lg-4 pb-xl-5 pb-0">
 					<h4 className="text-center lead-text-font color-primary erbaum-bold" style={{width:'100%'}}>5 KEY FEATURES IN EVERY CHIROFOAM MATTRESS</h4>
 					<p className="text-center pb-4 pb-sm-4 pt-2 mb-5 color-primary proxima-b m-auto col-12 col-sm-10 col-lg-7 space-1">Designed by mattress experts with 5 key features that consumers voted most important for a comfortable sleep experience. (Most mattresses don’t succeed in all 5 areas.) </p>
-					<div style={{margin:'0px auto'}} className="d-block no-gutters mt-4 mt-sm-5 pt-0 pt-sm-4 pb-0 pb-sm-5 animation-box col-sm-12 col-lg-11 col-xl-11" style={{display:'flex-box'}}>
+					<div style={{margin:'0px auto',display:'flex-box'}} className="d-block no-gutters mt-4 mt-sm-5 pt-0 pt-sm-4 pb-0 pb-sm-5 animation-box col-sm-12 col-lg-11 col-xl-11">
 						<Col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
 							<div className="card-bg1 card-bg bg-image mb-4 mb-sm-0">
 								<div className="card-layer">

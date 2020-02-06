@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Link} from "gatsby";
-import {Jumbotron, Row, Col, Table, Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
+import {Jumbotron, Row, Col, Table, Form, FormGroup, Label, Input} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import paypal from "../assets/img/paypal.jpg"
 import cards from "../assets/img/cards.png"

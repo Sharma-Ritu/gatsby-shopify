@@ -1,11 +1,10 @@
 import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
+import {Jumbotron, Row, Col} from 'reactstrap';
 import SEO from '~/components/seo'
 import {Link} from "gatsby"
 //import "../assets/css/bootstrap.min.css"
-import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Cart from "../components/Cart"
 
 
