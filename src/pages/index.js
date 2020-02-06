@@ -9,11 +9,6 @@ import product1 from "../assets/img/product1.jpg"
 import product2 from "../assets/img/product2.jpg"
 import blog1 from "../assets/img/blog1.jpg"
 import run from "../assets/img/run.png"
-import feat1 from "../assets/img/feat1.jpg"
-import feat2 from "../assets/img/feat2.jpg"
-import feat3 from "../assets/img/feat3.jpg"
-import feat4 from "../assets/img/feat4.jpg"
-import feat5 from "../assets/img/feat5.jpg"
 import { Link } from "gatsby"
 
 export default (props) => {

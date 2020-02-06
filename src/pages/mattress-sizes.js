@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import mattress_size from "../assets/img/mattress-size.png"
 import xl_twin_size from "../assets/img/xl-twin-size.png"
