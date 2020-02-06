@@ -2,32 +2,35 @@ import React, { useState } from 'react';
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media, Nav, NavItem, NavLink, TabContent, TabPane, Form} from 'reactstrap';
+import {Container,Jumbotron, Row, Col, Button, Fade, Media, Nav, NavItem, NavLink, TabContent, TabPane, Form} from 'reactstrap';
+import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
+	const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState('1');
-
+  const startTest = () => setShowTest(!showTest);
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
   }
 //export default (props) => {
   return (
 	<>
+		<SEO title="TAKE THE TEST" description="We understand that everyone has different needs and there is no such thing as the perfect mattress that works for everyone. This is why we have created the Chirofoam test to see if the Chirofoam mattress is the right fit for you." />
 		<Header />
-		<section className="mb-0 py-3 pb-lg-5 pb-xl-5 position-relative">
+		<section className="mb-0 py-3 pb-lg-5 pb-xl-5 position-absolute w-100">
 			<Container className="pb-lg-5 pb-xl-5">
 				<Row>
 					<h4 className="text-center color-primary erbaum-bold text-uppercase w-100 pt-2 pt-sm-5 mt-0 mt-sm-5">See if the Chirofoam mattress is right for you. Take the test!</h4>
 					<p className="pt-0 text-center w-100 pt-2 pt-lg-4 pt-xl-4 color-secondary" style={{fontSize:'15px'}}>We understand that everyone has different needs and there is no such thing as the perfect mattress that works for everyone. This is why we have created the Chirofoam test to see if the Chirofoam mattress is the right fit for you.</p>
 					<p className="pt-0 text-center w-100 pt-2 color-secondary" style={{fontSize:'15px'}}>Our objective is to provide our customers with a better sleep and a more comfortable mattress than what they currently sleep on. Although the Chirofoam mattress works great for the majority of people, by taking this test you will be able to find out if the Chirofoam mattress is a good fit for you!</p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-5 pt-xl-5 w-100 text-center mt-4 mt-sm-0">
-						<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">START NOW</Link>
+						<button onClick={startTest} className="btn-cta color-primary erbaum-bold space-1">START NOW</button>
 					</p>
 				</Row>
 			</Container>
 		</section>
-		<section className="mb-0 py-5 position-relative" id="take-test">
+		<Fade in={showTest} tag="section" className="mb-0 py-5 bg-white position-relative" id="take-test">
 			<div className="container-large">
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
@@ -273,7 +276,7 @@ const Example = (props) => {
 					</TabContent>
 				</div>
 			</div>
-		</section>
+		</Fade>
 		<section>
 			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
