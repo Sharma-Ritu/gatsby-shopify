@@ -19,7 +19,6 @@ const BlogPage = ({ data }) => {
     console.log(path);
     navigate(path)
   }
-  console.log(allShopifyArticle, pageInfo);
   return (
     <>
     <SEO title="Chirofoam™ Memory Foam Mattresses" description="Sleep Education and Chirofoam™ News" />

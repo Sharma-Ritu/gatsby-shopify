@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql, Link, navigate} from 'gatsby'
-import {Col, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
+import {Col, Pagination, PaginationItem} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
 
@@ -51,6 +51,7 @@ const Blogs = ({ id }) => {
   const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
+  /*
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/10))];
   pages.forEach((page, i) => {
       let path = `/blogs/${i+1}/`;
@@ -60,6 +61,7 @@ const Blogs = ({ id }) => {
       console.log(path, (10*i));
     })
   console.log(pageInfo);
+  */
   return (
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
@@ -96,28 +98,36 @@ const Blogs = ({ id }) => {
             {(pageInfo.pageCount > 1) &&
               <Pagination aria-label="Page navigation">
                 <PaginationItem disabled={!pageInfo.hasPreviousPage}>
-                  <PaginationLink
-                    previous
-                    href={"#" + (currentPage - 1)}
+                  <button
+                    className="page-link"
+                    aria-label="Previous"
                     onClick={e => handlePagination(e, previousPage)}
-                  />
+                    disabled={!pageInfo.hasPreviousPage}
+                  >
+                    <span aria-hidden="true">‹</span>
+                    <span className="sr-only">Previous</span>
+                  </button>
                 </PaginationItem>
                 {[...Array(pageInfo.pageCount)].map((page, i) => 
                   <PaginationItem active={(i+1) === currentPage} key={i}>
-                    <PaginationLink
+                    <button
                       onClick={e => handlePagination(e, (i + 1))}
-                      href={"#" + (i + 1)}
+                      className="page-link"
                     >
                       {i + 1}
-                    </PaginationLink>
+                    </button>
                   </PaginationItem>
                 )}
                 <PaginationItem disabled={!pageInfo.hasNextPage}>
-                  <PaginationLink
-                    next
-                    href={"#" + (currentPage + 1)}
+                  <button
+                    className="page-link"
+                    aria-label="Next"
                     onClick={e => handlePagination(e, nextPage)}
-                  />
+                    disabled={!pageInfo.hasNextPage}
+                  >
+                    <span aria-hidden="true">›</span>
+                    <span className="sr-only">Next</span>
+                  </button>
                 </PaginationItem>
               </Pagination>
             }
