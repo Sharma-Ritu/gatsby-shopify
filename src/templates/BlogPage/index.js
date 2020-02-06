@@ -15,7 +15,9 @@ const BlogPage = ({ data }) => {
   const nextPage = (currentPage === pageInfo.pageCount)? currentPage : (currentPage + 1);
   const handlePagination = (e, toPage) => {
     e.preventDefault();
-    navigate(`/blogs/${toPage}/`)
+    const path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
+    console.log(path);
+    navigate(path)
   }
   console.log(allShopifyArticle, pageInfo);
   return (
