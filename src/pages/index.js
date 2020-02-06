@@ -56,7 +56,7 @@ export default (props) => {
 					<h4 className="text-center lead-text-font color-primary erbaum-bold" style={{width:'100%'}}>5 KEY FEATURES IN EVERY CHIROFOAM MATTRESS</h4>
 					<p className="text-center pb-4 pb-sm-4 pt-2 mb-5 color-primary proxima-b m-auto col-12 col-sm-10 col-lg-7 space-1">Designed by mattress experts with 5 key features that consumers voted most important for a comfortable sleep experience. (Most mattresses don’t succeed in all 5 areas.) </p>
 					<div style={{margin:'0px auto'}} className="d-block no-gutters mt-4 mt-sm-5 pt-0 pt-sm-4 pb-0 pb-sm-5 animation-box col-sm-12 col-lg-11 col-xl-11" style={{display:'flex-box'}}>
-						<Col col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
+						<Col className="five-key pb-0 pb-sm-4 px-4 px-sm-0 mx-0 d-inline-block">
 							<div className="card-bg1 card-bg bg-image mb-4 mb-sm-0">
 								<div className="card-layer">
 									<h3 className="pt-0 pt-sm-3 text-right text-white pr-3 erbaum-bold">01</h3>
