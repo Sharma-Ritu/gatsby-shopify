@@ -87,11 +87,15 @@ const BlogPage = ({ data }) => {
                   </PaginationItem>
                 )}
                 <PaginationItem disabled={!pageInfo.hasNextPage}>
-                  <PaginationLink
-                    next
-                    href={"#" + (currentPage + 1)}
+                  <button
+                    className="page-link"
+                    aria-label="Next"
                     onClick={e => handlePagination(e, nextPage)}
-                  />
+                    disabled={!pageInfo.hasNextPage}
+                  >
+                    <span aria-hidden="true">›</span>
+                    <span class="sr-only">Next</span>
+                  </button>
                 </PaginationItem>
               </Pagination>
             }
