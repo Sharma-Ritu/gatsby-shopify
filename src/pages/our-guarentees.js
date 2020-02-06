@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col} from 'reactstrap';
+import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Chirofoam_Mattress_Quality_Materials from "../assets/img/Chirofoam-Mattress-Quality-Materials.png"
@@ -10,10 +11,10 @@ import Chirofoam_Mattress_Charity_Donations from "../assets/img/Chirofoam-Mattre
 import Chirofoam_Mattress_In_Home_Trial from "../assets/img/Chirofoam-Mattress-In-Home-Trial.png"
 import Chirofoam_Mattress_Warranty_15_Years from "../assets/img/Chirofoam-Mattress-Warranty-15-Years.png"
 
-
 export default (props) => {
   return (
 	<>
+		<SEO title="OUR GUARANTEES" description="We have your back!" />
 		<Header />
 		<section className="blue-bg charity">
 			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
