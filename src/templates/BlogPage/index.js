@@ -66,11 +66,15 @@ const BlogPage = ({ data }) => {
             {(pageInfo.pageCount > 1) &&
               <Pagination aria-label="Page navigation">
                 <PaginationItem disabled={!pageInfo.hasPreviousPage}>
-                  <PaginationLink
-                    previous
-                    href={"#" + (currentPage - 1)}
+                  <button
+                    className="page-link"
+                    aria-label="Previous"
                     onClick={e => handlePagination(e, previousPage)}
-                  />
+                    disabled={!pageInfo.hasPreviousPage}
+                  >
+                    <span aria-hidden="true">‹</span>
+                    <span class="sr-only">Previous</span>
+                  </button>
                 </PaginationItem>
                 {[...Array(pageInfo.pageCount)].map((page, i) => 
                   <PaginationItem active={(i+1) === currentPage} key={i}>
