@@ -7,11 +7,11 @@ import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
-	const [showTest, setShowTest] = useState(false);
+	//const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState('1');
   const startTest = () => {
-  	console.log(document.getElementById('start-test'))
-  	setShowTest(!showTest)
+  	document.querySelector("#start-test").classList.toggle("d-none")
+  	document.querySelector("#take-test").classList.toggle("d-none")
   };
   /*
   const toggle = tab => {
@@ -35,7 +35,7 @@ const Example = (props) => {
 				</Row>
 			</Container>
 		</section>
-		<Fade in={showTest} tag="section" className="mb-0 py-5 bg-white position-relative" id="take-test">
+		<section className="mb-0 py-5 bg-white position-relative d-none" id="take-test">
 			<div className="container-large">
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
@@ -281,7 +281,7 @@ const Example = (props) => {
 					</TabContent>
 				</div>
 			</div>
-		</Fade>
+		</section>
 		<section>
 			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
