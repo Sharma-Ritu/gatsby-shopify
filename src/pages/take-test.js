@@ -10,7 +10,7 @@ const Example = (props) => {
 	const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState('1');
   const startTest = () => {
-  	console.log(document.getElementByID('start-test'))
+  	console.log(document.getElementById('start-test'))
   	setShowTest(!showTest)
   };
   /*
