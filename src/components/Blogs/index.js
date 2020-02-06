@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql, Link, navigate} from 'gatsby'
 import {Col, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import blogs1 from "~/assets/img/blogs5.jpg"
@@ -42,7 +42,9 @@ const Blogs = ({ id }) => {
   )
   const handlePagination = (e, toPage) => {
     e.preventDefault();
-    console.log(toPage);
+    let path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
+    console.log(path);
+    navigate(path)
   }
   const pageInfo = allShopifyArticle.pageInfo;
   const currentPage = pageInfo.currentPage;
@@ -50,9 +52,8 @@ const Blogs = ({ id }) => {
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/10))];
-  const path = ``;
   pages.forEach((page, i) => {
-      path = `/blogs/${i+1}/`;
+      let path = `/blogs/${i+1}/`;
       if(i===0){
         path = `/blogs/`;
       }
