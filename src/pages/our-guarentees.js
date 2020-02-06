@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Container,Jumbotron, Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Chirofoam_Mattress_Quality_Materials from "../assets/img/Chirofoam-Mattress-Quality-Materials.png"
