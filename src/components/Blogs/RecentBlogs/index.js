@@ -26,11 +26,8 @@ const RecentBlogs = () => {
       }
     `
   )
-
+  console.log(allShopifyArticle);
   return (
-   
-    
-
           <Col sm="4">
             <div className="recent-posts">
               <h5 className="filson-pro-reg">Recent Posts</h5>
