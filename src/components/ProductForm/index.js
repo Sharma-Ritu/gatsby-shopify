@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react'
-import { Button, ButtonGroup } from 'reactstrap'
+import { Button } from 'reactstrap'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
@@ -41,26 +41,6 @@ const ProductForm = ({ product }) => {
   useEffect(() => {
     checkAvailability(product.shopifyId)
   }, [productVariant, checkAvailability, product.shopifyId])
-
-  const handleQuantityChange = ({ target }) => {
-    setQuantity(target.value)
-  }
-
-  const handleOptionChange = (optionIndex, { target }) => {
-    const { value } = target
-    const currentOptions = [...variant.selectedOptions]
-
-    currentOptions[optionIndex] = {
-      ...currentOptions[optionIndex],
-      value,
-    }
-
-    const selectedVariant = find(variants, ({ selectedOptions }) =>
-      isEqual(currentOptions, selectedOptions)
-    )
-
-    setVariant({ ...selectedVariant })
-  }
 
   const handleAddToCart = () => {
     addVariantToCart(variants[selectedVariantIndex].shopifyId, quantity).then(()=>{

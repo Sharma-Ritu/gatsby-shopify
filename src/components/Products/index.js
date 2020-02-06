@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Row} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
-import {Grid,Product,Title,PriceTag} from './styles'
+import {Product} from './styles'
 import { Img } from '~/utils/styles'
 
 const ProductGrid = () => {

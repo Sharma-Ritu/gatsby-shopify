@@ -1,8 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql, Link, navigate} from 'gatsby'
 import {Col, Pagination, PaginationItem} from 'reactstrap';
-import StoreContext from '~/context/StoreContext'
-import blogs1 from "~/assets/img/blogs5.jpg"
 
 const Blogs = ({ id }) => {
   const { allShopifyArticle } = useStaticQuery(
@@ -42,9 +40,8 @@ const Blogs = ({ id }) => {
   )
   const pageInfo = allShopifyArticle.pageInfo;
   const currentPage = pageInfo.currentPage;
-  const previousPage = (currentPage == 1)? currentPage : (currentPage - 1);
-  const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
-  const perPage = pageInfo.perPage;
+  const previousPage = (currentPage === 1)? currentPage : (currentPage - 1);
+  const nextPage = (currentPage === pageInfo.pageCount)? currentPage : (currentPage + 1);
   const handlePagination = (e, toPage) => {
     if(currentPage !== toPage){
       e.preventDefault();
