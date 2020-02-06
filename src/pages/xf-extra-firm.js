@@ -99,8 +99,8 @@ export default (props) => {
 						<p className="filson-pro-reg space-1 col-12 col-sm-12 col-lg-7 px-0" style={{fontSize:'14px'}}>Firmness sacle: 10/10-Extra Firm</p>
 						<div className="d-flex text-center pt-3 pl-sm-0 pl-lg-5 pl-0 facilities">
 							<Col sm="4" className="px-2 px-sm-3">
-								<Link to=" /warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></Link>
-								<Link to=" /warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></Link>
+								<Link to="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></Link>
+								<Link to="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY</span></Link>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
 								<img src={van} alt="van" width="60px" className="mb-3"/>
@@ -126,7 +126,7 @@ export default (props) => {
 							<b className="proxima-eb">Our specilized layer of chirofoam<sup pr>TM</sup> lumbar support</b> provides an additional 20% of conforming support in the centre third of mattress for improved lumbar support and increased life span of the mattress. The majority of your body's weight rests in the centre third of the mattress where you need the most support to keep your spine in optimal alignment while relieving back pain.
 						</p>
 						<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
-							<span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>CAD $990.00</span><Link to=" /cart/" className="btn-cta color-primary erbaum-bold space-1">ADD TO CART</Link>
+							<span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>CAD $990.00</span><Link to="/cart/" className="btn-cta color-primary erbaum-bold space-1">ADD TO CART</Link>
 						</p>
 					</Col>
 				</Row>
@@ -197,7 +197,7 @@ export default (props) => {
 							<b className="proxima-eb">Our specilized layer of chirofoam<sup style={{fontSize:'7px'}}>TM</sup> lumbar support</b> provides an additional 20% of conforming support in the centre third of mattress for improved lumbar support and increased life span of the mattress. The majority of your body's weight rests in the centre third of the mattress where you need the most support to keep your spine in optimal alignment while relieving back pain. The pro Lumbar Support layer is also designed to resist sagging and keeps your mattress comfortable and more supportive even far boyond our 15 years warranty period.
 						</p>
 						<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0">
-							<Link to=" /reviews/" className="btn-cta color-primary erbaum-bold space-1">READ CUSTOMER REVIEWS</Link>
+							<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">READ CUSTOMER REVIEWS</Link>
 						</p>
 					</Col>
 					<Col sm="6">
