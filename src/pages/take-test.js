@@ -30,7 +30,7 @@ const Example = (props) => {
 					<p className="pt-0 text-center w-100 pt-2 pt-lg-4 pt-xl-4 color-secondary" style={{fontSize:'15px'}}>We understand that everyone has different needs and there is no such thing as the perfect mattress that works for everyone. This is why we have created the Chirofoam test to see if the Chirofoam mattress is the right fit for you.</p>
 					<p className="pt-0 text-center w-100 pt-2 color-secondary" style={{fontSize:'15px'}}>Our objective is to provide our customers with a better sleep and a more comfortable mattress than what they currently sleep on. Although the Chirofoam mattress works great for the majority of people, by taking this test you will be able to find out if the Chirofoam mattress is a good fit for you!</p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-5 pt-xl-5 w-100 text-center mt-4 mt-sm-0">
-						<button onClick={startTest} className="btn-cta color-primary erbaum-bold space-1">START NOW</button>
+						<button onClick={startTest} className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0">START NOW</button>
 					</p>
 				</Row>
 			</Container>
