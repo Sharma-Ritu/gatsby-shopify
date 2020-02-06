@@ -46,8 +46,12 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
     paginate.forEach((page, i) => {
+      const path = `/blogs/${i+1}/`;
+      if(i===0){
+        path = `/blogs/`;
+      }
       createPage({
-        path: `/blogs/${i+1}/`,
+        path: path,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
         context: {
           // Data passed to context is available
