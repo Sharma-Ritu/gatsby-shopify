@@ -13,6 +13,10 @@ const BlogPage = ({ data }) => {
   const currentPage = pageInfo.currentPage;
   const previousPage = (currentPage === 1)? currentPage : (currentPage - 1);
   const nextPage = (currentPage === pageInfo.pageCount)? currentPage : (currentPage + 1);
+  const handlePagination = (e, toPage) => {
+    e.preventDefault();
+    console.log(toPage);
+  }
   console.log(allShopifyArticle, pageInfo);
   return (
     <>
