@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Container,Jumbotron, Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import amazon from "../assets/img/amazon.jpg"
 import best from "../assets/img/best.png"
@@ -40,7 +40,7 @@ export default (props) => {
 							Contact: 905-963-0890
 						</p>
 						<div className="g-map pt-2 pt-sm-4">
-							<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=7701+Woodbine+Avenue" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
+							<iframe title="Markham" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=7701+Woodbine+Avenue" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
 						</div>
 					</Col>
 					<Col sm="4" className="text-center px-0 px-sm-4">
@@ -60,7 +60,7 @@ export default (props) => {
 							Contact: 905-565-0885
 						</p>
 						<div className="g-map pt-2 pt-sm-4">
-							<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=1550+Meyerside+Drive" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
+							<iframe title="Mississauga" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=1550+Meyerside+Drive" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
 						</div>
 					</Col>
 					<Col sm="4" className="text-center px-0 px-sm-4">
@@ -80,7 +80,7 @@ export default (props) => {
 							Contact: 905-878-8444
 						</p>
 						<div className="g-map pt-2 pt-sm-4">
-							<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=15+Brownridge+Road" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
+							<iframe title="Milton/Georgetown" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=15+Brownridge+Road" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
 						</div>
 					</Col>
 				</Row>
