@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {Container,Jumbotron, Row, Col, Button, Media, Table} from 'reactstrap';
+import {Row, Table} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
 import LineItem from './LineItem'
 
@@ -19,7 +19,7 @@ const Cart = () => {
   })
   return (
     <>
-    {(checkout.ready) && (checkout.lineItems.length == 0) && <section className="mb-0 py-3 py-sm-5">
+    {(checkout.ready) && (checkout.lineItems.length === 0) && <section className="mb-0 py-3 py-sm-5">
       <div className="container">
         <Row>
           <div className="col text-center">
