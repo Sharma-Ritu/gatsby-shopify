@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import { useStaticQuery, graphql, Link } from 'gatsby'
-import {Container,Jumbotron, Row, Col, Button, Media, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
+import { graphql, Link } from 'gatsby'
+import {Jumbotron, Row, Col, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
 import SEO from '~/components/seo'
 import "~/assets/css/bootstrap.min.css"
 import RecentBlogs from "~/components/Blogs/RecentBlogs"
