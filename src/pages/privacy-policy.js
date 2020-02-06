@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container, Row} from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 
 
