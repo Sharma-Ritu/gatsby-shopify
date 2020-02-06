@@ -104,7 +104,7 @@ export default (props) => {
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
 								<img src={van} alt="van" width="60px" className="mb-3"/>
-								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <a className="color-primary" to=" /return-policy/">EASY RETURNS</Link></span>
+								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <Link className="color-primary" to="/return-policy/">EASY RETURNS</Link></span>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
 								<img src={box} alt="box" width="60px" className="mb-3"/>
