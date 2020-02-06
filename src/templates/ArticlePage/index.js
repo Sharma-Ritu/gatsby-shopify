@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import SEO from '~/components/seo'
 import "~/assets/css/bootstrap.min.css"
 import RecentPosts from "~/components/Blogs/RecentPostsFooter"

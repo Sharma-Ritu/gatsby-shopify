@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import { graphql, Link } from 'gatsby'
+import { graphql, Link, navigate} from 'gatsby'
 import {Jumbotron, Row, Col, Pagination, PaginationItem, PaginationLink} from 'reactstrap';
 import SEO from '~/components/seo'
 import "~/assets/css/bootstrap.min.css"
@@ -15,6 +15,7 @@ const BlogPage = ({ data }) => {
   const nextPage = (currentPage === pageInfo.pageCount)? currentPage : (currentPage + 1);
   const handlePagination = (e, toPage) => {
     e.preventDefault();
+    navigate('/blogs/${toPage}}/')
     console.log(toPage);
   }
   console.log(allShopifyArticle, pageInfo);
