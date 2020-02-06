@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/header'
-import {Row, Col, Jumbotron,Container, Button } from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 
 const Banner = () => (

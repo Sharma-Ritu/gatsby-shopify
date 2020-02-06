@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col,Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import shop_banner from "../assets/img/shop-banner.png"
 

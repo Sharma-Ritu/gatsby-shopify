@@ -1,11 +1,7 @@
 import React from "react"
 import {Link} from "gatsby"
-import {Container, Row, Col} from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
-import twiter from "../assets/img/twiter.png"
-import fb from "../assets/img/fb.png"
-import youtube from "../assets/img/youtube.png"
-import blank from "../assets/img/blank.png"
 
 const Footer = () => (
 	<footer className="footer py-0 py-sm-5" style={{ backgroundColor: '#243b6a', borderRadius: '0', color: '#fff' }}>
@@ -19,10 +15,10 @@ const Footer = () => (
 						paddingLeft:'0px',
 						paddingTop:'18px'
 					}} >
-						<li className="mr-2 pr-1"><a target="_blank" href="https://facebook.com/chirofoam"><i className="fa fa-facebook color-primary"></i></a></li>
-						<li className="mr-2 pr-1"><a target="_blank" href="https://www.instagram.com/chirofoam/"><i className="fa fa-instagram color-primary"></i></a></li>
-						<li className="mr-2 pr-1"><a target="_blank" href="https://twitter.com/chirofoam"><i className="fa fa-twitter color-primary"></i></a></li>
-						<li className="mr-2 pr-1"><a target="_blank" href="https://www.youtube.com/channel/UCDjVpHGDY4fapKu4TnuKu6w"><i className="fa fa-youtube color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a target="_blank" rel="noreferrer" href="https://facebook.com/chirofoam"><i className="fa fa-facebook color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a target="_blank" rel="noreferrer" href="https://www.instagram.com/chirofoam/"><i className="fa fa-instagram color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a target="_blank" rel="noreferrer" href="https://twitter.com/chirofoam"><i className="fa fa-twitter color-primary"></i></a></li>
+						<li className="mr-2 pr-1"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCDjVpHGDY4fapKu4TnuKu6w"><i className="fa fa-youtube color-primary"></i></a></li>
 
 					</ul>
 					<p className="proxima-r space-1 pt-3 mb-0" style={{color:'#b2b2b2',fontSize:'11px'}}>Chirofoam<sup>TM</sup> Memory Foam Mattress </p>

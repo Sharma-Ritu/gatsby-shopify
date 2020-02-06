@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Jumbotron, Row} from 'reactstrap';
 import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
-import blogs1 from "../assets/img/blogs5.jpg"
 import Blogs from "../components/Blogs"
 import RecentBlogs from "../components/Blogs/RecentBlogs"
 

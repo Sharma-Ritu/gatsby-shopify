@@ -1,7 +1,6 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react'
 import { Button } from 'reactstrap'
 import find from 'lodash/find'
-import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
 import {navigate} from 'gatsby';
 
@@ -14,8 +13,8 @@ const ProductForm = ({ product }) => {
     variants: [initialVariant],
     priceRange: { minVariantPrice },
   } = product
-  const [variant, setVariant] = useState({ ...initialVariant })
-  const [quantity, setQuantity] = useState(1)
+  const [variant/*, setVariant*/] = useState({ ...initialVariant })
+  const [quantity/*, setQuantity*/] = useState(1)
   const {
     addVariantToCart,
     store: { client, adding },
