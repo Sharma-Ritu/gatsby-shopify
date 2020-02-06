@@ -50,8 +50,9 @@ const Blogs = ({ id }) => {
   const nextPage = (currentPage == pageInfo.pageCount)? currentPage : (currentPage + 1);
   const perPage = pageInfo.perPage;
   const pages = [...Array(Math.ceil(allShopifyArticle.totalCount/10))];
+  const path = ``;
   pages.forEach((page, i) => {
-      const path = `/blogs/${i+1}/`;
+      path = `/blogs/${i+1}/`;
       if(i===0){
         path = `/blogs/`;
       }
