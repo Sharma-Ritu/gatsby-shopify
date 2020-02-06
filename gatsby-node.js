@@ -22,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
+    const paginate = [...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))];
     result.data.allShopifyProduct.edges.forEach(({ node }) => {
       createPage({
         path: `/product/${node.handle}/`,
@@ -44,7 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    [...Array(Math.ceil(result.data.allShopifyArticle.totalCount/10))].forEach((page, i) => {
+    paginate.forEach((page, i) => {
       createPage({
         path: `/blogs/${i+1}/`,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
