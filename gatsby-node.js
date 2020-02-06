@@ -47,9 +47,9 @@ exports.createPages = ({ graphql, actions }) => {
     })
     paginate.forEach((page, i) => {
       const path = `/blogs/${i+1}/`;
-      if(i===0){
+      /*if(i===0){
         path = `/blogs/`;
-      }
+      }*/
       createPage({
         path: path,
         component: path.resolve(`./src/templates/BlogPage/index.js`),
