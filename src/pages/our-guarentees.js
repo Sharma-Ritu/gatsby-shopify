@@ -4,7 +4,6 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col} from 'reactstrap';
 import SEO from '~/components/seo'
-import "../assets/css/bootstrap.min.css"
 import Chirofoam_Mattress_Sleep_Quality from "../assets/img/Chirofoam-Mattress-Sleep-Quality.png"
 import Chirofoam_Mattress_Quality_Materials from "../assets/img/Chirofoam-Mattress-Quality-Materials.png"
 import Chirofoam_Mattress_Charity_Donations from "../assets/img/Chirofoam-Mattress-Charity-Donations.png"
