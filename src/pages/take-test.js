@@ -60,6 +60,27 @@ const TAKETEST = (props) => {
   		setActiveTab(tabID)
   	}
   }
+  const processTest = (event) => {
+  	const Index = selectedChoices.findIndex((step => step.id === 1));
+  	const Step1 = selectedChoices[Index];
+  	Index = selectedChoices.findIndex((step => step.id === 2));
+  	const Step2 = selectedChoices[Index];
+  	Index = selectedChoices.findIndex((step => step.id === 3));
+  	const Step3 = selectedChoices[Index];
+  	Index = selectedChoices.findIndex((step => step.id === 4));
+  	const Step4 = selectedChoices[Index];
+  	Index = selectedChoices.findIndex((step => step.id === 5));
+  	const Step5 = selectedChoices[Index];
+  	Index = selectedChoices.findIndex((step => step.id === 6));
+  	const Step6 = selectedChoices[Index];
+  	if((Step2.choice === 1) || (Step3.choice === 1)){
+  		console.log('sorry')
+  	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
+  		console.log('xf')
+  	}else{
+  		console.log('ol')
+  	}
+  }
   /*
   const toggle = tab => {
     if(activeTab !=== tab) setActiveTab(tab);
@@ -334,7 +355,7 @@ const TAKETEST = (props) => {
 										</Col>
 										<Col className="col-12">
 											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '5')}>Back</button>
-											<button className="btn text-white btn-custom-secondary">Continue</button>
+											<button className="btn text-white btn-custom-secondary" onClick={e => processTest(e)}>Continue</button>
 										</Col>
 									</Row>
 								</div>
