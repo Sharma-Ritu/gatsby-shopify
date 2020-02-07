@@ -131,7 +131,6 @@ const TAKETEST = (props) => {
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
-												
 											</div>
 										</Col>
 									</Row>
@@ -165,12 +164,11 @@ const TAKETEST = (props) => {
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
-												
 											</div>
 										</Col>
-                    				</Row>
-                				</div>
-            				</div>
+									</Row>
+								</div>
+							</div>
 						</TabPane>
 						<TabPane tabId="3">
 							<div className="tab-content border border-top-0">
@@ -180,31 +178,30 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">3. What would you consider your body type?</h3>
 												<div>
-													<input type="radio" value="1" name="third_stepopt" id="radioc1"/>
+													<input type="radio" value="1" name="third_stepopt" id="radioc1" onChange={e => handleChoiceSelect(e, 3, 1)}/>
 													<label className="opt_heading" htmlFor="radioc1">a. Small – I am very small and/or very skinny. (Typically under 130lbs.)</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="third_stepopt" id="radioc2"/>
+													<input type="radio" value="2" name="third_stepopt" id="radioc2" onChange={e => handleChoiceSelect(e, 3, 2)}/>
 													<label className="opt_heading" htmlFor="radioc2">b. Average – I am average height and average build. (Between 130lbs and 210lbs.)</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="third_stepopt" id="radioc3"/>
+													<input type="radio" value="3" name="third_stepopt" id="radioc3" onChange={e => handleChoiceSelect(e, 3, 3)}/>
 													<label className="opt_heading" htmlFor="radioc3">c. Large – I am taller than average and/or a little heavier than average. (Between 210lbs and 280lbs.)</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="third_stepopt" id="radioc4"/>
+													<input type="radio" value="4" name="third_stepopt" id="radioc4" onChange={e => handleChoiceSelect(e, 3, 4)}/>
 													<label className="opt_heading" htmlFor="radioc4">d. Extra Large – I have a very large frame and on the heavy side. (Over 280lbs.)</label>
 												</div>
 											</div>
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
-												
 											</div>
 										</Col>
-                    				</Row>
-                				</div>
-            				</div>
+									</Row>
+								</div>
+							</div>>
 						</TabPane>
 						<TabPane tabId="4">
 							<div className="tab-content border border-top-0">
@@ -214,31 +211,30 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">4. Do you get hot and sweaty or very cold when you sleep at night?</h3>
 												<div>
-													<input type="radio" value="1" name="forth_stepopt" id="radiod1" />
+													<input type="radio" value="1" name="forth_stepopt" id="radiod1" onChange={e => handleChoiceSelect(e, 4, 1)}/>
 													<label className="opt_heading" htmlFor="radiod1">a. I sleep very cool and always need to wrap myself up to keep warm.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="forth_stepopt" id="radiod2" />
+													<input type="radio" value="2" name="forth_stepopt" id="radiod2" onChange={e => handleChoiceSelect(e, 4, 2)}/>
 													<label className="opt_heading" htmlFor="radiod2">b. My sleep temperature is not a problem, I’m never too hot or too cold.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="forth_stepopt" id="radiod3" />
+													<input type="radio" value="3" name="forth_stepopt" id="radiod3" onChange={e => handleChoiceSelect(e, 4, 3)}/>
 													<label className="opt_heading" htmlFor="radiod3">c. I get hot once in a while but nothing drastic.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="forth_stepopt" id="radiod4" />
+													<input type="radio" value="4" name="forth_stepopt" id="radiod4" onChange={e => handleChoiceSelect(e, 4, 4)}/>
 													<label className="opt_heading" htmlFor="radiod4">d. I get hot and sweaty when I sleep and wake up in the middle of the night constantly.</label>
 												</div>
 											</div>
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
-												
 											</div>
 										</Col>
-                    				</Row>
-                				</div>
-            				</div>
+									</Row>
+								</div>
+							</div>
 						</TabPane>
 						<TabPane tabId="5">
 							<div className="tab-content border border-top-0">
@@ -248,32 +244,30 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">5. How often to you play sports, work out, exercise, and/or go for a run?</h3>
 												<div>
-													<input type="radio" value="1" name="fifth_stepopt" id="radioe1" />
+													<input type="radio" value="1" name="fifth_stepopt" id="radioe1" onChange={e => handleChoiceSelect(e, 5, 1)}/>
 													<label className="opt_heading" htmlFor="radioe1">a. 3-7 times a week.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="fifth_stepopt" id="radioe2" />
+													<input type="radio" value="2" name="fifth_stepopt" id="radioe2" onChange={e => handleChoiceSelect(e, 5, 2)}/>
 													<label className="opt_heading" htmlFor="radioe2">b. 1-2 times a week.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="fifth_stepopt" id="radioe3" />
+													<input type="radio" value="3" name="fifth_stepopt" id="radioe3" onChange={e => handleChoiceSelect(e, 5, 3)}/>
 													<label className="opt_heading" htmlFor="radioe3">c. A few times a month.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="fifth_stepopt" id="radioe4" />
+													<input type="radio" value="4" name="fifth_stepopt" id="radioe4" onChange={e => handleChoiceSelect(e, 5, 4)}/>
 													<label className="opt_heading" htmlFor="radioe4">d. Never.</label>
 												</div>
 											</div>
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
-												
 											</div>
 										</Col>
-										
-                    				</Row>
-                				</div>
-            				</div>
+									</Row>
+								</div>
+							</div>
 						</TabPane>
 						<TabPane tabId="6">
 							<div className="tab-content border border-top-0">
@@ -283,31 +277,30 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">6. Do you suffer from back pain?</h3>
 												<div>
-													<input type="radio" value="1" name="sixth_stepopt" id="radiof1" />
+													<input type="radio" value="1" name="sixth_stepopt" id="radiof1" onChange={e => handleChoiceSelect(e, 6, 1)}/>
 													<label className="opt_heading" htmlFor="radiof1">a. I suffer from severe back pain constantly.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="sixth_stepopt" id="radiof2" />
+													<input type="radio" value="2" name="sixth_stepopt" id="radiof2" onChange={e => handleChoiceSelect(e, 6, 2)}/>
 													<label className="opt_heading" htmlFor="radiof2">b. I get occasional back pain that is severe.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="sixth_stepopt" id="radiof3" />
+													<input type="radio" value="3" name="sixth_stepopt" id="radiof3" onChange={e => handleChoiceSelect(e, 6, 3)}/>
 													<label className="opt_heading" htmlFor="radiof3">c. I get occasional back pain that is mild.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="sixth_stepopt" id="radiof4" />
+													<input type="radio" value="4" name="sixth_stepopt" id="radiof4" onChange={e => handleChoiceSelect(e, 6, 4)}/>
 													<label className="opt_heading" htmlFor="radiof4">d. I do not suffer from back pain.</label>
 												</div>
 											</div>
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
-												
 											</div>
 										</Col>
-                    				</Row>
-                				</div>
-            				</div>
+									</Row>
+								</div>
+							</div>
 						</TabPane>
 					</TabContent>
 				</div>
