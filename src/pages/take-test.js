@@ -8,7 +8,7 @@ import "../assets/css/bootstrap.min.css"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  const selectedChoices = [];
+  const [selectedChoices, setSelectedChoices] = useState([]);
   const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
@@ -19,8 +19,15 @@ const TAKETEST = (props) => {
   }
   const handleChoiceSelect = (event, Step, Choice) => {
   	//selectedChoices[(Step)] = Choice;
-  	selectedChoices.push(Choice)
-  	console.log(selectedChoices, Step, Choice)
+  	setItems([
+      ...selectedChoices,
+      {
+        id: selectedChoices.length,
+        value: Math.random() * 100
+      }
+    ]);
+  	//selectedChoices.push(Choice)
+  	console.log(selectedChoices)
   }
   /*
   const toggle = tab => {
