@@ -8,14 +8,17 @@ import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
+	const selectedChoices = Array();
   const [activeTab, setActiveTab] = useState(1);
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
   };
   const startTest = () => {
-  	console.log(getElement("#start-test"))
-  	document.querySelector("#start-test").classList.toggle("d-none")
-  	document.querySelector("#take-test").classList.toggle("d-none")
+  	getElement("#start-test").classList.toggle("d-none")
+  	getElement("#start-test").classList.toggle("d-none")
+  };
+  const handleChoiceSelect = (Step, Choice) => {
+  	console.log(Step, Choice)
   };
   /*
   const toggle = tab => {
@@ -89,15 +92,15 @@ const Example = (props) => {
 												<div className="left-content">
 													<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">1. In what position do you most frequently sleep at night?</h3>
 													<div>
-														<input type="radio" value="1" name="first_stepopt" id="radioa1"/>
+														<input type="radio" value="1" name="first_stepopt" id="radioa1" onClick={handleChoiceSelect(1, 1)}/>
 														<label className="opt_heading" htmlFor="radioa1">a. I sleep on my side.</label>
 													</div>
 													<div>
-														<input type="radio" value="2" name="first_stepopt" id="radioa2"/>
+														<input type="radio" value="2" name="first_stepopt" id="radioa2" onClick={handleChoiceSelect(1, 2)}/>
 														<label className="opt_heading" htmlFor="radioa2">b. I sleep on my back and/or stomach.</label>
 													</div>
 													<div>
-														<input type="radio" value="3" name="first_stepopt" id="radioa3"/>
+														<input type="radio" value="3" name="first_stepopt" id="radioa3" onClick={handleChoiceSelect(1, 3)}/>
 														<label className="opt_heading" htmlFor="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
