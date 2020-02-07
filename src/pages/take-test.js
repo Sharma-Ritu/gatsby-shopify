@@ -6,9 +6,9 @@ import {Container,Jumbotron, Row, Col, Button, Fade, Media, Nav, NavItem, NavLin
 import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 
-const Example = (props) => {
+const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  let selectedChoices = Array();
+  const selectedChoices = useState(Array());
   const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
@@ -22,12 +22,12 @@ const Example = (props) => {
   	selectedChoices.push(Choice)
   	console.log(selectedChoices, Step, Choice)
   }
+  console.log(selectedChoices);
   /*
   const toggle = tab => {
     if(activeTab !=== tab) setActiveTab(tab);
   }
   */
-//export default (props) => {
   return (
 	<>
 		<SEO title="TAKE THE TEST" description="We understand that everyone has different needs and there is no such thing as the perfect mattress that works for everyone. This is why we have created the Chirofoam test to see if the Chirofoam mattress is the right fit for you." />
@@ -334,4 +334,4 @@ const Example = (props) => {
 	</>
   );
 };
-export default Example;
+export default TAKETEST;
