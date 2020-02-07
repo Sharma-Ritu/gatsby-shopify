@@ -71,37 +71,37 @@ const TAKETEST = (props) => {
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
-							<NavLink  className={activeTab === '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
+							<NavLink  className={activeTab === '1' ? 'active' : ''}>
 								<span>Step 1</span>
 								Sleep Position
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
+							<NavLink  className={activeTab === '2' ? 'active' : ''}>
 								<span>Step 2</span>
 								Surface
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
+							<NavLink  className={activeTab === '3' ? 'active' : ''}>
 								<span>Step 3</span>
 								Body Type
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
+							<NavLink  className={activeTab === '4' ? 'active' : ''}>
 								<span>Step 4</span>
 								Temperature
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
+							<NavLink  className={activeTab === '5' ? 'active' : ''}>
 								<span>Step 5</span>
 								Exercise
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
+							<NavLink  className={activeTab === '6' ? 'active' : ''}>
 								<span>Step 6</span>
 								Back Pain
 							</NavLink>
@@ -128,11 +128,13 @@ const TAKETEST = (props) => {
 														<label className="opt_heading" htmlFor="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
-												<button className="btn btn-custom-secondary">Continue</button>
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
 											</div>
+										</Col>
+										<Col className="col-12">
+											<button className="btn text-white btn-custom-secondary" onClick={() => setActiveTab('2')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -167,6 +169,10 @@ const TAKETEST = (props) => {
 											<div>
 											</div>
 										</Col>
+										<Col className="col-12">
+											<button className="btn text-white btn-custom-primary" onClick={() => setActiveTab('1')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={() => setActiveTab('3')}>Continue</button>
+										</Col>
 									</Row>
 								</div>
 							</div>
@@ -199,6 +205,10 @@ const TAKETEST = (props) => {
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
 											</div>
+										</Col>
+										<Col className="col-12">
+											<button className="btn text-white btn-custom-primary" onClick={() => setActiveTab('2')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={() => setActiveTab('4')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -233,6 +243,10 @@ const TAKETEST = (props) => {
 											<div>
 											</div>
 										</Col>
+										<Col className="col-12">
+											<button className="btn text-white btn-custom-primary" onClick={() => setActiveTab('3')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={() => setActiveTab('5')}>Continue</button>
+										</Col>
 									</Row>
 								</div>
 							</div>
@@ -266,6 +280,10 @@ const TAKETEST = (props) => {
 											<div>
 											</div>
 										</Col>
+										<Col className="col-12">
+											<button className="btn text-white btn-custom-primary" onClick={() => setActiveTab('4')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={() => setActiveTab('6')}>Continue</button>
+										</Col>
 									</Row>
 								</div>
 							</div>
@@ -298,6 +316,10 @@ const TAKETEST = (props) => {
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
 											</div>
+										</Col>
+										<Col className="col-12">
+											<button className="btn text-white btn-custom-primary" onClick={() => setActiveTab('5')}>Back</button>
+											<button className="btn text-white btn-custom-secondary">Continue</button>
 										</Col>
 									</Row>
 								</div>

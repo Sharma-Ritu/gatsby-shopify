@@ -561,13 +561,11 @@ body .navbar{
 #tabs.d-block-ruby{
 	display:block ruby;
 }
-.btn-checkout {
-	background-color: #24336c !important;
-
+.btn.btn-checkout {
+	background-color: #24336c;
 }
-.btn-checkout:hover{
-	background-color: #000000 !important;
-	
+.btn.btn-checkout:hover{
+	background-color: #000000;	
 }
 .cart-total li {
     padding:15px;
@@ -594,18 +592,18 @@ body .navbar{
 .recent-post-image:hover .card-layer{
 	opacity:0.85;
 }
-.btn-custom-primary {
+.btn.btn-custom-primary {
 	background-color: #24336c;
 	border: 1px solid #24336c;
 }
-.btn-custom-primary {
+.btn.btn-custom-primary {
 	opacity: .8;
 }
-.btn-custom-secondary {
+.btn.btn-custom-secondary {
     background-color: #ba2154;
     border: 1px solid #ba3d67;
 }
-.btn-custom-secondary:hover{
+.btn.btn-custom-secondary:hover{
 	opacity: .8;
 }
 .take-test-tab .left-content input{
