@@ -94,15 +94,15 @@ const Example = (props) => {
 													<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">1. In what position do you most frequently sleep at night?</h3>
 													<div>
 														<input type="radio" value="1" name="first_stepopt" id="radioa1" onChange={e => handleChoiceSelect(e, 1, 1)}/>
-														<label className="opt_heading" for="radioa1">a. I sleep on my side.</label>
+														<label className="opt_heading" htmlFor="radioa1">a. I sleep on my side.</label>
 													</div>
 													<div>
 														<input type="radio" value="2" name="first_stepopt" id="radioa2" onChange={e => handleChoiceSelect(e, 1, 2)}/>
-														<label className="opt_heading" for="radioa2">b. I sleep on my back and/or stomach.</label>
+														<label className="opt_heading" htmlFor="radioa2">b. I sleep on my back and/or stomach.</label>
 													</div>
 													<div>
 														<input type="radio" value="3" name="first_stepopt" id="radioa3" onChange={e => handleChoiceSelect(e, 1, 3)}/>
-														<label className="opt_heading" for="radioa3">c. I toss and turn all the time.</label>
+														<label className="opt_heading" htmlFor="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
 										</Col>
@@ -124,19 +124,19 @@ const Example = (props) => {
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">2. On which surface do you think you would have the most comfortable sleep?</h3>
 												<div>
 													<input type="radio" value="1" name="second_stepopt" id="radiob1" />
-													<label className="opt_heading" for="radiob1">a. Soft – Like sleeping in a big pile of pillows that you sink into.</label>
+													<label className="opt_heading" htmlFor="radiob1">a. Soft – Like sleeping in a big pile of pillows that you sink into.</label>
 												</div>
 												<div>
 													<input type="radio" value="2" name="second_stepopt" id="radiob2" />
-													<label className="opt_heading" for="radiob2">b. Medium – Like sleeping on the couch with regular cushions.</label>
+													<label className="opt_heading" htmlFor="radiob2">b. Medium – Like sleeping on the couch with regular cushions.</label>
 												</div>
 												<div>
 													<input type="radio" value="3" name="second_stepopt" id="radiob3" />
-													<label className="opt_heading" for="radiob3">c. Firm – Like sleeping on the floor with a thick and fluffy comforter underneath.</label>
+													<label className="opt_heading" htmlFor="radiob3">c. Firm – Like sleeping on the floor with a thick and fluffy comforter underneath.</label>
 												</div>
 												<div>
 													<input type="radio" value="4" name="second_stepopt" id="radiob4" />
-													<label className="opt_heading" for="radiob4">d. Extra Firm – Like sleeping on the bare floor with just a carpet underneath.</label>
+													<label className="opt_heading" htmlFor="radiob4">d. Extra Firm – Like sleeping on the bare floor with just a carpet underneath.</label>
 												</div>
 											</div>
 										</Col>
@@ -158,19 +158,19 @@ const Example = (props) => {
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">3. What would you consider your body type?</h3>
 												<div>
 													<input type="radio" value="1" name="third_stepopt" id="radioc1"/>
-													<label className="opt_heading" for="radioc1">a. Small – I am very small and/or very skinny. (Typically under 130lbs.)</label>
+													<label className="opt_heading" htmlFor="radioc1">a. Small – I am very small and/or very skinny. (Typically under 130lbs.)</label>
 												</div>
 												<div>
 													<input type="radio" value="2" name="third_stepopt" id="radioc2"/>
-													<label className="opt_heading" for="radioc2">b. Average – I am average height and average build. (Between 130lbs and 210lbs.)</label>
+													<label className="opt_heading" htmlFor="radioc2">b. Average – I am average height and average build. (Between 130lbs and 210lbs.)</label>
 												</div>
 												<div>
 													<input type="radio" value="3" name="third_stepopt" id="radioc3"/>
-													<label className="opt_heading" for="radioc3">c. Large – I am taller than average and/or a little heavier than average. (Between 210lbs and 280lbs.)</label>
+													<label className="opt_heading" htmlFor="radioc3">c. Large – I am taller than average and/or a little heavier than average. (Between 210lbs and 280lbs.)</label>
 												</div>
 												<div>
 													<input type="radio" value="4" name="third_stepopt" id="radioc4"/>
-													<label className="opt_heading" for="radioc4">d. Extra Large – I have a very large frame and on the heavy side. (Over 280lbs.)</label>
+													<label className="opt_heading" htmlFor="radioc4">d. Extra Large – I have a very large frame and on the heavy side. (Over 280lbs.)</label>
 												</div>
 											</div>
 										</Col>
@@ -192,19 +192,19 @@ const Example = (props) => {
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">4. Do you get hot and sweaty or very cold when you sleep at night?</h3>
 												<div>
 													<input type="radio" value="1" name="forth_stepopt" id="radiod1" />
-													<label className="opt_heading" for="radiod1">a. I sleep very cool and always need to wrap myself up to keep warm.</label>
+													<label className="opt_heading" htmlFor="radiod1">a. I sleep very cool and always need to wrap myself up to keep warm.</label>
 												</div>
 												<div>
 													<input type="radio" value="2" name="forth_stepopt" id="radiod2" />
-													<label className="opt_heading" for="radiod2">b. My sleep temperature is not a problem, I’m never too hot or too cold.</label>
+													<label className="opt_heading" htmlFor="radiod2">b. My sleep temperature is not a problem, I’m never too hot or too cold.</label>
 												</div>
 												<div>
 													<input type="radio" value="3" name="forth_stepopt" id="radiod3" />
-													<label className="opt_heading" for="radiod3">c. I get hot once in a while but nothing drastic.</label>
+													<label className="opt_heading" htmlFor="radiod3">c. I get hot once in a while but nothing drastic.</label>
 												</div>
 												<div>
 													<input type="radio" value="4" name="forth_stepopt" id="radiod4" />
-													<label className="opt_heading" for="radiod4">d. I get hot and sweaty when I sleep and wake up in the middle of the night constantly.</label>
+													<label className="opt_heading" htmlFor="radiod4">d. I get hot and sweaty when I sleep and wake up in the middle of the night constantly.</label>
 												</div>
 											</div>
 										</Col>
@@ -226,19 +226,19 @@ const Example = (props) => {
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">5. How often to you play sports, work out, exercise, and/or go for a run?</h3>
 												<div>
 													<input type="radio" value="1" name="fifth_stepopt" id="radioe1" />
-													<label className="opt_heading" for="radioe1">a. 3-7 times a week.</label>
+													<label className="opt_heading" htmlFor="radioe1">a. 3-7 times a week.</label>
 												</div>
 												<div>
 													<input type="radio" value="2" name="fifth_stepopt" id="radioe2" />
-													<label className="opt_heading" for="radioe2">b. 1-2 times a week.</label>
+													<label className="opt_heading" htmlFor="radioe2">b. 1-2 times a week.</label>
 												</div>
 												<div>
 													<input type="radio" value="3" name="fifth_stepopt" id="radioe3" />
-													<label className="opt_heading" for="radioe3">c. A few times a month.</label>
+													<label className="opt_heading" htmlFor="radioe3">c. A few times a month.</label>
 												</div>
 												<div>
 													<input type="radio" value="4" name="fifth_stepopt" id="radioe4" />
-													<label className="opt_heading" for="radioe4">d. Never.</label>
+													<label className="opt_heading" htmlFor="radioe4">d. Never.</label>
 												</div>
 											</div>
 										</Col>
@@ -261,19 +261,19 @@ const Example = (props) => {
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">6. Do you suffer from back pain?</h3>
 												<div>
 													<input type="radio" value="1" name="sixth_stepopt" id="radiof1" />
-													<label className="opt_heading" for="radiof1">a. I suffer from severe back pain constantly.</label>
+													<label className="opt_heading" htmlFor="radiof1">a. I suffer from severe back pain constantly.</label>
 												</div>
 												<div>
 													<input type="radio" value="2" name="sixth_stepopt" id="radiof2" />
-													<label className="opt_heading" for="radiof2">b. I get occasional back pain that is severe.</label>
+													<label className="opt_heading" htmlFor="radiof2">b. I get occasional back pain that is severe.</label>
 												</div>
 												<div>
 													<input type="radio" value="3" name="sixth_stepopt" id="radiof3" />
-													<label className="opt_heading" for="radiof3">c. I get occasional back pain that is mild.</label>
+													<label className="opt_heading" htmlFor="radiof3">c. I get occasional back pain that is mild.</label>
 												</div>
 												<div>
 													<input type="radio" value="4" name="sixth_stepopt" id="radiof4" />
-													<label className="opt_heading" for="radiof4">d. I do not suffer from back pain.</label>
+													<label className="opt_heading" htmlFor="radiof4">d. I do not suffer from back pain.</label>
 												</div>
 											</div>
 										</Col>
