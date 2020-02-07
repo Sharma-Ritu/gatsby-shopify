@@ -96,11 +96,11 @@ const Example = (props) => {
 														<label className="opt_heading" for="radioa1">a. I sleep on my side.</label>
 													</div>
 													<div>
-														<input type="radio" value="2" name="first_stepopt" id="radioa2" onClick={handleChoiceSelect(1, 1)}/>
+														<input type="radio" value="2" name="first_stepopt" id="radioa2" onClick={handleChoiceSelect(1, 2)}/>
 														<label className="opt_heading" for="radioa2">b. I sleep on my back and/or stomach.</label>
 													</div>
 													<div>
-														<input type="radio" value="3" name="first_stepopt" id="radioa3" onClick={handleChoiceSelect(1, 1)}/>
+														<input type="radio" value="3" name="first_stepopt" id="radioa3" onClick={handleChoiceSelect(1, 3)}/>
 														<label className="opt_heading" for="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
