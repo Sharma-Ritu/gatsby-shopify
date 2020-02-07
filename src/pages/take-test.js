@@ -18,12 +18,14 @@ const TAKETEST = (props) => {
   	getElement("#take-test").classList.toggle("d-none")
   }
   const handleChoiceSelect = (event, Step, Choice) => {
-  	//selectedChoices[(Step-1)] = Choice;
-  	console.log(selectedChoices[(Step-1)])
+  	//selectedChoices[(Step)] = Choice;
   	setSelectedChoices([
       ...selectedChoices,
-      selectedChoices.push(Choice)
-    ])
+      {
+        step: Step,
+        choice: Choice
+      }
+    ]);
   	//selectedChoices.push(Choice)
   	console.log(selectedChoices)
   }
