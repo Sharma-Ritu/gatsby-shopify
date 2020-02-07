@@ -37,6 +37,7 @@ const TAKETEST = (props) => {
 	  }
   ]);
   const [activeTab, setActiveTab] = useState('1');
+  const [disableProcess, setDisableProcess] = useState(false);
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
   };
@@ -45,10 +46,12 @@ const TAKETEST = (props) => {
   	getElement("#take-test").classList.toggle("d-none")
   }
   const handleChoiceSelect = (event, stepID, Choice, choiceLabel) => {
-  	const nextStepID = (stepID !== 6)? (stepID + 1) : null;
   	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
   	selectedChoices[choiceIndex].choice = Choice;
   	selectedChoices[choiceIndex].choiceLabel = choiceLabel;
+  	if(stepID === 6){
+  		setDisableProcess(false);
+  	}
   }
   const goTo = (event, checkStep, tabID) => {
   	if(checkStep){
@@ -68,18 +71,20 @@ const TAKETEST = (props) => {
   	const Step4 = selectedChoices[selectedChoices.findIndex((step => step.id === 4))];
   	const Step5 = selectedChoices[selectedChoices.findIndex((step => step.id === 5))];
   	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6))];
-  	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
-  	if((Step2.choice === 1) || (Step3.choice === 1)){
-  		getElement("#result").classList.toggle("d-none")
-  		getElement("#sorry").classList.toggle("d-none")
-  	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
-  		getElement("#result").classList.toggle("d-none")
-  		getElement("#xf").classList.toggle("d-none")
-  		getElement("#xf-block").classList.toggle("d-none")
-  		getElement("#success").classList.toggle("d-none")
-  	}else{
-  		getElement("#result").classList.toggle("d-none")
-  		console.log('ol')
+  	if(Step6.choice !== 0){
+	  	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
+	  	if((Step2.choice === 1) || (Step3.choice === 1)){
+	  		getElement("#result").classList.toggle("d-none")
+	  		getElement("#sorry").classList.toggle("d-none")
+	  	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
+	  		getElement("#result").classList.toggle("d-none")
+	  		getElement("#xf").classList.toggle("d-none")
+	  		getElement("#xf-block").classList.toggle("d-none")
+	  		getElement("#success").classList.toggle("d-none")
+	  	}else{
+	  		getElement("#result").classList.toggle("d-none")
+	  		console.log('ol')
+	  	}
   	}
   }
   /*
@@ -356,7 +361,7 @@ const TAKETEST = (props) => {
 										</Col>
 										<Col className="col-12">
 											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '5')}>Back</button>
-											<button className="btn text-white btn-custom-secondary" onClick={e => processTest(e)}>Continue</button>
+											<button className="btn text-white btn-custom-secondary" disabled={disableProcess} onClick={e => processTest(e)}>Continue</button>
 										</Col>
 									</Row>
 								</div>
