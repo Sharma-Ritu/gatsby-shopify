@@ -14,6 +14,7 @@ const Example = (props) => {
   	return document.querySelector(seletor)
   };
   const startTest = () => {
+  	console.log(getElement("#start-test").classList)
   	document.querySelector("#start-test").classList.toggle("d-none")
   	document.querySelector("#take-test").classList.toggle("d-none")
   };
