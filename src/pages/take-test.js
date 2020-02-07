@@ -379,7 +379,7 @@ const TAKETEST = (props) => {
 						<ul>{selectedChoices.map((step, i) => 
                   <li key={i}>
                     <strong>{step.id}. </strong>
-                    <span>{step.choice}</spna>
+                    <span>{step.choice}</span>
                   </li>
             )}</ul>
             <div className="btn_row1">
