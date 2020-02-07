@@ -6,6 +6,7 @@ import {Container,Jumbotron, Row, Col, Button, Fade, Media, Nav, NavItem, NavLin
 import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 import xf1 from "~/assets/img/xf1.jpg"
+import ol1 from "~/assets/img/ol1.jpg"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
@@ -393,6 +394,21 @@ const TAKETEST = (props) => {
 							</div>
 						</div>
 						<div id="xf-block" className="ans-pdt">
+							<div className="based-on-answer">
+								<h4>Recommended Mattress</h4>
+								<p>Based on your input, this mattress is a good fit for you.</p>
+							</div>
+							<div className="b-now">
+								<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`}>BUY NOW</Link>
+							</div>
+							<div className="ans-pdt-data">
+								<div className="pdt-image">
+									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} class="img-fluid" />
+								</div>
+								<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
+							</div>
+            </div>
+            <div id="ol-block" className="ans-pdt">
 							<div className="based-on-answer">
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
