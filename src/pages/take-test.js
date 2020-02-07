@@ -83,7 +83,9 @@ const TAKETEST = (props) => {
 	  		getElement("#success").classList.toggle("d-none")
 	  	}else{
 	  		getElement("#result").classList.toggle("d-none")
-	  		console.log('ol')
+	  		getElement("#ol").classList.toggle("d-none")
+	  		getElement("#ol-block").classList.toggle("d-none")
+	  		getElement("#success").classList.toggle("d-none")
 	  	}
   	}
   }
@@ -419,13 +421,13 @@ const TAKETEST = (props) => {
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
 							<div className="b-now">
-								<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`}>BUY NOW</Link>
+								<Link to={`/product/the-original-chirofoam™-mattress-luxury-firm/`}>BUY NOW</Link>
 							</div>
 							<div className="ans-pdt-data">
 								<div className="pdt-image">
-									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} class="img-fluid" />
+									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={ol1} class="img-fluid" />
 								</div>
-								<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
+								<h4>THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM</h4>
 							</div>
             </div>
             <div className="btn_row1">
