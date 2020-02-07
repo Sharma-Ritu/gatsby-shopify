@@ -49,7 +49,7 @@ const TAKETEST = (props) => {
   	selectedChoices[choiceIndex].choiceLabel = choiceLabel;
   	console.log(selectedChoices[choiceIndex])
   }
-  const goTo = (checkStep, tabID) => {
+  const goTo = (event, checkStep, tabID) => {
   	if(checkStep){
   		const stepID = (parseInt(tabID) - 1);
   		const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
@@ -149,7 +149,7 @@ const TAKETEST = (props) => {
 											</div>
 										</Col>
 										<Col className="col-12">
-											<button className="btn text-white btn-custom-secondary" onClick={goTo(true, '2')}>Continue</button>
+											<button className="btn text-white btn-custom-secondary" onClick={e => goTo(e, true, '2')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -185,8 +185,8 @@ const TAKETEST = (props) => {
 											</div>
 										</Col>
 										<Col className="col-12">
-											<button className="btn text-white btn-custom-primary mr-2" onClick={goTo(false, '1')}>Back</button>
-											<button className="btn text-white btn-custom-secondary" onClick={goTo(true, '3')}>Continue</button>
+											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '1')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={e => goTo(e, true, '3')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -222,8 +222,8 @@ const TAKETEST = (props) => {
 											</div>
 										</Col>
 										<Col className="col-12">
-											<button className="btn text-white btn-custom-primary mr-2" onClick={goTo(false, '2')}>Back</button>
-											<button className="btn text-white btn-custom-secondary" onClick={goTo(true, '4')}>Continue</button>
+											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '2')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={e => goTo(e, true, '4')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -259,8 +259,8 @@ const TAKETEST = (props) => {
 											</div>
 										</Col>
 										<Col className="col-12">
-											<button className="btn text-white btn-custom-primary mr-2" onClick={goTo(false, '3')}>Back</button>
-											<button className="btn text-white btn-custom-secondary" onClick={goTo(true, '5')}>Continue</button>
+											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '3')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={e => goTo(e, true, '5')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -296,8 +296,8 @@ const TAKETEST = (props) => {
 											</div>
 										</Col>
 										<Col className="col-12">
-											<button className="btn text-white btn-custom-primary mr-2" onClick={goTo(false, '4')}>Back</button>
-											<button className="btn text-white btn-custom-secondary" onClick={goTo(true, '6')}>Continue</button>
+											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '4')}>Back</button>
+											<button className="btn text-white btn-custom-secondary" onClick={e => goTo(e, true, '6')}>Continue</button>
 										</Col>
 									</Row>
 								</div>
@@ -333,7 +333,7 @@ const TAKETEST = (props) => {
 											</div>
 										</Col>
 										<Col className="col-12">
-											<button className="btn text-white btn-custom-primary mr-2" onClick={goTo(false, '5')}>Back</button>
+											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '5')}>Back</button>
 											<button className="btn text-white btn-custom-secondary">Continue</button>
 										</Col>
 									</Row>
