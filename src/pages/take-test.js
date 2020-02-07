@@ -382,7 +382,7 @@ const TAKETEST = (props) => {
 						<div id="sorry" className="d-none text-center">
 							We are sorry, but based on the answers you have provided we do not think that the Chirofoam mattress will be a good fit for you. Some of the crucial answers you provided did not match well with the Chirofoam mattress.
 							<br/>
-							Visit our preferred retail partner <a href="https://nationalmattress.ca" target="_blank">National Mattress</a>, or try their mattress selector online. You will definitely find a mattress that better suits your needs and they offer free Canada-Wide delivery on many of their mattresses. You may also try the Chirofoam mattress at any one of their locations to see if it a good fit for you.
+							Visit our preferred retail partner <a href="https://nationalmattress.ca" rel="noopener noreferrer" target="_blank">National Mattress</a>, or try their mattress selector online. You will definitely find a mattress that better suits your needs and they offer free Canada-Wide delivery on many of their mattresses. You may also try the Chirofoam mattress at any one of their locations to see if it a good fit for you.
 						</div>
 						<div id="xf" className="d-none text-center">
 							The Chirofoam Mattress looks like it will be an average fit for you based on the answers you provided.
@@ -411,7 +411,7 @@ const TAKETEST = (props) => {
 							</div>
 							<div className="ans-pdt-data">
 								<div className="pdt-image">
-									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} class="img-fluid" />
+									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} className="img-fluid" />
 								</div>
 								<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
 							</div>
@@ -426,7 +426,7 @@ const TAKETEST = (props) => {
 							</div>
 							<div className="ans-pdt-data">
 								<div className="pdt-image">
-									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={ol1} class="img-fluid" />
+									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={ol1} className="img-fluid" />
 								</div>
 								<h4>THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM</h4>
 							</div>
