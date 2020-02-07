@@ -387,6 +387,32 @@ const TAKETEST = (props) => {
 							<li key={i}><strong>{step.id}</strong> <span>{step.choiceLabel}</span></li>
             )}
             </ul>
+            <div id="success" className="d-none">
+							<div className="tip_div">
+								<p><em>Note:- </em>The Chirofoam Mattress looks like it will be the ideal fit for you based on the answers you provided. You matched up well on all your answers!</p>
+							</div>
+						</div>
+						<div id="xf-block" className="ans-pdt">
+							<div className="based-on-answer">
+								<h4>Recommended Mattress</h4>
+								<p>Based on your input, this mattress is a good fit for you.</p>
+							</div>
+							<div className="b-now">
+								<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`}>BUY NOW</Link>
+							</div>
+							<div className="ans-pdt-data">
+								<div className="pdt-image">
+									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} class="img-fluid" />
+								</div>
+								<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
+							</div>
+            </div>
+            <div className="btn_row1">
+            	<div className="tip_div">
+            		<p><em>Tip: </em>If you sleep with a partner, let them take the test to see if your results match up.</p>
+            		<p>As always, your purchase comes with a 100-night sleep trial, making it easy to return the Chirofoam mattress within 100 nights if you are not 100% satisfied!</p>
+            	</div>
+            </div>
 					</Col>
 				</Row>
 			</Container>
