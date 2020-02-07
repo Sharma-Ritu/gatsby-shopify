@@ -50,7 +50,7 @@ const TAKETEST = (props) => {
   	selectedChoices[choiceIndex].choice = Choice;
   	selectedChoices[choiceIndex].choiceLabel = choiceLabel;
   	if(stepID === 6){
-  		setDisableProcess(false);
+  		setDisableProcess(true);
   	}
   }
   const goTo = (event, checkStep, tabID) => {
