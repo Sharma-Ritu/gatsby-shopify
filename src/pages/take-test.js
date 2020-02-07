@@ -10,7 +10,7 @@ import ol1 from "~/assets/img/ol1.jpg"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  const [selectedChoices] = useState([{
+  const [selectedChoices, setSelectedChoices] = useState([{
 	    id: 1,
 	    choice: 0,
 	    choiceLabel: ''
@@ -37,7 +37,7 @@ const TAKETEST = (props) => {
 	  }
   ]);
   const [activeTab, setActiveTab] = useState('1');
-  const [disableProcess, setDisableProcess] = useState(false);
+  const [enableProcess, setEnableProcess] = useState(true);
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
   };
@@ -50,7 +50,8 @@ const TAKETEST = (props) => {
   	selectedChoices[choiceIndex].choice = Choice;
   	selectedChoices[choiceIndex].choiceLabel = choiceLabel;
   	if(stepID === 6){
-  		setDisableProcess(true);
+  		setSelectedChoices(selectedChoices);
+  		setEnableProcess(false);
   	}
   }
   const goTo = (event, checkStep, tabID) => {
@@ -363,7 +364,7 @@ const TAKETEST = (props) => {
 										</Col>
 										<Col className="col-12">
 											<button className="btn text-white btn-custom-primary mr-2" onClick={e => goTo(e, false, '5')}>Back</button>
-											<button className="btn text-white btn-custom-secondary" disabled={disableProcess} onClick={e => processTest(e)}>Continue</button>
+											<button className="btn text-white btn-custom-secondary" disabled={enableProcess} onClick={e => processTest(e)}>Continue</button>
 										</Col>
 									</Row>
 								</div>
