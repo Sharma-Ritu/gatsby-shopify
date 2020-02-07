@@ -61,20 +61,20 @@ const TAKETEST = (props) => {
   	}
   }
   const processTest = (event) => {
-  	const Step1 = selectedChoices[selectedChoices.findIndex((step => step.id === 1))];
+  	console.log(selectedChoices.findIndex((step => step.id === 1)));
+  	/*const Step1 = selectedChoices[selectedChoices.findIndex((step => step.id === 1))];
   	const Step2 = selectedChoices[selectedChoices.findIndex((step => step.id === 2)];
   	const Step3 = selectedChoices[selectedChoices.findIndex((step => step.id === 3)];
   	const Step4 = selectedChoices[selectedChoices.findIndex((step => step.id === 4)];
   	const Step5 = selectedChoices[selectedChoices.findIndex((step => step.id === 5)];
   	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6)];
-  	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
   	if((Step2.choice === 1) || (Step3.choice === 1)){
   		console.log('sorry')
   	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
   		console.log('xf')
   	}else{
   		console.log('ol')
-  	}
+  	}*/
   }
   /*
   const toggle = tab => {
