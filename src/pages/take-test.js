@@ -10,14 +10,13 @@ const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState(1);
   const getElement = (seletor) => {
-  	console.log('here', seletor)
   	return document.querySelector(seletor)
   };
   const startTest = () => {
+  	console.log(getElement("#start-test"))
   	document.querySelector("#start-test").classList.toggle("d-none")
   	document.querySelector("#take-test").classList.toggle("d-none")
   };
-  console.log(getElement("#start-test"))
   /*
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
