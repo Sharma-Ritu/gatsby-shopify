@@ -8,7 +8,26 @@ import "../assets/css/bootstrap.min.css"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  const [selectedChoices, setSelectedChoices] = useState([]);
+  const [selectedChoices, setSelectedChoices] = useState([{
+	    id: 1,
+	    choice: 0
+	  },{
+	    id: 2,
+	    choice: 0
+	  },{
+	    id: 3,
+	    choice: 0
+	  },{
+	    id: 4,
+	    choice: 0
+	  },{
+	    id: 4,
+	    choice: 0
+	  },{
+	    id: 6,
+	    choice: 0
+	  },
+  ]);
   const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
@@ -17,15 +36,19 @@ const TAKETEST = (props) => {
   	getElement("#start-test").classList.toggle("d-none")
   	getElement("#take-test").classList.toggle("d-none")
   }
-  const handleChoiceSelect = (event, Step, Choice) => {
+  const handleChoiceSelect = (event, stepID, Choice) => {
   	//selectedChoices[(Step)] = Choice;
-  	if(selectedChoices.length === 0){
+  	choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
+  	console.log("Before update: ", selectedChoices[choiceIndex])
+  	selectedChoices[choiceIndex].choice = Choice
+  	console.log("After update: ", selectedChoices[choiceIndex])
+  	/*if(selectedChoices.length === 0){
   		selectedChoices.push({
 	      step: Step,
 	      choice: Choice
 	   	});
 	   	setSelectedChoices(selectedChoices);
-  	}
+  	}*/
   	/*setSelectedChoices([
       ...selectedChoices,
       {
