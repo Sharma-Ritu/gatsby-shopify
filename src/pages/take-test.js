@@ -382,12 +382,11 @@ const TAKETEST = (props) => {
 							The Chirofoam Mattress looks like it will be the ideal fit for you based on the answers you provided. You matched up well on all your answers!
 						</div>
 						<h3>Results</h3>
-						<ul className="list-unstyled">{selectedChoices.map((step, i) => 
-                  <li key={i}>
-                    <strong>{step.id}. </strong>
-                    <span>{step.choiceLabel}</span>
-                  </li>
-            )}</ul>
+						<ul className="list-unstyled">
+						{selectedChoices.map((step, i) => 
+							<li key={i}><strong>{step.id}</strong> <span>{step.choiceLabel}</span></li>
+            )}
+            </ul>
 					</Col>
 				</Row>
 			</Container>
