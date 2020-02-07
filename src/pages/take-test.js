@@ -10,23 +10,29 @@ const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const [selectedChoices] = useState([{
 	    id: 1,
-	    choice: 0
+	    choice: 0,
+	    choiceLabel: ''
 	  },{
 	    id: 2,
-	    choice: 0
+	    choice: 0,
+	    choiceLabel: ''
 	  },{
 	    id: 3,
-	    choice: 0
+	    choice: 0,
+	    choiceLabel: ''
 	  },{
 	    id: 4,
-	    choice: 0
+	    choice: 0,
+	    choiceLabel: ''
 	  },{
 	    id: 5,
-	    choice: 0
+	    choice: 0,
+	    choiceLabel: ''
 	  },{
 	    id: 6,
-	    choice: 0
-	  },
+	    choice: 0,
+	    choiceLabel: ''
+	  }
   ]);
   const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
@@ -36,14 +42,12 @@ const TAKETEST = (props) => {
   	getElement("#start-test").classList.toggle("d-none")
   	getElement("#take-test").classList.toggle("d-none")
   }
-  const handleChoiceSelect = (event, stepID, Choice) => {
+  const handleChoiceSelect = (event, stepID, Choice, choiceLabel) => {
   	const nextStepID = (stepID !== 6)? (stepID + 1) : null;
-  	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID))
-  	selectedChoices[choiceIndex].choice = Choice
-  	if(stepID !== 6){
-  		setActiveTab(nextStepID.toString())
-  	}
-  	console.log(selectedChoices)
+  	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
+  	selectedChoices[choiceIndex].choice = Choice;
+  	selectedChoices[choiceIndex].choiceLabel = choiceLabel;
+  	console.log(selectedChoices[choiceIndex])
   }
   /*
   const toggle = tab => {
@@ -116,15 +120,15 @@ const TAKETEST = (props) => {
 												<div className="left-content">
 													<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">1. In what position do you most frequently sleep at night?</h3>
 													<div>
-														<input type="radio" value="1" name="first_stepopt" id="radioa1" onChange={e => handleChoiceSelect(e, 1, 1)}/>
+														<input type="radio" value="1" name="first_stepopt" id="radioa1" onChange={e => handleChoiceSelect(e, 1, 1, 'I sleep on my side.')}/>
 														<label className="opt_heading" htmlFor="radioa1">a. I sleep on my side.</label>
 													</div>
 													<div>
-														<input type="radio" value="2" name="first_stepopt" id="radioa2" onChange={e => handleChoiceSelect(e, 1, 2)}/>
+														<input type="radio" value="2" name="first_stepopt" id="radioa2" onChange={e => handleChoiceSelect(e, 1, 2, 'I sleep on my back and/or stomach.')}/>
 														<label className="opt_heading" htmlFor="radioa2">b. I sleep on my back and/or stomach.</label>
 													</div>
 													<div>
-														<input type="radio" value="3" name="first_stepopt" id="radioa3" onChange={e => handleChoiceSelect(e, 1, 3)}/>
+														<input type="radio" value="3" name="first_stepopt" id="radioa3" onChange={e => handleChoiceSelect(e, 1, 3, 'I toss and turn all the time.')}/>
 														<label className="opt_heading" htmlFor="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
@@ -148,19 +152,19 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">2. On which surface do you think you would have the most comfortable sleep?</h3>
 												<div>
-													<input type="radio" value="1" name="second_stepopt" id="radiob1" onChange={e => handleChoiceSelect(e, 2, 1)} />
+													<input type="radio" value="1" name="second_stepopt" id="radiob1" onChange={e => handleChoiceSelect(e, 2, 1, 'Soft – Like sleeping in a big pile of pillows that you sink into.')} />
 													<label className="opt_heading" htmlFor="radiob1">a. Soft – Like sleeping in a big pile of pillows that you sink into.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="second_stepopt" id="radiob2" onChange={e => handleChoiceSelect(e, 2, 2)} />
+													<input type="radio" value="2" name="second_stepopt" id="radiob2" onChange={e => handleChoiceSelect(e, 2, 2, 'Medium – Like sleeping on the couch with regular cushions.')} />
 													<label className="opt_heading" htmlFor="radiob2">b. Medium – Like sleeping on the couch with regular cushions.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="second_stepopt" id="radiob3" onChange={e => handleChoiceSelect(e, 2, 3)} />
+													<input type="radio" value="3" name="second_stepopt" id="radiob3" onChange={e => handleChoiceSelect(e, 2, 3, 'Firm – Like sleeping on the floor with a thick and fluffy comforter underneath.')} />
 													<label className="opt_heading" htmlFor="radiob3">c. Firm – Like sleeping on the floor with a thick and fluffy comforter underneath.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="second_stepopt" id="radiob4" onChange={e => handleChoiceSelect(e, 2, 4)} />
+													<input type="radio" value="4" name="second_stepopt" id="radiob4" onChange={e => handleChoiceSelect(e, 2, 4, 'Extra Firm – Like sleeping on the bare floor with just a carpet underneath.')} />
 													<label className="opt_heading" htmlFor="radiob4">d. Extra Firm – Like sleeping on the bare floor with just a carpet underneath.</label>
 												</div>
 											</div>
@@ -185,19 +189,19 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">3. What would you consider your body type?</h3>
 												<div>
-													<input type="radio" value="1" name="third_stepopt" id="radioc1" onChange={e => handleChoiceSelect(e, 3, 1)}/>
+													<input type="radio" value="1" name="third_stepopt" id="radioc1" onChange={e => handleChoiceSelect(e, 3, 1, 'Small – I am very small and/or very skinny. (Typically under 130lbs.)')}/>
 													<label className="opt_heading" htmlFor="radioc1">a. Small – I am very small and/or very skinny. (Typically under 130lbs.)</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="third_stepopt" id="radioc2" onChange={e => handleChoiceSelect(e, 3, 2)}/>
+													<input type="radio" value="2" name="third_stepopt" id="radioc2" onChange={e => handleChoiceSelect(e, 3, 2, 'Average – I am average height and average build. (Between 130lbs and 210lbs.)')}/>
 													<label className="opt_heading" htmlFor="radioc2">b. Average – I am average height and average build. (Between 130lbs and 210lbs.)</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="third_stepopt" id="radioc3" onChange={e => handleChoiceSelect(e, 3, 3)}/>
+													<input type="radio" value="3" name="third_stepopt" id="radioc3" onChange={e => handleChoiceSelect(e, 3, 3, 'Large – I am taller than average and/or a little heavier than average. (Between 210lbs and 280lbs.)')}/>
 													<label className="opt_heading" htmlFor="radioc3">c. Large – I am taller than average and/or a little heavier than average. (Between 210lbs and 280lbs.)</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="third_stepopt" id="radioc4" onChange={e => handleChoiceSelect(e, 3, 4)}/>
+													<input type="radio" value="4" name="third_stepopt" id="radioc4" onChange={e => handleChoiceSelect(e, 3, 4, 'Extra Large – I have a very large frame and on the heavy side. (Over 280lbs.)')}/>
 													<label className="opt_heading" htmlFor="radioc4">d. Extra Large – I have a very large frame and on the heavy side. (Over 280lbs.)</label>
 												</div>
 											</div>
@@ -212,7 +216,7 @@ const TAKETEST = (props) => {
 										</Col>
 									</Row>
 								</div>
-							</div>>
+							</div>
 						</TabPane>
 						<TabPane tabId="4">
 							<div className="tab-content">
@@ -222,19 +226,19 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">4. Do you get hot and sweaty or very cold when you sleep at night?</h3>
 												<div>
-													<input type="radio" value="1" name="forth_stepopt" id="radiod1" onChange={e => handleChoiceSelect(e, 4, 1)}/>
+													<input type="radio" value="1" name="forth_stepopt" id="radiod1" onChange={e => handleChoiceSelect(e, 4, 1, 'I sleep very cool and always need to wrap myself up to keep warm.')}/>
 													<label className="opt_heading" htmlFor="radiod1">a. I sleep very cool and always need to wrap myself up to keep warm.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="forth_stepopt" id="radiod2" onChange={e => handleChoiceSelect(e, 4, 2)}/>
+													<input type="radio" value="2" name="forth_stepopt" id="radiod2" onChange={e => handleChoiceSelect(e, 4, 2, 'My sleep temperature is not a problem, I’m never too hot or too cold.')}/>
 													<label className="opt_heading" htmlFor="radiod2">b. My sleep temperature is not a problem, I’m never too hot or too cold.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="forth_stepopt" id="radiod3" onChange={e => handleChoiceSelect(e, 4, 3)}/>
+													<input type="radio" value="3" name="forth_stepopt" id="radiod3" onChange={e => handleChoiceSelect(e, 4, 3, 'I get hot once in a while but nothing drastic.')}/>
 													<label className="opt_heading" htmlFor="radiod3">c. I get hot once in a while but nothing drastic.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="forth_stepopt" id="radiod4" onChange={e => handleChoiceSelect(e, 4, 4)}/>
+													<input type="radio" value="4" name="forth_stepopt" id="radiod4" onChange={e => handleChoiceSelect(e, 4, 4, 'I get hot and sweaty when I sleep and wake up in the middle of the night constantly.')}/>
 													<label className="opt_heading" htmlFor="radiod4">d. I get hot and sweaty when I sleep and wake up in the middle of the night constantly.</label>
 												</div>
 											</div>
@@ -259,19 +263,19 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">5. How often to you play sports, work out, exercise, and/or go for a run?</h3>
 												<div>
-													<input type="radio" value="1" name="fifth_stepopt" id="radioe1" onChange={e => handleChoiceSelect(e, 5, 1)}/>
+													<input type="radio" value="1" name="fifth_stepopt" id="radioe1" onChange={e => handleChoiceSelect(e, 5, 1, '3-7 times a week.')}/>
 													<label className="opt_heading" htmlFor="radioe1">a. 3-7 times a week.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="fifth_stepopt" id="radioe2" onChange={e => handleChoiceSelect(e, 5, 2)}/>
+													<input type="radio" value="2" name="fifth_stepopt" id="radioe2" onChange={e => handleChoiceSelect(e, 5, 2, '1-2 times a week.')}/>
 													<label className="opt_heading" htmlFor="radioe2">b. 1-2 times a week.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="fifth_stepopt" id="radioe3" onChange={e => handleChoiceSelect(e, 5, 3)}/>
+													<input type="radio" value="3" name="fifth_stepopt" id="radioe3" onChange={e => handleChoiceSelect(e, 5, 3, 'A few times a month.')}/>
 													<label className="opt_heading" htmlFor="radioe3">c. A few times a month.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="fifth_stepopt" id="radioe4" onChange={e => handleChoiceSelect(e, 5, 4)}/>
+													<input type="radio" value="4" name="fifth_stepopt" id="radioe4" onChange={e => handleChoiceSelect(e, 5, 4, 'Never.')}/>
 													<label className="opt_heading" htmlFor="radioe4">d. Never.</label>
 												</div>
 											</div>
@@ -296,19 +300,19 @@ const TAKETEST = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">6. Do you suffer from back pain?</h3>
 												<div>
-													<input type="radio" value="1" name="sixth_stepopt" id="radiof1" onChange={e => handleChoiceSelect(e, 6, 1)}/>
+													<input type="radio" value="1" name="sixth_stepopt" id="radiof1" onChange={e => handleChoiceSelect(e, 6, 1, 'I suffer from severe back pain constantly.')}/>
 													<label className="opt_heading" htmlFor="radiof1">a. I suffer from severe back pain constantly.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="sixth_stepopt" id="radiof2" onChange={e => handleChoiceSelect(e, 6, 2)}/>
+													<input type="radio" value="2" name="sixth_stepopt" id="radiof2" onChange={e => handleChoiceSelect(e, 6, 2, 'I get occasional back pain that is severe.')}/>
 													<label className="opt_heading" htmlFor="radiof2">b. I get occasional back pain that is severe.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="sixth_stepopt" id="radiof3" onChange={e => handleChoiceSelect(e, 6, 3)}/>
+													<input type="radio" value="3" name="sixth_stepopt" id="radiof3" onChange={e => handleChoiceSelect(e, 6, 3, 'I get occasional back pain that is mild.')}/>
 													<label className="opt_heading" htmlFor="radiof3">c. I get occasional back pain that is mild.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="sixth_stepopt" id="radiof4" onChange={e => handleChoiceSelect(e, 6, 4)}/>
+													<input type="radio" value="4" name="sixth_stepopt" id="radiof4" onChange={e => handleChoiceSelect(e, 6, 4, 'I do not suffer from back pain.')}/>
 													<label className="opt_heading" htmlFor="radiof4">d. I do not suffer from back pain.</label>
 												</div>
 											</div>
