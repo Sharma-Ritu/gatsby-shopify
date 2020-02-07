@@ -563,11 +563,23 @@ body .navbar{
 }
 .btn-checkout {
 	background-color: #24336c !important;
-
 }
 .btn-checkout:hover{
 	background-color: #000000 !important;
-	
+}
+.btn-custom-primary{
+	background-color: #24336c;
+	border: 1px solid #24336c;
+}
+.btn-custom-primary{
+	opacity: .8;
+}
+.btn-custom-secondary{
+	background-color: #ba2154;
+	border: 1px solid #ba3d67;
+}
+.btn-custom-secondary:hover{
+	opacity: .8;
 }
 .cart-total li {
     padding:15px;
