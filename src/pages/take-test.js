@@ -8,7 +8,7 @@ import "../assets/css/bootstrap.min.css"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  const [selectedChoices, setSelectedChoices] = useState([{
+  const [selectedChoices] = useState([{
 	    id: 1,
 	    choice: 0
 	  },{
@@ -37,26 +37,12 @@ const TAKETEST = (props) => {
   	getElement("#take-test").classList.toggle("d-none")
   }
   const handleChoiceSelect = (event, stepID, Choice) => {
-  	//selectedChoices[(Step)] = Choice;
-  	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
-  	console.log("Before update: ", selectedChoices[choiceIndex])
+  	const nextStepID = (stepID !== 6)? (stepID + 1) : null;
+  	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID))
   	selectedChoices[choiceIndex].choice = Choice
-  	console.log("After update: ", selectedChoices[choiceIndex])
-  	/*if(selectedChoices.length === 0){
-  		selectedChoices.push({
-	      step: Step,
-	      choice: Choice
-	   	});
-	   	setSelectedChoices(selectedChoices);
-  	}*/
-  	/*setSelectedChoices([
-      ...selectedChoices,
-      {
-        step: Step,
-        choice: Choice
-      }
-    ]);*/
-  	//selectedChoices.push(Choice)
+  	if(stepID !== 6){
+  		setActiveTab(nextStepID.toString())
+  	}
   	console.log(selectedChoices)
   }
   /*
