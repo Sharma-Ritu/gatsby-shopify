@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Fade, Media, Nav, NavItem, NavLink, TabContent, TabPane, Form} from 'reactstrap';
+import {Container, Row, Col, Nav, NavItem, NavLink, TabContent, TabPane} from 'reactstrap';
 import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 import xf1 from "~/assets/img/xf1.jpg"
@@ -66,11 +66,8 @@ const TAKETEST = (props) => {
   	}
   }
   const processTest = (event) => {
-  	const Step1 = selectedChoices[selectedChoices.findIndex((step => step.id === 1))];
   	const Step2 = selectedChoices[selectedChoices.findIndex((step => step.id === 2))];
   	const Step3 = selectedChoices[selectedChoices.findIndex((step => step.id === 3))];
-  	const Step4 = selectedChoices[selectedChoices.findIndex((step => step.id === 4))];
-  	const Step5 = selectedChoices[selectedChoices.findIndex((step => step.id === 5))];
   	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6))];
   	if(Step6.choice !== 0){
 	  	console.log(selectedChoices);
