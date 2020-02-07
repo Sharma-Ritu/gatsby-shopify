@@ -38,7 +38,7 @@ const TAKETEST = (props) => {
   }
   const handleChoiceSelect = (event, stepID, Choice) => {
   	//selectedChoices[(Step)] = Choice;
-  	choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
+  	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
   	console.log("Before update: ", selectedChoices[choiceIndex])
   	selectedChoices[choiceIndex].choice = Choice
   	console.log("After update: ", selectedChoices[choiceIndex])
