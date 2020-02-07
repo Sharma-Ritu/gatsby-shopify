@@ -19,8 +19,8 @@ const Example = (props) => {
   	document.querySelector("#take-test").classList.toggle("d-none")
   };
   const handleChoiceSelect = (event, Step, Choice) => {
-  	console.log(Step, Choice)
   	selectedChoices[Step] = Choice
+  	console.log(selectedChoices, Step, Choice)
   }
   /*
   const toggle = tab => {
@@ -124,19 +124,19 @@ const Example = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">2. On which surface do you think you would have the most comfortable sleep?</h3>
 												<div>
-													<input type="radio" value="1" name="second_stepopt" id="radiob1" />
+													<input type="radio" value="1" name="second_stepopt" id="radiob1" onChange={e => handleChoiceSelect(e, 2, 1)} />
 													<label className="opt_heading" htmlFor="radiob1">a. Soft – Like sleeping in a big pile of pillows that you sink into.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="second_stepopt" id="radiob2" />
+													<input type="radio" value="2" name="second_stepopt" id="radiob2" onChange={e => handleChoiceSelect(e, 2, 2)} />
 													<label className="opt_heading" htmlFor="radiob2">b. Medium – Like sleeping on the couch with regular cushions.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="second_stepopt" id="radiob3" />
+													<input type="radio" value="3" name="second_stepopt" id="radiob3" onChange={e => handleChoiceSelect(e, 2, 3)} />
 													<label className="opt_heading" htmlFor="radiob3">c. Firm – Like sleeping on the floor with a thick and fluffy comforter underneath.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="second_stepopt" id="radiob4" />
+													<input type="radio" value="4" name="second_stepopt" id="radiob4" onChange={e => handleChoiceSelect(e, 2, 4)} />
 													<label className="opt_heading" htmlFor="radiob4">d. Extra Firm – Like sleeping on the bare floor with just a carpet underneath.</label>
 												</div>
 											</div>
