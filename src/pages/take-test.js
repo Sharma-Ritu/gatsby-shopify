@@ -14,10 +14,9 @@ const Example = (props) => {
   	return document.querySelector(seletor)
   };
   const startTest = () => {
-  	console.log(getElement("#start-test").classList)
-  	document.querySelector("#start-test").classList.toggle("d-none")
-  	document.querySelector("#take-test").classList.toggle("d-none")
-  };
+  	getElement("#start-test").classList.toggle("d-none")
+  	getElement("#take-test").classList.toggle("d-none")
+  }
   const handleChoiceSelect = (event, Step, Choice) => {
   	//selectedChoices[(Step)] = Choice;
   	selectedChoices.push(Choice)
