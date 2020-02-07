@@ -75,19 +75,17 @@ const TAKETEST = (props) => {
   	if(Step6.choice !== 0){
 	  	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
 	  	if((Step2.choice === 1) || (Step3.choice === 1)){
-	  		getElement("#result").classList.toggle("d-none")
 	  		getElement("#sorry").classList.toggle("d-none")
 	  	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
-	  		getElement("#result").classList.toggle("d-none")
 	  		getElement("#xf").classList.toggle("d-none")
 	  		getElement("#xf-block").classList.toggle("d-none")
 	  		getElement("#success").classList.toggle("d-none")
 	  	}else{
-	  		getElement("#result").classList.toggle("d-none")
 	  		getElement("#ol").classList.toggle("d-none")
 	  		getElement("#ol-block").classList.toggle("d-none")
 	  		getElement("#success").classList.toggle("d-none")
 	  	}
+	  	getElement("#result").classList.toggle("d-none")
   	}
   }
   /*
