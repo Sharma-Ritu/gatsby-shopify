@@ -8,7 +8,7 @@ import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  const selectedChoices = Array();
+  let selectedChoices = Array();
   const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
