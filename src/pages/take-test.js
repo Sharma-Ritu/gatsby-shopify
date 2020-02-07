@@ -21,10 +21,7 @@ const TAKETEST = (props) => {
   	//selectedChoices[(Step)] = Choice;
   	setSelectedChoices([
       ...selectedChoices,
-      {
-        id: selectedChoices.length,
-        value: Math.random() * 100
-      }
+      selectedChoices.push(Choice)
     ]);
   	//selectedChoices.push(Choice)
   	console.log(selectedChoices)
