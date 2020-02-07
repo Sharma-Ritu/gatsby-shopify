@@ -9,10 +9,14 @@ import "../assets/css/bootstrap.min.css"
 const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState('1');
+  const getElement = (seletor) => {
+  	return document.querySelector(seletor)
+  };
   const startTest = () => {
   	document.querySelector("#start-test").classList.toggle("d-none")
   	document.querySelector("#take-test").classList.toggle("d-none")
   };
+  console.log(getElement("#start-test"))
   /*
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
