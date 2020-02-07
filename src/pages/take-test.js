@@ -10,6 +10,7 @@ const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const [activeTab, setActiveTab] = useState(1);
   const getElement = (seletor) => {
+  	console.log('here', seletor)
   	return document.querySelector(seletor)
   };
   const startTest = () => {
