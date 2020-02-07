@@ -359,6 +359,42 @@ const TAKETEST = (props) => {
 				</div>
 			</div>
 		</section>
+		<section id="result" className="d-none">
+			<Container>
+				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
+					<Col className="col-12">
+						<h3 className="text-center">Answer</h3>
+						<div id="sorry" className="d-none text-center">
+							We are sorry, but based on the answers you have provided we do not think that the Chirofoam mattress will be a good fit for you. Some of the crucial answers you provided did not match well with the Chirofoam mattress.
+							<br/>
+							Visit our preferred retail partner <a href="https://nationalmattress.ca" target="_blank">National Mattress</a>, or try their mattress selector online. You will definitely find a mattress that better suits your needs and they offer free Canada-Wide delivery on many of their mattresses. You may also try the Chirofoam mattress at any one of their locations to see if it a good fit for you.
+						</div>
+						<div id="xf" className="d-none text-center">
+							The Chirofoam Mattress looks like it will be an average fit for you based on the answers you provided.
+						</div>
+						<div id="ol" className="d-none text-center">
+							The Chirofoam Mattress looks like it will be the ideal fit for you based on the answers you provided. You matched up well on all your answers!
+						</div>
+						<h3>Results</h3>
+						<ul>{selectedChoices.map((step, i) => 
+                  <li key={i}>
+                    <strong>{step.id}. </strong>
+                    <span>{step.choice}</spna>
+                  </li>
+            )}</ul>
+            <div className="btn_row1">
+							<div className="tip_div">
+								<p>
+									<em>Tip: </em>
+									If you sleep with a partner, let them take the test to see if your results match up.
+								</p>
+								<p>As always, your purchase comes with a 100-night sleep trial, making it easy to return the Chirofoam mattress within 100 nights if you are not 100% satisfied!</p>
+							</div>
+						</div>
+					</Col>
+				</Row>
+			</Container>
+		</section>
 		<section>
 			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
