@@ -8,7 +8,7 @@ import "../assets/css/bootstrap.min.css"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
-  const selectedChoices = useState(Array());
+  const selectedChoices = [];
   const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
@@ -22,7 +22,6 @@ const TAKETEST = (props) => {
   	selectedChoices.push(Choice)
   	console.log(selectedChoices, Step, Choice)
   }
-  console.log(selectedChoices);
   /*
   const toggle = tab => {
     if(activeTab !=== tab) setActiveTab(tab);
