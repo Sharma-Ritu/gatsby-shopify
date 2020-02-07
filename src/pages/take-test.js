@@ -21,7 +21,7 @@ const TAKETEST = (props) => {
 	    id: 4,
 	    choice: 0
 	  },{
-	    id: 4,
+	    id: 5,
 	    choice: 0
 	  },{
 	    id: 6,
