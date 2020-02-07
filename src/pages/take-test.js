@@ -19,7 +19,7 @@ const TAKETEST = (props) => {
   }
   const handleChoiceSelect = (event, Step, Choice) => {
   	//selectedChoices[(Step)] = Choice;
-  	setItems([
+  	setSelectedChoices([
       ...selectedChoices,
       {
         id: selectedChoices.length,
