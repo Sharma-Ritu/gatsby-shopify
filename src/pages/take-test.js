@@ -5,6 +5,7 @@ import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Button, Fade, Media, Nav, NavItem, NavLink, TabContent, TabPane, Form} from 'reactstrap';
 import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
+import xf1 from "~/assets/img/xf1.jpg"
 
 const TAKETEST = (props) => {
 	//const [showTest, setShowTest] = useState(false);
@@ -68,10 +69,15 @@ const TAKETEST = (props) => {
   	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6))];
   	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
   	if((Step2.choice === 1) || (Step3.choice === 1)){
-  		console.log('sorry')
+  		getElement("#result").classList.toggle("d-none")
+  		getElement("#sorry").classList.toggle("d-none")
   	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
-  		console.log('xf')
+  		getElement("#result").classList.toggle("d-none")
+  		getElement("#xf").classList.toggle("d-none")
+  		getElement("#xf-block").classList.toggle("d-none")
+  		getElement("#success").classList.toggle("d-none")
   	}else{
+  		getElement("#result").classList.toggle("d-none")
   		console.log('ol')
   	}
   }
@@ -376,12 +382,38 @@ const TAKETEST = (props) => {
 							The Chirofoam Mattress looks like it will be the ideal fit for you based on the answers you provided. You matched up well on all your answers!
 						</div>
 						<h3>Results</h3>
-						<ul>{selectedChoices.map((step, i) => 
+						<ul className="list-unstyled">{selectedChoices.map((step, i) => 
                   <li key={i}>
                     <strong>{step.id}. </strong>
-                    <span>{step.choice}</span>
+                    <span>{step.choiceLabel}</span>
                   </li>
             )}</ul>
+            <div id="success" className="d-none">
+							<div className="tip_div">
+								<p>
+									<em>Note:- </em>
+									The Chirofoam Mattress looks like it will be the ideal fit for you based on the answers you provided. You matched up well on all your answers!
+								</p>
+							</div>
+						</div>
+            <div className="btn_class buy_now_div" style="display: block; width: 50%;">
+            	<div className="based-on-answer">
+            		<h4>Recommended Mattress</h4>
+            		<p>Based on your input, this mattress is a good fit for you.</p>
+            	</div>
+            	<div id="xf-block" className="ans-pdt">
+            		<div className="b-now">
+            			<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`}>BUY NOW</Link>
+            		</div>
+            		<div className="ans-pdt-data">
+            			<div className="pdt-image">
+            				<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src="" class="img-fluid" />
+            			</div>
+            				<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
+            			</div>
+            		</div>
+            	</div>
+            </div>
             <div className="btn_row1">
 							<div className="tip_div">
 								<p>
