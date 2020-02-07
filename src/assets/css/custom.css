@@ -574,9 +574,9 @@ body .navbar{
 .btn-custom-primary{
 	opacity: .8;
 }
-.btn-custom-secondary{
-	background-color: #ba2154;
-	border: 1px solid #ba3d67;
+.btn-custom-secondary {
+    background-color: #ba2154;
+    border: 1px solid #ba3d67;
 }
 .btn-custom-secondary:hover{
 	opacity: .8;
