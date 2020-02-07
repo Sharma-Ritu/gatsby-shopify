@@ -47,7 +47,6 @@ const TAKETEST = (props) => {
   	const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
   	selectedChoices[choiceIndex].choice = Choice;
   	selectedChoices[choiceIndex].choiceLabel = choiceLabel;
-  	console.log(selectedChoices[choiceIndex])
   }
   const goTo = (event, checkStep, tabID) => {
   	if(checkStep){
@@ -62,11 +61,11 @@ const TAKETEST = (props) => {
   }
   const processTest = (event) => {
   	const Step1 = selectedChoices[selectedChoices.findIndex((step => step.id === 1))];
-  	const Step2 = selectedChoices[selectedChoices.findIndex((step => step.id === 2)];
-  	const Step3 = selectedChoices[selectedChoices.findIndex((step => step.id === 3)];
-  	const Step4 = selectedChoices[selectedChoices.findIndex((step => step.id === 4)];
-  	const Step5 = selectedChoices[selectedChoices.findIndex((step => step.id === 5)];
-  	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6)];
+  	const Step2 = selectedChoices[selectedChoices.findIndex((step => step.id === 2))];
+  	const Step3 = selectedChoices[selectedChoices.findIndex((step => step.id === 3))];
+  	const Step4 = selectedChoices[selectedChoices.findIndex((step => step.id === 4))];
+  	const Step5 = selectedChoices[selectedChoices.findIndex((step => step.id === 5))];
+  	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6))];
   	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
   	if((Step2.choice === 1) || (Step3.choice === 1)){
   		console.log('sorry')
