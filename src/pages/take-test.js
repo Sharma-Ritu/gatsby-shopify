@@ -9,7 +9,7 @@ import "../assets/css/bootstrap.min.css"
 const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const selectedChoices = Array();
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
   };
@@ -23,7 +23,7 @@ const Example = (props) => {
   }
   /*
   const toggle = tab => {
-    if(activeTab !== tab) setActiveTab(tab);
+    if(activeTab !=== tab) setActiveTab(tab);
   }
   */
 //export default (props) => {
@@ -48,37 +48,37 @@ const Example = (props) => {
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
-							<NavLink className={(activeTab === 1) ? 'active' : ''} onClick={() => setActiveTab(1)}>
+							<NavLink  className={activeTab === '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
 								<span>Step 1</span>
 								Sleep Position
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className={(activeTab === 2) ? 'active' : ''} onClick={() => setActiveTab(2)}>
+							<NavLink  className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
 								<span>Step 2</span>
 								Surface
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className={(activeTab === 3) ? 'active' : ''} onClick={() => setActiveTab(3)}>
+							<NavLink  className={activeTab === '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
 								<span>Step 3</span>
 								Body Type
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className={(activeTab === 4) ? 'active' : ''} onClick={() => setActiveTab(4)}>
+							<NavLink  className={activeTab === '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
 								<span>Step 4</span>
 								Temperature
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className={(activeTab === 5) ? 'active' : ''} onClick={() => setActiveTab(5)}>
+							<NavLink  className={activeTab === '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
 								<span>Step 5</span>
 								Exercise
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink className={(activeTab === 6) ? 'active' : ''} onClick={() => setActiveTab(6)}>
+							<NavLink  className={activeTab === '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
 								<span>Step 6</span>
 								Back Pain
 							</NavLink>
