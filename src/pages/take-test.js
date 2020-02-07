@@ -73,7 +73,7 @@ const TAKETEST = (props) => {
   	const Step5 = selectedChoices[selectedChoices.findIndex((step => step.id === 5))];
   	const Step6 = selectedChoices[selectedChoices.findIndex((step => step.id === 6))];
   	if(Step6.choice !== 0){
-	  	console.log(Step1, Step2, Step3, Step4, Step5, Step6);
+	  	console.log(selectedChoices);
 	  	if((Step2.choice === 1) || (Step3.choice === 1)){
 	  		getElement("#sorry").classList.toggle("d-none")
 	  	}else if((Step2.choice === 4) || (Step6.choice === 1) || ((Step2.choice === 3)&&(Step3.choice === 4))){
@@ -85,6 +85,7 @@ const TAKETEST = (props) => {
 	  		getElement("#ol-block").classList.toggle("d-none")
 	  		getElement("#success").classList.toggle("d-none")
 	  	}
+	  	getElement("#take-test").classList.toggle("d-none")
 	  	getElement("#result").classList.toggle("d-none")
   	}
   }
