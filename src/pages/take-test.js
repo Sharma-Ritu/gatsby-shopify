@@ -9,7 +9,7 @@ import "../assets/css/bootstrap.min.css"
 const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const selectedChoices = Array();
-  const [activeTab, setActiveTab] = useState('1');
+  const [activeTab, setActiveTab] = useState(1);
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
   };
@@ -18,7 +18,8 @@ const Example = (props) => {
   	document.querySelector("#take-test").classList.toggle("d-none")
   };
   const handleChoiceSelect = (event, Step, Choice) => {
-  	console.log(event, Step, Choice)
+  	console.log(Step, Choice)
+  	selectedChoices[Step] = Choice
   }
   /*
   const toggle = tab => {
@@ -47,37 +48,37 @@ const Example = (props) => {
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
-							<NavLink  className={activeTab == '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
+							<NavLink className={(activeTab === 1) ? 'active' : ''} onClick={() => setActiveTab(1)}>
 								<span>Step 1</span>
 								Sleep Position
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab == '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
+							<NavLink className={(activeTab === 2) ? 'active' : ''} onClick={() => setActiveTab(2)}>
 								<span>Step 2</span>
 								Surface
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab == '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
+							<NavLink className={(activeTab === 3) ? 'active' : ''} onClick={() => setActiveTab(3)}>
 								<span>Step 3</span>
 								Body Type
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab == '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
+							<NavLink className={(activeTab === 4) ? 'active' : ''} onClick={() => setActiveTab(4)}>
 								<span>Step 4</span>
 								Temperature
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab == '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
+							<NavLink className={(activeTab === 5) ? 'active' : ''} onClick={() => setActiveTab(5)}>
 								<span>Step 5</span>
 								Exercise
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab == '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
+							<NavLink className={(activeTab === 6) ? 'active' : ''} onClick={() => setActiveTab(6)}>
 								<span>Step 6</span>
 								Back Pain
 							</NavLink>
@@ -85,8 +86,8 @@ const Example = (props) => {
 					</Nav>
 					<TabContent className="take-test-tab" activeTab={activeTab}>
 						<TabPane tabId="1">
-							<div id="tabsContent" className="tab-content">
-                    			<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+							<div className="tab-content">
+                    			<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 												<div className="left-content">
@@ -115,8 +116,8 @@ const Example = (props) => {
 							</div>
 						</TabPane>
 						<TabPane tabId="2">
-							<div id="tabsContent" className="tab-content border border-top-0">
-								<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+							<div className="tab-content border border-top-0">
+								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 											<div className="left-content">
@@ -149,8 +150,8 @@ const Example = (props) => {
             				</div>
 						</TabPane>
 						<TabPane tabId="3">
-							<div id="tabsContent" className="tab-content border border-top-0">
-								<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+							<div className="tab-content border border-top-0">
+								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 											<div className="left-content">
@@ -183,8 +184,8 @@ const Example = (props) => {
             				</div>
 						</TabPane>
 						<TabPane tabId="4">
-							<div id="tabsContent" className="tab-content border border-top-0">
-								<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+							<div className="tab-content border border-top-0">
+								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 											<div className="left-content">
@@ -217,8 +218,8 @@ const Example = (props) => {
             				</div>
 						</TabPane>
 						<TabPane tabId="5">
-							<div id="tabsContent" className="tab-content border border-top-0">
-								<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+							<div className="tab-content border border-top-0">
+								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 											<div className="left-content">
@@ -252,8 +253,8 @@ const Example = (props) => {
             				</div>
 						</TabPane>
 						<TabPane tabId="6">
-							<div id="tabsContent" className="tab-content border border-top-0">
-								<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+							<div className="tab-content border border-top-0">
+								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 											<div className="left-content">
