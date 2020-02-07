@@ -9,7 +9,7 @@ import "../assets/css/bootstrap.min.css"
 const Example = (props) => {
 	//const [showTest, setShowTest] = useState(false);
   const selectedChoices = Array();
-  const [activeTab, setActiveTab] = useState('0');
+  const [activeTab, setActiveTab] = useState('1');
   const getElement = (seletor) => {
   	return document.querySelector(seletor)
   };
@@ -49,37 +49,37 @@ const Example = (props) => {
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
-							<NavLink  className={activeTab === '0' ? 'active' : ''}  onClick={() => setActiveTab('0')}>
+							<NavLink  className={activeTab === '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
 								<span>Step 1</span>
 								Sleep Position
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '1' ? 'active' : ''} onClick={() => setActiveTab('1')}>
+							<NavLink  className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
 								<span>Step 2</span>
 								Surface
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
+							<NavLink  className={activeTab === '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
 								<span>Step 3</span>
 								Body Type
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
+							<NavLink  className={activeTab === '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
 								<span>Step 4</span>
 								Temperature
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '4' ? 'active' : ''} onClick={() => setActiveTab('4')}>
+							<NavLink  className={activeTab === '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
 								<span>Step 5</span>
 								Exercise
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={activeTab === '5' ? 'active' : ''} onClick={() => setActiveTab('5')}>
+							<NavLink  className={activeTab === '6' ? 'active' : ''} onClick={() => setActiveTab('6')}>
 								<span>Step 6</span>
 								Back Pain
 							</NavLink>
@@ -94,15 +94,15 @@ const Example = (props) => {
 												<div className="left-content">
 													<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">1. In what position do you most frequently sleep at night?</h3>
 													<div>
-														<input type="radio" value="1" name="first_stepopt" id="radioa1" onChange={e => handleChoiceSelect(e, 0, 1)}/>
+														<input type="radio" value="1" name="first_stepopt" id="radioa1" onChange={e => handleChoiceSelect(e, 1, 1)}/>
 														<label className="opt_heading" htmlFor="radioa1">a. I sleep on my side.</label>
 													</div>
 													<div>
-														<input type="radio" value="2" name="first_stepopt" id="radioa2" onChange={e => handleChoiceSelect(e, 0, 2)}/>
+														<input type="radio" value="2" name="first_stepopt" id="radioa2" onChange={e => handleChoiceSelect(e, 1, 2)}/>
 														<label className="opt_heading" htmlFor="radioa2">b. I sleep on my back and/or stomach.</label>
 													</div>
 													<div>
-														<input type="radio" value="3" name="first_stepopt" id="radioa3" onChange={e => handleChoiceSelect(e, 0, 3)}/>
+														<input type="radio" value="3" name="first_stepopt" id="radioa3" onChange={e => handleChoiceSelect(e, 1, 3)}/>
 														<label className="opt_heading" htmlFor="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
@@ -124,19 +124,19 @@ const Example = (props) => {
 											<div className="left-content">
 												<h3 className="head_point filson-pro-reg pb-2 pb-lg-4 pb-xl-4">2. On which surface do you think you would have the most comfortable sleep?</h3>
 												<div>
-													<input type="radio" value="1" name="second_stepopt" id="radiob1" onChange={e => handleChoiceSelect(e, 1, 1)} />
+													<input type="radio" value="1" name="second_stepopt" id="radiob1" onChange={e => handleChoiceSelect(e, 2, 1)} />
 													<label className="opt_heading" htmlFor="radiob1">a. Soft – Like sleeping in a big pile of pillows that you sink into.</label>
 												</div>
 												<div>
-													<input type="radio" value="2" name="second_stepopt" id="radiob2" onChange={e => handleChoiceSelect(e, 1, 2)} />
+													<input type="radio" value="2" name="second_stepopt" id="radiob2" onChange={e => handleChoiceSelect(e, 2, 2)} />
 													<label className="opt_heading" htmlFor="radiob2">b. Medium – Like sleeping on the couch with regular cushions.</label>
 												</div>
 												<div>
-													<input type="radio" value="3" name="second_stepopt" id="radiob3" onChange={e => handleChoiceSelect(e, 1, 3)} />
+													<input type="radio" value="3" name="second_stepopt" id="radiob3" onChange={e => handleChoiceSelect(e, 2, 3)} />
 													<label className="opt_heading" htmlFor="radiob3">c. Firm – Like sleeping on the floor with a thick and fluffy comforter underneath.</label>
 												</div>
 												<div>
-													<input type="radio" value="4" name="second_stepopt" id="radiob4" onChange={e => handleChoiceSelect(e, 1, 4)} />
+													<input type="radio" value="4" name="second_stepopt" id="radiob4" onChange={e => handleChoiceSelect(e, 2, 4)} />
 													<label className="opt_heading" htmlFor="radiob4">d. Extra Firm – Like sleeping on the bare floor with just a carpet underneath.</label>
 												</div>
 											</div>
