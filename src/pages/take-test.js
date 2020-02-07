@@ -407,7 +407,7 @@ const TAKETEST = (props) => {
             		</div>
             		<div className="ans-pdt-data">
             			<div className="pdt-image">
-            				<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src="" class="img-fluid" />
+            				<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} class="img-fluid" />
             			</div>
             				<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
             			</div>
