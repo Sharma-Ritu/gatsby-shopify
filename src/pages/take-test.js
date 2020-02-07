@@ -53,11 +53,12 @@ const TAKETEST = (props) => {
   	if(checkStep){
   		const stepID = (parseInt(tabID) - 1);
   		const choiceIndex = selectedChoices.findIndex((step => step.id === stepID));
-  		if(selectedChoices[choiceIndex].choice === 0){
-  			return
+  		if(selectedChoices[choiceIndex].choice !== 0){
+  			setActiveTab(tabID)
   		}
+  	}else{
+  		setActiveTab(tabID)
   	}
-  	setActiveTab(tabID)
   }
   /*
   const toggle = tab => {
