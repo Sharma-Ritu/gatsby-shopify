@@ -110,7 +110,7 @@ const TAKETEST = (props) => {
 					<TabContent className="take-test-tab" activeTab={activeTab}>
 						<TabPane tabId="1">
 							<div className="tab-content">
-                    			<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
+								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
 												<div className="left-content">
@@ -128,6 +128,7 @@ const TAKETEST = (props) => {
 														<label className="opt_heading" htmlFor="radioa3">c. I toss and turn all the time.</label>
 													</div>
 												</div>
+												<button className="btn btn-custom-secondary">Continue</button>
 										</Col>
 										<Col className="col-12 col-lg-5 col-xl-5">
 											<div>
@@ -138,7 +139,7 @@ const TAKETEST = (props) => {
 							</div>
 						</TabPane>
 						<TabPane tabId="2">
-							<div className="tab-content border border-top-0">
+							<div className="tab-content">
 								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
@@ -171,7 +172,7 @@ const TAKETEST = (props) => {
 							</div>
 						</TabPane>
 						<TabPane tabId="3">
-							<div className="tab-content border border-top-0">
+							<div className="tab-content">
 								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
@@ -204,7 +205,7 @@ const TAKETEST = (props) => {
 							</div>>
 						</TabPane>
 						<TabPane tabId="4">
-							<div className="tab-content border border-top-0">
+							<div className="tab-content">
 								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
@@ -237,7 +238,7 @@ const TAKETEST = (props) => {
 							</div>
 						</TabPane>
 						<TabPane tabId="5">
-							<div className="tab-content border border-top-0">
+							<div className="tab-content">
 								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
@@ -270,7 +271,7 @@ const TAKETEST = (props) => {
 							</div>
 						</TabPane>
 						<TabPane tabId="6">
-							<div className="tab-content border border-top-0">
+							<div className="tab-content">
 								<div className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 									<Row className="m-0">
 										<Col className="col-12 col-lg-7 col-xl-7">
