@@ -62,8 +62,8 @@ const ArticlePage = ({ data }) => {
 }
 
 export const query = graphql`
-  query($id: String!) {
-    shopifyArticle(id: {eq: $id}) {
+  query($slug: String!) {
+    shopifyArticle(url: {regex: $slug}) {
       id
       title
       image {

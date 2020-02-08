@@ -35,8 +35,9 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
+      node.url.substring((node.url.lastIndexOf("/")+1))
       createPage({
-        path: `/article/${node.id}/`,
+        path: `/article/${node.url.substring((node.url.lastIndexOf("/")+1))}/`,
         component: path.resolve(`./src/templates/ArticlePage/index.js`),
         context: {
           // Data passed to context is available
