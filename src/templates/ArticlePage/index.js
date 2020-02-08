@@ -7,8 +7,8 @@ import "~/assets/css/bootstrap.min.css"
 import RecentPosts from "~/components/Blogs/RecentPostsFooter"
 
 const ArticlePage = ({ data }) => {
-  console.log(data);
   const article = data.shopifyArticle
+  console.log(article);
   return (
     <>
     <SEO title={article.title} description={article.excerpt} />
@@ -62,8 +62,8 @@ const ArticlePage = ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
-    shopifyArticle(url: {regex: $slug}) {
+  query($id: String!) {
+    shopifyArticle(id: {eq: $id}) {
       id
       title
       image {
