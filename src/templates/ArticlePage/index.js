@@ -7,8 +7,8 @@ import "~/assets/css/bootstrap.min.css"
 import RecentPosts from "~/components/Blogs/RecentPostsFooter"
 
 const ArticlePage = ({ data }) => {
+  console.log(data);
   const article = data.shopifyArticle
-  console.log(article);
   return (
     <>
     <SEO title={article.title} description={article.excerpt} />
