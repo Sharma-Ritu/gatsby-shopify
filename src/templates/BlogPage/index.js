@@ -39,7 +39,7 @@ const BlogPage = ({ data }) => {
             ? allShopifyArticle.edges.map(({node: { id, url, title, content, excerpt, publishedAt, image, author, blog}}, index) => (
             <div className="blogs-section mb-4" key={id}>
               <div className="featured-image position-relative overflow-hidden">
-                <Link to={`/article/${url.substring((url.lastIndexOf("/")+1))}/`} state={{ fromFeed: true }}>
+                <Link to={`/article/${id}/`} state={{ fromFeed: true }}>
                   <img src={image.src} className="img-fluid" alt="Blog" style={{transition:'all 0.15s ease-in-out'}}/>
                   <div className="card-layer">
                     <div className="img-icon position-absolute" style={{top:'50%', left:'50%', transform:'translate(-50%,-50%)'}}>
