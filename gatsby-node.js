@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           // Data passed to context is available
           // in article queries as GraphQL variables.
-          slug: RegExp(node.url.split("/").pop()),
+          id: node.id,
         },
       })
     })
