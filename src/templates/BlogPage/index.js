@@ -17,7 +17,6 @@ const BlogPage = ({ data }) => {
     if(currentPage !== toPage){
       e.preventDefault();
       let path = (toPage===1)?`/blogs/`:`/blogs/${toPage}/`;
-      console.log(path);
       navigate(path)
     }
   }
@@ -70,7 +69,7 @@ const BlogPage = ({ data }) => {
               <Pagination aria-label="Page navigation">
                 <PaginationItem disabled={!pageInfo.hasPreviousPage}>
                   <button
-                    className="page-link"
+                    className="page-link btn-custom-primary"
                     aria-label="Previous"
                     onClick={e => handlePagination(e, previousPage)}
                     disabled={!pageInfo.hasPreviousPage}
@@ -83,7 +82,7 @@ const BlogPage = ({ data }) => {
                   <PaginationItem active={(i+1) === currentPage} key={i}>
                     <button
                       onClick={e => handlePagination(e, (i + 1))}
-                      className="page-link"
+                      className="page-link btn-custom-primary"
                     >
                       {i + 1}
                     </button>
@@ -91,7 +90,7 @@ const BlogPage = ({ data }) => {
                 )}
                 <PaginationItem disabled={!pageInfo.hasNextPage}>
                   <button
-                    className="page-link"
+                    className="page-link btn-custom-primary"
                     aria-label="Next"
                     onClick={e => handlePagination(e, nextPage)}
                     disabled={!pageInfo.hasNextPage}

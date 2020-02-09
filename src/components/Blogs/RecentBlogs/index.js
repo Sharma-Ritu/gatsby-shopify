@@ -26,7 +26,6 @@ const RecentBlogs = () => {
       }
     `
   )
-  console.log(allShopifyArticle);
   return (
           <Col sm="4">
             <div className="recent-posts">

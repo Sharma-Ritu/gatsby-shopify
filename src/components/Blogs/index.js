@@ -98,7 +98,7 @@ const Blogs = ({ id }) => {
               <Pagination aria-label="Page navigation">
                 <PaginationItem disabled={!pageInfo.hasPreviousPage}>
                   <button
-                    className="page-link"
+                    className="page-link btn-custom-primary"
                     aria-label="Previous"
                     onClick={e => handlePagination(e, previousPage)}
                     disabled={!pageInfo.hasPreviousPage}
@@ -111,7 +111,7 @@ const Blogs = ({ id }) => {
                   <PaginationItem active={(i+1) === currentPage} key={i}>
                     <button
                       onClick={e => handlePagination(e, (i + 1))}
-                      className="page-link"
+                      className="page-link btn-custom-primary"
                       disabled={(i+1) === currentPage}
                     >
                       {i + 1}
@@ -120,7 +120,7 @@ const Blogs = ({ id }) => {
                 )}
                 <PaginationItem disabled={!pageInfo.hasNextPage}>
                   <button
-                    className="page-link"
+                    className="page-link btn-custom-primary"
                     aria-label="Next"
                     onClick={e => handlePagination(e, nextPage)}
                     disabled={!pageInfo.hasNextPage}
