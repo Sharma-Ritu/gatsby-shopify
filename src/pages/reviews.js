@@ -33,12 +33,12 @@ const Example = (props) => {
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-block-ruby">
 						<NavItem>
-							<NavLink nav-link small color-secondary filson-pro-reg className={activeTab === '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
+							<NavLink className={activeTab === '1' ? 'active' : ''}  onClick={() => setActiveTab('1')}>
 								Customer Reviews
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink nav-link small color-secondary filson-pro-reg className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
+							<NavLink className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
 								Leave A Review
 							</NavLink>
 						</NavItem>
