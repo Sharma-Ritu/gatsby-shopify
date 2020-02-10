@@ -198,8 +198,15 @@ p.cta.erbaum.position-absolute {
 .max-support .btn-cta::after,.banner-home .btn-cta::after{
 	content:url('../img/b-ic.png');
 	position: absolute;
-	top: -3px;
-	right:-65px;
+	top: -1px;
+	right: -28px;
+	width: 20px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.max-support .btn-cta:hover::after, .banner-home .btn-cta:hover::after{
+	right: -28px;
+	width:100%;
 }
 .approved .btn-cta::after{
 	content:url('../img/b-ic.png');
