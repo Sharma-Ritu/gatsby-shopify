@@ -402,12 +402,12 @@ const TAKETEST = (props) => {
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
-							<div className="b-now">
-								<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`}>BUY NOW</Link>
-							</div>
-							<div className="ans-pdt-data">
-								<div className="pdt-image">
+							<div className="text-center">
+								<div className="pdt-image d-inline-block position-relative">
 									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} className="img-fluid" />
+									<div className="b-now">
+										<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`}>BUY NOW</Link>
+									</div>
 								</div>
 								<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
 							</div>
@@ -417,12 +417,12 @@ const TAKETEST = (props) => {
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
-							<div className="b-now">
-								<Link to={`/product/the-original-chirofoam™-mattress-luxury-firm/`}>BUY NOW</Link>
-							</div>
-							<div className="ans-pdt-data">
-								<div className="pdt-image">
+							<div className="text-center">
+								<div className="pdt-image d-inline-block position-relative">
 									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={ol1} className="img-fluid" />
+									<div className="b-now">
+										<Link to={`/product/the-original-chirofoam™-mattress-luxury-firm/`}>BUY NOW</Link>
+									</div>
 								</div>
 								<h4>THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM</h4>
 							</div>
