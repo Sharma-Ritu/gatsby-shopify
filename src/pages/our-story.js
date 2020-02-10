@@ -28,7 +28,7 @@ export default (props) => {
 		</section>
 		<section className="mb-0 py-3 position-relative">
 			<Container className="our-focus pt-5">
-				<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100 pb-lg-3 pb-xl-3 m-0">Our focus on comfort, support, and health</h4>
+				<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100 pb-lg-3 pb-xl-3 m-0 pb-2 pb-sm-3">Our focus on comfort, support, and health</h4>
 				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5 pt-2 pt-sm-2 pt-lg-5 pt-xl-5">
 					<div className="col-12 col-sm-8 col-lg-8 col-xl-8 left-card">
 						<h5 className="erbaum-bold color-primary pb-2 pb-lg-3 pb-xl-3">TODAY’S MATTRESS MARKET</h5>
@@ -102,14 +102,14 @@ export default (props) => {
 		<section>
 			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-sm-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+					<div className="m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
