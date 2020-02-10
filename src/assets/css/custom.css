@@ -313,7 +313,7 @@ font-size:100px;
     transition: all 0.3s ease-in-out;
 }
 .btn-cta:hover::after {
-    right: -135px;
+    right: -95px !important;
     width: 100%;
 }
 
