@@ -598,6 +598,13 @@ body .navbar{
 .page-item .page-link.btn-custom-primary {
     color: #243B6B;
 }
+.tip_div em {
+    color: #9b0235;
+    font-weight: 700;
+}
+.b-now {
+    background-color: rgba(186, 33, 84, 0.1);
+}
 .b-now:hover {
     background-color: rgba(186, 33, 84, 0.5);
 }
