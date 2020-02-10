@@ -17,14 +17,14 @@ export default (props) => {
 		<Header />
 		<section className="blue-bg">
 			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1">
-				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 space-2 px-sm-5">Chirofoam Mattresses are now available at the following locations:</h2>
+				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-3 pt-lg-5 pt-xl-5 space-2 px-sm-5">Chirofoam Mattresses are now available at the following locations:</h2>
 			</Jumbotron>
 		</section>
-		<section className="mb-0 pt-5 pb-3 position-relative">
+		<section className="mb-0 pt-5 pb-3 position-relative" id="locations-inner">
 			<Container className="our-focus pt-5">
 				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
-					<Col sm="4" className="text-center px-0 px-sm-4">
-						<h4 className="text-uppercase color-primary erbaum-bold pb-4">Markham</h4>
+					<Col sm="4" className="text-center px-0 px-sm-4 mb-5 mb-sm-4 mb-lg-0 mb-xl-0">
+						<h4 className="text-uppercase color-primary erbaum-bold pb-4 location-title">Markham</h4>
 						<p className="filson-pro-reg color-secondary">
 							7701 Woodbine Avenue<br/>
 							Unit#5<br/>
@@ -39,12 +39,12 @@ export default (props) => {
 
 							Contact: 905-963-0890
 						</p>
-						<div className="g-map pt-2 pt-sm-4">
+						<div className="g-map pt-2 pt-sm-4 px-3 px-sm-3 px-lg-0 px-xl-0">
 							<iframe title="Markham" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=7701+Woodbine+Avenue" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
 						</div>
 					</Col>
-					<Col sm="4" className="text-center px-0 px-sm-4">
-						<h4 className="text-uppercase color-primary erbaum-bold pb-4">Mississauga</h4>
+					<Col sm="4" className="text-center px-0 px-sm-4 mb-5 mb-sm-4 mb-lg-0 mb-xl-0">
+						<h4 className="text-uppercase color-primary erbaum-bold pb-4 location-title">Mississauga</h4>
 						<p className="filson-pro-reg color-secondary">
 							1550 Meyerside Drive<br/>
 							Unit#3<br/>
@@ -59,12 +59,12 @@ export default (props) => {
 
 							Contact: 905-565-0885
 						</p>
-						<div className="g-map pt-2 pt-sm-4">
+						<div className="g-map pt-2 pt-sm-4 px-3 px-sm-3 px-lg-0 px-xl-0">
 							<iframe title="Mississauga" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=1550+Meyerside+Drive" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
 						</div>
 					</Col>
-					<Col sm="4" className="text-center px-0 px-sm-4">
-						<h4 className="text-uppercase color-primary erbaum-bold pb-4">Milton/Georgetown</h4>
+					<Col sm="4" className="text-center px-0 px-sm-4 mb-5 mb-sm-4 mb-lg-0 mb-xl-0">
+						<h4 className="text-uppercase color-primary erbaum-bold pb-4 location-title">Milton/Georgetown</h4>
 						<p className="filson-pro-reg color-secondary">
 							15 Brownridge Road<br/>
 							Unit#3<br/>
@@ -79,7 +79,7 @@ export default (props) => {
 
 							Contact: 905-878-8444
 						</p>
-						<div className="g-map pt-2 pt-sm-4">
+						<div className="g-map pt-2 pt-sm-4 px-3 px-sm-3 px-lg-0 px-xl-0">
 							<iframe title="Milton/Georgetown" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=15+Brownridge+Road" width="100%" height="300px" frameborder="0" style={{border:'0'}} allowfullscreen></iframe>
 						</div>
 					</Col>
@@ -105,14 +105,14 @@ export default (props) => {
 		<section>
 			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-sm-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+					<div className="m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
