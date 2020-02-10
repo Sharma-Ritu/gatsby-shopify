@@ -397,7 +397,7 @@ const TAKETEST = (props) => {
 								<p><em>Note:- </em>The Chirofoam Mattress looks like it will be the ideal fit for you based on the answers you provided. You matched up well on all your answers!</p>
 							</div>
 						</div>
-						<div id="xf-block" className="ans-pdt d-none">
+						<div id="xf-block" className="d-none">
 							<div className="based-on-answer">
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
@@ -412,7 +412,7 @@ const TAKETEST = (props) => {
 								</div>
 							</div>
             </div>
-            <div id="ol-block" className="ans-pdt d-none">
+            <div id="ol-block" className="d-none">
 							<div className="based-on-answer">
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
