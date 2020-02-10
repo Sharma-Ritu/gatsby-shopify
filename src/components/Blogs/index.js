@@ -13,9 +13,6 @@ const Blogs = ({ id }) => {
               title
               excerpt
               url
-              blog {
-                url
-              }
               publishedAt(formatString: "MMM DD, YYYY")
               image {
                 src
@@ -25,6 +22,7 @@ const Blogs = ({ id }) => {
               }
               blog {
                 title
+                url
               }
             }
           }
