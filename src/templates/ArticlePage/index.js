@@ -75,6 +75,7 @@ export const query = graphql`
       }
       blog {
         title
+        url
       }
       publishedAt(formatString: "MMMM DD, YYYY")
       excerpt

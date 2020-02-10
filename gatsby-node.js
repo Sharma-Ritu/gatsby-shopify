@@ -16,6 +16,9 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             id
             url
+            blog {
+              url
+            }
           }
         }
         totalCount
@@ -35,8 +38,9 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
     result.data.allShopifyArticle.edges.forEach(({ node }) => {
+
       createPage({
-        path: `/article/${node.url.split("/").pop()}/`,
+        path: `/blogs/${node.blog.url.split("/").pop()}/${node.url.split("/").pop()}/`,
         component: path.resolve(`./src/templates/ArticlePage/index.js`),
         context: {
           // Data passed to context is available
