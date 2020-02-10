@@ -15,10 +15,10 @@ const Banner = () => (
 					
 					</Col>
 					<Col md="6" className="text-center banner-home" style={{right:'0'}}>			
-						<p className="leads filson-pro-reg space-4 pt-2">CHIROFOAM MEMORY FOAM MATTRESS</p>
-						<h2 className="erbaum-bold space-4 pl-sm-0 pl-xl-4 pl-lg-4" style={{fontStyle:'italic'}}>UPGRADE</h2>
-						<h3 className="erbaum">YOUR SLEEP</h3>
-						<p className="cta mt-0 pt-sm-1 pt-lg-1 pt-xl-1 mb-sm-2 pl-0 animated bounce slow">
+						<p className="leads filson-pro-reg space-4 pt-2 animated fadeInUp slow">CHIROFOAM MEMORY FOAM MATTRESS</p>
+						<h2 className="erbaum-bold space-4 pl-sm-0 pl-xl-4 pl-lg-4 animated shake" style={{fontStyle:'italic'}}>UPGRADE</h2>
+						<h3 className="erbaum animated fadeInRight slow">YOUR SLEEP</h3>
+						<p className="cta mt-0 pt-sm-1 pt-lg-1 pt-xl-1 mb-sm-2 pl-0 animated heartBeat slow">
 							<a href="/shop-chirofoam/" className="btn-cta text-white erbaum-bold space-1">BUY NOW</a>
 						</p>
 					</Col>
