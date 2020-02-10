@@ -35,7 +35,7 @@ const BlogPage = ({ data }) => {
         <Row>
           <Col sm="8" className="align-middle">
             {allShopifyArticle.edges
-            ? allShopifyArticle.edges.map(({node: { id, url, blog, title, content, excerpt, publishedAt, image, author, blog}}, index) => (
+            ? allShopifyArticle.edges.map(({node: { id, url, title, content, excerpt, publishedAt, image, author, blog}}, index) => (
             <div className="blogs-section mb-4" key={id}>
               <div className="featured-image position-relative overflow-hidden">
                 <Link to={`/blogs/${blog.url.split("/").pop()}/${url.split("/").pop()}/`} state={{ fromFeed: true }}>
@@ -138,9 +138,6 @@ export const query = graphql`
           title
           excerpt
           url
-          blog {
-            url
-          }
           publishedAt(formatString: "MMM DD, YYYY")
           image {
             src
@@ -150,6 +147,7 @@ export const query = graphql`
           }
           blog {
             title
+            url
           }
         }
       }
