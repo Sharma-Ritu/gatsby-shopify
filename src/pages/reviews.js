@@ -68,11 +68,11 @@ const Example = (props) => {
            										<li className="border mb-4">
            											<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Chirofoam™ XF Mattress – Extra Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
+				                   						<button data-rating-value="1" data-rating-text="1" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="2" data-rating-text="2" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="3" data-rating-text="3" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="4" data-rating-text="4" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="5" data-rating-text="5" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current"><span className="color-primary fa fa-star"></span></button>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Mina Ho–</b> September 4, 2019</p>
@@ -81,11 +81,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
+				                   						<button data-rating-value="1" data-rating-text="1" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="2" data-rating-text="2" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="3" data-rating-text="3" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="4" data-rating-text="4" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="5" data-rating-text="5" className="br-selected p-0 border-0 bg-transparent br-current"><span className="color-primary fa fa-star"></span></button>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Emma –</b> June 1, 2016</p>
@@ -94,11 +94,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
+				                   						<button data-rating-value="1" data-rating-text="1" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="2" data-rating-text="2" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="3" data-rating-text="3" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="4" data-rating-text="4" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="5" data-rating-text="5" className="br-selected p-0 border-0 bg-transparent br-current"><span className="color-primary fa fa-star"></span></button>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Judy –</b> June 1, 2016</p>
@@ -107,11 +107,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
+				                   						<button data-rating-value="1" data-rating-text="1" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="2" data-rating-text="2" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="3" data-rating-text="3" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="4" data-rating-text="4" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="5" data-rating-text="5" className="br-selected p-0 border-0 bg-transparent br-current"><span className="color-primary fa fa-star"></span></button>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Hardeep –</b> June 1, 2016</p>
@@ -120,11 +120,11 @@ const Example = (props) => {
 			                   					<li className="border mb-4">
 			                   						<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>The Original Chirofoam™ Mattress – Luxury Firm</h4>
 			                   						<div className="br-widget br-readonly pt-2">
-				                   						<Link to="#" data-rating-value="1" data-rating-text="1" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="2" data-rating-text="2" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="3" data-rating-text="3" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="4" data-rating-text="4" className="br-selected"><span className="color-primary fa fa-star"></span></Link>
-				                   						<Link to="#" data-rating-value="5" data-rating-text="5" className="br-selected br-current"><span className="color-primary fa fa-star"></span></Link>
+				                   						<button data-rating-value="1" data-rating-text="1" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="2" data-rating-text="2" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="3" data-rating-text="3" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="4" data-rating-text="4" className="br-selected p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
+				                   						<button data-rating-value="5" data-rating-text="5" className="br-selected p-0 border-0 bg-transparent br-current"><span className="color-primary fa fa-star"></span></button>
 				                   						<div className="br-current-rating d-none">5</div>
 			                   						</div>
 			                   						<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">Steven Wright–</b> June 2, 2016</p>
