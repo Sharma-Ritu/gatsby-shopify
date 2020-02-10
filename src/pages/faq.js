@@ -829,16 +829,16 @@ Cali King – 81 inches x 14.5 inches x 14.5 inches</p>
 			</Container>
 		</section>
 		<section>
-			<div className="container-fluid">
+			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-sm-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+					<div className="m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
@@ -846,7 +846,7 @@ Cali King – 81 inches x 14.5 inches x 14.5 inches</p>
 						</Col>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
 			<Container className="pb-0 pb-sm-5">
