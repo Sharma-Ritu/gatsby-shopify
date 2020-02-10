@@ -1,4 +1,7 @@
 @media only screen and (max-width: 767px) {
+	.all-mattress .mattress-desc {
+    font-size: 18px;
+}
 	body .container-large{
 		padding:0px 20px !important;
 }
@@ -221,6 +224,24 @@ body .mattresses .cta.left-btn.position-absolute{
 body .container-large{
 	padding:0px 20px;
 }
+.check-text p {
+    font-size: 14px;
+}
+#locations-inner .container{
+	width:100%;
+	max-width:100%;
+	padding:0px 15px;
+}
+.location-title {
+    font-size: 0.8rem;
+}
+.all-mattress .mattress-desc {
+    font-size: 18px;
+}
+.mattress-section1 h2 {
+    font-size: 1.5rem;
+}
+
 }
 
 
@@ -282,6 +303,9 @@ body .container-large{
 	}
 	body .container-large{
 	padding:0px 20px;
+}
+.check-text p {
+    font-size: 16px;
 }
 }
 
