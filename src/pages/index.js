@@ -249,18 +249,18 @@ export default (props) => {
 		</section>
 		<section className="our-customer">
 				<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
-					<Col sm="6">
+					<Col sm="6" className="pr-sm-2">
 						<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
 							<h4 className="color-primary erbaum-bold" style={{letterSpacing:'0px',fontSize:'32px', lineHeight:'45px'}}>WHAT OUR CUSTOMERS ARE SAYING ABOUT CHIROFOAM</h4>
 							<h5 className="filson-pro-reg color-primary pt-2" style={{fontSize:'14px'}}>CUSTOMER REVIEW</h5>
 							<p className="text-left proxima-eb space-1 pt-1 mb-0" style={{color:'#808080'}}><span className="color-primary">Chirofoam mattresses are designed by Chiropractors</span> to improve posture, and provide incredible pressure relief. Your back will thank you.</p>
-							<p className="cta mt-3 pt-sm-5 pt-lg-5 pt-xl-5 position-absolute">
+							<p className="cta mt-3 pt-sm-5 pt-lg-5 pt-xl-5">
 								<Link to="/customer-service/" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </Link>
 							</p>
 						</div>
 					</Col>
 					<Col sm="6" className="align-middle customer bg-image">
-						<img src={blog1} alt="Blog1" width="100%"/>
+						
 					</Col>
 				</Row>
 		</section>
