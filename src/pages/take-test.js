@@ -403,7 +403,7 @@ const TAKETEST = (props) => {
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
 							<div className="text-center">
-								<div className="pdt-image d-inline-block position-relative">
+								<div className="pdt-image d-inline-block position-relative mb-3">
 									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={xf1} className="img-fluid" />
 									<div className="b-now d-flex justify-content-center align-items-center position-absolute w-100 h-100" style={{top:'0'}}>
 										<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`} className="btn text-white btn-custom-primary">BUY NOW</Link>
@@ -418,7 +418,7 @@ const TAKETEST = (props) => {
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
 							<div className="text-center">
-								<div className="pdt-image d-inline-block position-relative">
+								<div className="pdt-image d-inline-block position-relative mb-3">
 									<img title="Chirofoam™ Memory Foam Mattress, Toronto, ON" alt="chirofoamtm-memory-foam-mattress-toronto-on" src={ol1} className="img-fluid" />
 									<div className="b-now d-flex justify-content-center align-items-center position-absolute w-100 h-100" style={{top:'0'}}>
 										<Link to={`/product/the-original-chirofoam™-mattress-luxury-firm/`} className="btn text-white btn-custom-primary">BUY NOW</Link>
