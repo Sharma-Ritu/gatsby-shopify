@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Nav, NavItem, NavLink, TabContent, TabPane} from 'reactstrap';
+import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
@@ -16,6 +17,7 @@ const Example = (props) => {
 //export default (props) => {
   return (
 	<>
+		<SEO title="SHOP CHIROFOAM™" />
 		<Header />
 		<section>
 			<Container>
