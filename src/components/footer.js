@@ -27,15 +27,15 @@ const Footer = () => (
 
 
 				</Col>
-				<Col md="3" className="pl-3 pl-sm-5 pt-4 pt-sm-0 widget-2">
+				<Col md="3" className="pl-3 pl-sm-3 pt-4 pt-sm-0 widget-2">
 					<p className="pb-0 pb-sm-4 m-0" style={{color:'#b2b2b2',fontSize:'12px',letterSpacing:'1px', margin:'0px',lineHeight:'30px'}}>Have any Inquiries? Give us a call:</p>
 					<strong className="pt-3 d-block space-3 text-white" style={{fontSize:'13px'}}>1 (888) CHIRO-31</strong>
 					<p className="m-0 pb-0 pb-sm-3 space-1 pt-2" style={{color:'#b2b2b2',fontSize:'12px',lineHeight:'30px'}}>1 (888)244-7631</p>
 					<p className="m-0 pb-0 pt-2 space-1" style={{color:'#b2b2b2',fontSize:'12px'}}>Our sleep experts are on call</p>
 					<p className="m-0 space-1 pt-0 pt-sm-0 pt-lg-0 pt-xl-0" style={{color:'#b2b2b2',fontSize:'12px'}}>Mon-Fri 10am - 6pm(EST)</p>
 				</Col>
-				<Col md="3" className="widget-3 m-0 pl-sm-4 pt-sm-0">
-					<ul className="pl-0 pl-sm-5 pb-0" style={{
+				<Col md="3" className="widget-3 m-0 pt-sm-4">
+					<ul className="pl-0 pb-0" style={{
 						listStyle:'none',
 					}} >
 						<li className="mr-2 pb-sm-2 pb-1"><Link to="/charity/" style={{color:'#b2b2b2',fontSize:'12px'}}>Charity</Link></li>
@@ -46,8 +46,8 @@ const Footer = () => (
 						<li className="mr-2 pb-sm-2 pb-1"><Link to="/faq/" style={{color:'#b2b2b2',fontSize:'12px'}}>Frequently Asked Questions</Link></li>
 					</ul>
 				</Col>
-				<Col md="3" className="widget-4 pt-0 m-0 pl-sm-5 pl-xl-5 pl-lg-5">
-					<ul className="pl-0 pl-sm-5 pl-lg-5 pl-xl-5 pb-0" style={{
+				<Col md="3" className="widget-4 pt-0 m-0 pl-xl-5 pl-lg-5">
+					<ul className="pl-0 pl-lg-5 pl-xl-5 pb-0" style={{
 						listStyle:'none',
 					}} >
 						<li className="mr-2 pb-sm-2 pb-lg-2 pb-xl-2 pb-1 m-0 pt-0"><Link to="/mattress-sizes/" style={{color:'#b2b2b2',fontSize:'12px'}}>Mattress Sizes</Link></li>
