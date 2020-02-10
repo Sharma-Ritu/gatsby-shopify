@@ -34,7 +34,7 @@ const Footer = () => (
 					<p className="m-0 pb-0 pt-2 space-1" style={{color:'#b2b2b2',fontSize:'12px'}}>Our sleep experts are on call</p>
 					<p className="m-0 space-1 pt-0 pt-sm-0 pt-lg-0 pt-xl-0" style={{color:'#b2b2b2',fontSize:'12px'}}>Mon-Fri 10am - 6pm(EST)</p>
 				</Col>
-				<Col md="3" className="widget-3 m-0 pt-lg-0 pt-xl-0 pt-sm-4">
+				<Col md="3" className="widget-3 m-0 pt-lg-0 pt-xl-0 pt-4 pt-sm-4 pl-3 pl-lg-5 pl-xl-5">
 					<ul className="pl-0 pb-0" style={{
 						listStyle:'none',
 					}} >
