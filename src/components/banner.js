@@ -18,7 +18,7 @@ const Banner = () => (
 						<p className="leads filson-pro-reg space-4 pt-2">CHIROFOAM MEMORY FOAM MATTRESS</p>
 						<h2 className="erbaum-bold space-4 pl-sm-0 pl-xl-4 pl-lg-4" style={{fontStyle:'italic'}}>UPGRADE</h2>
 						<h3 className="erbaum">YOUR SLEEP</h3>
-						<p className="cta mt-0 pt-sm-1 pt-lg-1 pt-xl-1 mb-sm-2 pl-0 animated bounce">
+						<p className="cta mt-0 pt-sm-1 pt-lg-1 pt-xl-1 mb-sm-2 pl-0 animated bounce slow">
 							<a href="/shop-chirofoam/" className="btn-cta text-white erbaum-bold space-1">BUY NOW</a>
 						</p>
 					</Col>
