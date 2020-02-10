@@ -408,8 +408,8 @@ const TAKETEST = (props) => {
 									<div className="b-now d-flex justify-content-center align-items-center position-absolute w-100 h-100" style={{top:'0'}}>
 										<Link to={`/product/the-chirofoam™-xf-mattress-extra-firm/`} className="btn text-white btn-custom-primary">BUY NOW</Link>
 									</div>
+									<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
 								</div>
-								<h4>The Chirofoam™ XF Mattress – Extra Firm</h4>
 							</div>
             </div>
             <div id="ol-block" className="ans-pdt d-none">
@@ -423,8 +423,8 @@ const TAKETEST = (props) => {
 									<div className="b-now d-flex justify-content-center align-items-center position-absolute w-100 h-100" style={{top:'0'}}>
 										<Link to={`/product/the-original-chirofoam™-mattress-luxury-firm/`} className="btn text-white btn-custom-primary">BUY NOW</Link>
 									</div>
+									<h4>THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM</h4>
 								</div>
-								<h4>THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM</h4>
 							</div>
             </div>
             <div className="btn_row1">

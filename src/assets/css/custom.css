@@ -604,9 +604,11 @@ body .navbar{
 }
 .b-now {
     background-color: rgba(186, 33, 84, 0.1);
+    opacity: 0.8;
 }
 .b-now:hover {
     background-color: rgba(186, 33, 84, 0.5);
+    opacity: 1;
 }
 .btn.btn-custom-primary, .page-item.active .page-link.btn-custom-primary {
 	background-color: #21366e;
