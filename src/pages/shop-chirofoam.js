@@ -14,7 +14,7 @@ import Products from '~/components/Products'
 export default (props) => {
   return (
 	<>
-		<SEO title="CHIROFOAM™ MATTRESS REVIEWS" />
+		<SEO title="SHOP CHIROFOAM™" />
 		<Header />
 		<Banner/>
 		<section className="mt-4 mb py-4" style={{backgroundColor:'#fff'}}>

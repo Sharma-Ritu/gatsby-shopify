@@ -17,7 +17,7 @@ const Example = (props) => {
 //export default (props) => {
   return (
 	<>
-		<SEO title="SHOP CHIROFOAM™" />
+		<SEO title="CHIROFOAM™ MATTRESS REVIEWS" />
 		<Header />
 		<section>
 			<Container>
