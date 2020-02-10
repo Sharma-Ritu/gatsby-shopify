@@ -598,11 +598,14 @@ body .navbar{
 .page-item .page-link.btn-custom-primary {
     color: #243B6B;
 }
+.b-now:hover {
+    background-color: rgba(186, 33, 84, 0.5);
+}
 .btn.btn-custom-primary, .page-item.active .page-link.btn-custom-primary {
 	background-color: #21366e;
 	border: 1px solid #21366e;
 }
-.btn.btn-custom-primary {
+.btn.btn-custom-primary:hover {
 	opacity: .8;
 }
 .btn.btn-custom-secondary {
