@@ -699,3 +699,13 @@ body .navbar{
 	background-color: transparent;
 	border: none;
 }
+.check-text p{
+	font-size:20px;
+	color:#ba2154;
+}
+.all-mattress .mattress-desc {
+    font-size:24px;
+}
+.mattress-section1 h2{
+	font-size:2rem;
+}
