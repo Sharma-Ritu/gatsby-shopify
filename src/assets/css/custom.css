@@ -420,17 +420,20 @@ body .charity{
 	padding:30px;
 	background-color:#fcfcfc;
 }
-.select-mattress a{
+.select-mattress a, .select-mattress button{
 	background-color:#ba2154;
 	border-radius:5px;
 	color:#fff;
 	padding:15px 20px;
 	transition:all 0.3s ease;
 }
+.select-mattress button {
+    border: none;
+}
 .select-mattress .card{
 	font-size:12px;
 }
-.select-mattress a:hover{
+.select-mattress a:hover, .select-mattress button:hover{
 	background-color:transparent;
 	color:#000;
 }

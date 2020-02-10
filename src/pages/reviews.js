@@ -146,13 +146,13 @@ const Example = (props) => {
 											<div className="col-12 col-sm-6 col-lg-6 col-xl-6 m-auto d-flex no-gutters select-mattress">
 												<Col className="col-6">
 													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
-														<Link to="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam Premium Mattress</Link>
+														<button className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam Premium Mattress</button>
 														<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our Premium Mattresses</p>
 													</div>
 												</Col>
 												<Col className="col-6">
 													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
-														<Link to="#" className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam X-Firm mattress</Link>
+														<button className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam X-Firm mattress</button>
 														<p className="filson-pro-reg pt-4 color-secondary">Click here to add your reviews for our X Firm Mattresses</p>
 													</div>
 												</Col>
