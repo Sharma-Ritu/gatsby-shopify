@@ -8,7 +8,25 @@ import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
   const [activeTab, setActiveTab] = useState('1');
-
+  const reviews = [
+  	{
+  		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
+  		rating : 5,
+  		ratedBy : "Mina Ho",
+  		ratedOn : "September 4, 2019",
+  		comment : "Supports your whole body comfortably and yet u won’t feel the hardness. The mattress is just amazing. I would recommend to all my friends."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Emma",
+  		ratedOn : "June 1, 2016",
+  		comment : "I am obsessed with this mattress! I've suffered from back pain for years and I couldn't tell you the last time I slept through the night without tossing and turning. Ever since I started sleeping on my new mattress I've been sleeping throughout the entire night without waking up and my back hasn't been bothering me nearly as much as it used to. Very pleased! Thank you Chirofoam!"
+  	}
+  ];
+  const handleLoadMore = (event) => {
+  	console.log(reviews)
+  }
   /*
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
@@ -134,7 +152,7 @@ const Example = (props) => {
 			                   					</li>
            									</ul>
 			                   				<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-center">
-												<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">LOAD MORE</Link>
+												<button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 p-0" onClick={e => handleLoadMore(e)}>LOAD MORE</button>
 											</p>
            								</div>
            							</Row>
