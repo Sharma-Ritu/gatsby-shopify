@@ -186,6 +186,7 @@ const Example = (props) => {
   		comment : "Surprised my wife on our anniversary and we absolutely love it. So do our kids which isn't necessarily a good thing :P"
   	}
   ];
+
   const handleLoadMore = (event) => {
   	console.log(showReviews, reviews)
   	setShowReviews(showReviews+5)
@@ -250,7 +251,6 @@ const Example = (props) => {
                    		<ul className="list-unstyled p-0 ratings">
                    			{
                    				reviews.map((review, index) => (
-                   					{index < showReviews &&
 		           							<li className="border mb-4" key={index}>
 		           								<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>{review.title}</h4>
 					                   	<div className="d-inline-block br-widget br-readonly pt-2" title={"Rating: "+review.rating}>
@@ -271,7 +271,6 @@ const Example = (props) => {
 					                   	<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">{review.ratedBy}–</b> {review.ratedOn}</p>
 					                   	<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>{review.comment}</p>
 		           							</li>
-                   					}
                    				))
                    			}
            						</ul>
