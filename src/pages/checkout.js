@@ -23,10 +23,10 @@ export default (props) => {
 		<section className="mb-0 py-3 py-sm-5">
 			<div className="container-large">
 				<Row className="border border-info bg-light">
-					<p className="color-secondary mt-2 ml-5 p-1">Returning customers? <Link to="#">Click here to login.</Link></p>
+					<p className="color-secondary mt-2 ml-5 p-1">Returning customers? <Link to="#-cta" onClick={(e) => e.preventDefault()}>Click here to login.</Link></p>
 				</Row>
 				<Row className="border border-info bg-light mt-2">
-					<p className="color-secondary mt-2 ml-5 p-1">Have a coupon? <Link to="#">Click here to enter your code</Link></p>
+					<p className="color-secondary mt-2 ml-5 p-1">Have a coupon? <Link to="#-cta" onClick={(e) => e.preventDefault()}>Click here to enter your code</Link></p>
 				</Row>
 			</div>
 		</section>
