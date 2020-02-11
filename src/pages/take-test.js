@@ -398,7 +398,7 @@ const TAKETEST = (props) => {
 							</div>
 						</div>
 						<div id="xf-block" className="d-none">
-							<div className="based-on-answer">
+							<div className="based-on-answer text-center">
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
@@ -413,7 +413,7 @@ const TAKETEST = (props) => {
 							</div>
             </div>
             <div id="ol-block" className="d-none">
-							<div className="based-on-answer">
+							<div className="based-on-answer text-center">
 								<h4>Recommended Mattress</h4>
 								<p>Based on your input, this mattress is a good fit for you.</p>
 							</div>
