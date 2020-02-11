@@ -189,7 +189,7 @@ const Example = (props) => {
 
   const handleLoadMore = () => {
   	if(reviewsData.length !== showReviews){
-  		setShowReviews(showReviews+5)
+  		//setShowReviews(showReviews+5)
   	}
   }
   /*
