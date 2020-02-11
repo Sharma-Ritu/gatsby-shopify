@@ -1,4 +1,11 @@
 @media only screen and (max-width: 767px) {
+	.single-article h2 {
+    font-size: 20px;
+}
+
+	.blog-content h3 {
+    font-size: 20px;
+}
 	.all-mattress .mattress-desc {
     font-size: 18px;
 }
@@ -179,6 +186,9 @@ body .container-large{
 	.card-bg .card-layer p{
   	font-size:12px !important;
   }
+  .single-article h2 {
+    font-size: 20px;
+}
   .card-bg .card-layer h4{
   	font-size:14px !important;
   }
