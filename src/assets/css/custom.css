@@ -251,6 +251,8 @@ p.cta.erbaum.position-absolute {
     left: calc(100% + 5px);
     display: inline-block;
     background-image: url('../img/w-ic.png');
+    background-repeat: no-repeat;
+    background-position: center right;
     width: 15px;
     height: 23px;
     transition: width .1s cubic-bezier(0.4, 0, 0.2, 1);
