@@ -116,7 +116,8 @@ const Example = (props) => {
 					                   				<button
 					                   					data-rating-value={i}
 					                   					data-rating-text={i}
-					                   					className={(review.rating === (i-1))?"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current":"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"}
+					                   					className={((review.rating-1) === i)? "br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current":"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"}
+					                   					key={i}
 					                   				>
 					                   					<span className="color-primary fa fa-star"></span>
 					                   				</button>
