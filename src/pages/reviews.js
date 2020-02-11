@@ -276,7 +276,7 @@ const Example = (props) => {
                    			}
            						</ul>
 			                <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-center">
-												<button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 p-0" onClick={handleLoadMore}>LOAD MORE</button>
+												<button className="btn-cta color-primary erbaum-bold space-1 bg-transparent border-0 p-0" onClick={handleLoadMore} style={{outline:'none'}}>LOAD MORE</button>
 											</p>
            					</div>
            				</Row>
