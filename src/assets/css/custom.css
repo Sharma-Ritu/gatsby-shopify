@@ -193,14 +193,9 @@ p.cta.erbaum.position-absolute {
 	letter-spacing: 0px;
 }
 .max-support .btn-cta::after,
+.approved .btn-cta::after,
 .banner-home .btn-cta::after {
     background-image: url('../img/b-ic.png');
-}
-.approved .btn-cta::after {
-	content: url('../img/b-ic.png');
-	position: absolute;
-	top: -3px;
-	right: -55px;
 }
 .mattresses .lead-text-font {
 	letter-spacing: -1px;
