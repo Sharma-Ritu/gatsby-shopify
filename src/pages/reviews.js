@@ -187,7 +187,8 @@ const Example = (props) => {
   	}
   ];
   const handleLoadMore = (event) => {
-  	console.log(reviews)
+  	console.log(showReviews, reviews)
+  	setShowReviews(showReviews+5)
   }
   /*
   const toggle = tab => {
@@ -249,26 +250,29 @@ const Example = (props) => {
                    		<ul className="list-unstyled p-0 ratings">
                    			{
                    				reviews.map((review, index) => (
-		           							<li className="border mb-4" key={index}>
-		           								<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>{review.title}</h4>
-					                   	<div className="br-widget br-readonly pt-2">
-					                   		{
-					                   			[...Array(review.rating)].map((elem, i) => (
-					                   				<button
-					                   					data-rating-value={i}
-					                   					data-rating-text={i}
-					                   					className={((review.rating-1) === i)? "br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current":"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"}
-					                   					key={i}
-					                   				>
-					                   					<span className="color-primary fa fa-star"></span>
-					                   				</button>
-					                   			))
-					                   		}
-						                  	<div className="br-current-rating d-none">{review.rating}</div>
-					                   	</div>
-					                   	<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">{review.ratedBy}–</b> {review.ratedOn}</p>
-					                   	<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>{review.comment}</p>
-		           							</li>
+                   					{
+                   						(index < showReviews) &&
+				           							<li className="border mb-4" key={index}>
+				           								<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>{review.title}</h4>
+							                   	<div className="d-inline-block br-widget br-readonly pt-2" title={"Rating: "+review.rating}>
+							                   		{
+							                   			[...Array(review.rating)].map((elem, i) => (
+							                   				<button
+							                   					data-rating-value={i}
+							                   					data-rating-text={i}
+							                   					className={((review.rating-1) === i)? "br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current":"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"}
+							                   					key={i}
+							                   				>
+							                   					<span className="color-primary fa fa-star"></span>
+							                   				</button>
+							                   			))
+							                   		}
+								                  	<div className="br-current-rating d-none">{review.rating}</div>
+							                   	</div>
+							                   	<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">{review.ratedBy}–</b> {review.ratedOn}</p>
+							                   	<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>{review.comment}</p>
+				           							</li>
+                   					}
                    				))
                    			}
            						</ul>
