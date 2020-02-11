@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container, Row, Col, Media} from 'reactstrap';
+import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption} from 'reactstrap';
 import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
 import {Img} from '~/utils/styles'
@@ -15,8 +15,52 @@ import us from "~/assets/img/us.png"
 import eco from "~/assets/img/eco.png"
 import confidence from "~/assets/img/confidence.png"
 
+
 const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === product.images.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? product.images.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  }
+
+
+  const slides = product.images.map(image => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={product.images}
+      >
+        <Img
+            fluid={image.localFile.childImageSharp.fluid}
+            key={image.id}
+            alt={product.title}
+          />
+      </CarouselItem>
+    );
+  });
+  
+ 
+
+
+  
+
   return (
     <>
       <SEO title={product.title} description={product.description} />
@@ -26,13 +70,25 @@ const ProductPage = ({ data }) => {
       <Container>
         <Row className="no-gutters pb-2 pb-sm-5">
           <Col sm="6" className="single-product-img">
-                 {product.images.map(image => (
+          <Carousel
+            activeIndex={activeIndex}
+            next={next}
+            previous={previous}
+          >
+            {slides}
+            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+          </Carousel>
+          {product.images.map(image => (
                 <Img
                   fluid={image.localFile.childImageSharp.fluid}
                   key={image.id}
                   alt={product.title}
+
+                  activeIndex={activeIndex} onClickHandler={goToIndex}
                 />
               ))}
+                  
           </Col>
           <Col sm="6" className="pl-lg-5 pl-0 pt-0 pt-sm-0 color-primary single-product-desc">  
              <h3 className="erbaum-bold pb-3 color-primary">{product.title}</h3>
@@ -147,6 +203,7 @@ const ProductPage = ({ data }) => {
     </>
   )
 }
+
 
 export const query = graphql`
   query($handle: String!) {
