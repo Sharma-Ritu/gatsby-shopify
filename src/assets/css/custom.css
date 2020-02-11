@@ -711,3 +711,9 @@ body .navbar {
 .mattress-section1 h2 {
 	font-size: 2rem;
 }
+.blog-content h3 {
+    font-size: 24px;
+}
+.single-article h2 {
+    font-size: 24px;
+}
