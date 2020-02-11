@@ -194,10 +194,7 @@ p.cta.erbaum.position-absolute {
 }
 .max-support .btn-cta::after,
 .banner-home .btn-cta::after {
-	content: url('../img/b-ic.png');
-	position: absolute;
-	top: -3px;
-	right: -65px;
+    background-image: url('../img/b-ic.png');
 }
 .approved .btn-cta::after {
 	content: url('../img/b-ic.png');
@@ -253,10 +250,18 @@ p.cta.erbaum.position-absolute {
 	font-size: 13px;
 }
 .btn-cta::after {
-	content: url('../img/w-ic.png');
-	position: absolute;
-	top: -3px;
-	right: -55px;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: calc(100% + 5px);
+    display: inline-block;
+    background-image: url('../img/w-ic.png');
+    width: 53px;
+    height: 23px;
+    transition: width .1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-cta:hover::after {
+    width: 53px;
 }
 .story::after {
 	content: url('../img/i1.png');

@@ -7,7 +7,6 @@ import "../assets/css/bootstrap.min.css"
 import mattress1 from "../assets/img/mattress1.jpg"
 import product1 from "../assets/img/product1.jpg"
 import product2 from "../assets/img/product2.jpg"
-import blog1 from "../assets/img/blog1.jpg"
 import run from "../assets/img/run.png"
 import { Link } from "gatsby"
 
