@@ -9,7 +9,7 @@ import "../assets/css/bootstrap.min.css"
 const Example = (props) => {
   const [activeTab, setActiveTab] = useState('1');
   const [showReviews, setShowReviews] = useState(5);
-  const reviews = [
+  const reviewsData = [
   	{
   		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
   		rating : 5,
@@ -188,10 +188,10 @@ const Example = (props) => {
   ];
 
   const handleLoadMore = (event) => {
-  	if(reviews.length !== showReviews){
+  	if(reviewsData.length !== showReviews){
   		setShowReviews(showReviews+5)
-  		console.log(showReviews)
   	}
+  	console.log(showReviews)
   }
   /*
   const toggle = tab => {
@@ -252,7 +252,7 @@ const Example = (props) => {
                    	<div className="w-100 m-auto">
                    		<ul className="list-unstyled p-0 ratings">
                    			{
-                   				reviews.slice(0, showReviews).map((review, index) => (
+                   				reviewsData.slice(0, showReviews).map((review, index) => (
 		           							<li className="border mb-4" key={index}>
 		           								<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>{review.title}</h4>
 					                   	<div className="d-inline-block br-widget br-readonly pt-2" title={"Rating: "+review.rating}>
