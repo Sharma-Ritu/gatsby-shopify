@@ -30,7 +30,7 @@ export default (props) => {
 							Try the world-class rated mattress with free continetal USA and Caanada-wide delivery, and a 100-night sleep trial."
 						</p>
 						<p className="cta mt-0 pt-sm-2 pt-lg-2 pt-xl-2">
-							<Link to="#-cta" onClick={(e) => e.preventDefault()} className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </Link>
+							<Link to="#" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </Link>
 						</p>
 					</Col>
 					<Col sm="12" className="col-lg-6 col-xl-6">
@@ -121,7 +121,7 @@ export default (props) => {
 							BODY SUPPORT BIO FOAM CORE
 						</p>
 						<p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 mb-sm-2 ml-3">
-							<Link to="#-cta" onClick={(e) => e.preventDefault()} className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
+							<Link to="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
 						</p>
 					</Col>
 				</Row>
@@ -197,7 +197,7 @@ export default (props) => {
 							<h4 className="approved-title text-white erbaum-bold">CHIROPRACTOR APPROVED</h4>
 							<p className="proxima-b space-1 p-0 pt-sm-1" style={{fontSize:'19px',lineHeight:'29px'}}>Chirofoam<sup style={{fontSize:'8px'}}>TM</sup> mattresses are designed by Chiropractors to improve posture, and provide incredible pressure relief. Your back will thank you.</p>
 							<p className="cta mt-3 mt-sm-0 mt-lg-0 mt-xl-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<Link to="#-cta" onClick={(e) => e.preventDefault()} className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
+								<Link to="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
 							</p>
 						</div>
 						

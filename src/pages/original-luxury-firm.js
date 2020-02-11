@@ -41,62 +41,62 @@ export default (props) => {
 						<div className="row text-center text-lg-left no-gutters">
 
 					    <div className="col-lg-2 col-md-3 col-3 mx-2">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-4 h-100">
+					      <Link to="#" className="d-block mb-4 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol1} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-2">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-4 h-100">
+					      <Link to="#" className="d-block mb-4 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol2} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol3} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol4} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol5} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol6} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol7} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol8} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol9} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol1} alt=""/>
 					          </Link>
 					    </div>
 					     <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-42h-100">
+					      <Link to="#" className="d-block mb-42h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol3} alt=""/>
 					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <Link to="#-cta" onClick={(e) => e.preventDefault()} className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol4} alt=""/>
 					          </Link>
 					    </div>
