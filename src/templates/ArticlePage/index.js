@@ -13,7 +13,7 @@ const ArticlePage = ({ data }) => {
     <>
     <SEO title={article.title} description={article.excerpt} />
     <Header />
-    <section className="single-blog py-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
+    <section className="single-blog py-3 py-sm-3 py-lg-5 py-xl-5" style={{backgroundColor:'rgba(0,0,0,0.1)'}}>
       <div className="container-large">
         <h3 className="text-uppercase filson-pro-reg m-0" style={{fontSize:'22px'}}>{article.title}</h3>
       </div>
@@ -21,7 +21,7 @@ const ArticlePage = ({ data }) => {
     <section className="mb-0 py-5 position-relative">
       <div className="container-large">
         <Row>
-          <Col sm="12" className="align-middle">
+          <Col sm="12" className="align-middle single-article">
               
             <div className="featured-image position-relative overflow-hidden">
               <img src={article.image.src} className="img-fluid" alt={article.image.altText} style={{transition:'all 0.15s ease-in-out', width:'100%'}}/>
@@ -31,8 +31,8 @@ const ArticlePage = ({ data }) => {
               <Col sm="6">
                 <p style={{fontSize:'12px'}}>By <span>{article.author.firstName}</span> In <span>{article.blog.title}</span> Posted <span>{article.publishedAt}</span></p>
               </Col>
-              <Col sm="6" className="text-right" style={{display:'ruby'}}>
-                <span style={{color:'rgba(0,0,0,0.4)'}} className="ml-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></span>
+              <Col sm="6" className="text-left text-sm-left text-lg-right text-xl-right" style={{display:'ruby'}}>
+                <span style={{color:'rgba(0,0,0,0.4)'}} className="ml-0 ml-sm-0 ml-lg-4 ml-xl-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></span>
                 <span className="px-2 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-envelope"></i><span className="pl-2">2</span></span>
                 <span className="mb-0 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-heart"></i><span className="pl-2">2</span></span>
               </Col>
