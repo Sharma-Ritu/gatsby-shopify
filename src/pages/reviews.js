@@ -188,8 +188,10 @@ const Example = (props) => {
   ];
 
   const handleLoadMore = (event) => {
-  	setShowReviews(showReviews+5)
-  	console.log(showReviews)
+  	if(reviews.length !== showReviews){
+  		setShowReviews(showReviews+5)
+  		console.log(showReviews)
+  	}
   }
   /*
   const toggle = tab => {
