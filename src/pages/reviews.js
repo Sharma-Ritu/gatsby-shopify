@@ -108,14 +108,20 @@ const Example = (props) => {
                    		<ul className="list-unstyled p-0 ratings">
                    			{
                    				reviews.map((review, index) => (
-		           							<li className="border mb-4">
+		           							<li className="border mb-4" key={index}>
 		           								<h4 className="color-primary erbaum-bold text-uppercase" style={{fontSize:'16px'}}>{review.title}</h4>
 					                   	<div className="br-widget br-readonly pt-2">
-						                  	<button data-rating-value="1" data-rating-text="1" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
-						                  	<button data-rating-value="2" data-rating-text="2" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
-						                  	<button data-rating-value="3" data-rating-text="3" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
-						                  	<button data-rating-value="4" data-rating-text="4" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"><span className="color-primary fa fa-star"></span></button>
-						                  	<button data-rating-value="5" data-rating-text="5" className="br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current"><span className="color-primary fa fa-star"></span></button>
+					                   		{
+					                   			[...Array(review.rating)].map((elem, i) => (
+					                   				<button
+					                   					data-rating-value={i}
+					                   					data-rating-text={i}
+					                   					className={(review.rating === (i-1))?"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent br-current":"br-selected p-0 border-0 bg-transparent p-0 border-0 bg-transparent"}
+					                   				>
+					                   					<span className="color-primary fa fa-star"></span>
+					                   				</button>
+					                   			))
+					                   		}
 						                  	<div className="br-current-rating d-none">{review.rating}</div>
 					                   	</div>
 					                   	<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">{review.ratedBy}–</b> {review.ratedOn}</p>
