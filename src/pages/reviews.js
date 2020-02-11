@@ -8,7 +8,148 @@ import "../assets/css/bootstrap.min.css"
 
 const Example = (props) => {
   const [activeTab, setActiveTab] = useState('1');
+  const [showReviews, setShowReviews] = useState(5);
   const reviews = [
+  	{
+  		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
+  		rating : 5,
+  		ratedBy : "Mina Ho",
+  		ratedOn : "September 4, 2019",
+  		comment : "Supports your whole body comfortably and yet u won’t feel the hardness. The mattress is just amazing. I would recommend to all my friends."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Emma",
+  		ratedOn : "June 1, 2016",
+  		comment : "I am obsessed with this mattress! I've suffered from back pain for years and I couldn't tell you the last time I slept through the night without tossing and turning. Ever since I started sleeping on my new mattress I've been sleeping throughout the entire night without waking up and my back hasn't been bothering me nearly as much as it used to. Very pleased! Thank you Chirofoam!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Judy",
+  		ratedOn : "June 1, 2016",
+  		comment : "I'm a busy mom and work full-time and although I've been in dire need of a new mattress I haven't had the time to shop around. I was so happy when my Chirofoam mattress showed up at my door. It was compact and so easy to carry into my bedroom. I honestly didn't even know what a difference this mattress would make in my life. I ordered it because I thought it would be quick and easy and cut out one of many chores on my to-do list. Since sleeping on it I feel more energized and so much happier in the mornings. Even my kids have noticed a difference in my energy levels I feel like I'm 10 years younger!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Hardeep",
+  		ratedOn : "June 1, 2016",
+  		comment : "I will recommend this mattress to everyone I know. I have had bad lower back pain for years now and Chirofoam was well worth the investment. My back pain is almost entirely gone. Best part is I haven't had to take a pain killer since my first week sleeping on this mattress."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Steven Wright",
+  		ratedOn : "June 2, 2016",
+  		comment : "Surprised my wife on our anniversary and we absolutely love it. So do our kids which isn't necessarily a good thing :P"
+  	},
+  	{
+  		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
+  		rating : 5,
+  		ratedBy : "Mina Ho",
+  		ratedOn : "September 4, 2019",
+  		comment : "Supports your whole body comfortably and yet u won’t feel the hardness. The mattress is just amazing. I would recommend to all my friends."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Emma",
+  		ratedOn : "June 1, 2016",
+  		comment : "I am obsessed with this mattress! I've suffered from back pain for years and I couldn't tell you the last time I slept through the night without tossing and turning. Ever since I started sleeping on my new mattress I've been sleeping throughout the entire night without waking up and my back hasn't been bothering me nearly as much as it used to. Very pleased! Thank you Chirofoam!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Judy",
+  		ratedOn : "June 1, 2016",
+  		comment : "I'm a busy mom and work full-time and although I've been in dire need of a new mattress I haven't had the time to shop around. I was so happy when my Chirofoam mattress showed up at my door. It was compact and so easy to carry into my bedroom. I honestly didn't even know what a difference this mattress would make in my life. I ordered it because I thought it would be quick and easy and cut out one of many chores on my to-do list. Since sleeping on it I feel more energized and so much happier in the mornings. Even my kids have noticed a difference in my energy levels I feel like I'm 10 years younger!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Hardeep",
+  		ratedOn : "June 1, 2016",
+  		comment : "I will recommend this mattress to everyone I know. I have had bad lower back pain for years now and Chirofoam was well worth the investment. My back pain is almost entirely gone. Best part is I haven't had to take a pain killer since my first week sleeping on this mattress."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Steven Wright",
+  		ratedOn : "June 2, 2016",
+  		comment : "Surprised my wife on our anniversary and we absolutely love it. So do our kids which isn't necessarily a good thing :P"
+  	},
+  	{
+  		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
+  		rating : 5,
+  		ratedBy : "Mina Ho",
+  		ratedOn : "September 4, 2019",
+  		comment : "Supports your whole body comfortably and yet u won’t feel the hardness. The mattress is just amazing. I would recommend to all my friends."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Emma",
+  		ratedOn : "June 1, 2016",
+  		comment : "I am obsessed with this mattress! I've suffered from back pain for years and I couldn't tell you the last time I slept through the night without tossing and turning. Ever since I started sleeping on my new mattress I've been sleeping throughout the entire night without waking up and my back hasn't been bothering me nearly as much as it used to. Very pleased! Thank you Chirofoam!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Judy",
+  		ratedOn : "June 1, 2016",
+  		comment : "I'm a busy mom and work full-time and although I've been in dire need of a new mattress I haven't had the time to shop around. I was so happy when my Chirofoam mattress showed up at my door. It was compact and so easy to carry into my bedroom. I honestly didn't even know what a difference this mattress would make in my life. I ordered it because I thought it would be quick and easy and cut out one of many chores on my to-do list. Since sleeping on it I feel more energized and so much happier in the mornings. Even my kids have noticed a difference in my energy levels I feel like I'm 10 years younger!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Hardeep",
+  		ratedOn : "June 1, 2016",
+  		comment : "I will recommend this mattress to everyone I know. I have had bad lower back pain for years now and Chirofoam was well worth the investment. My back pain is almost entirely gone. Best part is I haven't had to take a pain killer since my first week sleeping on this mattress."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Steven Wright",
+  		ratedOn : "June 2, 2016",
+  		comment : "Surprised my wife on our anniversary and we absolutely love it. So do our kids which isn't necessarily a good thing :P"
+  	},
+  	{
+  		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
+  		rating : 5,
+  		ratedBy : "Mina Ho",
+  		ratedOn : "September 4, 2019",
+  		comment : "Supports your whole body comfortably and yet u won’t feel the hardness. The mattress is just amazing. I would recommend to all my friends."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Emma",
+  		ratedOn : "June 1, 2016",
+  		comment : "I am obsessed with this mattress! I've suffered from back pain for years and I couldn't tell you the last time I slept through the night without tossing and turning. Ever since I started sleeping on my new mattress I've been sleeping throughout the entire night without waking up and my back hasn't been bothering me nearly as much as it used to. Very pleased! Thank you Chirofoam!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Judy",
+  		ratedOn : "June 1, 2016",
+  		comment : "I'm a busy mom and work full-time and although I've been in dire need of a new mattress I haven't had the time to shop around. I was so happy when my Chirofoam mattress showed up at my door. It was compact and so easy to carry into my bedroom. I honestly didn't even know what a difference this mattress would make in my life. I ordered it because I thought it would be quick and easy and cut out one of many chores on my to-do list. Since sleeping on it I feel more energized and so much happier in the mornings. Even my kids have noticed a difference in my energy levels I feel like I'm 10 years younger!"
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Hardeep",
+  		ratedOn : "June 1, 2016",
+  		comment : "I will recommend this mattress to everyone I know. I have had bad lower back pain for years now and Chirofoam was well worth the investment. My back pain is almost entirely gone. Best part is I haven't had to take a pain killer since my first week sleeping on this mattress."
+  	},
+  	{
+  		title : "THE ORIGINAL CHIROFOAM™ MATTRESS – LUXURY FIRM",
+  		rating : 5,
+  		ratedBy : "Steven Wright",
+  		ratedOn : "June 2, 2016",
+  		comment : "Surprised my wife on our anniversary and we absolutely love it. So do our kids which isn't necessarily a good thing :P"
+  	},
   	{
   		title : "THE CHIROFOAM™ XF MATTRESS – EXTRA FIRM",
   		rating : 5,
