@@ -41,6 +41,7 @@ const ProductPage = ({ data }) => {
 
 
   const slides = product.images.map(image => {
+    console.log(image)
     return (
       <CarouselItem
         onExiting={() => setAnimating(true)}
@@ -55,7 +56,7 @@ const ProductPage = ({ data }) => {
       </CarouselItem>
     );
   });
-  
+
   return (
     <>
       <SEO title={product.title} description={product.description} />
