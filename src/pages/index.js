@@ -14,7 +14,7 @@ export default (props) => {
   return (
 	<>
 		<SEO title="Home" />
-		<main>
+		<main id="homepage">
 		<Banner />
 		<section className="py-4 py-sm-5 py-lg-5 py-xl-5 active-style">
 			<div className="container-large py-0 py-sm-5 py-lg-5 py-xl-5 px-3 px-sm-3">
