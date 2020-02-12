@@ -45,7 +45,7 @@ const ProductPage = ({ data }) => {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={product.images}
+        key={image.id}
       >
         <Img
             fluid={image.localFile.childImageSharp.fluid}
