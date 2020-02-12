@@ -56,11 +56,6 @@ const ProductPage = ({ data }) => {
     );
   });
   
- 
-
-
-  
-
   return (
     <>
       <SEO title={product.title} description={product.description} />
@@ -74,6 +69,7 @@ const ProductPage = ({ data }) => {
             activeIndex={activeIndex}
             next={next}
             previous={previous}
+            ride={false}
           >
             {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
