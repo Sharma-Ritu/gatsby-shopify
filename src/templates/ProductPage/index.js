@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption} from 'reactstrap';
+import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl} from 'reactstrap';
 import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
-import {Img} from '~/utils/styles'
 import {ProductDescription} from './styles'
 import icon1 from "~/assets/img/ic1.png"
 import icon2 from "~/assets/img/ic2.png"
@@ -79,9 +78,9 @@ const ProductPage = ({ data }) => {
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
           </Carousel>
           <div className="row">
-          {product.images.map(image => (
-            <Col sm="4" key={image.id}>
-              <button className="p-0 bg-transparent border-0" activeIndex={activeIndex} onClick={goToIndex}>
+          {product.images.map((image, index) => (
+            <Col sm="3" key={image.id}>
+              <button className="p-0 bg-transparent border-0" onClick={goToIndex(index+1)}>
                 <img
                   className="img-fluid"
                   src={image.localFile.childImageSharp.fluid.src}
