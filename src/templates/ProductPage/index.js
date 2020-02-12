@@ -80,6 +80,7 @@ const ProductPage = ({ data }) => {
       <Container>
         <Row className="no-gutters pb-2 pb-sm-5">
           <Col sm="6" className="single-product-img">
+          <h3 className="erbaum-bold mb-3 color-primary d-sm-none">{product.title}</h3>
           <Carousel
             activeIndex={activeIndex}
             next={next}
@@ -110,7 +111,7 @@ const ProductPage = ({ data }) => {
           </div>  
           </Col>
           <Col sm="6" className="pl-lg-5 pl-0 pt-0 pt-sm-0 color-primary single-product-desc">  
-             <h3 className="erbaum-bold pb-3 color-primary">{product.title}</h3>
+             <h3 className="erbaum-bold pb-3 color-primary d-none d-sm-block">{product.title}</h3>
               <ProductDescription className="filson-pro-reg space-1 mt-0"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
               />

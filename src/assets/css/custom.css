@@ -550,7 +550,22 @@ body .charity {
 	color: #fff !important;
 }
 .single-product-img .carousel-item .parent {
-    min-height: 400px;
+	min-height: 215px;
+}
+@media (min-width: 992px) {
+	.single-product-img .carousel-item .parent {
+	    min-height: 400px;
+	}
+}
+@media (min-width: 768px) {
+	.single-product-img .carousel-item .parent {
+	    min-height: 250px;
+	}
+}
+@media (min-width: 576px) {
+	.single-product-img .carousel-item .parent {
+	    min-height: 220px;
+	}
 }
 .single-product-img .gatsby-image-wrapper {
 	width: 20%;
