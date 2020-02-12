@@ -1,4 +1,5 @@
 @media only screen and (max-width: 767px) {
+
 	.single-article h2 {
     font-size: 20px;
 }
@@ -169,6 +170,16 @@ body .container-large{
 .single-product-desc .cta span{
 	font-size:1.5rem;
 }
+.banner-slider .carousel-control-next {
+    height: 50px;
+    top: 50%;
+    right:5px;
+}
+.banner-slider .carousel-control-prev {
+    height: 50px;
+    top: 50%;
+    left:5px;
+}
 	
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -183,8 +194,8 @@ body .container-large{
 
 /* Portrait */
 @media only screen and (min-device-width: 576px) and (max-device-width: 1024px){ 
-	.card-bg .card-layer p{
-  	font-size:12px !important;
+	.home-banner {
+    height:65vh;
   }
   .single-article h2 {
     font-size: 20px;
@@ -265,8 +276,18 @@ body .container-large{
 	.single-product-desc .cta span{
 	font-size:1.5rem;
 }
+.banner-slider .carousel-control-next {
+    height: 50px;
+    top: 50%;
+    right: 10px;
+}
+.banner-slider .carousel-control-prev {
+    height: 50px;
+    top: 50%;
+    left:10px;
+}
   .home-banner {
-    height: 100vh;
+    height: 55vh;
     background-position:unset;
 }
 .animation-box .five-key {
@@ -327,6 +348,9 @@ body .container-large{
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	body .container-large{
 	padding:0px 20px;
+}
+.home-banner {
+	height:55vh;
 }
   
  .facilities span{
