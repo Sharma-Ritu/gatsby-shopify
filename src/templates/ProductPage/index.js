@@ -110,7 +110,7 @@ const ProductPage = ({ data }) => {
               ))}
           </div>  
           </Col>
-          <Col lg="6" className="pl-lg-5 pl-sm-2 pl-0 pt-0 pt-sm-0 color-primary single-product-desc text-center text-sm-justify">  
+          <Col lg="6" className="pl-lg-5 pl-sm-2 pl-0 pt-0 pt-sm-0 color-primary single-product-desc text-center text-lg-left">  
              <h3 className="erbaum-bold pb-3 color-primary d-none d-lg-block">{product.title}</h3>
               <ProductDescription className="filson-pro-reg space-1 mt-0"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
