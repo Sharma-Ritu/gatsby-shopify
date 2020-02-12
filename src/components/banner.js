@@ -12,7 +12,7 @@ const Banner = () => {
 		<div className="banner-slider position-relative">
 			<HomePageSlider />
 		</div>
-		<Header/>
+		<Header color="dark" />
 	</header>
 	)
 }
