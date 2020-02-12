@@ -56,7 +56,7 @@ const ProductPage = ({ data }) => {
           <button
             className="p-0 bg-transparent border-0"
             onClick={e => toggleModal(e, image.localFile.childImageSharp.fluid.src)}
-            style={{outline:'none'}}
+            style={{outline:'none', cursor: 'zoom-in'}}
           >
             <img
               className="img-fluid my-auto"
@@ -215,7 +215,7 @@ const ProductPage = ({ data }) => {
         </Row>
       </Container>
     </section>
-     <Modal size="lg" isOpen={modal} toggle={closeModal} centered={true} contentClassName="rounded-0 bg-transparent border-0">
+     <Modal size="xl" isOpen={modal} toggle={closeModal} centered={true} contentClassName="rounded-0 bg-transparent border-0">
         <div className="modal-body p-0">
           <img src={modalImage} alt="" className="w-100 img-fluid"/>
         </div>
