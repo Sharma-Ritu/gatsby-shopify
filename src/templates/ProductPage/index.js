@@ -44,7 +44,7 @@ const ProductPage = ({ data }) => {
     setModalImage(imgSrc)
     setModal(!modal)
   }  
-  const externalCloseBtn = <button className="close" style={{position:'absolute',top:'15px',right:'15px'}} onClick={closeModal}>&times;</button>;
+  const externalCloseBtn = <button className="close" style={{position:'absolute',top:'15px',right:'15px',color:'#fff',fontSize:'3em'}} onClick={closeModal}>&times;</button>;
   const slides = product.images.map(image => {
     return (
       <CarouselItem
@@ -216,7 +216,7 @@ const ProductPage = ({ data }) => {
       </Container>
     </section>
      <Modal
-      size="xl"
+      size="lg"
       isOpen={modal} 
       toggle={closeModal}
       centered={true}
