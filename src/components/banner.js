@@ -8,8 +8,7 @@ import HomePageSlider from '../components/HomePageSlider'
 const Banner = () => {
 
 	return(
-	<header className="header-outer">
-		
+	<header className="header-outer home-page">
 		<div className="banner-slider position-relative">
 			<HomePageSlider />
 		</div>

@@ -4,7 +4,6 @@ import {Link} from "gatsby"
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   Nav,
   NavItem,
 } from 'reactstrap';
@@ -23,7 +22,24 @@ const Header = (props) => {
       <Navbar color="faded" light expand="lg" className="bg-transparent pt-4 pt-sm-4 p-3 p-sm-0">
 		<div className="container d-sm-flex d-lg-flex d-xl-flex">
 			<Link to="/" className="navbar-brand"><img src={logo} alt="Chirofoam" width="200px"/></Link>
-			<NavbarToggler onClick={toggle} />
+			<button
+				aria-label="Toggle navigation"
+				type="button"
+				className="navbar-toggler"
+				onClick={toggle}
+			>
+				<svg
+					viewBox="0 0 30 30"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						stroke-width="2"
+						stroke-linecap="round" 
+						stroke-miterlimit="10"
+						d="M4 7h22M4 15h22M4 23h22"
+					/>
+				</svg>
+			</button>
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 				<NavItem>
