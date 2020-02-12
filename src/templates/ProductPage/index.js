@@ -80,7 +80,7 @@ const ProductPage = ({ data }) => {
       <Container>
         <Row className="no-gutters pb-2 pb-sm-5">
           <Col lg="6" className="single-product-img">
-          <h3 className="erbaum-bold mb-3 color-primary d-lg-none">{product.title}</h3>
+          <h3 className="erbaum-bold mb-3 color-primary d-lg-none text-center">{product.title}</h3>
           <Carousel
             activeIndex={activeIndex}
             next={next}

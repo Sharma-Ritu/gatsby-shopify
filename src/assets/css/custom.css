@@ -565,6 +565,9 @@ body .charity {
 	background-color: #243B6B;
 	color: #fff !important;
 }
+.single-product-img .carousel-item .parent {
+	min-height: 215px;
+}
 @media (min-width: 576px) {
 	.single-product-img .carousel-item .parent {
 	    min-height: 220px;
@@ -572,7 +575,7 @@ body .charity {
 }
 @media (min-width: 768px) {
 	.single-product-img .carousel-item .parent {
-	    min-height: 310px;
+	    min-height: 400px;
 	}
 }
 @media (min-width: 992px) {
@@ -584,9 +587,6 @@ body .charity {
 	.single-product-img .carousel-item .parent {
 	    min-height: 400px;
 	}
-}
-.single-product-img .carousel-item .parent {
-	min-height: 215px;
 }
 .single-product-img .gatsby-image-wrapper {
 	width: 20%;
