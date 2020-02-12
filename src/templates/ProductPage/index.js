@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl, Modal} from 'reactstrap';
 import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
 import {ProductDescription} from './styles'
@@ -213,11 +213,10 @@ const ProductPage = ({ data }) => {
         </Row>
       </Container>
     </section>
-     <Modal size="lg" isOpen={modal} toggle={toggleModal}>
-        <ModalHeader>Modal title</ModalHeader>
-        <ModalBody>
+     <Modal size="lg" isOpen={modal} toggle={toggleModal} centered={true} contentClassName="rounded-0 bg-transparent border-0">
+        <div className="modal-body p-0">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
+        </div>
       </Modal>
     <Footer />
     </>
