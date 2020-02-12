@@ -69,7 +69,7 @@ const ProductPage = ({ data }) => {
             activeIndex={activeIndex}
             next={next}
             previous={previous}
-            ride={false}
+            interval={false}
           >
             {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
