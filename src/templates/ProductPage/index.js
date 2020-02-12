@@ -21,6 +21,7 @@ const ProductPage = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [modal, setModal] = useState(false);
+  const [modalImage, setModalImage] = useState('');
 
   const next = () => {
     if (animating) return;
@@ -38,8 +39,9 @@ const ProductPage = ({ data }) => {
     if (animating) return;
     setActiveIndex(newIndex);
   }
-
-  const toggleModal = () => {
+  const closeModal = () => setModal(false)
+  const toggleModal = (event, imgSrc) => {
+    setModalImage(imgSrc)
     setModal(!modal)
   }  
 
@@ -53,7 +55,7 @@ const ProductPage = ({ data }) => {
         <div className="parent h-100 d-flex justify-content-center" key={image.id}>
           <button
             className="p-0 bg-transparent border-0"
-            onClick={toggleModal}
+            onClick={e => toggleModal(e, image.localFile.childImageSharp.fluid.src)}
             style={{outline:'none'}}
           >
             <img
@@ -213,9 +215,9 @@ const ProductPage = ({ data }) => {
         </Row>
       </Container>
     </section>
-     <Modal size="lg" isOpen={modal} toggle={toggleModal} centered={true} contentClassName="rounded-0 bg-transparent border-0">
+     <Modal size="lg" isOpen={modal} toggle={closeModal} centered={true} contentClassName="rounded-0 bg-transparent border-0">
         <div className="modal-body p-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <img src={modalImage} alt="">
         </div>
       </Modal>
     <Footer />
