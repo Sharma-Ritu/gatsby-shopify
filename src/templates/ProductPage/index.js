@@ -39,7 +39,7 @@ const ProductPage = ({ data }) => {
     setActiveIndex(newIndex);
   }
 
-  const toggleModal = (event) => {
+  const toggleModal = () => {
     setModal(!modal)
   }  
 
@@ -53,7 +53,7 @@ const ProductPage = ({ data }) => {
         <div className="parent h-100 d-flex justify-content-center" key={image.id}>
           <button
             className="p-0 bg-transparent border-0"
-            onClick={e => toggleModal(e)}
+            onClick={toggleModal}
             style={{outline:'none'}}
           >
             <img
@@ -213,8 +213,8 @@ const ProductPage = ({ data }) => {
         </Row>
       </Container>
     </section>
-     <Modal size="lg" isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+     <Modal size="lg" isOpen={modal} toggle={toggleModal}>
+        <ModalHeader>Modal title</ModalHeader>
         <ModalBody>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </ModalBody>
