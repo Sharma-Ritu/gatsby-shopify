@@ -217,7 +217,7 @@ const ProductPage = ({ data }) => {
     </section>
      <Modal size="lg" isOpen={modal} toggle={closeModal} centered={true} contentClassName="rounded-0 bg-transparent border-0">
         <div className="modal-body p-0">
-          <img src={modalImage} alt="">
+          <img src={modalImage} alt="" />
         </div>
       </Modal>
     <Footer />
