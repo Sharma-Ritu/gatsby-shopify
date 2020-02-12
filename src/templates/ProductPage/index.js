@@ -80,7 +80,7 @@ const ProductPage = ({ data }) => {
           {product.images.map((image, index) => (
             <Col sm="3" key={image.id}>
               <button
-              className="p-0 bg-transparent border-0"
+              className="p-0 bg-transparent border-0 mb-2"
               onClick={e => goToIndex(e, index)}
               style={{outline:'none'}}
               >
