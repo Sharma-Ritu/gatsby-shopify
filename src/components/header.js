@@ -13,7 +13,6 @@ import logo from "../assets/img/logo-home.png"
 
 
 const Header = (props) => {
-  console.log(props)
   const [isOpen, setIsOpen] = useState(false);
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
