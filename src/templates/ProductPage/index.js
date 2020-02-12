@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl} from 'reactstrap';
+import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
 import {ProductDescription} from './styles'
@@ -20,6 +20,7 @@ const ProductPage = ({ data }) => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const [modal, setModal] = useState(false);
 
   const next = () => {
     if (animating) return;
@@ -38,6 +39,9 @@ const ProductPage = ({ data }) => {
     setActiveIndex(newIndex);
   }
 
+  const toggleModal = (event) => {
+    setModal(!modal)
+  }  
 
   const slides = product.images.map(image => {
     return (
@@ -47,11 +51,17 @@ const ProductPage = ({ data }) => {
         key={image.id}
       >
         <div className="parent h-100 d-flex justify-content-center" key={image.id}>
-          <img
-            className="img-fluid my-auto"
-            src={image.localFile.childImageSharp.fluid.src}
-            alt={product.title}
-          />
+          <button
+            className="p-0 bg-transparent border-0"
+            onClick={e => toggleModal(e)}
+            style={{outline:'none'}}
+          >
+            <img
+              className="img-fluid my-auto"
+              src={image.localFile.childImageSharp.fluid.src}
+              alt={product.title}
+            />
+          </button>
         </div>
       </CarouselItem>
     );
@@ -203,6 +213,12 @@ const ProductPage = ({ data }) => {
         </Row>
       </Container>
     </section>
+     <Modal size="lg" isOpen={modal} toggle={toggle} className={className}>
+        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+        <ModalBody>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </ModalBody>
+      </Modal>
     <Footer />
     </>
   )
