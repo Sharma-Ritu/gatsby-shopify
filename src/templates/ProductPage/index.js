@@ -33,7 +33,7 @@ const ProductPage = ({ data }) => {
     setActiveIndex(nextIndex);
   }
 
-  const goToIndex = (newIndex) => {
+  const goToIndex = (event, newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
   }
@@ -80,7 +80,7 @@ const ProductPage = ({ data }) => {
           <div className="row">
           {product.images.map((image, index) => (
             <Col sm="3" key={image.id}>
-              <button className="p-0 bg-transparent border-0" onClick={goToIndex(index+1)}>
+              <button className="p-0 bg-transparent border-0" onClick={e => goToIndex(e, (index+1))}>
                 <img
                   className="img-fluid"
                   src={image.localFile.childImageSharp.fluid.src}
