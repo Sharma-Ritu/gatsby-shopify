@@ -549,6 +549,9 @@ body .charity {
 	background-color: #243B6B;
 	color: #fff !important;
 }
+.single-product-img .carousel-item .parent {
+    min-height: 360px;
+}
 .single-product-img .gatsby-image-wrapper {
 	width: 20%;
 	display: inline-flex;

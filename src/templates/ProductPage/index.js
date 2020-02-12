@@ -79,18 +79,18 @@ const ProductPage = ({ data }) => {
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
           </Carousel>
           <div className="row">
-          </div>
           {product.images.map(image => (
-            <div className="col-sm-4" key={image.id}>
-              <button className="" activeIndex={activeIndex} onClick={goToIndex}>
+            <Col sm="4" key={image.id}>
+              <button className="p-0 bg-transparent border-0" activeIndex={activeIndex} onClick={goToIndex}>
                 <img
-                  className="img-fluid my-auto"
+                  className="img-fluid"
                   src={image.localFile.childImageSharp.fluid.src}
+                  alt=""
                 />
               </button>
-            </div>
+            </Col>
               ))}
-                  
+          </div>  
           </Col>
           <Col sm="6" className="pl-lg-5 pl-0 pt-0 pt-sm-0 color-primary single-product-desc">  
              <h3 className="erbaum-bold pb-3 color-primary">{product.title}</h3>
