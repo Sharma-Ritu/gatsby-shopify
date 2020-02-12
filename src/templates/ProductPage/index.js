@@ -43,7 +43,7 @@ const ProductPage = ({ data }) => {
 
   const toggleModal = (event, imgSrc) => {
     setModalImage(imgSrc)
-    setModal(!modal)
+    setModal(true)
   }  
 
   const externalCloseBtn = <button className="close" style={{position:'absolute',top:'0',right:'15px',fontSize:'3em',color:'#fff'}} onClick={closeModal}>&times;</button>;
@@ -85,6 +85,7 @@ const ProductPage = ({ data }) => {
             next={next}
             previous={previous}
             interval={false}
+            enableTouch={true}
           >
             {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
@@ -92,7 +93,7 @@ const ProductPage = ({ data }) => {
           </Carousel>
           <div className="row mx-n2">
           {product.images.map((image, index) => (
-            <div className="col-sm-3 px-2" key={image.id}>
+            <div className="col-3 px-2" key={image.id}>
               <button
               className="p-0 bg-transparent border-0 mb-2"
               onClick={e => goToIndex(e, index)}
