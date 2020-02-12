@@ -90,9 +90,9 @@ const ProductPage = ({ data }) => {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
           </Carousel>
-          <div className="row">
+          <div className="row mx-n2">
           {product.images.map((image, index) => (
-            <Col sm="3" key={image.id}>
+            <div className="col-sm-3 px-2" key={image.id}>
               <button
               className="p-0 bg-transparent border-0 mb-2"
               onClick={e => goToIndex(e, index)}
@@ -104,7 +104,7 @@ const ProductPage = ({ data }) => {
                   alt=""
                 />
               </button>
-            </Col>
+            </div>
               ))}
           </div>  
           </Col>
