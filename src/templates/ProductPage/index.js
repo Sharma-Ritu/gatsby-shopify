@@ -48,11 +48,13 @@ const ProductPage = ({ data }) => {
         onExited={() => setAnimating(false)}
         key={image.id}
       >
-        <Img
-            fluid={image.localFile.childImageSharp.fluid}
-            key={image.id}
+        <div className="parent h-100 d-flex justify-content-center" key={image.id}>
+          <img
+            className="img-fluid my-auto"
+            src={image.localFile.childImageSharp.fluid.src}
             alt={product.title}
           />
+        </div>
       </CarouselItem>
     );
   });
