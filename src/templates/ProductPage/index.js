@@ -40,10 +40,12 @@ const ProductPage = ({ data }) => {
     setActiveIndex(newIndex);
   }
   const closeModal = () => setModal(false)
+
   const toggleModal = (event, imgSrc) => {
     setModalImage(imgSrc)
     setModal(!modal)
   }  
+  
   const externalCloseBtn = <button className="close" style={{position:'absolute',top:'15px',right:'15px',color:'#fff',fontSize:'3em'}} onClick={closeModal}>&times;</button>;
   const slides = product.images.map(image => {
     return (
