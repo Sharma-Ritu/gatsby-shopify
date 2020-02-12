@@ -40,7 +40,6 @@ const ProductPage = ({ data }) => {
 
 
   const slides = product.images.map(image => {
-    console.log(image)
     return (
       <CarouselItem
         onExiting={() => setAnimating(true)}
@@ -80,7 +79,11 @@ const ProductPage = ({ data }) => {
           <div className="row">
           {product.images.map((image, index) => (
             <Col sm="3" key={image.id}>
-              <button className="p-0 bg-transparent border-0" onClick={e => goToIndex(e, (index+1))}>
+              <button
+              className="p-0 bg-transparent border-0"
+              onClick={e => goToIndex(e, index)}
+              style={{outline:'none'}}
+              >
                 <img
                   className="img-fluid"
                   src={image.localFile.childImageSharp.fluid.src}
