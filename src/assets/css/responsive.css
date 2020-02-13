@@ -1,4 +1,7 @@
 @media only screen and (max-width: 767px) {
+	.single-article-content h3 {
+    font-size: 20px;
+}
 	.single-article-content p img{
 		width:100%;
 	}
