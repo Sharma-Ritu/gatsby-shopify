@@ -233,7 +233,7 @@ const Example = (props) => {
 							<div id="tabsContent" className="tab-content border border-top-0">
                     			<div id="customer-revieew" className="tab-pane active show m-auto pb-5" style={{width:'85%'}}>
 									<Row>
-										<Col sm="6" className="text-center py-5">
+										<Col sm="6" className="text-center py-0 py-sm-5 py-lg-5 py-xl-5">
 											<p className="erbaum-bold color-secondary pt-5 mt-3">4.95 out of 5 stars</p>
 											<p><span>175</span> reviews </p>
 										</Col>
