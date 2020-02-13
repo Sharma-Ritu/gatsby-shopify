@@ -287,7 +287,7 @@ const Example = (props) => {
 								<div id="tabsContent" className="tab-content border border-top-0">
 									<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
 										<Row className="m-0">
-											<div className="col-12 col-sm-6 col-lg-6 col-xl-6 m-auto d-flex no-gutters select-mattress">
+											<div className="col-12 col-sm-12 col-lg-6 col-xl-6 m-auto d-flex no-gutters select-mattress">
 												<Col className="col-6">
 													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
 														<button className="filson-pro-reg space-1 px-3 px-sm-4 px-lg-4 px-xl-4">Chirofoam Premium Mattress</button>
