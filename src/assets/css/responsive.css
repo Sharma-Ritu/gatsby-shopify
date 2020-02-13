@@ -1,4 +1,7 @@
 @media only screen and (max-width: 767px) {
+	.single-article-content p img{
+		width:100%;
+	}
 	.four-zero-four h1{
 	font-size:100px;
 }
@@ -64,8 +67,8 @@
 		padding-left:0;
 	}
 	.home-banner {
-	    	background-position-x: 10%;
-		height:100vh;
+	    background-position-x: 10%;
+		height:80vh;
 	}
 	.banner-home {
 		margin-top:140px;
@@ -384,6 +387,9 @@ body .container-large{
 @media (min-width: 1025px) and (max-width: 1280px) {
   body .container-large{
 	padding:0px 20px;
+}
+.single-product-desc .cta span {
+    font-size: 2.5rem;
 }
   .card-bg .card-layer h4{
   	font-size:20px !important;
