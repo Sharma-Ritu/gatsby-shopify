@@ -49,7 +49,7 @@ export default (props) => {
 			</Container>
 		</section>
 		<section className="rating-and-review py-3">
-			<Container className="pb-5 pb-lg-0 pb-xl-0">
+			<Container className="pb-5 pb-lg-5 pb-xl-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
