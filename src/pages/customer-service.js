@@ -31,17 +31,17 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2"><strong>1 (888) CHIRO-31 </strong><br/>1 (888) 244-7631</p>
 						<p className="filson-pro-reg color-secondary pt-2">Our sleep experts are on call <br/>
 						Mon-Fri 10am-6pm (EST)</p>
-						<p className="filson-pro-reg color-secondary pt-5">You may also call our local Toronto, Ontario office at: (905) 766-3380</p>
-						<p className="filson-pro-reg color-secondary pt-5">Chirofoam Mattress Company, Head Office</p>
-						<p className="filson-pro-reg color-secondary pt-3">130 King Street West <br/> Suite 1800 <br/> Toronto, Ontario 
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">You may also call our local Toronto, Ontario office at: (905) 766-3380</p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Chirofoam Mattress Company, Head Office</p>
+						<p className="filson-pro-reg color-secondary pt-2">130 King Street West <br/> Suite 1800 <br/> Toronto, Ontario 
 						<br/> M5X 1E3 <br/> Canada</p>
-						<p className="filson-pro-reg color-secondary pt-3">Office hours: <br/> Mon-Fri 10am-6pm (EST) </p>
-						<p className="filson-pro-reg color-secondary pt-5">Distribution Center:</p>
-						<p className="filson-pro-reg color-secondary pt-3">1550 Meyerside Drive <br/> Unit#2 <br/> Mississauga, Ontario 
+						<p className="filson-pro-reg color-secondary pt-2">Office hours: <br/> Mon-Fri 10am-6pm (EST) </p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Distribution Center:</p>
+						<p className="filson-pro-reg color-secondary pt-2">1550 Meyerside Drive <br/> Unit#2 <br/> Mississauga, Ontario 
 						<br/> L5T 1V4 <br/> Canada</p>
-						<p className="filson-pro-reg color-secondary pt-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
 					</Col>
-					<Col sm="6" className="mb-3 mb-sm-5 pt-5">
+					<Col sm="6" className="mb-3 mb-sm-5 pt-3 pt-sm-3 pt-lg-5 pt-xl-5">
 						<Form>
 							<div className="row">
 								<div className="col-6">
@@ -71,8 +71,8 @@ export default (props) => {
 				</Row>
 			</Container>
 		</section>
-		<section className="rating-and-review py-3 py-sm-5">
-			<Container className="pb-0 pb-sm-5">
+		<section className="rating-and-review py-3">
+			<Container className="pb-5 pb-lg-0 pb-xl-0">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
