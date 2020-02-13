@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container,Jumbotron, Row, Col, Form} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
+import MyForm from "../components/ContactForm"
 
 
 export default (props) => {
@@ -41,32 +42,8 @@ export default (props) => {
 						<br/> L5T 1V4 <br/> Canada</p>
 						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
 					</Col>
-					<Col sm="6" className="mb-3 mb-sm-5 pt-3 pt-sm-3 pt-lg-5 pt-xl-5">
-						<Form>
-							<div className="row">
-								<div className="col-6">
-									<input type="text" className="form-control" id="name" placeholder="Your Name" name="name" />
-								</div>
-								<div className="col-6">
-									<input type="text" className="form-control" id="email" placeholder="Your Email" name="email" />
-								</div>
-							</div>
-							<div className="row pt-3">
-								<div className="col-12">
-									<input type="text" className="form-control" id="subject" placeholder="Subject" name="subject" />
-								</div>
-							</div>
-							<div className="row pt-3">
-								<div className="col-12">
-									<textarea className="form-control" rows="8" id="message" placeholder="Your Message"></textarea>
-								</div>
-							</div>
-							<div className="row pt-3">
-								<div className="col-12">
-									<button type="button" className="btn btn-danger btn-block">SEND</button>
-								</div>
-							</div>
-						</Form>
+					<Col sm="6" className="mb-3 mb-sm-5 pt-3 pt-sm-3 pt-lg-5 pt-xl-5 email-form">
+						<MyForm />
 					</Col>
 				</Row>
 			</Container>
