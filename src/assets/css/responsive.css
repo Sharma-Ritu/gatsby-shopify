@@ -282,6 +282,15 @@ body .container-large{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+	.navbar-nav li.nav-item {
+    padding: 10px 0px;
+}
+	.shop-banner-title {
+    font-size:50px;
+}
+	.contact-us-title{
+		font-size:15px;
+	}
 	.single-product-desc .cta span{
 	font-size:1.5rem;
 }
@@ -355,6 +364,12 @@ body .container-large{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.shop-banner-title {
+    font-size:50px;
+}
+	.contact-us-title{
+		font-size:15px;
+	}
 	body .container-large{
 	padding:0px 20px;
 }
