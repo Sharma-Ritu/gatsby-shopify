@@ -9,7 +9,7 @@ const Banner = () => (
 			<Row className="py-sm-5 py-4">
 				<Col md="7">
 					<span className="erbaum-bold color-primary space-1">SHOP</span>
-					<h2 className="shop-banner-title erbaum-bold color-primary" style={{fontSize:'95px',lineHeight:'85px'}}>CHIROFOAM</h2>
+					<h2 className="shop-banner-title erbaum-bold color-primary">CHIROFOAM</h2>
 					<p className="cta mt-0 pt-sm-5 pt-lg-5 pt-xl-5">
 						<a href="#product" className="btn-cta color-primary erbaum-bold space-1">BUY NOW</a>
 					</p>
