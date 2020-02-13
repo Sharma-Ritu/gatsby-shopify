@@ -759,3 +759,11 @@ body .navbar {
 .four-zero-four h1{
 	font-size:180px;
 }
+.email-form form p p {
+    background-color:#296e01;
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+    font-family: "filson-pro";
+    font-size: 14px;
+}
