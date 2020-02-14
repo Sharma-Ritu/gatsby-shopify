@@ -425,10 +425,10 @@ body .container-large{
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) {
 .fs-sm-1{
-		font-size:.5rem !important;
+	font-size:.5rem !important;
 }
 .fs-sm-2{
 	font-size:1rem !important;
@@ -461,9 +461,9 @@ body .container-large{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
 .fs-md-1{
-		font-size:.5rem !important;
+	font-size:.5rem !important;
 }
 .fs-md-2{
 	font-size:1rem !important;
@@ -496,9 +496,9 @@ body .container-large{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
 .fs-lg-1{
-		font-size:.5rem !important;
+	font-size:.5rem !important;
 }
 .fs-lg-2{
 	font-size:1rem !important;
@@ -531,7 +531,7 @@ body .container-large{
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
 .fs-xl-1{
 		font-size:.5rem !important;
 }
