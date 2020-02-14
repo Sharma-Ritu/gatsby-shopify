@@ -16,7 +16,7 @@ export default (props) => {
 		<SEO title="Home" />
 		<main id="homepage">
 		<Banner />
-		<section className="py-4 py-sm-5 py-lg-5 py-xl-5 active-style">
+		<section className="py-4 py-sm-4 py-lg-4 py-xl-4 active-style">
 			<div className="container-large py-0 py-sm-5 py-lg-5 py-xl-5 px-3 px-sm-3">
 				<Row className="pt-0 pt-sm-4 pt-lg-4 pt-xl-4 d-flex m-0">
 					<Col sm="12" className="pt-0 pt-sm-12 pt-lg-12 pt-xl-2 col-lg-6 col-xl-6">
@@ -44,7 +44,7 @@ export default (props) => {
 				</Row>
 			</div>
 		</section>
-		<section className="py-4 pt-sm-0 pb-sm-5 key-feature">
+		<section className="py-4 pt-sm-1 pb-sm-5 key-feature">
 			<Container className="py-0 pt-sm-0 pb-sm-5">
 				<Row className="pb-sm-3 pb-lg-4 pb-xl-5 pb-0 m-0">
 					<h3 className="text-center lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text color-primary erbaum-bold" style={{width:'100%'}}>5 KEY FEATURES IN EVERY CHIROFOAM MATTRESS</h3>
@@ -246,7 +246,7 @@ export default (props) => {
 				</Row>
 			</div>
 		</section>
-		<section className="our-customer">
+		<section className="py-4 pt-sm-5 pb-sm-4 our-customer">
 				<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
 					<Col sm="6" className="pr-sm-2">
 						<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
