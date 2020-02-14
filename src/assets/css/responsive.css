@@ -434,6 +434,12 @@ body .container-large{
 }
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px) {
+.sub-sm-text{
+	font-size:1.10rem !important;
+}
+.lead-sm-text{
+	font-size:1.65rem !important;
+}
 .fs-sm-1{
 	font-size:.75rem !important;
 }
@@ -469,6 +475,12 @@ body .container-large{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+.sub-md-text{
+	font-size:1.15rem !important;
+}
+	.lead-md-text{
+	font-size:1.85rem !important;
+}
 .fs-md-1{
 	font-size:.75rem !important;
 }
@@ -504,6 +516,12 @@ body .container-large{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
+.sub-lg-text{
+	font-size:1.20rem !important;
+}
+	.lead-lg-text{
+	font-size:2rem !important;
+}
 .fs-lg-1{
 	font-size:.75rem !important;
 }
@@ -539,6 +557,12 @@ body .container-large{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
+.sub-xl-text{
+	font-size:1.25rem !important;
+}
+	.lead-xl-text{
+	font-size:2.15rem !important;
+}
 .fs-xl-1{
 	font-size:.75rem !important;
 }
