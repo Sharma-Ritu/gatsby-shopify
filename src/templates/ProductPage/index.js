@@ -135,7 +135,7 @@ const ProductPage = ({ data }) => {
                   </Media>
                   <Media body middle className="pl-3 text-white">
                     <h4 className="erbaum-bold" style={{fontSize:'18px'}}>BACKED BY SCIENCE</h4>
-                    <p className="proxima-r space-1" style={{fontSize:'14px'}}>Created by experts after testing it with data by the Sleep To Live Institute whose research is based on profiling over 10m people. Recommended by Chiropractors based on key elements of conformity, support, alignment, pressure relief and comfort.</p>
+                    <p className="proxima-r space-1 text-1">Created by experts after testing it with data by the Sleep To Live Institute whose research is based on profiling over 10m people. Recommended by Chiropractors based on key elements of conformity, support, alignment, pressure relief and comfort.</p>
                   </Media>
               </Media>
             </Col>
@@ -146,7 +146,7 @@ const ProductPage = ({ data }) => {
                   </Media>
                   <Media body middle className="pl-3 text-white">
                     <h4 className="erbaum-bold" style={{fontSize:'18px'}}>COMFORT GUARANTEED</h4>
-                    <p className="proxima-r space-1" style={{fontSize:'14px'}}>Made with the highest quality materials and designed to help you get a better night’s sleep.  Our 97% customer satisfaction rate speaks for itself.</p>
+                    <p className="proxima-r space-1 text-1">Made with the highest quality materials and designed to help you get a better night’s sleep.  Our 97% customer satisfaction rate speaks for itself.</p>
                   </Media>
               </Media>
             </Col>
@@ -157,7 +157,7 @@ const ProductPage = ({ data }) => {
                   </Media>
                   <Media body middle className="pl-3 text-white">
                     <h4 className="erbaum-bold" style={{fontSize:'18px'}}>5 KEY FEATURES</h4>
-                    <p className="proxima-r space-1" style={{fontSize:'14px'}}>Designed by mattress experts with 5 key features that consumers voted most important for a comfortable sleep experience.</p>
+                    <p className="proxima-r space-1 text-1">Designed by mattress experts with 5 key features that consumers voted most important for a comfortable sleep experience.</p>
                   </Media>
               </Media>
             </Col>
@@ -168,7 +168,7 @@ const ProductPage = ({ data }) => {
                   </Media>
                   <Media body middle className="pl-3 text-white">
                     <h4 className="erbaum-bold" style={{fontSize:'18px'}}>FREE EXPRESS DELIVERY & EASY RETURNS </h4>
-                    <p className="proxima-r space-1" style={{fontSize:'14px'}}>Delivered to your door free of charge, and you may return it within 100 nights if you are not 100% satisfied with full money back.</p>
+                    <p className="proxima-r space-1 text-1">Delivered to your door free of charge, and you may return it within 100 nights if you are not 100% satisfied with full money back.</p>
                   </Media>
               </Media>
             </Col>
@@ -182,7 +182,7 @@ const ProductPage = ({ data }) => {
           <Media className="px-3 px-sm-5 mb-1 d-block d-sm-flex">
               <Media left middle>
               <h4 className="lead-text-font color-primary erbaum-bold display-5 d-none">HEADING</h4>
-              <p className="color-primary proxima-r space-1" style={{paddingTop:'30px', lineHeight:'30px'}}>CertiPUR-US® approved foams are made without ozone depleters, made without PBDE flame retardants made without mercury, lead and other heavy metals, made without formaldehyde. </p> 
+              <p className="color-primary proxima-r space-1 text-1" style={{paddingTop:'30px', lineHeight:'30px'}}>CertiPUR-US® approved foams are made without ozone depleters, made without PBDE flame retardants made without mercury, lead and other heavy metals, made without formaldehyde. </p> 
               </Media>
               <Media body middle className="pl-sm-4 pl-0 pb-3">
                 <img src={us} alt="us" width="150px"/>
@@ -190,7 +190,7 @@ const ProductPage = ({ data }) => {
           </Media>
           <Media className="px-3 px-sm-5 mb-1 d-block d-sm-flex">
               <Media left middle>
-              <p className="color-primary proxima-r space-1" style={{paddingTop:'30px', lineHeight:'30px'}}>Eco institut tested for emission analysis in the test chamber according to ISO 16000. compound analyses for heavy metals. AOX/EOX, biocides, phthalates, flame retatdants etc... odour testing according to VDA, toxicological and ecological expertise.</p>  
+              <p className="color-primary proxima-r space-1 text-1" style={{paddingTop:'30px', lineHeight:'30px'}}>Eco institut tested for emission analysis in the test chamber according to ISO 16000. compound analyses for heavy metals. AOX/EOX, biocides, phthalates, flame retatdants etc... odour testing according to VDA, toxicological and ecological expertise.</p>  
               </Media>
               <Media body middle className="pl-sm-4 pl-0 pb-3">
                 <img src={eco} alt="eco" width="150px"/>
@@ -198,7 +198,7 @@ const ProductPage = ({ data }) => {
           </Media>
           <Media className="px-3 px-sm-5 mb-1 d-block d-sm-flex">
               <Media left middle>
-              <p className="color-primary proxima-r space-1" style={{paddingTop:'30px', lineHeight:'30px'}}>Confidence In Textile Oeko-Tex® standard 100 certified provide extensive testing on the fabrics to ensure that no substances are present that could be harmful to human. Oeko-Tex® standard 100 is an international certification that set limits for over 100 harmful chemicals, substances, and emissions in textiles.</p>  
+              <p className="color-primary proxima-r space-1 text-1" style={{paddingTop:'30px', lineHeight:'30px'}}>Confidence In Textile Oeko-Tex® standard 100 certified provide extensive testing on the fabrics to ensure that no substances are present that could be harmful to human. Oeko-Tex® standard 100 is an international certification that set limits for over 100 harmful chemicals, substances, and emissions in textiles.</p>  
               </Media>
               <Media body middle className="pl-sm-4 pl-0 pb-3">
                 <img src={confidence} alt="confidence" width="150px"/>
