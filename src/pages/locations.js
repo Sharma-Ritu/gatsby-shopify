@@ -17,7 +17,7 @@ export default (props) => {
 		<Header />
 		<section className="blue-bg">
 			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1">
-				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-3 pt-lg-5 pt-xl-5 space-2 px-sm-5">Chirofoam Mattresses are now available at the following locations:</h2>
+				<h1 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-3 pt-lg-5 pt-xl-5 space-2 px-sm-5">Chirofoam Mattresses are now available at the following locations:</h1>
 			</Jumbotron>
 		</section>
 		<section className="mb-0 pt-5 pb-3 position-relative" id="locations-inner">
