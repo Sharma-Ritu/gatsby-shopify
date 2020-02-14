@@ -826,11 +826,10 @@ body .navbar {
     -webkit-transform: rotate(-90deg) translate(-50%);
     transform: rotate(-90deg) translate(-50%);
 }
-.test-content-slider-title h2 {
+.test-content-slider-title button {
     display: block;
     padding: 8px 15px;
     background-color: #24336c;
-    font-size: 16px;
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 0.5px;

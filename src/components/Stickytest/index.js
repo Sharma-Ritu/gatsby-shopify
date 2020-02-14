@@ -6,7 +6,7 @@ const Stickytest = () => (
 	<div className="sticky-test position-fixed">
 		<div className="test-content-slider-tab">
 			<div className="test-content-slider-title">
-				<h2>Take The Chirofoam Test</h2>
+				<button className="fs-2">Take The Chirofoam Test</button>
 			</div>
 		</div>
 	</div>
