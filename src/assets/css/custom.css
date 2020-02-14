@@ -834,4 +834,8 @@ body .navbar {
     color: #ffffff;
     letter-spacing: 0.5px;
     border-radius: 0 0 8px 8px;
+    border: none;
+}
+.test-content-slider-title button:focus{
+    outline: none;
 }
