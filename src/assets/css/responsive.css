@@ -420,3 +420,147 @@ body .container-large{
     width: 33.3%;
 }
 }
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.fs-sm-1em{
+	font-size:1em;
+}
+.fs-sm-2em{
+	font-size:2em;
+}
+.fs-sm-3em{
+	font-size:3em;
+}
+.fs-sm-4em{
+	font-size:4em;
+}
+.fs-sm-5em{
+	font-size:5em;
+}
+.fs-sm-6em{
+	font-size:6em;
+}
+.fs-sm-7em{
+	font-size:7em;
+}
+.fs-sm-8em{
+	font-size:8em;
+}
+.fs-sm-9em{
+	font-size:9em;
+}
+.fs-sm-10em{
+	font-size:10em;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.fs-md-1em{
+	font-size:1em;
+}
+.fs-md-2em{
+	font-size:2em;
+}
+.fs-md-3em{
+	font-size:3em;
+}
+.fs-md-4em{
+	font-size:4em;
+}
+.fs-md-5em{
+	font-size:5em;
+}
+.fs-md-6em{
+	font-size:6em;
+}
+.fs-md-7em{
+	font-size:7em;
+}
+.fs-md-8em{
+	font-size:8em;
+}
+.fs-md-9em{
+	font-size:9em;
+}
+.fs-md-10em{
+	font-size:10em;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.fs-lg-1em{
+	font-size:1em;
+}
+.fs-lg-2em{
+	font-size:2em;
+}
+.fs-lg-3em{
+	font-size:3em;
+}
+.fs-lg-4em{
+	font-size:4em;
+}
+.fs-lg-5em{
+	font-size:5em;
+}
+.fs-lg-6em{
+	font-size:6em;
+}
+.fs-lg-7em{
+	font-size:7em;
+}
+.fs-lg-8em{
+	font-size:8em;
+}
+.fs-lg-9em{
+	font-size:9em;
+}
+.fs-lg-10em{
+	font-size:10em;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.fs-xl-1em{
+	font-size:1em;
+}
+.fs-xl-2em{
+	font-size:2em;
+}
+.fs-xl-3em{
+	font-size:3em;
+}
+.fs-xl-4em{
+	font-size:4em;
+}
+.fs-xl-5em{
+	font-size:5em;
+}
+.fs-xl-6em{
+	font-size:6em;
+}
+.fs-xl-7em{
+	font-size:7em;
+}
+.fs-xl-8em{
+	font-size:8em;
+}
+.fs-xl-9em{
+	font-size:9em;
+}
+.fs-xl-10em{
+	font-size:10em;
+}
+
+} 
