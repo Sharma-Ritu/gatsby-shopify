@@ -21,8 +21,8 @@ const Header = (props) => {
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
   const openDropdown = (event) => {
-  	//document.querySelector(".dropdown").classList.toggle("show")
-  	//document.querySelector(".dropdown-menu").classList.toggle("show")
+  	document.querySelector(".dropdown.show").classList.toggle("show")
+  	document.querySelector(".dropdown-menu.show").classList.toggle("show")
   	event.target.parentElement.classList.toggle("show")
   	event.target.nextSibling.classList.toggle("show")
   }
@@ -33,7 +33,7 @@ const Header = (props) => {
   return (
     <div className="bg-transparent pt-sm-2 header-part">
 	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0'}}>
-	  	<img src={madeIn} className="img-fluid" />
+	  	<img src={madeIn} className="img-fluid" alt="Canada"/>
 	  	Developed & manufactured in Canada
 	  </span>
       <Navbar color={navbarColor} light={(navbarColor==='light')} dark={(navbarColor==='dark')} expand="lg" className="bg-transparent pt-4 pt-sm-4 p-3 p-sm-0">
