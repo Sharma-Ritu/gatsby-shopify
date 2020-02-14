@@ -868,3 +868,20 @@ body .navbar {
     -webkit-transform: translate(0%,-50%);
     transform: translate(0%,-50%);
 }
+.sticky-test .test-close-slider-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 23px;
+    line-height: 22px;
+    text-align: center;
+    background: #F44336;
+    border:none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    -moz-transition: all 350ms ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+}
