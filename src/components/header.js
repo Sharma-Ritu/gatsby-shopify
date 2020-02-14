@@ -10,7 +10,6 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
@@ -39,23 +38,23 @@ const Header = (props) => {
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
           <DropdownMenu right>
-				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item space-1" style={{color:'#b2b2b2'}}>BUY NOW</Link>
-            <DropdownItem>
-              Option 1
-            </DropdownItem>
-            <DropdownItem>
-              Option 2
-            </DropdownItem>
-            <DropdownItem>
-              Reset
-            </DropdownItem>
+          	<Link to="/5-key-features/" className="dropdown-item">5 Key Features</Link>
+          	<Link to="/design/" className="dropdown-item">Design</Link>
+          	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
+				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item">BUY NOW</Link>
           </DropdownMenu>
         </UncontrolledDropdown>
-				<NavItem>
-				</NavItem>
-				<NavItem>
-				  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</Link>
-				</NavItem>
+        <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>
+            XF EXTRA FIRM
+          </DropdownToggle>
+          <DropdownMenu right>
+          	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item">5 Key Features</Link>
+          	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item">Design</Link>
+          	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
+				  	<Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="dropdown-item">BUY NOW</Link>
+          </DropdownMenu>
+        </UncontrolledDropdown>
 				<NavItem>
 				  <Link to="/our-guarentees/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>OUR GUARENTEES</Link>
 				</NavItem>
