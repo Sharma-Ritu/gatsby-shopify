@@ -204,7 +204,7 @@ const Example = (props) => {
 		<Header />
 		<section>
 			<Container>
-				<Row>
+				<Row className="mx-0">
 					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
 						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">Chirofoam™ Mattress Reviews </h2>
 						<p className="filson-pro-reg color-primary space-2 pt-5" style={{fontSize:'24px'}}>97% Customer Satisfaction Rate </p>
@@ -232,7 +232,7 @@ const Example = (props) => {
 						<TabPane tabId="1">
 							<div id="tabsContent" className="tab-content border border-top-0">
                     			<div id="customer-revieew" className="tab-pane active show m-auto pb-5" style={{width:'85%'}}>
-									<Row>
+									<Row className="mx-0">
 										<Col sm="6" className="text-center py-0 py-sm-5 py-lg-5 py-xl-5">
 											<p className="erbaum-bold color-secondary pt-5 mt-3">4.95 out of 5 stars</p>
 											<p><span>175</span> reviews </p>
@@ -247,7 +247,7 @@ const Example = (props) => {
 											</div>
 										</Col>
 									</Row>
-									<Row>
+									<Row className="mx-0">
                    	<div className="w-100 m-auto">
                    		<ul className="list-unstyled p-0 ratings">
                    			{
@@ -270,7 +270,7 @@ const Example = (props) => {
 						                  	<div className="br-current-rating d-none">{review.rating}</div>
 					                   	</div>
 					                   	<p className="filson-pro-reg pt-2" style={{ fontSize:'14px'}}><b className="color-primary">{review.ratedBy}–</b> {review.ratedOn}</p>
-					                   	<p className="filson-pro-reg color-secondary mb-0 pb-0" style={{fontSize:'14px'}}>{review.comment}</p>
+					                   	<p className="filson-pro-reg text-1 color-secondary mb-0 pb-0">{review.comment}</p>
 		           							</li>
                    				))
                    			}
@@ -286,7 +286,7 @@ const Example = (props) => {
 							<TabPane tabId="2">
 								<div id="tabsContent" className="tab-content border border-top-0">
 									<div id="leave-review" className="m-auto py-5 col-12 col-sm-10 col-lg-10 col-xl-10 p-0 px-sm-2">
-										<Row className="m-0">
+										<Row className="mx-0">
 											<div className="col-12 col-sm-12 col-lg-6 col-xl-6 m-auto d-flex no-gutters select-mattress">
 												<Col className="col-6">
 													<div className="card card-body text-center border-0 px-0 px-sm-2 px-lg-2 px-xl-2 mx-1">
@@ -311,7 +311,7 @@ const Example = (props) => {
 	</section>
     <section>
 			<Container>
-				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
+				<Row className="py-3 py-sm-5 mb-0 mb-sm-5 mx-0">
 					<div className="w-50 m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
@@ -331,7 +331,7 @@ const Example = (props) => {
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
 			<Container className="pb-0 pb-sm-5">
-				<Row>
+				<Row className="mx-0">
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
 						<i className="fa fa-star star-medium ml-2"></i>
