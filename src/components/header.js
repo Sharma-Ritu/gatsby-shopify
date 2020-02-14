@@ -7,6 +7,10 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
@@ -30,6 +34,22 @@ const Header = (props) => {
 			<NavbarToggler onClick={toggle} />
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
+			  <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav>
+            ORIGINAL LUXURY FIRM
+          </DropdownToggle>
+          <DropdownMenu right>
+            <DropdownItem>
+              Option 1
+            </DropdownItem>
+            <DropdownItem>
+              Option 2
+            </DropdownItem>
+            <DropdownItem>
+              Reset
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
 				<NavItem>
 				  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</Link>
 				</NavItem>
