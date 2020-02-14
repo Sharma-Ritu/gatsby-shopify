@@ -424,7 +424,9 @@ body .container-large{
 @media only screen and (max-width: 600px) {
 
 }
-
+@media (max-width: 575.98px) {
+	
+}
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px) {
 .fs-sm-1{

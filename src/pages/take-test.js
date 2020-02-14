@@ -113,38 +113,38 @@ const TAKETEST = (props) => {
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
 							<NavLink  className={activeTab === '1' ? 'active' : ''}>
-								<span>Step 1</span>
-								Sleep Position
+								<span className="fs-2 fs-sm-4">Step 1</span>
+								<span>Sleep Position</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '2' ? 'active' : ''}>
-								<span>Step 2</span>
-								Surface
+								<span className="fs-2 fs-sm-4">Step 2</span>
+								<span>Surface</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '3' ? 'active' : ''}>
-								<span>Step 3</span>
-								Body Type
+								<span className="fs-2 fs-sm-4">Step 3</span>
+								<span>Body Type</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '4' ? 'active' : ''}>
-								<span>Step 4</span>
-								Temperature
+								<span className="fs-2 fs-sm-4">Step 4</span>
+								<span>Temperature</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '5' ? 'active' : ''}>
-								<span>Step 5</span>
-								Exercise
+								<span className="fs-2 fs-sm-4">Step 5</span>
+								<span>Exercise</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '6' ? 'active' : ''}>
-								<span>Step 6</span>
-								Back Pain
+								<span className="fs-2 fs-sm-4">Step 6</span>
+								<span>Back Pain</span>
 							</NavLink>
 						</NavItem>
 					</Nav>
