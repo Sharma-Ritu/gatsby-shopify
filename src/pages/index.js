@@ -109,7 +109,7 @@ export default (props) => {
 				</Row>
 			</Container>
 		</section>
-		<section className="my-4 py-4 py-sm-5 max-support bg-image">
+		<section className="py-4 py-sm-5 max-support bg-image">
 			<Container className="p-0 pb-sm-5">
 				<Row className="">
 					<Col sm="4">
