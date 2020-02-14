@@ -2,14 +2,19 @@ import React from "react"
 import {Link} from "gatsby"
 
 const Stickytest = () => {
-	const toggleTakeTest = () => {
-		console.log('here')
+	const openTakeTest = () => {
+		document.querySelector(".test-slider-content").classList.remove('hidden')
+		document.querySelector(".test-slider-content").classList.add('show')
+	}
+	const closeTakeTest = () => {
+		document.querySelector(".test-slider-content").classList.add('hidden')
+		document.querySelector(".test-slider-content").classList.remove('show')
 	}
 	return(
 		<div className="sticky-test position-fixed">
 			<div className="test-content-slider-tab">
 				<div className="test-content-slider-title">
-					<button className="fs-2" onClick={toggleTakeTest}>Take The Chirofoam Test</button>
+					<button className="fs-2" onClick={openTakeTest}>Take The Chirofoam Test</button>
 				</div>
 				<div className="test-slider-content hidden">
 					<div className="test-slider-content-inner-wrap mCustomScrollbar _mCS_1 mCS_no_scrollbar">
@@ -25,7 +30,7 @@ const Stickytest = () => {
 							</div>
 						</div>
 					</div>
-				<span className="test-close-slider-content">x</span>
+				<button className="test-close-slider-content" onClick={closeTakeTest}>&times;</button>
 				</div>
 			</div>
 		</div>
