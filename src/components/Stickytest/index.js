@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import {Row, Col} from 'reactstrap';
 
-const Stickytest = () => (
+const Stickytest = (props) => {
 	const toggleTakeTest = () => {
 	  	console.log('here');
 	}
@@ -15,6 +15,6 @@ const Stickytest = () => (
 			</div>
 		</div>
 	}
-)
+}
 
 export default Stickytest;
