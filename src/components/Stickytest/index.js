@@ -2,10 +2,12 @@ import React from "react"
 import {Link} from "gatsby"
 import {Row, Col} from 'reactstrap';
 
-const Stickytest = (props) => {
+const Stickytest = () => {
+
 	const toggleTakeTest = () => {
-	  	console.log('here');
+	  	console.log('here')
 	}
+	
 	return(){
 		<div className="sticky-test position-fixed">
 			<div className="test-content-slider-tab">
