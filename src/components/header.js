@@ -10,7 +10,6 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
@@ -21,7 +20,16 @@ const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
-
+  const openDropdown = (event) => {
+  	//document.querySelector(".dropdown").classList.toggle("show")
+  	//document.querySelector(".dropdown-menu").classList.toggle("show")
+  	event.target.parentElement.classList.toggle("show")
+  	event.target.nextSibling.classList.toggle("show")
+  }
+  const closeDropdown = (event) => {
+  	event.target.classList.toggle("show")
+  	event.target.parentElement.classList.toggle("show")
+  }
   return (
     <div className="bg-transparent pt-sm-2 header-part">
 	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0'}}>
@@ -35,27 +43,27 @@ const Header = (props) => {
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 			  <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
-          <DropdownMenu right>
-            <DropdownItem>
-              Option 1
-            </DropdownItem>
-            <DropdownItem>
-              Option 2
-            </DropdownItem>
-            <DropdownItem>
-              Reset
-            </DropdownItem>
+          <DropdownMenu right className="border-0" onMouseLeave={(e) => closeDropdown(e)}>
+          	<Link to="/5-key-features/" className="dropdown-item">5 Key Features</Link>
+          	<Link to="/design/" className="dropdown-item">Design</Link>
+          	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
+				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item">BUY NOW</Link>
           </DropdownMenu>
         </UncontrolledDropdown>
-				<NavItem>
-				  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</Link>
-				</NavItem>
-				<NavItem>
-				  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</Link>
-				</NavItem>
+        <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
+            XF EXTRA FIRM
+          </DropdownToggle>
+          <DropdownMenu right className="border-0" onMouseLeave={(e) => closeDropdown(e)}>
+          	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item">5 Key Features</Link>
+          	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item">Design</Link>
+          	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
+				  	<Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="dropdown-item">BUY NOW</Link>
+          </DropdownMenu>
+        </UncontrolledDropdown>
 				<NavItem>
 				  <Link to="/our-guarentees/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>OUR GUARENTEES</Link>
 				</NavItem>
