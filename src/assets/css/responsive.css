@@ -450,27 +450,26 @@ body .container-large{
 	font-size:1.5rem !important;
 }
 .fs-sm-4{
-	font-size:2rem !important;
+	font-size:1.75rem !important;
 }
 .fs-sm-5{
-	font-size:2.5rem !important;
+	font-size:2rem !important;
 }
 .fs-sm-6{
-	font-size:3rem !important;
+	font-size:2.5rem !important;
 }
 .fs-sm-7{
-	font-size:3.5rem !important;
+	font-size:3rem !important;
 }
 .fs-sm-8{
-	font-size:4rem !important;
+	font-size:3.5rem !important;
 }
 .fs-sm-9{
-	font-size:4.5rem !important;
+	font-size:4rem !important;
 }
 .fs-sm-10{
 	font-size:5rem !important;
 }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -478,7 +477,7 @@ body .container-large{
 .sub-md-text{
 	font-size:1.15rem !important;
 }
-	.lead-md-text{
+.lead-md-text{
 	font-size:1.85rem !important;
 }
 .fs-md-1{
@@ -491,22 +490,22 @@ body .container-large{
 	font-size:1.5rem !important;
 }
 .fs-md-4{
-	font-size:2rem !important;
+	font-size:1.75rem !important;
 }
 .fs-md-5{
-	font-size:2.5rem !important;
+	font-size:2rem !important;
 }
 .fs-md-6{
-	font-size:3rem !important;
+	font-size:2.5rem !important;
 }
 .fs-md-7{
-	font-size:3.5rem !important;
+	font-size:3rem !important;
 }
 .fs-md-8{
-	font-size:4rem !important;
+	font-size:3.5rem !important;
 }
 .fs-md-9{
-	font-size:4.5rem !important;
+	font-size:4rem !important;
 }
 .fs-md-10{
 	font-size:5rem !important;
@@ -519,7 +518,7 @@ body .container-large{
 .sub-lg-text{
 	font-size:1.20rem !important;
 }
-	.lead-lg-text{
+.lead-lg-text{
 	font-size:2rem !important;
 }
 .fs-lg-1{
@@ -532,22 +531,22 @@ body .container-large{
 	font-size:1.5rem !important;
 }
 .fs-lg-4{
-	font-size:2rem !important;
+	font-size:1.75rem !important;
 }
 .fs-lg-5{
-	font-size:2.5rem !important;
+	font-size:2rem !important;
 }
 .fs-lg-6{
-	font-size:3rem !important;
+	font-size:2.5rem !important;
 }
 .fs-lg-7{
-	font-size:3.5rem !important;
+	font-size:3rem !important;
 }
 .fs-lg-8{
-	font-size:4rem !important;
+	font-size:3.5rem !important;
 }
 .fs-lg-9{
-	font-size:4.5rem !important;
+	font-size:4rem !important;
 }
 .fs-lg-10{
 	font-size:5rem !important;
@@ -560,7 +559,7 @@ body .container-large{
 .sub-xl-text{
 	font-size:1.25rem !important;
 }
-	.lead-xl-text{
+.lead-xl-text{
 	font-size:2.15rem !important;
 }
 .fs-xl-1{
@@ -573,25 +572,24 @@ body .container-large{
 	font-size:1.5rem !important;
 }
 .fs-xl-4{
-	font-size:2rem !important;
+	font-size:1.75rem !important;
 }
 .fs-xl-5{
-	font-size:2.5rem !important;
+	font-size:2rem !important;
 }
 .fs-xl-6{
-	font-size:3rem !important;
+	font-size:2.5rem !important;
 }
 .fs-xl-7{
-	font-size:3.5rem !important;
+	font-size:3rem !important;
 }
 .fs-xl-8{
-	font-size:4rem !important;
+	font-size:3.5rem !important;
 }
 .fs-xl-9{
-	font-size:4.5rem !important;
+	font-size:4rem !important;
 }
 .fs-xl-10{
 	font-size:5rem !important;
 }
-
-} 
+}
