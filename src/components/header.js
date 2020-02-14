@@ -21,8 +21,10 @@ const Header = (props) => {
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
   const openDropdown = (event) => {
-  	document.querySelector(".dropdown.show").classList.toggle("show")
-  	document.querySelector(".dropdown-menu.show").classList.toggle("show")
+  	if(document.querySelector(".dropdown.show")!==null){
+	  	document.querySelector(".dropdown.show").classList.toggle("show")
+	  	document.querySelector(".dropdown-menu.show").classList.toggle("show")
+  	}
   	event.target.parentElement.classList.toggle("show")
   	event.target.nextSibling.classList.toggle("show")
   }
