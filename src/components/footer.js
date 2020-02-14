@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import {Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
-import Stickytest from '../components/stickytest'
+import Stickytest from '../components/Stickytest'
 
 const Footer = () => (
 	<footer className="footer py-0 py-sm-5" style={{ backgroundColor: '#243b6a', borderRadius: '0', color: '#fff' }}>
