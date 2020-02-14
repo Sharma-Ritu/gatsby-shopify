@@ -20,10 +20,15 @@ const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
-  const toggleDropdown = (event) => {
-  	console.log(event.target.parentElement, event.target.nextSibling);
+  const openDropdown = (event) => {
+  	document.querySelector(".dropdown").classList.toggle("d-none")
+  	document.querySelector(".dropdown-menu").classList.toggle("d-none")
   	event.target.parentElement.classList.toggle("show")
   	event.target.nextSibling.classList.toggle("show")
+  }
+  const closeDropdown = (event) => {
+  	event.target.classList.toggle("show")
+  	event.target.parentElement.classList.toggle("show")
   }
   return (
     <div className="bg-transparent pt-sm-2 header-part">
@@ -38,10 +43,10 @@ const Header = (props) => {
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 			  <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => toggleDropdown(e)} style={{color:'#b2b2b2'}}>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
-          <DropdownMenu right className="border-0" onMouseLeave={(e) => toggleDropdown(e)}>
+          <DropdownMenu right className="border-0" onMouseLeave={(e) => closeDropdown(e)}>
           	<Link to="/5-key-features/" className="dropdown-item">5 Key Features</Link>
           	<Link to="/design/" className="dropdown-item">Design</Link>
           	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
@@ -49,10 +54,10 @@ const Header = (props) => {
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => toggleDropdown(e)} style={{color:'#b2b2b2'}}>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             XF EXTRA FIRM
           </DropdownToggle>
-          <DropdownMenu right className="border-0" onMouseLeave={(e) => toggleDropdown(e)}>
+          <DropdownMenu right className="border-0" onMouseLeave={(e) => closeDropdown(e)}>
           	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item">5 Key Features</Link>
           	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item">Design</Link>
           	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
