@@ -426,10 +426,10 @@ body .container-large{
 }
 @media (max-width: 575.98px) {
 	.px-xs-0,.pl-xs-0{
-		padding-left: 0;
+		padding-left: 0!important;
 	}
 	.px-xs-0,.pr-xs-0{
-		padding-right: 0;
+		padding-right: 0!important;
 	}
 }
 /* Small devices (portrait tablets and large phones, 576px and up) */
