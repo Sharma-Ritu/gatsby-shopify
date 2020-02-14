@@ -427,140 +427,140 @@ body .container-large{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.fs-sm-1em{
-	font-size:1em;
+.fs-sm-1{
+		font-size:.5rem !important;
 }
-.fs-sm-2em{
-	font-size:2em;
+.fs-sm-2{
+	font-size:1rem !important;
 }
-.fs-sm-3em{
-	font-size:3em;
+.fs-sm-3{
+	font-size:1.5rem !important;
 }
-.fs-sm-4em{
-	font-size:4em;
+.fs-sm-4{
+	font-size:2rem !important;
 }
-.fs-sm-5em{
-	font-size:5em;
+.fs-sm-5{
+	font-size:2.5rem !important;
 }
-.fs-sm-6em{
-	font-size:6em;
+.fs-sm-6{
+	font-size:3rem !important;
 }
-.fs-sm-7em{
-	font-size:7em;
+.fs-sm-7{
+	font-size:3.5rem !important;
 }
-.fs-sm-8em{
-	font-size:8em;
+.fs-sm-8{
+	font-size:4rem !important;
 }
-.fs-sm-9em{
-	font-size:9em;
+.fs-sm-9{
+	font-size:4.5rem !important;
 }
-.fs-sm-10em{
-	font-size:10em;
+.fs-sm-10{
+	font-size:5rem !important;
 }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-.fs-md-1em{
-	font-size:1em;
+.fs-md-1{
+		font-size:.5rem !important;
 }
-.fs-md-2em{
-	font-size:2em;
+.fs-md-2{
+	font-size:1rem !important;
 }
-.fs-md-3em{
-	font-size:3em;
+.fs-md-3{
+	font-size:1.5rem !important;
 }
-.fs-md-4em{
-	font-size:4em;
+.fs-md-4{
+	font-size:2rem !important;
 }
-.fs-md-5em{
-	font-size:5em;
+.fs-md-5{
+	font-size:2.5rem !important;
 }
-.fs-md-6em{
-	font-size:6em;
+.fs-md-6{
+	font-size:3rem !important;
 }
-.fs-md-7em{
-	font-size:7em;
+.fs-md-7{
+	font-size:3.5rem !important;
 }
-.fs-md-8em{
-	font-size:8em;
+.fs-md-8{
+	font-size:4rem !important;
 }
-.fs-md-9em{
-	font-size:9em;
+.fs-md-9{
+	font-size:4.5rem !important;
 }
-.fs-md-10em{
-	font-size:10em;
+.fs-md-10{
+	font-size:5rem !important;
 }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-.fs-lg-1em{
-	font-size:1em;
+.fs-lg-1{
+		font-size:.5rem !important;
 }
-.fs-lg-2em{
-	font-size:2em;
+.fs-lg-2{
+	font-size:1rem !important;
 }
-.fs-lg-3em{
-	font-size:3em;
+.fs-lg-3{
+	font-size:1.5rem !important;
 }
-.fs-lg-4em{
-	font-size:4em;
+.fs-lg-4{
+	font-size:2rem !important;
 }
-.fs-lg-5em{
-	font-size:5em;
+.fs-lg-5{
+	font-size:2.5rem !important;
 }
-.fs-lg-6em{
-	font-size:6em;
+.fs-lg-6{
+	font-size:3rem !important;
 }
-.fs-lg-7em{
-	font-size:7em;
+.fs-lg-7{
+	font-size:3.5rem !important;
 }
-.fs-lg-8em{
-	font-size:8em;
+.fs-lg-8{
+	font-size:4rem !important;
 }
-.fs-lg-9em{
-	font-size:9em;
+.fs-lg-9{
+	font-size:4.5rem !important;
 }
-.fs-lg-10em{
-	font-size:10em;
+.fs-lg-10{
+	font-size:5rem !important;
 }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-.fs-xl-1em{
-	font-size:1em;
+.fs-xl-1{
+		font-size:.5rem !important;
 }
-.fs-xl-2em{
-	font-size:2em;
+.fs-xl-2{
+	font-size:1rem !important;
 }
-.fs-xl-3em{
-	font-size:3em;
+.fs-xl-3{
+	font-size:1.5rem !important;
 }
-.fs-xl-4em{
-	font-size:4em;
+.fs-xl-4{
+	font-size:2rem !important;
 }
-.fs-xl-5em{
-	font-size:5em;
+.fs-xl-5{
+	font-size:2.5rem !important;
 }
-.fs-xl-6em{
-	font-size:6em;
+.fs-xl-6{
+	font-size:3rem !important;
 }
-.fs-xl-7em{
-	font-size:7em;
+.fs-xl-7{
+	font-size:3.5rem !important;
 }
-.fs-xl-8em{
-	font-size:8em;
+.fs-xl-8{
+	font-size:4rem !important;
 }
-.fs-xl-9em{
-	font-size:9em;
+.fs-xl-9{
+	font-size:4.5rem !important;
 }
-.fs-xl-10em{
-	font-size:10em;
+.fs-xl-10{
+	font-size:5rem !important;
 }
 
 } 
