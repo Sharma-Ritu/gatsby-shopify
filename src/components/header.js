@@ -35,7 +35,7 @@ const Header = (props) => {
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 			  <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
           <DropdownMenu right>
