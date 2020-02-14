@@ -112,37 +112,37 @@ const TAKETEST = (props) => {
 				<div className="col-md-12">
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
-							<NavLink  className={(activeTab === '1' ? 'active ' : '') + 'p-xs-0'}>
+							<NavLink  className={(activeTab === '1' ? 'active ' : '') + 'px-xs-0'}>
 								<span className="fs-2 fs-md-4 fs-sm-3">Step 1</span>
 								<span className="fs-2 d-none d-md-block">Sleep Position</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={(activeTab === '2' ? 'active' : '') + 'p-xs-0'}>
+							<NavLink  className={(activeTab === '2' ? 'active' : '') + 'px-xs-0'}>
 								<span className="fs-2 fs-md-4 fs-sm-3">Step 2</span>
 								<span className="fs-2 d-none d-md-block">Surface</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={(activeTab === '3' ? 'active' : '') + 'p-xs-0'}>
+							<NavLink  className={(activeTab === '3' ? 'active' : '') + 'px-xs-0'}>
 								<span className="fs-2 fs-md-4 fs-sm-3">Step 3</span>
 								<span className="fs-2 d-none d-md-block">Body Type</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={(activeTab === '4' ? 'active' : '') + 'p-xs-0'}>
+							<NavLink  className={(activeTab === '4' ? 'active' : '') + 'px-xs-0'}>
 								<span className="fs-2 fs-md-4 fs-sm-3">Step 4</span>
 								<span className="fs-2 d-none d-md-block">Temperature</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={(activeTab === '5' ? 'active' : '') + 'p-xs-0'}>
+							<NavLink  className={(activeTab === '5' ? 'active' : '') + 'px-xs-0'}>
 								<span className="fs-2 fs-md-4 fs-sm-3">Step 5</span>
 								<span className="fs-2 d-none d-md-block">Exercise</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink  className={(activeTab === '6' ? 'active' : '') + 'p-xs-0'}>
+							<NavLink  className={(activeTab === '6' ? 'active' : '') + 'px-xs-0'}>
 								<span className="fs-2 fs-md-4 fs-sm-3">Step 6</span>
 								<span className="fs-2 d-none d-md-block">Back Pain</span>
 							</NavLink>
