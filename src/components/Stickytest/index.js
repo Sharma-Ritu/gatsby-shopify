@@ -1,6 +1,5 @@
 import React from "react"
 import {Link} from "gatsby"
-import {Row, Col} from 'reactstrap';
 
 const Stickytest = () => {
 	const toggleTakeTest = () => {
@@ -20,7 +19,7 @@ const Stickytest = () => {
 								<p><span>See if Chirofoam is right for you.</span></p>
 								<p className="start_noww">
 									<span>
-										<a href="https://chirofoam.com/chirofoam-test/">START NOW</a>
+										<Link to="/take-test/">START NOW</Link>
 									</span>
 								</p>
 							</div>
