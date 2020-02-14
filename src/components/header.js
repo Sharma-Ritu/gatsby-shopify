@@ -1,47 +1,69 @@
 
 import React, {useState} from "react"
+import {Link} from "gatsby"
 import {
-  Container,
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
+import madeIn from "../assets/img/canadian-made.png"
 
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
 
   return (
-    <div className="bg-transparent pt-sm-2">
-      <Navbar color="faded" light expand="lg" className="bg-transparent pt-3 pt-sm-4">
-		<div className="container-large d-sm-flex d-lg-flex d-xl-flex">
-			<NavbarBrand href="/"><img src={logo} alt="Chirofoam" width="200px"/></NavbarBrand>
+    <div className="bg-transparent pt-sm-2 header-part">
+	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0'}}>
+	  	<img src={madeIn} className="img-fluid" />
+	  	Developed & manufactured in Canada
+	  </span>
+      <Navbar color={navbarColor} light={(navbarColor==='light')} dark={(navbarColor==='dark')} expand="lg" className="bg-transparent pt-4 pt-sm-4 p-3 p-sm-0">
+		<div className="container d-sm-flex d-lg-flex d-xl-flex">
+			<Link to="/" className="navbar-brand"><img src={logo} alt="Chirofoam" width="200px"/></Link>
 			<NavbarToggler onClick={toggle} />
 			<Collapse isOpen={isOpen} navbar>
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
-			  	<span className="pr-4">Developed & manufactured in Canada</span>
+			  <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>
+            ORIGINAL LUXURY FIRM
+          </DropdownToggle>
+          <DropdownMenu right>
+				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item space-1" style={{color:'#b2b2b2'}}>BUY NOW</Link>
+            <DropdownItem>
+              Option 1
+            </DropdownItem>
+            <DropdownItem>
+              Option 2
+            </DropdownItem>
+            <DropdownItem>
+              Reset
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
 				<NavItem>
-				  <NavLink href="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</NavLink>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</NavLink>
+				  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</Link>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/our-guarentees" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>OUR GUARENTEES</NavLink>
+				  <Link to="/our-guarentees/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>OUR GUARENTEES</Link>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/reviews" className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{color:'#b2b2b2'}}>REVIEWS</NavLink>
+				  <Link to="/reviews/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>REVIEWS</Link>
 				</NavItem>
 				<NavItem>
-				  <NavLink href="/shop-chirofoam" className="space-1 p-sm-0 p-lg-0 p-xl-0 shop-chir position-relative" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</NavLink>
+				  <Link to="/shop-chirofoam/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</Link>
 				</NavItem>           
 			  </Nav>
 			</Collapse>

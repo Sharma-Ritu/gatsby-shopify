@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Row} from 'reactstrap';
 import StoreContext from '~/context/StoreContext'
-import {Grid,Product,Title,PriceTag} from './styles'
+import {Product} from './styles'
 import { Img } from '~/utils/styles'
 
 const ProductGrid = () => {
@@ -53,13 +53,13 @@ const ProductGrid = () => {
   return (
    
     <section className="py-4 pt-sm-4 pt-lg-4 pt-xl-4 pb-sm-4 pb-lg-4 pb-xl-4 mb-0 mb-sm-3 mb-lg-3 mb-xl-3 mattresses" id="product">
-      <div className="pt-0 pt-sm-5 container-large">
+      <div className="pt-0 pt-sm-5 container">
         <h4 className="text-center lead-text-font color-primary erbaum-bold display-5" style={{width:'100%'}}>THE COMFORT AND SUPPORT YOU NEED FOR A BETTER SLEEP</h4>
-        <p className="col-12 col-sm-7 text-center pb-4 pb-sm-5 px-0 px-sm-2 pt-1 mb-5 color-primary proxima-b space-1 m-auto lead-sub-text">Aenean suscipit, lacus at handerit porta, massa sem efficitur est, quis mattis eros quam In saplen.</p>
-        <Row className="no-gutters row-eq-height pb-5 products-list">
+        <p className="col-sm-7 text-center pb-4 pb-sm-5 px-0 px-sm-2 pt-1 mb-5 color-primary proxima-b space-1 m-auto lead-sub-text">Aenean suscipit, lacus at handerit porta, massa sem efficitur est, quis mattis eros quam In saplen.</p>
+        <Row className="text-center no-gutters row-eq-height pb-5">
           {allShopifyProduct.edges
         ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
-          <Product key={id} >
+          <Product key={id} className="col-12 col-sm-12 col-lg-6 col-xl-6">
           <div className="products position-relative">
             <div className="mr-0">
                 <Link to={`/product/${handle}/`}>

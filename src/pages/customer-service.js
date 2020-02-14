@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media, Form} from 'reactstrap';
+import {Container,Jumbotron, Row, Col, Form} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
+import MyForm from "../components/ContactForm"
 
 
 export default (props) => {
@@ -19,7 +21,7 @@ export default (props) => {
 			</div>
 		</section>
 		<section className="mb-0 py-5 position-relative">
-			<div className="container-large">
+			<Container>
 				<Row>
 					<Col sm="6" className="mb-3 mb-sm-5">
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 mb-0 text-uppercase">GET IN TOUCH</h5>
@@ -30,48 +32,24 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-2"><strong>1 (888) CHIRO-31 </strong><br/>1 (888) 244-7631</p>
 						<p className="filson-pro-reg color-secondary pt-2">Our sleep experts are on call <br/>
 						Mon-Fri 10am-6pm (EST)</p>
-						<p className="filson-pro-reg color-secondary pt-5">You may also call our local Toronto, Ontario office at: (905) 766-3380</p>
-						<p className="filson-pro-reg color-secondary pt-5">Chirofoam Mattress Company, Head Office</p>
-						<p className="filson-pro-reg color-secondary pt-3">130 King Street West <br/> Suite 1800 <br/> Toronto, Ontario 
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">You may also call our local Toronto, Ontario office at: (905) 766-3380</p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Chirofoam Mattress Company, Head Office</p>
+						<p className="filson-pro-reg color-secondary pt-2">130 King Street West <br/> Suite 1800 <br/> Toronto, Ontario 
 						<br/> M5X 1E3 <br/> Canada</p>
-						<p className="filson-pro-reg color-secondary pt-3">Office hours: <br/> Mon-Fri 10am-6pm (EST) </p>
-						<p className="filson-pro-reg color-secondary pt-5">Distribution Center:</p>
-						<p className="filson-pro-reg color-secondary pt-3">1550 Meyerside Drive <br/> Unit#2 <br/> Mississauga, Ontario 
+						<p className="filson-pro-reg color-secondary pt-2">Office hours: <br/> Mon-Fri 10am-6pm (EST) </p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Distribution Center:</p>
+						<p className="filson-pro-reg color-secondary pt-2">1550 Meyerside Drive <br/> Unit#2 <br/> Mississauga, Ontario 
 						<br/> L5T 1V4 <br/> Canada</p>
-						<p className="filson-pro-reg color-secondary pt-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
 					</Col>
-					<Col sm="6" className="mb-3 mb-sm-5 pt-5">
-						<Form>
-							<div class="row">
-								<div class="col-6">
-									<input type="text" class="form-control" id="name" placeholder="Your Name" name="name" />
-								</div>
-								<div class="col-6">
-									<input type="text" class="form-control" id="email" placeholder="Your Email" name="email" />
-								</div>
-							</div>
-							<div class="row pt-3">
-								<div class="col-12">
-									<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" />
-								</div>
-							</div>
-							<div class="row pt-3">
-								<div class="col-12">
-									<textarea class="form-control" rows="8" id="message" placeholder="Your Message"></textarea>
-								</div>
-							</div>
-							<div class="row pt-3">
-								<div class="col-12">
-									<button type="button" class="btn btn-danger btn-block">SEND</button>
-								</div>
-							</div>
-						</Form>
+					<Col sm="6" className="mb-3 mb-sm-5 pt-3 pt-sm-3 pt-lg-5 pt-xl-5 email-form">
+						<MyForm />
 					</Col>
 				</Row>
-			</div>
+			</Container>
 		</section>
-		<section className="rating-and-review py-3 py-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
+		<section className="rating-and-review py-3">
+			<Container className="pb-5 pb-lg-5 pb-xl-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -82,11 +60,11 @@ export default (props) => {
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
 					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
 
 		<Footer />

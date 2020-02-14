@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import Header from "~/components/header"
 import Footer from "~/components/footer"
-import {Container, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col, Media, Carousel, CarouselItem, CarouselControl, Modal} from 'reactstrap';
 import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
-import {Img,TwoColumnGrid,GridLeft,GridRight,} from '~/utils/styles'
-import {ProductTitle,ProductDescription} from './styles'
+import {ProductDescription} from './styles'
 import icon1 from "~/assets/img/ic1.png"
 import icon2 from "~/assets/img/ic2.png"
 import icon3 from "~/assets/img/ic3.png"
@@ -15,8 +14,63 @@ import us from "~/assets/img/us.png"
 import eco from "~/assets/img/eco.png"
 import confidence from "~/assets/img/confidence.png"
 
+
 const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === product.images.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? product.images.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  }
+
+  const goToIndex = (event, newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  }
+  const closeModal = () => setModal(false)
+
+  const toggleModal = (event, imgSrc) => {
+    setModalImage(imgSrc)
+    setModal(true)
+  }  
+
+  const externalCloseBtn = <button className="close" style={{position:'absolute',top:'0',right:'15px',fontSize:'3em',color:'#fff'}} onClick={closeModal}>&times;</button>;
+  const slides = product.images.map(image => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={image.id}
+      >
+        <div className="parent h-100 d-flex justify-content-center" key={image.id}>
+          <button
+            className="p-0 bg-transparent border-0"
+            onClick={e => toggleModal(e, image.localFile.childImageSharp.fluid.src)}
+            style={{outline:'none', cursor: 'zoom-in'}}
+          >
+            <img
+              className="img-fluid my-auto"
+              src={image.localFile.childImageSharp.fluid.src}
+              alt={product.title}
+            />
+          </button>
+        </div>
+      </CarouselItem>
+    );
+  });
+
   return (
     <>
       <SEO title={product.title} description={product.description} />
@@ -25,17 +79,39 @@ const ProductPage = ({ data }) => {
       <section className="mt-4 mb py-5" style={{backgroundColor:'#fff'}}>
       <Container>
         <Row className="no-gutters pb-2 pb-sm-5">
-          <Col sm="6" className="single-product-img">
-                 {product.images.map(image => (
-                <Img
-                  fluid={image.localFile.childImageSharp.fluid}
-                  key={image.id}
-                  alt={product.title}
+          <Col lg="6" className="single-product-img">
+          <h3 className="erbaum-bold mb-3 color-primary d-lg-none text-center">{product.title}</h3>
+          <Carousel
+            activeIndex={activeIndex}
+            next={next}
+            previous={previous}
+            interval={false}
+            enableTouch={true}
+          >
+            {slides}
+            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+          </Carousel>
+          <div className="row mx-n2">
+          {product.images.map((image, index) => (
+            <div className="col-3 px-2" key={image.id}>
+              <button
+              className="p-0 bg-transparent border-0 mb-2"
+              onClick={e => goToIndex(e, index)}
+              style={{outline:'none'}}
+              >
+                <img
+                  className="img-fluid"
+                  src={image.localFile.childImageSharp.fluid.src}
+                  alt=""
                 />
+              </button>
+            </div>
               ))}
+          </div>  
           </Col>
-          <Col sm="6" className="pl-lg-5 pl-0 pt-0 pt-sm-0 color-primary single-product-desc">  
-             <h3 className="erbaum-bold pb-3 color-primary">{product.title}</h3>
+          <Col lg="6" className="pl-lg-5 pl-sm-2 pl-0 pt-0 pt-sm-0 color-primary single-product-desc text-center text-lg-left">  
+             <h3 className="erbaum-bold pb-3 color-primary d-none d-lg-block">{product.title}</h3>
               <ProductDescription className="filson-pro-reg space-1 mt-0"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
               />
@@ -137,16 +213,29 @@ const ProductPage = ({ data }) => {
           <Col sm="4">
             <h2 className="display-3 erbaum-bold text-white">MAX SUPPORT MAX RESULTS</h2>
             <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0">
-              <a href="/faq/" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION</a>
+              <a href="/faq/" className="btn-cta text-white erbaum-bold space-1">KNOW MORE</a>
             </p>
           </Col>
         </Row>
       </Container>
     </section>
+     <Modal
+      size="lg"
+      isOpen={modal} 
+      toggle={closeModal}
+      centered={true}
+      contentClassName="rounded-0 bg-transparent border-0"
+      external={externalCloseBtn}
+      >
+        <div className="modal-body p-0">
+          <img src={modalImage} alt="" className="w-100 img-fluid"/>
+        </div>
+      </Modal>
     <Footer />
     </>
   )
 }
+
 
 export const query = graphql`
   query($handle: String!) {

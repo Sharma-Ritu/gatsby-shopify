@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media} from 'reactstrap';
+import {Container,Jumbotron, Row, Col} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
-import run from "../assets/img/run.png"
 
 
 export default (props) => {
@@ -16,8 +16,8 @@ export default (props) => {
 				<p className="space-4 proxima-r text-white m-auto text-center px-0 px-sm-5 px-lg-5 px-xl-5 pt-2 pt-sm-4" style={{width:'90%',fontSize:'26px'}}>100 Night In Home Sleep Trial – Full Money Back Returns</p>
 			</Jumbotron>
 		</section>
-		<section className="mb-0 privacy-policy py-3 py-sm-5">
-			<div className="container-large">
+		<section className="mb-0 privacy-policy py-3 py-sm-5 mt-lg-3 mt-xl-3">
+			<Container>
 				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
 					<div className="col-12">
 						<h3 className="display-5 erbaum-bold font-weight-bold color-primary space-2 text-center">IN HOME SLEEP TRIAL</h3>
@@ -46,30 +46,30 @@ export default (props) => {
 						<p className="filson-pro-reg color-secondary pt-5">The Chirofoam™ Memory Foam Mattress is protected by our 15 year total warranty protection guarantee.  This covers the mattress from any defects in workmanship and quality, for a period of 15 years from the purchase date.  Please see our warranty details for more information.</p>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
 		<section>
-			<div className="container-large">
+			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+					<div className="w-50 m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
 							Start your journey to a better sleep!
 						</Col>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
-		<section className="rating-and-review py-3 py-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
+		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -79,12 +79,12 @@ export default (props) => {
 						<i className="fa fa-star star-small"></i>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
-					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
 
 

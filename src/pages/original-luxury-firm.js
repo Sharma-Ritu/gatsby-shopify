@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container, Row, Col, Button, Media} from 'reactstrap';
+import {Container, Row, Col, Media} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import "../assets/css/custom.css"
 import product1 from "../assets/img/product1.jpg"
@@ -40,64 +41,64 @@ export default (props) => {
 						<div className="row text-center text-lg-left no-gutters">
 
 					    <div className="col-lg-2 col-md-3 col-3 mx-2">
-					      <a href="#" className="d-block mb-4 h-100">
+					      <Link to="#" className="d-block mb-4 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol1} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-2">
-					      <a href="#" className="d-block mb-4 h-100">
+					      <Link to="#" className="d-block mb-4 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol2} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol3} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol4} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol5} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol6} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol7} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol8} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol9} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol1} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					     <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-42h-100">
+					      <Link to="#" className="d-block mb-42h-100">
 					            <img className="img-fluid img-thumbnail border-0" src={ol3} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					    <div className="col-lg-2 col-md-3 col-3 mx-1">
-					      <a href="#" className="d-block mb-2 h-100">
+					      <Link to="#" className="d-block mb-2 h-100">
 					           <img className="img-fluid img-thumbnail border-0" src={ol4} alt=""/>
-					          </a>
+					          </Link>
 					    </div>
 					  </div>
 					</Col>
@@ -110,12 +111,12 @@ export default (props) => {
 						<p className="filson-pro-reg space-1 col-sm-12 col-lg-7 col-12 px-0" style={{fontSize:'14px'}}>Usually ships within 1 - 2 business day. </p>
 						<div className="d-flex text-center pt-3 pl-sm-0 pl-lg-5 pl-0 facilities">
 							<Col sm="4" className="px-2 px-sm-3">
-								<a href="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></a>
-								<a href="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY12</span></a>
+								<Link to="/warranty/"><img src={warranty} alt="warranty" width="60px" className="mb-3"/></Link>
+								<Link to="/warranty/"><span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>15 YEAR WARRANTY12</span></Link>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
-								<a href="/return-policy/"><img src={van} alt="van" width="60px" className="mb-3"/></a>
-								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <a className="color-primary" href="/return-policy/">EASY RETURNS</a></span>
+								<Link to="/return-policy/"><img src={van} alt="van" width="60px" className="mb-3"/></Link>
+								<span className="d-block erbaum-bold color-primary" style={{fontSize:'0.8rem'}}>FREE EXPRESS DELIVERY AND <Link className="color-primary" to="/return-policy/">EASY RETURNS</Link></span>
 							</Col>
 							<Col sm="4" className="px-2 px-sm-3">
 								<img src={box} alt="box" width="60px" className="mb-3"/>
@@ -137,7 +138,7 @@ export default (props) => {
 							<b className="proxima-eb">Our specilized layer of chirofoam<sup pr>TM</sup> lumbar support</b> provides an additional 20% of conforming support in the centre third of mattress for improved lumbar support and increased life span of the mattress. The majority of your body's weight rests in the centre third of the mattress where you need the most support to keep your spine in optimal alignment while relieving back pain.
 						</p>
 						<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0 text-right pr-5">
-							<span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>CAD $990.00</span><a href="/cart/" className="btn-cta color-primary erbaum-bold space-1">ADD TO CART</a>
+							<span className="proxima-b color-primary float-left display-5 v-price" style={{lineHeight:'30px'}}>CAD $990.00</span><Link to="/cart/" className="btn-cta color-primary erbaum-bold space-1">ADD TO CART</Link>
 						</p>
 					</Col>
 				</Row>
@@ -236,7 +237,7 @@ export default (props) => {
 					<Col sm="4">
 						<h2 className="display-3 erbaum-bold text-white">MAX SUPPORT MAX RESULTS</h2>
 						<p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0">
-							<a href="/faq/" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION</a>
+							<Link to="/faq/" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION</Link>
 						</p>
 					</Col>
 				</Row>

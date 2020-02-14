@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import {Container,Jumbotron, Row, Col, Button, Media, Card, CardBody, UncontrolledCollapse} from 'reactstrap';
+import {Container,Jumbotron, Row, Col, Card, CardBody, UncontrolledCollapse} from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 
 const FaqPage = (props) => {
@@ -11,15 +12,15 @@ const FaqPage = (props) => {
 		<Header />
 		<section className="blue-bg faq height-400">
 			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1">
-				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 space-2">Chirofoam™ Memory Foam Mattresses </h2>
+				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 pt-sm-0 space-2">Chirofoam™ Memory Foam Mattresses </h2>
 				<p className="space-4 proxima-r text-white m-auto text-center px-0 px-sm-5 px-lg-5 px-xl-5 pt-2 pt-sm-4" style={{width:'90%',fontSize:'26px'}}>If you require any more information about the Chirofoam™ mattress, feel free to call or email us.</p>
 			</Jumbotron>
 		</section>
-		<section className="mb-0 py-5 position-relative">
+		<section className="mb-0 py-5 mt-lg-3 mt-xl-3 position-relative">
 			<Container>
 				<Row>
-					<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100" style={{paddingBottom:'100px'}}>Frequently Asked Questions </h4>
-					<div className="q-list w-100">
+					<h4 className="text-center lead-text-font color-primary erbaum-bold text-uppercase w-100 pb-3 pb-sm-3 pb-lg-5 pb-xl-5">Frequently Asked Questions </h4>
+					<div className="q-list w-100 pt-0 pt-sm-0 pt-lg-2 pt-xl-2">
 						<ul className="list-unstyled pl-0 qs-ans">
 							<li>
 								<div id="toggler0" className="qs w-100 proxima-r">What is the difference in purchasing through you direct, or purchasing through a retail store?</div>
@@ -828,27 +829,27 @@ Cali King – 81 inches x 14.5 inches x 14.5 inches</p>
 			</Container>
 		</section>
 		<section>
-			<div className="container-large">
+			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+					<div className="m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/take-test/" className="btn-cta color-primary erbaum-bold space-1 mr-3">TAKE THE TEST</a>
+								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<a href="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</a>
+								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
 							Start your journey to a better sleep!
 						</Col>
 					</div>
 				</Row>
-			</div>
+			</Container>
 		</section>
-		<section className="rating-and-review py-3 py-sm-5">
-			<div className="container-large pb-0 pb-sm-5">
+		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
+			<Container className="pb-0 pb-sm-5">
 				<Row>
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
@@ -858,13 +859,14 @@ Cali King – 81 inches x 14.5 inches x 14.5 inches</p>
 						<i className="fa fa-star star-small"></i>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>“A great quality mattress I enjoy waking up on every day…” <br/>  -Mark F. from Toronto, Ontario</p>
-					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center">
-						<a href="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</a>
+					<p className="cta mt-0 pt-sm-4 pt-lg-4 pt-xl-4 w-100 text-center mt-4 mt-sm-0">
+						<Link to="/reviews/" className="btn-cta color-primary erbaum-bold space-1">SEE REVIEWS</Link>
 					</p>
 					<p className="filson-pro-reg color-secondary pt-3 w-75 m-auto text-center space-1" style={{fontSize:'20px'}}>Chirofoam™ Memory Foam Mattresses are proudly developed and manufactured in Toronto, ON, Canada.</p> 
 				</Row>
-			</div>
+			</Container>
 		</section>
+		
 		<Footer />
 	</>
   );

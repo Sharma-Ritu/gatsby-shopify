@@ -3,8 +3,10 @@ import { graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container, Row, Col, Button, Media} from 'reactstrap';
+import SEO from '~/components/seo'
 import "../assets/css/bootstrap.min.css"
-import run from "../assets/img/run.png"
+import Blogs from "../components/Blogs"
+import RecentBlogs from "../components/Blogs/RecentBlogs"
 
 const ProductsPage = ({ data }) => (
   <Container>
@@ -22,7 +24,6 @@ const ProductsPage = ({ data }) => (
     </Row>
   </Container>
 )
-
 export default ProductsPage
 export const query = graphql`
   {
