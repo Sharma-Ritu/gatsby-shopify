@@ -39,6 +39,7 @@ const Header = (props) => {
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
           <DropdownMenu right>
+				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item space-1" style={{color:'#b2b2b2'}}>BUY NOW</Link>
             <DropdownItem>
               Option 1
             </DropdownItem>
@@ -51,7 +52,6 @@ const Header = (props) => {
           </DropdownMenu>
         </UncontrolledDropdown>
 				<NavItem>
-				  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>ORIGINAL LUXURY FIRM</Link>
 				</NavItem>
 				<NavItem>
 				  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>XF EXTRA FIRM</Link>
