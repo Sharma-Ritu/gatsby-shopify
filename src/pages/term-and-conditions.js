@@ -14,9 +14,9 @@ export default (props) => {
 			<Container className="our-focus">
 				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5 mx-0">
 					<div>
-						<h4 className="font-weight-bold erbaum-bold mt-0 mt-sm-2 mt-lg-4 mt-xl-4 py-2 py-sm-2 py-lg-5 py-xl-5 space-2 color-primary">Terms and Conditions</h4>
-						<p className="filson-pro-reg color-secondary">Welcome to the Chirofoam™ website (the “Website” or Site”) maintained and operated by and on behalf of Chirofoam Mattress Company Inc. (“the Company”). This site is maintained as a service to our customers. By using this site, you are communicating with the Company electronically and agree to comply with and be bound by the following terms and conditions of use. Please review these terms and conditions carefully. If you do not agree to these terms and conditions, you should not use this website.</p>
-						<p className="filson-pro-reg color-secondary">
+						<h1 className="font-weight-bold display-5 erbaum-bold mt-0 mt-sm-2 mt-lg-4 mt-xl-4 py-2 py-sm-2 py-lg-5 py-xl-5 space-2 color-primary">Terms and Conditions</h1>
+						<p className="filson-pro-reg text-1 color-secondary">Welcome to the Chirofoam™ website (the “Website” or Site”) maintained and operated by and on behalf of Chirofoam Mattress Company Inc. (“the Company”). This site is maintained as a service to our customers. By using this site, you are communicating with the Company electronically and agree to comply with and be bound by the following terms and conditions of use. Please review these terms and conditions carefully. If you do not agree to these terms and conditions, you should not use this website.</p>
+						<p className="filson-pro-reg text-1 color-secondary">
 							<ol>
 								<li>
 									Agreement <br/> 
@@ -103,14 +103,14 @@ export default (props) => {
 		<section>
 			<Container>
 				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
-					<div className="w-50 m-auto text-center d-sm-flex">
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+					<div className="m-auto text-center d-sm-flex">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/take-test/" className="btn-cta color-primary erbaum-bold space-1">TAKE THE TEST</Link>
 							</p>
 							See if Chirofoam™ is right for you.
 						</Col>
-						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0">
+						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
 								<Link to="/shop-chirofoam/" className="btn-cta color-primary erbaum-bold space-1 mr-3">BUY NOW</Link>
 							</p>
