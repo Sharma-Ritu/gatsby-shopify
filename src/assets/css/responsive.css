@@ -425,7 +425,9 @@ body .container-large{
 
 }
 @media (max-width: 575.98px) {
-	
+	.p-xs-0{
+		padding: 0;
+	}
 }
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px) {
