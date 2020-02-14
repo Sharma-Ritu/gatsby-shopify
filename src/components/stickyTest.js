@@ -2,10 +2,10 @@ import React from "react"
 import {Link} from "gatsby"
 import {Row, Col} from 'reactstrap';
 
-const stickytest = () => (
+const Stickytest = () => (
 	<div className="sticky-test position-fixed" style={{backgroundColor: '#243b6a', borderRadius: '0', color: '#fff' }}>
 		Take The Chirofoam Test
 	</div>
 )
 
-export default stickytest;
+export default Stickytest;
