@@ -10,6 +10,7 @@ import {
 } from 'reactstrap';
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
+import madeIn from "../assets/img/canadian-made.png"
 
 
 const Header = (props) => {
@@ -19,7 +20,10 @@ const Header = (props) => {
 
   return (
     <div className="bg-transparent pt-sm-2 header-part">
-	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0'}}>Developed & manufactured in Canada</span>
+	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0'}}>
+	  	<img src={madeIn} className="img-fluid" />
+	  	Developed & manufactured in Canada
+	  </span>
       <Navbar color="faded" color="navbarColor" light={(navbarColor==='light')} dark={(navbarColor==='dark')} expand="lg" className="bg-transparent pt-4 pt-sm-4 p-3 p-sm-0">
 		<div className="container d-sm-flex d-lg-flex d-xl-flex">
 			<Link to="/" className="navbar-brand"><img src={logo} alt="Chirofoam" width="200px"/></Link>
