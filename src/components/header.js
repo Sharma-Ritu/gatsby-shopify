@@ -21,7 +21,9 @@ const Header = (props) => {
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
   const toggleDropdown = (event) => {
-  	console.log(event.target);
+  	console.log(event.target.parentElement, event.target.nextSibling);
+  	event.target.parentElement.classList.toggle("show")
+  	event.target.nextSibling.classList.toggle("show")
   }
   return (
     <div className="bg-transparent pt-sm-2 header-part">
