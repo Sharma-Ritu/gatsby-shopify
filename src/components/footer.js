@@ -8,7 +8,7 @@ const Footer = () => (
 		<div className="container-large px-0 px-sm-4 pt-0 pt-sm-2">
 			<Row className="proxima-r pt-5 pb-3 px-0 px-sm-2">
 				<Col md="3" className="widget-1 pt-0 pt-sm-1">
-					<strong className="proxima-r space-1">CONNECT WITH US</strong>
+					<strong className="proxima-r space-1 contact-us-title">CONNECT WITH US</strong>
 					<ul style={{
 						listStyle:'none',
 						display:'flex',
@@ -34,7 +34,7 @@ const Footer = () => (
 					<p className="m-0 pb-0 pt-2 space-1" style={{color:'#b2b2b2',fontSize:'12px'}}>Our sleep experts are on call</p>
 					<p className="m-0 space-1 pt-0 pt-sm-0 pt-lg-0 pt-xl-0" style={{color:'#b2b2b2',fontSize:'12px'}}>Mon-Fri 10am - 6pm(EST)</p>
 				</Col>
-				<Col md="3" className="widget-3 m-0 pt-lg-0 pt-xl-0 pt-4 pt-sm-4 pl-3 pl-lg-5 pl-xl-5">
+				<Col md="3" className="widget-3 m-0 pt-lg-0 pt-xl-0 pt-4 pt-sm-0 pl-3 pl-lg-5 pl-xl-5">
 					<ul className="pl-0 pb-0" style={{
 						listStyle:'none',
 					}} >

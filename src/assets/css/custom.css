@@ -3,6 +3,36 @@ body {
 	/*background-image:url('../img/home.png');*/
 	/*opacity:0.2;*/
 }
+.fs-1{
+		font-size:.5rem !important;
+}
+.fs-2{
+	font-size:1rem !important;
+}
+.fs-3{
+	font-size:1.5rem !important;
+}
+.fs-4{
+	font-size:2rem !important;
+}
+.fs-5{
+	font-size:2.5rem !important;
+}
+.fs-6{
+	font-size:3rem !important;
+}
+.fs-7{
+	font-size:3.5rem !important;
+}
+.fs-8{
+	font-size:4rem !important;
+}
+.fs-9{
+	font-size:4.5rem !important;
+}
+.fs-10{
+	font-size:5rem !important;
+}
 .banner-slider .carousel-control-next {
     height:40px;
     top: 50%;
@@ -758,4 +788,15 @@ body .navbar {
 }
 .four-zero-four h1{
 	font-size:180px;
+}
+.email-form form p p {
+    background-color:#296e01;
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+    font-family: "filson-pro";
+    font-size: 14px;
+}
+.shop-banner-title {
+    font-size: 95px;
 }

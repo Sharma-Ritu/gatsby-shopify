@@ -31,7 +31,7 @@ const ArticlePage = ({ data }) => {
               <Col sm="6">
                 <p style={{fontSize:'12px'}}>By <span>{article.author.firstName}</span> In <span>{article.blog.title}</span> Posted <span>{article.publishedAt}</span></p>
               </Col>
-              <Col sm="6" className="text-left text-sm-left text-lg-right text-xl-right" style={{display:'ruby'}}>
+              <Col sm="6" className="text-left text-sm-right text-lg-right text-xl-right" style={{display:'ruby'}}>
                 <span style={{color:'rgba(0,0,0,0.4)'}} className="ml-0 ml-sm-0 ml-lg-4 ml-xl-4"><i className="fa fa-share-alt"></i><span className="pl-2">2</span></span>
                 <span className="px-2 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-envelope"></i><span className="pl-2">2</span></span>
                 <span className="mb-0 ml-4" style={{color:'rgba(0,0,0,0.4)'}}><i className="fa fa-heart"></i><span className="pl-2">2</span></span>
@@ -40,7 +40,7 @@ const ArticlePage = ({ data }) => {
             <Row className="mt-3">
               <Col sm="12">
                 <div
-                  className="filson-pro-reg"
+                  className="filson-pro-reg single-article-content"
                   style={{color:'rgba(0,0,0,0.5)', fontSize:'13px', lineHeight:'30px'}}
                   dangerouslySetInnerHTML={{ __html: article.contentHtml}}
                 />

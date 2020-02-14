@@ -12,7 +12,7 @@ const FaqPage = (props) => {
 		<Header />
 		<section className="blue-bg faq height-400">
 			<Jumbotron className="mb-0 text-center text-white bg-transparent space-1">
-				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 space-2">Chirofoam™ Memory Foam Mattresses </h2>
+				<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 pt-sm-0 space-2">Chirofoam™ Memory Foam Mattresses </h2>
 				<p className="space-4 proxima-r text-white m-auto text-center px-0 px-sm-5 px-lg-5 px-xl-5 pt-2 pt-sm-4" style={{width:'90%',fontSize:'26px'}}>If you require any more information about the Chirofoam™ mattress, feel free to call or email us.</p>
 			</Jumbotron>
 		</section>

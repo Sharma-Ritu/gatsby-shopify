@@ -12,7 +12,7 @@ export default (props) => {
 		<Header />
 		<section className="mb-0 privacy-policy py-3 py-sm-5">
 			<Container className="our-focus">
-				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5">
+				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5 mx-0">
 					<div>
 						<h4 className="font-weight-bold erbaum-bold mt-0 mt-sm-2 mt-lg-4 mt-xl-4 py-2 py-sm-2 py-lg-5 py-xl-5 space-2 color-primary">Privacy Policy</h4>
 						<p className="filson-pro-reg color-secondary">Chirofoam<sup>TM</sup>Mattress Company (www.chirofoam.com) Privacy Policy</p>

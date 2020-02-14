@@ -213,7 +213,7 @@ const ProductPage = ({ data }) => {
           <Col sm="4">
             <h2 className="display-3 erbaum-bold text-white">MAX SUPPORT MAX RESULTS</h2>
             <p className="cta mt-0 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0">
-              <a href="/faq/" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION</a>
+              <a href="/faq/" className="btn-cta text-white erbaum-bold space-1">KNOW MORE</a>
             </p>
           </Col>
         </Row>

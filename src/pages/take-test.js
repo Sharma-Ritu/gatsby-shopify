@@ -97,7 +97,7 @@ const TAKETEST = (props) => {
 		<Header />
 		<section className="mb-0 py-3 pb-lg-5 pb-xl-5" id="start-test">
 			<Container className="pb-lg-5 pb-xl-5">
-				<Row>
+				<Row className="mx-0">
 					<h4 className="text-center color-primary erbaum-bold text-uppercase w-100 pt-2 pt-sm-5 mt-0 mt-sm-5">See if the Chirofoam mattress is right for you. Take the test!</h4>
 					<p className="pt-0 text-center w-100 pt-2 pt-lg-4 pt-xl-4 color-secondary" style={{fontSize:'15px'}}>We understand that everyone has different needs and there is no such thing as the perfect mattress that works for everyone. This is why we have created the Chirofoam test to see if the Chirofoam mattress is the right fit for you.</p>
 					<p className="pt-0 text-center w-100 pt-2 color-secondary" style={{fontSize:'15px'}}>Our objective is to provide our customers with a better sleep and a more comfortable mattress than what they currently sleep on. Although the Chirofoam mattress works great for the majority of people, by taking this test you will be able to find out if the Chirofoam mattress is a good fit for you!</p>
@@ -372,7 +372,7 @@ const TAKETEST = (props) => {
 		</section>
 		<section id="result" className="d-none">
 			<Container>
-				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
+				<Row className="py-3 py-sm-5 mb-0 mb-sm-5 mx-0">
 					<Col className="col-12">
 						<h3 className="text-center">Answer</h3>
 						<div id="sorry" className="d-none text-center">
@@ -439,7 +439,7 @@ const TAKETEST = (props) => {
 		</section>
 		<section>
 			<Container>
-				<Row className="py-3 py-sm-5 mb-0 mb-sm-5">
+				<Row className="py-3 py-sm-5 mb-0 mb-sm-5 mx-0">
 					<div className="m-auto text-center d-sm-flex">
 						<Col sm="6" className="text-center filson-pro-reg color-secondary mb-5 mb-sm-0 px-sm-5">
 							<p className="cta mt-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
@@ -459,7 +459,7 @@ const TAKETEST = (props) => {
 		</section>
 		<section className="rating-and-review py-3 py-sm-5 mb-4 mb-sm-0">
 			<Container className="pb-0 pb-sm-5">
-				<Row>
+				<Row className="mx-0">
 					<p className="text-center w-100 star">
 						<i className="fa fa-star star-small"></i>
 						<i className="fa fa-star star-medium ml-2"></i>
