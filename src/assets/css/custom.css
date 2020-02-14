@@ -839,3 +839,27 @@ body .navbar {
 .test-content-slider-title button:focus{
     outline: none;
 }
+.test-slider-content{
+	position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: #24336c;
+    padding: 50px 0;
+    opacity: 0;
+    visibility: hidden;
+    white-space: normal;
+    min-width: 350px;
+    max-height: 350px;
+    overflow-y: hidden;
+    -moz-transition: all 350ms ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+}
+.test-slider-content.show{
+    opacity: 1;
+    visibility: visible;
+    -moz-transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    transform: translate(0%,-50%);
+}

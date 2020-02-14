@@ -23,8 +23,10 @@ const Header = (props) => {
   const openDropdown = (event) => {
   	if(document.querySelector(".dropdown.show")!==null){
 	  	document.querySelector(".dropdown.show").classList.toggle("show")
-	  	document.querySelector(".dropdown-menu.show").classList.toggle("show")
   	}
+  	if(document.querySelector(".dropdown-menu.show")!==null){
+	  	document.querySelector(".dropdown-menu.show").classList.toggle("show")
+	  }
   	event.target.parentElement.classList.toggle("show")
   	event.target.nextSibling.classList.toggle("show")
   }
