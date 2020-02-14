@@ -86,7 +86,7 @@ const Blogs = ({ id }) => {
                 <Col className="pl-2 pl-sm-2 pl-lg-4 pl-xl-4 col-11 blog-content">
                   <p style={{fontSize:'12px'}}>By <span>{author.name}</span> In <span>{blog.title}</span> Posted <span> {publishedAt}</span></p>
                   <h3 className="mb-3"><Link to={`/blogs/${blog.url.split("/").pop()}/${url.split("/").pop()}/`} state={{ fromFeed: true }} className="text-uppercase erbaum space-1 text-dark">{title}</Link></h3>
-                  <p className="filson-pro-reg" style={{fontSize:'14px'}}>{excerpt}</p>
+                  <p className="filson-pro-reg text-1">{excerpt}</p>
                   <p className="cta mt-0 pt-sm-3 pt-lg-3 pt-xl-3 w-100">
                     <Link to={`/blogs/${blog.url.split("/").pop()}/${url.split("/").pop()}/`} state={{ fromFeed: true }} className="btn-cta color-primary erbaum-bold space-1">READ MORE</Link>
                   </p>
