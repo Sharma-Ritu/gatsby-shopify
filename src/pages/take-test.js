@@ -113,38 +113,38 @@ const TAKETEST = (props) => {
 					<Nav tabs id="tabs" className="d-flex">
 						<NavItem>
 							<NavLink  className={activeTab === '1' ? 'active' : ''}>
-								<span className="fs-2 fs-sm-4">Step 1</span>
-								<span>Sleep Position</span>
+								<span className="fs-2 fs-md-4 fs-sm-3">Step 1</span>
+								<span className="fs-2 d-none d-md-block">Sleep Position</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '2' ? 'active' : ''}>
-								<span className="fs-2 fs-sm-4">Step 2</span>
-								<span>Surface</span>
+								<span className="fs-2 fs-md-4 fs-sm-3">Step 2</span>
+								<span className="fs-2 d-none d-md-block">Surface</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '3' ? 'active' : ''}>
-								<span className="fs-2 fs-sm-4">Step 3</span>
-								<span>Body Type</span>
+								<span className="fs-2 fs-md-4 fs-sm-3">Step 3</span>
+								<span className="fs-2 d-none d-md-block">Body Type</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '4' ? 'active' : ''}>
-								<span className="fs-2 fs-sm-4">Step 4</span>
-								<span>Temperature</span>
+								<span className="fs-2 fs-md-4 fs-sm-3">Step 4</span>
+								<span className="fs-2 d-none d-md-block">Temperature</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '5' ? 'active' : ''}>
-								<span className="fs-2 fs-sm-4">Step 5</span>
-								<span>Exercise</span>
+								<span className="fs-2 fs-md-4 fs-sm-3">Step 5</span>
+								<span className="fs-2 d-none d-md-block">Exercise</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink  className={activeTab === '6' ? 'active' : ''}>
-								<span className="fs-2 fs-sm-4">Step 6</span>
-								<span>Back Pain</span>
+								<span className="fs-2 fs-md-4 fs-sm-3">Step 6</span>
+								<span className="fs-2 d-none d-md-block">Back Pain</span>
 							</NavLink>
 						</NavItem>
 					</Nav>
