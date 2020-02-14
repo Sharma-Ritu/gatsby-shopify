@@ -812,3 +812,27 @@ body .navbar {
 .shop-banner-title {
     font-size: 95px;
 }
+.sticky-test {
+    top: 50%;
+    left: 0;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+.test-content-slider-title{
+	transform-origin: 0 0;
+	-moz-transform: rotate(-90deg) translate(-50%);
+    -webkit-transform: rotate(-90deg) translate(-50%);
+    transform: rotate(-90deg) translate(-50%);
+}
+.test-content-slider-title h2 {
+    display: block;
+    padding: 8px 15px;
+    background-color: #19a499;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    border-radius: 0 0 8px 8px;
+}
