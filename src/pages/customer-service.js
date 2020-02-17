@@ -15,7 +15,7 @@ export default (props) => {
 			<div className="container-large">
 				<Row>
 					<Jumbotron className="mb-0 text-center text-white bg-transparent space-1 w-100 m-auto">
-						<h2 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">CUSTOMER SERVICE</h2>
+						<h1 className="font-weight-bold display-5 color-primary erbaum-bold text-uppercase pt-5 space-2">CUSTOMER SERVICE</h1>
 					</Jumbotron>
 				</Row>
 			</div>
@@ -25,22 +25,22 @@ export default (props) => {
 				<Row>
 					<Col sm="6" className="mb-3 mb-sm-5">
 						<h5 className="erbaum-bold color-primary pb-2 pb-sm-5 mb-0 text-uppercase">GET IN TOUCH</h5>
-						<p className="filson-pro-reg color-secondary pt-2">If you have any questions, concerns, of would like to contact us, simply fill out the contact form and a member of our team will get back to you as soon as possible.  You can also email us directly: info@chirofoam.com</p>
-						<p className="filson-pro-reg color-secondary pt-2">Prefer to talk to us by phone? <br/>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">If you have any questions, concerns, of would like to contact us, simply fill out the contact form and a member of our team will get back to you as soon as possible.  You can also email us directly: info@chirofoam.com</p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">Prefer to talk to us by phone? <br/>
 						Give us a call:
 						</p>
-						<p className="filson-pro-reg color-secondary pt-2"><strong>1 (888) CHIRO-31 </strong><br/>1 (888) 244-7631</p>
-						<p className="filson-pro-reg color-secondary pt-2">Our sleep experts are on call <br/>
+						<p className="filson-pro-reg color-secondary pt-2 text-1"><strong>1 (888) CHIRO-31 </strong><br/>1 (888) 244-7631</p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">Our sleep experts are on call <br/>
 						Mon-Fri 10am-6pm (EST)</p>
-						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">You may also call our local Toronto, Ontario office at: (905) 766-3380</p>
-						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Chirofoam Mattress Company, Head Office</p>
-						<p className="filson-pro-reg color-secondary pt-2">130 King Street West <br/> Suite 1800 <br/> Toronto, Ontario 
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5 text-1">You may also call our local Toronto, Ontario office at: (905) 766-3380</p>
+						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5 text-1">Chirofoam Mattress Company, Head Office</p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">130 King Street West <br/> Suite 1800 <br/> Toronto, Ontario 
 						<br/> M5X 1E3 <br/> Canada</p>
-						<p className="filson-pro-reg color-secondary pt-2">Office hours: <br/> Mon-Fri 10am-6pm (EST) </p>
-						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Distribution Center:</p>
-						<p className="filson-pro-reg color-secondary pt-2">1550 Meyerside Drive <br/> Unit#2 <br/> Mississauga, Ontario 
+						<p className="filson-pro-reg color-secondary pt-2 text-1">Office hours: <br/> Mon-Fri 10am-6pm (EST) </p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1 pt-sm-2 pt-lg-5 pt-xl-5">Distribution Center:</p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">1550 Meyerside Drive <br/> Unit#2 <br/> Mississauga, Ontario 
 						<br/> L5T 1V4 <br/> Canada</p>
-						<p className="filson-pro-reg color-secondary pt-2 pt-sm-2 pt-lg-5 pt-xl-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1 pt-sm-2 pt-lg-5 pt-xl-5">Our manufacturing plant located in Toronto, ON is not open to the public, however we may schedule a plant tour by appointment for wholesale clients.</p>
 					</Col>
 					<Col sm="6" className="mb-3 mb-sm-5 pt-3 pt-sm-3 pt-lg-5 pt-xl-5 email-form">
 						<MyForm />
