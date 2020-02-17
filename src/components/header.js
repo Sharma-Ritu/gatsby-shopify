@@ -58,10 +58,10 @@ const Header = (props) => {
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav className="dropdown-menu-center space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             XF EXTRA FIRM
           </DropdownToggle>
-          <DropdownMenu className="border-0" onMouseLeave={(e) => closeDropdown(e)}>
+          <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>
           	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item">5 Key Features</Link>
           	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item">Design</Link>
           	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
