@@ -12,7 +12,7 @@ export default (props) => {
 	<>
 		<SEO title="5-key-features" />
 		<Header />
-		<section className="mb-0 py-3 position-relative>
+		<section className="mb-0 py-3 position-relative">
 			<Container>
         		<Row className="mx-0 text-center">
 					<h2 className="font-weight-bold display-5 erbaum-bold text-uppercase pt-5 space-2 pt-sm-1 pt-lg-5 pt-xl-5 color-primary w-100">BETTER FEATURES FOR A BETTER SLEEP</h2>
