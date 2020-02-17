@@ -6,6 +6,7 @@ import {Container, Row, Col} from 'reactstrap';
 import SEO from '../components/seo'
 import "../assets/css/bootstrap.min.css"
 import coolgel from "../assets/img/Cool-Gel-Memory-Foam-1.jpg"
+import support from "../assets/img/support.jpg"
 
 export default (props) => {
   return (
@@ -30,6 +31,16 @@ export default (props) => {
 						<h5 className="erbaum-bold color-primary pb-2 pb-lg-3 pb-xl-3">PRESSURE RELIEF</h5>
 						<p className="filson-pro-reg color-secondary pt-2 text-1">The Chirofoam™ memory foam mattress is designed to relieve pressure which is built up in your body from daily activities. This pressure build up is largely responsible for common back pain experienced by many people, and can be caused by improper sitting posture, heavy lifting, or other strenuous activities.</p>
 						<p className="filson-pro-reg color-secondary pt-2 text-1">The gel infused memory foam layer works together with the firm support Chirofoam™ layer to cushion your body and relieve pressure built up in your muscles and joints. By relieving pressure and relaxing your body during sleep, the Chirofoam™ mattress will help you feel rejuvenated and wake up with back pain relief to tackle the day ahead.</p>
+					</div>
+				</Row>
+				<Row className="mb-2 mb-sm-5 pb-0 pb-sm-5 mx-0">
+					<div className="col-12 col-sm-4 col-lg-4 col-xl-4 pt-2 mt-0 right-card">
+						<img src={support} alt="Support" className="rounded-circle" width="250px" height="250px" />
+					</div>
+					<div className="col-12 col-sm-8 col-lg-8 col-xl-8 left-card">
+						<h5 className="erbaum-bold color-primary pb-2 pb-lg-3 pb-xl-3">PROPER BACK SUPPORT AND ALIGNMENT</h5>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">The majority of people go by their daily life with improper posture while sitting, standing, or lifting heavy objects. This improper posture puts unnecessary strain on your back which leads to back pain and potentially more serious health problems in the future.</p>
+						<p className="filson-pro-reg color-secondary pt-2 text-1">The pro lumbar support layer in your Chirofoam™ mattress works together with the bio foam core to support your body and align your back to its natural curves while you rest at night. The memory foam mattress provides support and proper body alignment which contributes to pressure relief and helps your body regenerate and re-energize while you sleep.</p>
 					</div>
 				</Row>
       		</Container>
