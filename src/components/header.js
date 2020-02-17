@@ -110,7 +110,7 @@ const Header = (props) => {
 							  		<div
 							  			className="media-left"
 							  		>
-							  			<img src={variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
+							  			<img src={line_item.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
 							  		</div>
 							  		<div
 							  			className="media-body"
