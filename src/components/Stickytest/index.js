@@ -24,7 +24,7 @@ const Stickytest = () => {
 							<Link className="btn text-white btn-custom-secondary" to="/take-test/">START NOW</Link>
 						</p>
 					</div>
-				<button className="test-close-slider-content" onClick={closeTakeTest}>&times;</button>
+				<button className="test-close-slider-content btn text-white btn-custom-secondary rounded-0 p-0" onClick={closeTakeTest}>&times;</button>
 				</div>
 			</div>
 		</div>

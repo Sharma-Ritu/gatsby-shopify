@@ -40,7 +40,7 @@ const Header = (props) => {
 	  	<img src={madeIn} className="img-fluid" alt="Canada"/>
 	  	Developed & manufactured in Canada
 	  </span>
-      <Navbar color={navbarColor} light={(navbarColor==='light')} dark={(navbarColor==='dark')} expand="lg" className="bg-transparent pt-4 pt-sm-4 p-3 p-sm-0">
+      <Navbar color="light" light={true} expand="lg" className="bg-white pt-4 pt-sm-4 p-3 p-sm-0">
 		<div className="container d-sm-flex d-lg-flex d-xl-flex">
 			<Link to="/" className="navbar-brand"><img src={logo} alt="Chirofoam" width="200px"/></Link>
 			<NavbarToggler onClick={toggle} />
