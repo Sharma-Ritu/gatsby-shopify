@@ -44,6 +44,7 @@ const Header = (props) => {
   	return lineItemTotal.toFixed(2)
   }
   const lineItems = checkout.lineItems;
+  const subtotalPrice = checkout.subtotalPrice.toFixed(2);
   useEffect(() => {
   	if(checkout.lineItems.length > 0){
   		setCartCount(checkout.lineItems.length)
@@ -107,13 +108,14 @@ const Header = (props) => {
 						  	>
 						  		<div className="media">
 							  		<div className="media-left">
-							  			<button className="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></button>
+							  			<button className="btn btn-link p-0 color-primary" title="Remove this item"><i className="fa fa-remove"></i></button>
 							  		</div>
 							  		<div className="media-left">
 							  			<img src={lineItem.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
 							  		</div>
 							  		<div className="media-body">
 							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.title}</span>
+							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.variant.title}</span>
 							  			<span className="color-primary fs-2 float-left">X&nbsp;{lineItem.quantity}</span>
 							  			<span className="color-primary fs-2 float-right">
 							  				CAD&nbsp;
@@ -124,13 +126,13 @@ const Header = (props) => {
 						  		</div>
 						  	</li>
           		))}
-          		<li className="list-group-item p-2 text-center border-0 rounded-0">
-							  <p className="text-center color-primary">
-							  	<strong>Subtotal:</strong> 
-							  	<span className="color-primary amount">
+          		<li className="list-group-item p-2 text-center border-left-0 border-right-0 mb-0 rounded-0">
+							  <p className="text-center mb-0 color-primary">
+							  	<strong>Subtotal: </strong> 
+							  	<span className="color-primary fs-2 amount">
 							  		CAD&nbsp;
-							  		<span className="color-primary currencySymbol">$</span>
-							  		1580.00
+							  		<span className="color-primary fs-2 currencySymbol">$</span>
+							  		{subtotalPrice}
 							  	</span>
 							  </p>
 						  </li>
