@@ -95,11 +95,11 @@ const Header = (props) => {
             <i className="fa fa-shopping-cart"></i> 
 				  	<span>({cartCount})</span>
           </DropdownToggle>
-          <DropdownMenu className="dropdown-menu-right border-0 rounded-0">          	
+          <DropdownMenu className="dropdown-menu-right rounded-0">          	
           	<ul className="list-group">
           		{lineItems.map((lineItem, index) => (
 						  	<li
-						  		className={(index>0)"list-group-item border-left-0 border-right-0 border-bottom-0 rounded-0":"list-group-item border-0 rounded-0"}
+						  		className={(index>0)?"list-group-item border-left-0 border-right-0 border-bottom-0 rounded-0":"list-group-item border-0 rounded-0"}
 						  	>
 						  		<div className="media">
 							  		<div className="media-left">
