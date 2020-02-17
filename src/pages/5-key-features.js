@@ -24,7 +24,7 @@ export default (props) => {
       		<Container className="pt-5">
 		        <Row className="mb-2 mb-sm-5 pb-0 pb-sm-5 mx-0">
 					<div className="col-12 col-sm-4 col-lg-4 col-xl-4 pt-2 mt-0 right-card">
-						<img src={coolgel} alt="Cool-Gel-Memory-Foam-1" className="rounded-circle" />
+						<img src={coolgel} alt="Cool-Gel-Memory-Foam-1" className="rounded-circle" width="250px" height="250px" />
 					</div>
 					<div className="col-12 col-sm-8 col-lg-8 col-xl-8 left-card">
 						<h5 className="erbaum-bold color-primary pb-2 pb-lg-3 pb-xl-3">PRESSURE RELIEF</h5>
