@@ -114,7 +114,7 @@ const Header = (props) => {
 							  			<img src={lineItem.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
 							  		</div>
 							  		<div className="media-body">
-							  			<span className="d-block color-primary fs-1">{lineItem.title}</span>
+							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.title}</span>
 							  			<span className="d-block color-primary fs-1">{lineItem.variant.title}</span>
 							  			<span className="color-primary fs-2 float-left">X&nbsp;{lineItem.quantity}</span>
 							  			<span className="color-primary fs-2 float-right">
