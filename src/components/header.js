@@ -98,7 +98,9 @@ const Header = (props) => {
           <DropdownMenu className="dropdown-menu-right border-0 rounded-0">          	
           	<ul className="list-group">
           		{lineItems.map((lineItem, index) => (
-						  	<li className="list-group-item border-0 rounded-0">
+						  	<li
+						  		className={(index>0)"list-group-item border-left-0 border-right-0 border-bottom-0 rounded-0":"list-group-item border-0 rounded-0"}
+						  	>
 						  		<div className="media">
 							  		<div className="media-left">
 							  			<button className="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></button>
