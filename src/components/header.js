@@ -95,27 +95,21 @@ const Header = (props) => {
             <i className="fa fa-shopping-cart"></i> 
 				  	<span>({cartCount})</span>
           </DropdownToggle>
-          <DropdownMenu className="dropdown-menu-right border-0 rounded-0" style={{minWidth:'16rem'}}>          	
+          <DropdownMenu className="dropdown-menu-right border-0 rounded-0">          	
           	<ul className="list-group">
-          		{checkout.lineItems.map((line_item, index) => (
+          		{lineItems.map((lineItem, index) => (
 						  	<li className="list-group-item border-0 rounded-0">
-						  		<div
-						  			className="media"
-						  		>
-							  		<div
-							  			className="media-left"
-							  		>
-							  			<button>&times;</button>
+						  		<div className="media">
+							  		<div className="media-left">
+							  			<button className="btn btn-link p-0" title="Remove this item"><i className="fa fa-remove"></i></button>
 							  		</div>
-							  		<div
-							  			className="media-left"
-							  		>
-							  			<img src={line_item.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
+							  		<div className="media-left">
+							  			<img src={lineItem.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
 							  		</div>
-							  		<div
-							  			className="media-body"
-							  		>
-							  			<span>{line_item.title}</span>
+							  		<div className="media-body">
+							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.title}</span>
+							  			<span className="color-primary fs-2" style={{whiteSpace:'pre'}}>{lineItem.quantity}</span>
+							  			<span>CAD&nbsp;<span>$&nbsp;</span><span>{lineItem.quantity * lineItem.variant.price}</span></span>
 							  		</div>
 						  		</div>
 						  	</li>
