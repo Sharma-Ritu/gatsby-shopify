@@ -44,7 +44,7 @@ const Header = (props) => {
   	return lineItemTotal.toFixed(2)
   }
   const lineItems = checkout.lineItems;
-  const subtotalPrice = checkout.subtotalPrice.toFixed(2);
+  const subtotalPrice = checkout.subtotalPrice;
   useEffect(() => {
   	if(checkout.lineItems.length > 0){
   		setCartCount(checkout.lineItems.length)
