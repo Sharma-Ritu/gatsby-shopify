@@ -119,7 +119,7 @@ p.cta.erbaum.position-absolute {
 	top: -2px;
 	right: -60px;
 }
-.dropdown-menu-center {
+.show .dropdown-menu-center {
     right: auto;
     left: 50%;
     transform: translateX(-50%);

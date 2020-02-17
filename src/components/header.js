@@ -58,7 +58,7 @@ const Header = (props) => {
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
+          <DropdownToggle nav className="dropdown-menu-center space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             XF EXTRA FIRM
           </DropdownToggle>
           <DropdownMenu className="border-0" onMouseLeave={(e) => closeDropdown(e)}>
