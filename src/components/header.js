@@ -97,11 +97,6 @@ const Header = (props) => {
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-right border-0 rounded-0" style={{minWidth:'16rem'}}>          	
           	<ul className="list-group">
-          		{checkout.lineItems.map((line_item, index) => (
-						  	<li className="list-group-item border-0 rounded-0">
-						  		{index}
-						  	</li>
-          		))}
 						  <li className="list-group-item text-center border-0 rounded-0">
 							  <Link to="/cart/" className="btn btn-custom-primary btn-sm text-white">View Cart</Link>
 						  </li>
