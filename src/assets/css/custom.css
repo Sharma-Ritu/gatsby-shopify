@@ -890,3 +890,9 @@ body .navbar {
     -webkit-transition: all 350ms ease-in-out;
     transition: all 350ms ease-in-out;
 }
+.payment-gateway {
+    width: 200px;
+}
+.payment-gateway p img{
+    width:100%;
+}
