@@ -1,5 +1,5 @@
 
-import React, {useState, useContext } from "react"
+import React, {useState, useEffect, useContext } from "react"
 import {Link} from "gatsby"
 import {
   Collapse,
@@ -38,7 +38,9 @@ const Header = (props) => {
   	event.target.classList.toggle("show")
   	event.target.parentElement.classList.toggle("show")
   }
-  console.log(checkout);
+  useEffect(() => {
+		console.log(checkout);
+	})
   return (
     <div className="bg-white pt-sm-2 header-part">
 	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0',zIndex:1}}>
