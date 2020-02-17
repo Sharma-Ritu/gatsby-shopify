@@ -44,8 +44,8 @@ const Header = (props) => {
   	const lineItemTotal = (quantity * variantPrice)
   	return lineItemTotal.toFixed(2)
   }
-  const handleRemove = () => {
-    removeLineItem(client, checkout.id, line_item.id)
+  const handleRemove = (event, lineItemId) => {
+    removeLineItem(client, checkout.id, lineItemId);
   }
   const handleCheckout = () => {
     window.open(checkout.webUrl)
@@ -115,7 +115,7 @@ const Header = (props) => {
 						  	>
 						  		<div className="media">
 							  		<div className="media-left">
-							  			<button onClick={handleRemove} className="btn btn-link p-0 color-primary" title="Remove this item"><i className="fa fa-remove"></i></button>
+							  			<button onClick={e => handleRemove(e, lineItem.id)} className="btn btn-link p-0 color-primary" title="Remove this item"><i className="fa fa-remove"></i></button>
 							  		</div>
 							  		<div className="media-left">
 							  			<img src={lineItem.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
