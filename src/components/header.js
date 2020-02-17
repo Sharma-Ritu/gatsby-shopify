@@ -20,7 +20,7 @@ import madeIn from "../assets/img/canadian-made.png"
 const Header = (props) => {
 	const {
 		removeLineItem,
-    store: { checkout },
+    store: { client, checkout },
   } = useContext(StoreContext)
   const [cartCount, setCartCount] = useState('')
   const [isOpen, setIsOpen] = useState(false)
