@@ -91,11 +91,11 @@ const Header = (props) => {
 				</NavItem>
 				<NavItem>
 					<UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" style={{color:'#b2b2b2'}}>
             <i className="fa fa-shopping-cart"></i> 
 				  	<span>({cartCount})</span>
           </DropdownToggle>
-          <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>          	
+          <DropdownMenu className="dropdown-menu-center border-0">          	
 					  <Link to="/cart/" className="dropdown-item space-1" style={{color:'#b2b2b2'}}>
 					  	View Cart
 					  </Link>
