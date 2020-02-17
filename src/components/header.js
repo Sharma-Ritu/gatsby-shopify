@@ -78,7 +78,7 @@ const Header = (props) => {
 				  <Link to="/shop-chirofoam/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</Link>
 				</NavItem>
 				<NavItem>
-				  <Link to="/cart/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}><i class="fas fa-shopping-cart"></i></Link>
+				  <Link to="/cart/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}><i className="fa fa-shopping-cart"></i></Link>
 				</NavItem>
 			  </Nav>
 			</Collapse>
