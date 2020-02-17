@@ -19,6 +19,7 @@ import madeIn from "../assets/img/canadian-made.png"
 
 const Header = (props) => {
 	const {
+		removeLineItem,
     store: { checkout },
   } = useContext(StoreContext)
   const [cartCount, setCartCount] = useState('')
@@ -42,6 +43,12 @@ const Header = (props) => {
   const getLineItemTotal = (quantity, variantPrice) => {
   	const lineItemTotal = (quantity * variantPrice)
   	return lineItemTotal.toFixed(2)
+  }
+  const handleRemove = () => {
+    removeLineItem(client, checkout.id, line_item.id)
+  }
+  const handleCheckout = () => {
+    window.open(checkout.webUrl)
   }
   const lineItems = checkout.lineItems;
   const subtotalPrice = checkout.subtotalPrice;
@@ -108,7 +115,7 @@ const Header = (props) => {
 						  	>
 						  		<div className="media">
 							  		<div className="media-left">
-							  			<button className="btn btn-link p-0 color-primary" title="Remove this item"><i className="fa fa-remove"></i></button>
+							  			<button onClick={handleRemove} className="btn btn-link p-0 color-primary" title="Remove this item"><i className="fa fa-remove"></i></button>
 							  		</div>
 							  		<div className="media-left">
 							  			<img src={lineItem.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
@@ -137,8 +144,8 @@ const Header = (props) => {
 							  </p>
 						  </li>
 						  <li className="list-group-item p-2 text-center border-0 rounded-0">
-							  <Link to="/cart/" className="btn btn-custom-secondary font-weight-bold btn-sm text-white">View Cart</Link>
-							  <button className="btn btn-checkout btn-sm font-weight-bold space-1 text-white">Checkout</button>
+							  <Link to="/cart/" className="btn btn-custom-secondary font-weight-bold btn-sm text-white mx-1">View Cart</Link>
+							  <button onClick={handleCheckout} className="btn btn-checkout btn-sm font-weight-bold space-1 text-white mx-1">Checkout</button>
 						  </li>
 						</ul>
           </DropdownMenu>
