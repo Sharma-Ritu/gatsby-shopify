@@ -40,7 +40,7 @@ const Header = (props) => {
   	event.target.parentElement.classList.toggle("show")
   }
   const getLineItemTotal = (quantity, variantPrice) => {
-  	lineItemTotal = (quantity * variantPrice)
+  	const lineItemTotal = (quantity * variantPrice)
   	return lineItemTotal.toFixed(2)
   }
   const lineItems = checkout.lineItems;
