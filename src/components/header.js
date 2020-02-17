@@ -45,7 +45,9 @@ const Header = (props) => {
   	return lineItemTotal.toFixed(2)
   }
   const handleRemove = (event, lineItemId) => {
-    removeLineItem(client, checkout.id, lineItemId);
+    removeLineItem(client, checkout.id, lineItemId).then(()=>{
+      setCartCount("("+checkout.lineItems.length+")")
+    })
   }
   const handleCheckout = () => {
     window.open(checkout.webUrl)
@@ -54,7 +56,7 @@ const Header = (props) => {
   const subtotalPrice = checkout.subtotalPrice;
   useEffect(() => {
   	if(checkout.lineItems.length > 0){
-  		setCartCount(checkout.lineItems.length)
+  		setCartCount("("+checkout.lineItems.length+")")
   	}
   	console.log(checkout)
 	})
@@ -105,7 +107,7 @@ const Header = (props) => {
 					<UncontrolledDropdown nav inNavbar>
           <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" style={{color:'#b2b2b2'}}>
             <i className="fa fa-shopping-cart"></i> 
-				  	<span>{"("+cartCount+")"}</span>
+				  	<span>{cartCount}</span>
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-right rounded-0">          	
           	{(lineItems.length > 0)?
@@ -150,7 +152,7 @@ const Header = (props) => {
 							  </li>
 							</ul>
 						:
-							<p>Cart is Empty!</p>
+							<p className="text-center mb-0 color-primary">Cart is Empty!</p>
           	}
           </DropdownMenu>
         </UncontrolledDropdown>
