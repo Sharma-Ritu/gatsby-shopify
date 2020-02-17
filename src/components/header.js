@@ -99,25 +99,7 @@ const Header = (props) => {
           	<ul className="list-group">
           		{checkout.lineItems.map((line_item, index) => (
 						  	<li className="list-group-item border-0 rounded-0">
-						  		<div
-						  			className="media"
-						  		>
-							  		<div
-							  			className="media-left"
-							  		>
-							  			<button>&times;</button>
-							  		</div>
-							  		<div
-							  			className="media-left"
-							  		>
-							  			<img src={line_item.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
-							  		</div>
-							  		<div
-							  			className="media-body"
-							  		>
-							  			<span>{line_item.title}</span>
-							  		</div>
-						  		</div>
+						  		{index}
 						  	</li>
           		))}
 						  <li className="list-group-item text-center border-0 rounded-0">
