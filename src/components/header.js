@@ -114,8 +114,8 @@ const Header = (props) => {
 							  			<img src={lineItem.variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
 							  		</div>
 							  		<div className="media-body">
-							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.title}</span>
-							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.variant.title}</span>
+							  			<span className="d-block color-primary fs-1">{lineItem.title}</span>
+							  			<span className="d-block color-primary fs-1">{lineItem.variant.title}</span>
 							  			<span className="color-primary fs-2 float-left">X&nbsp;{lineItem.quantity}</span>
 							  			<span className="color-primary fs-2 float-right">
 							  				CAD&nbsp;
@@ -129,15 +129,16 @@ const Header = (props) => {
           		<li className="list-group-item p-2 text-center border-left-0 border-right-0 mb-0 rounded-0">
 							  <p className="text-center mb-0 color-primary">
 							  	<strong>Subtotal: </strong> 
-							  	<span className="color-primary fs-2 amount">
+							  	<span className="color-primary fs-2 font-weight-bold amount">
 							  		CAD&nbsp;
-							  		<span className="color-primary fs-2 currencySymbol">$</span>
+							  		<span className="color-primary fs-2 font-weight-bold currencySymbol">$</span>
 							  		{subtotalPrice}
 							  	</span>
 							  </p>
 						  </li>
 						  <li className="list-group-item p-2 text-center border-0 rounded-0">
-							  <Link to="/cart/" className="btn btn-custom-primary btn-sm text-white">View Cart</Link>
+							  <Link to="/cart/" className="btn btn-custom-seconday font-weight-bold btn-sm text-white">View Cart</Link>
+							  <button className="btn btn-checkout btn-sm font-weight-bold space-1 text-white">Checkout</button>
 						  </li>
 						</ul>
           </DropdownMenu>
