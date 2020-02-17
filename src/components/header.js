@@ -97,10 +97,31 @@ const Header = (props) => {
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-right border-0 rounded-0" style={{minWidth:'16rem'}}>          	
           	<ul className="list-group">
-						  <li className="list-group-item border-0 rounded-0">Cras justo odio</li>
-						  <li className="list-group-item border-0">Dapibus ac facilisis in</li>
+          		{checkout.lineItems.map((line_item, index) => (
+						  	<li className="list-group-item border-0 rounded-0">
+						  		<div
+						  			className="media"
+						  		>
+							  		<div
+							  			className="media-left"
+							  		>
+							  			<button>&times;</button>
+							  		</div>
+							  		<div
+							  			className="media-left"
+							  		>
+							  			<img src={variant.image.src} alt="" className="img-fluid" style={{maxWidth:'70px'}}/>
+							  		</div>
+							  		<div
+							  			className="media-body"
+							  		>
+							  			<span>{line_item.title}</span>
+							  		</div>
+						  		</div>
+						  	</li>
+          		))}
 						  <li className="list-group-item text-center border-0 rounded-0">
-							  <Link to="/cart/" className="btn btn-custom-primary">View Cart</Link>
+							  <Link to="/cart/" className="btn btn-custom-primary btn-sm text-white">View Cart</Link>
 						  </li>
 						</ul>
           </DropdownMenu>
