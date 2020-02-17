@@ -900,3 +900,46 @@ body .navbar {
 .payment-gateway p img{
     width:100%;
 }
+.homepage-slider-2 .btn-cta .carousel-control-prev-icon,.homepage-slider-2 .btn-cta .carousel-control-next-icon{
+	display:none;
+}
+.homepage-slider-2 .btn-cta.carousel-control-prev {
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+    width: 80px;
+    left: 50px;
+    overflow-x: hidden;
+}
+.homepage-slider-2 .btn-cta.carousel-control-prev::after{
+	content:"";
+	background-image:url('../img/prev-icon-w.png');
+	left:35px;
+	width:100%;
+	transition:all 0.3s;
+}
+.homepage-slider-2 .btn-cta.carousel-control-prev:hover::after{
+	left:0 !important;
+}
+.homepage-slider-2 .btn-cta.carousel-control-next {
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+    width: 80px;
+    right: 50px;
+    overflow-x: hidden;
+}
+.homepage-slider-2 .btn-cta.carousel-control-next::after{
+	content:"";
+	background-image:url('../img/b-ic.png');
+	left:-65px;
+	width:100%;
+	transition:all 0.3s;
+}
+.homepage-slider-2 .btn-cta.carousel-control-next:hover::after{
+	left:-25px !important;
+}
+
+
