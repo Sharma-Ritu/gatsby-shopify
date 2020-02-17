@@ -21,7 +21,8 @@ const Header = (props) => {
 	const {
     store: { checkout },
   } = useContext(StoreContext)
-  const [isOpen, setIsOpen] = useState(false);
+  const [cartCount, setCartCount] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
   const openDropdown = (event) => {
@@ -38,8 +39,12 @@ const Header = (props) => {
   	event.target.classList.toggle("show")
   	event.target.parentElement.classList.toggle("show")
   }
+  const lineItems = checkout.lineItems;
   useEffect(() => {
-		console.log(checkout);
+  	if(checkout.lineItems.length > 0){
+  		setCartCount(checkout.lineItems.length)
+  	}
+  	console.log(lineItems)
 	})
   return (
     <div className="bg-white pt-sm-2 header-part">
@@ -85,7 +90,7 @@ const Header = (props) => {
 				  <Link to="/shop-chirofoam/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</Link>
 				</NavItem>
 				<NavItem>
-				  <Link to="/cart/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}><i className="fa fa-shopping-cart"></i></Link>
+				  <Link to="/cart/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}><i className="fa fa-shopping-cart"></i> <span>{cartCount}</span></Link>
 				</NavItem>
 			  </Nav>
 			</Collapse>
