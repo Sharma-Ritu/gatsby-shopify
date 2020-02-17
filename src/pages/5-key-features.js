@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {Container, Row, Col} from 'reactstrap';
-import SEO from '~/components/seo'
+import SEO from '../components/seo'
 import "../assets/css/bootstrap.min.css"
 import coolgel from "../assets/img/Cool-Gel-Memory-Foam-1.jpg"
 
