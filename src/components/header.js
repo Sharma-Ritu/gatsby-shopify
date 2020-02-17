@@ -11,12 +11,16 @@ import {
   DropdownToggle,
   DropdownMenu,
 } from 'reactstrap';
+import StoreContext from '~/context/StoreContext'
 import "../assets/css/bootstrap.min.css"
 import logo from "../assets/img/logo-home.png"
 import madeIn from "../assets/img/canadian-made.png"
 
 
 const Header = (props) => {
+	const {
+    store: { checkout },
+  } = useContext(StoreContext)
   const [isOpen, setIsOpen] = useState(false);
   const navbarColor = (props.color)?props.color: 'light';
   const toggle = () => setIsOpen(!isOpen); 
@@ -34,6 +38,7 @@ const Header = (props) => {
   	event.target.classList.toggle("show")
   	event.target.parentElement.classList.toggle("show")
   }
+  console.log(checkout);
   return (
     <div className="bg-white pt-sm-2 header-part">
 	  <span className="position-absolute pt-2 pr-4" style={{fontSize:'10px',color:'#b2b2b2',right:'0',top:'0',zIndex:1}}>
