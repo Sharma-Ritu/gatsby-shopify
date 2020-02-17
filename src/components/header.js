@@ -63,10 +63,10 @@ const Header = (props) => {
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>
-          	<Link to="/5-key-features/" className="dropdown-item">5 Key Features</Link>
-          	<Link to="/design/" className="dropdown-item">Design</Link>
-          	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
-				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item">BUY NOW</Link>
+          	<Link to="/5-key-features/" className="dropdown-item space-1">5 Key Features</Link>
+          	<Link to="/design/" className="dropdown-item space-1">Design</Link>
+          	<Link to="/comparison-chart/" className="dropdown-item space-1">Compare</Link>
+				  	<Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item space-1">BUY NOW</Link>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
@@ -74,10 +74,10 @@ const Header = (props) => {
             XF EXTRA FIRM
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>
-          	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item">5 Key Features</Link>
-          	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item">Design</Link>
-          	<Link to="/comparison-chart/" className="dropdown-item">Compare</Link>
-				  	<Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="dropdown-item">BUY NOW</Link>
+          	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item space-1">5 Key Features</Link>
+          	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item space-1">Design</Link>
+          	<Link to="/comparison-chart/" className="dropdown-item space-1">Compare</Link>
+				  	<Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="dropdown-item space-1">BUY NOW</Link>
           </DropdownMenu>
         </UncontrolledDropdown>
 				<NavItem>
@@ -90,10 +90,17 @@ const Header = (props) => {
 				  <Link to="/shop-chirofoam/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link" style={{color:'#b2b2b2'}}>SHOP CHIROFOAM</Link>
 				</NavItem>
 				<NavItem>
-				  <Link to="/cart/" className="space-1 p-sm-0 p-lg-0 p-xl-0 nav-link cart" style={{color:'#b2b2b2'}}>
-				  	<i className="fa fa-shopping-cart"></i> 
+					<UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
+            <i className="fa fa-shopping-cart"></i> 
 				  	<span>({cartCount})</span>
-				  </Link>
+          </DropdownToggle>
+          <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>          	
+					  <Link to="/cart/" className="dropdown-item space-1" style={{color:'#b2b2b2'}}>
+					  	View Cart
+					  </Link>
+          </DropdownMenu>
+        </UncontrolledDropdown>
 				</NavItem>
 			  </Nav>
 			</Collapse>
