@@ -39,12 +39,16 @@ const Header = (props) => {
   	event.target.classList.toggle("show")
   	event.target.parentElement.classList.toggle("show")
   }
+  const getLineItemTotal = (quantity, variantPrice) => {
+  	lineItemTotal = (quantity * variantPrice)
+  	return lineItemTotal.toFixed(2)
+  }
   const lineItems = checkout.lineItems;
   useEffect(() => {
   	if(checkout.lineItems.length > 0){
   		setCartCount(checkout.lineItems.length)
   	}
-  	console.log(lineItems)
+  	console.log(checkout)
 	})
   return (
     <div className="bg-white pt-sm-2 header-part">
@@ -93,13 +97,13 @@ const Header = (props) => {
 					<UncontrolledDropdown nav inNavbar>
           <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" style={{color:'#b2b2b2'}}>
             <i className="fa fa-shopping-cart"></i> 
-				  	<span>({cartCount})</span>
+				  	<span>{"("+cartCount+")"}</span>
           </DropdownToggle>
           <DropdownMenu className="dropdown-menu-right rounded-0">          	
           	<ul className="list-group">
           		{lineItems.map((lineItem, index) => (
 						  	<li
-						  		className={(index>0)?"list-group-item border-left-0 border-right-0 border-bottom-0 rounded-0":"list-group-item border-0 rounded-0"}
+						  		className={(index>0)?"list-group-item p-2 border-left-0 border-right-0 border-bottom-0 rounded-0":"list-group-item p-2 border-0 rounded-0"}
 						  	>
 						  		<div className="media">
 							  		<div className="media-left">
@@ -114,13 +118,23 @@ const Header = (props) => {
 							  			<span className="color-primary fs-2 float-right">
 							  				CAD&nbsp;
 							  				<span className="color-primary fs-2">$&nbsp;</span>
-							  				<span className="color-primary fs-2">{lineItem.quantity * lineItem.variant.price}</span>
+							  				<span className="color-primary fs-2">{getLineItemTotal(lineItem.quantity, lineItem.variant.price)}</span>
 							  			</span>
 							  		</div>
 						  		</div>
 						  	</li>
           		))}
-						  <li className="list-group-item text-center border-0 rounded-0">
+          		<li className="list-group-item p-2 text-center border-0 rounded-0">
+							  <p className="text-center color-primary">
+							  	<strong>Subtotal:</strong> 
+							  	<span className="color-primary amount">
+							  		CAD&nbsp;
+							  		<span className="color-primary currencySymbol">$</span>
+							  		1580.00
+							  	</span>
+							  </p>
+						  </li>
+						  <li className="list-group-item p-2 text-center border-0 rounded-0">
 							  <Link to="/cart/" className="btn btn-custom-primary btn-sm text-white">View Cart</Link>
 						  </li>
 						</ul>
