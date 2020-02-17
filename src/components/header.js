@@ -95,10 +95,14 @@ const Header = (props) => {
             <i className="fa fa-shopping-cart"></i> 
 				  	<span>({cartCount})</span>
           </DropdownToggle>
-          <DropdownMenu className="dropdown-menu-center border-0">          	
-					  <Link to="/cart/" className="dropdown-item space-1" style={{color:'#b2b2b2'}}>
-					  	View Cart
-					  </Link>
+          <DropdownMenu className="dropdown-menu-right border-0 rounded-0" style={{minWidth:'16rem'}}>          	
+          	<ul className="list-group">
+						  <li className="list-group-item border-0 rounded-0">Cras justo odio</li>
+						  <li className="list-group-item border-0">Dapibus ac facilisis in</li>
+						  <li className="list-group-item text-center border-0 rounded-0">
+							  <Link to="/cart/" className="btn btn-custom-primary">View Cart</Link>
+						  </li>
+						</ul>
           </DropdownMenu>
         </UncontrolledDropdown>
 				</NavItem>
