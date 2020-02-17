@@ -108,8 +108,12 @@ const Header = (props) => {
 							  		</div>
 							  		<div className="media-body">
 							  			<span className="d-block color-primary fs-1" style={{whiteSpace:'pre'}}>{lineItem.title}</span>
-							  			<span className="color-primary fs-2" style={{whiteSpace:'pre'}}>{lineItem.quantity}</span>
-							  			<span>CAD&nbsp;<span>$&nbsp;</span><span>{lineItem.quantity * lineItem.variant.price}</span></span>
+							  			<span className="color-primary fs-2 float-left">X&nbsp;{lineItem.quantity}</span>
+							  			<span className="color-primary fs-2 float-right">
+							  				CAD&nbsp;
+							  				<span className="color-primary fs-2">$&nbsp;</span>
+							  				<span className="color-primary fs-2">{lineItem.quantity * lineItem.variant.price}</span>
+							  			</span>
 							  		</div>
 						  		</div>
 						  	</li>
