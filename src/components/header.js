@@ -137,7 +137,7 @@ const Header = (props) => {
 							  </p>
 						  </li>
 						  <li className="list-group-item p-2 text-center border-0 rounded-0">
-							  <Link to="/cart/" className="btn btn-custom-seconday font-weight-bold btn-sm text-white">View Cart</Link>
+							  <Link to="/cart/" className="btn btn-custom-secondary font-weight-bold btn-sm text-white">View Cart</Link>
 							  <button className="btn btn-checkout btn-sm font-weight-bold space-1 text-white">Checkout</button>
 						  </li>
 						</ul>
