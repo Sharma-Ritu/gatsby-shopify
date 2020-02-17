@@ -9,6 +9,7 @@ import product1 from "../assets/img/product1.jpg"
 import product2 from "../assets/img/product2.jpg"
 import run from "../assets/img/run.png"
 import { Link } from "gatsby"
+import HomePageSlider2 from "../components/HomePageSlider2"
 
 export default (props) => {
   return (
@@ -186,66 +187,9 @@ export default (props) => {
 			</div>
 		</section>
 		
-		<section className="py-4 pt-sm-5 pb-sm-4 approved bg-image">
-			<div className="container">
-				<Row className="pt-3 no-gutters m-0">
-					<Col sm="12" className="align-middle col-lg-5 col-xl-5">
-						<img src={run} alt="run" width="75%" className="mt-sm-5 pt-sm-5 pl-sm-5 ml-sm-5"/>
-					</Col>
-					<Col sm="12" className="col-lg-7 col-xl-7">
-						<div className="text-white mb-4">
-							<h3 className="approved-title text-white erbaum-bold lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text">CHIROPRACTOR APPROVED</h3>
-							<p className="proxima-b space-1 p-0 pt-sm-1 sub-text sub-sm-text sub-md-text sub-lg-text sub-xl-text">Chirofoam<sup style={{fontSize:'8px'}}>TM</sup> mattresses are designed by Chiropractors to improve posture, and provide incredible pressure relief. Your back will thank you.</p>
-							<p className="cta mt-3 mt-sm-0 mt-lg-0 mt-xl-0 pt-sm-0 pt-lg-0 pt-xl-0 mb-sm-2">
-								<Link to="#" className="btn-cta text-white erbaum-bold space-1">CALL TO ACTION </Link>
-							</p>
-						</div>
-						
-						<div className="text-white mb-4 pt-1 pr-0 pr-sm-5">
-							<h3 className="approved-title text-white erbaum-bold pt-0 pt-sm-4 lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text">CUSTOMER APPROVED</h3>
-							<p className="proxima-b space-1 p-0 pt-sm-2 sub-text sub-sm-text sub-md-text sub-lg-text sub-xl-text">Our customers have reported the following benefits after sleeping on there chirofoam mattress</p>
-							<div className="ml-0 ml-sm-4 pt-0 pt-sm-3 pl-0 pr-sm-5">
-								<Media className="mt-3">
-								  <Media left middle className="pr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									97%
-								  </Media>
-								  <Media body middle className="proxima-r pl-sm-3" style={{fontSize:'1.1rem'}}>
-									  Improvement in sleep comfort and quality
-								  </Media>
-								</Media>
-								<Media className="pt-4">
-								  <Media left middle className="pr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									94%
-								  </Media>
-								  <Media body middle className="proxima-r pl-sm-3" style={{fontSize:'1.1rem'}}>
-									  Increased energy in the morning and throughout the day
-								  </Media>
-								</Media>
-								<Media className="pt-4">
-								  <Media left middle className="pr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									86%
-								  </Media>
-								  <Media body middle className="proxima-r pl-sm-3 pt-sm-1" style={{fontSize:'1.1rem'}}>
-									  Improved muscle recovery and/or relief in daliy experienced back pain
-								  </Media>
-								</Media>
-								<Media className="pt-3">
-								  <Media left middle className="pr-4 h4 erbaum-bold" style={{fontSize:'32px'}}>
-									82%
-								  </Media>
-								  <Media body middle className="proxima-r pl-sm-3 pt-sm-2" style={{fontSize:'1.1rem'}}>
-									  Improvement in sleep comfort and quality
-								  </Media>
-								</Media>
-							</div>
-							<p className="cta mt-3 mt-sm-3 pt-sm-4 pt-lg-4 pt-xl-4 mb-sm-2 pl-0">
-								<Link to="/reviews/" className="btn-cta text-white erbaum-bold space-1">READ CUSTOMER REVIEWS</Link>
-							</p>
-						</div>
-					</Col>
-				</Row>
-			</div>
-		</section>
+		<div className="homepage-slider-2">
+			<HomePageSlider2 />
+		</div>
 		<section className="py-4 pt-sm-5 pb-sm-4 our-customer">
 				<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
 					<Col sm="6" className="pr-sm-2">
