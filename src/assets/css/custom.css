@@ -119,6 +119,11 @@ p.cta.erbaum.position-absolute {
 	top: -2px;
 	right: -60px;
 }
+.dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .nav-link {
 	font-size: 13px;
 	font-family: 'PN-R';
@@ -145,7 +150,7 @@ p.cta.erbaum.position-absolute {
 	font-size: 14px;
 	padding-left: 35px;
 }
-.nav-link:hover {
+.show .nav-link, .nav-link:hover{
 	color: #243B6B !important;
 }
 .space-1 {
