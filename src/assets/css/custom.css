@@ -132,6 +132,10 @@ p.cta.erbaum.position-absolute {
 	font-size: 8px;
 	color: rgb(178, 178, 178);
 }
+.navbar-nav .cart span{
+	color: inherit;
+	font-size: inherit;
+}
 .navbar-nav .nav-item {
 	margin-right: 22px;
 }
