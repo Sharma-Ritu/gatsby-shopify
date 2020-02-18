@@ -70,13 +70,13 @@ const Header = (props) => {
 		<div className="container d-sm-flex d-lg-flex d-xl-flex">
 			<Link to="/" className="navbar-brand"><img src={logo} alt="Chirofoam" width="200px"/></Link>
 			<NavbarToggler onClick={toggle} />
-			<Collapse isOpen={isOpen} navbar>
+			<Collapse isOpen={isOpen} navbar className="text-center text-lg-left">
 			  <Nav className="mr-0 ml-auto pb-2" navbar>
 			  <UncontrolledDropdown nav inNavbar>
           <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             ORIGINAL LUXURY FIRM
           </DropdownToggle>
-          <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>
+          <DropdownMenu className="dropdown-menu-center border-0 text-center" onMouseLeave={(e) => closeDropdown(e)}>
           	<Link to="/5-key-features/" className="dropdown-item space-1">5 Key Features</Link>
           	<Link to="/design/" className="dropdown-item space-1">Design</Link>
           	<Link to="/comparison-chart/" className="dropdown-item space-1">Compare</Link>
@@ -87,7 +87,7 @@ const Header = (props) => {
           <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" onMouseEnter={(e) => openDropdown(e)} style={{color:'#b2b2b2'}}>
             XF EXTRA FIRM
           </DropdownToggle>
-          <DropdownMenu className="dropdown-menu-center border-0" onMouseLeave={(e) => closeDropdown(e)}>
+          <DropdownMenu className="dropdown-menu-center border-0 text-center" onMouseLeave={(e) => closeDropdown(e)}>
           	<Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item space-1">5 Key Features</Link>
           	<Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item space-1">Design</Link>
           	<Link to="/comparison-chart/" className="dropdown-item space-1">Compare</Link>

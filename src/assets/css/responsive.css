@@ -420,7 +420,13 @@ body .container-large{
     width: 33.3%;
 }
 }
- /* Extra small devices (phones, 600px and down) */
+/* Medium devices (Tablets, 991.98px and down) */
+@media (max-width: 991.98px) {
+	.show .dropdown-menu-center.show {
+	    transform: none;
+	}
+}
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
 }
@@ -442,6 +448,7 @@ body .container-large{
 		padding-right: 0!important;
 	}
 }
+
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px) {
 .homepage-slider-2 .btn-cta.carousel-control-prev {
