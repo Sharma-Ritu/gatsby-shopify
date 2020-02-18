@@ -109,7 +109,7 @@ const Header = props => {
                   {lineItems.length > 0 ? (
                     <ul className="list-group">
                       {lineItems.map((lineItem, index) => (
-                        <li className={index > 0 ? "list-group-item p-2 border-left-0 border-right-0 border-bottom-0 rounded-0" : "list-group-item p-2 border-0 rounded-0"}>
+                        <li key={index} className={index > 0 ? "list-group-item p-2 border-left-0 border-right-0 border-bottom-0 rounded-0" : "list-group-item p-2 border-0 rounded-0"}>
                           <div className="media">
                             <div className="media-left">
                               <button onClick={e => handleRemove(e, lineItem.id)} className="btn btn-link p-0 color-primary" title="Remove this item">
