@@ -886,9 +886,7 @@ body .navbar {
     height: 23px;
     line-height: 22px;
     text-align: center;
-    background: #F44336;
     border:none;
-    color: #fff;
     display: block;
     font-size: 16px;
     -moz-transition: all 350ms ease-in-out;
