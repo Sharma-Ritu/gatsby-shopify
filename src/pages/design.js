@@ -23,25 +23,25 @@ export default (props) => {
 		</section>
 		<section className="py-4 pt-sm-5 pb-sm-4 our-customer">
 			<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
+				<Col sm="6">
+					<img src={coolgel} alt="coolgel" width="100%" height="350px" />
+				</Col>
 				<Col sm="6" className="px-3">
 					<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
 						<h3 className="color-primary erbaum-bold lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text">COOL GEL INFUSED MEMORY FOAM</h3>
 						<p className="text-left proxima-eb space-1 pt-1 mb-0 text-1" style={{color:'#808080'}}><span className="color-primary">Helps keep your body cool and relaxed during sleep</span> while the temperature sensitive foam adjusts to your body’s natural shape and curves. Designed for back pain relief, this foam will help to relax your joints and muscles while relieving pressure and creating the ultimate comfort while your body rests.</p>
 					</div>
 				</Col>
-				<Col sm="6">
-					<img src={coolgel} alt="coolgel" />
-				</Col>
 			</Row>
-			<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
-				<Col sm="6">
-					<img src={latex} alt="latex" />
-				</Col>
+			<Row className="pb-3 pb-sm-0 no-gutters">
 				<Col sm="6" className="px-3">
 					<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
 						<h3 className="color-primary erbaum-bold lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text">FIRM SUPPORT CHIROFOAM™</h3>
 						<p className="text-left proxima-eb space-1 pt-1 mb-0 text-1" style={{color:'#808080'}}><span className="color-primary">An extremely durable and sag resistant layer of support foam</span> provides an additional “pressure relief buffer” between your body and the core support foam. This layer helps cradle and protect your muscles, joints, and bones from excess pressure during sleep.  The foam creates ultra comfortable “push back” support to keep your spine in an optimal natural sleeping position, while relieving back pain.</p>
 					</div>
+				</Col>
+				<Col sm="6">
+					<img src={latex} alt="latex" width="100%" height="350px" />
 				</Col>
 			</Row>
 		</section>
