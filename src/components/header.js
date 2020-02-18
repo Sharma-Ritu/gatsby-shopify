@@ -59,16 +59,16 @@ const Header = props => {
                   ORIGINAL LUXURY FIRM
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-center border-0 text-center">
-                  <Link to="/5-key-features/" className="dropdown-item space-1">
+                  <Link to="/5-key-features/" className="nav-link space-1">
                     5 Key Features
                   </Link>
-                  <Link to="/design/" className="dropdown-item space-1">
+                  <Link to="/design/" className="nav-link space-1">
                     Design
                   </Link>
-                  <Link to="/comparison-chart/" className="dropdown-item space-1">
+                  <Link to="/comparison-chart/" className="nav-link space-1">
                     Compare
                   </Link>
-                  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="dropdown-item space-1">
+                  <Link to="/product/the-original-chirofoam™-mattress-luxury-firm/" className="nav-link space-1">
                     BUY NOW
                   </Link>
                 </DropdownMenu>
@@ -78,16 +78,16 @@ const Header = props => {
                   XF EXTRA FIRM
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-center border-0 text-center">
-                  <Link to="/5-key-features-chirofoam-xf-extra-firm/" className="dropdown-item space-1">
+                  <Link to="/5-key-features-chirofoam-xf-extra-firm/" className="nav-link space-1">
                     5 Key Features
                   </Link>
-                  <Link to="/design-chirofoam-xf-extra-firm-mattress/" className="dropdown-item space-1">
+                  <Link to="/design-chirofoam-xf-extra-firm-mattress/" className="nav-link space-1">
                     Design
                   </Link>
-                  <Link to="/comparison-chart/" className="dropdown-item space-1">
+                  <Link to="/comparison-chart/" className="nav-link space-1">
                     Compare
                   </Link>
-                  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="dropdown-item space-1">
+                  <Link to="/product/the-chirofoam™-xf-mattress-extra-firm/" className="nav-link space-1">
                     BUY NOW
                   </Link>
                 </DropdownMenu>
