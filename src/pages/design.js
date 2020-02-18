@@ -8,6 +8,7 @@ import "../assets/css/bootstrap.min.css"
 import coolgel from "../assets/img/Cool-Gel-Memory-Foam-1.jpg"
 import latex from "../assets/img/latex-5keyfeatures.jpg"
 import support from "../assets/img/support.jpg"
+import foam from "../assets/img/foam.jpg"
 
 export default (props) => {
   return (
@@ -64,7 +65,7 @@ export default (props) => {
 					</div>
 				</Col>
 				<Col sm="6">
-					<img src={latex} alt="latex" width="100%" height="350px" />
+					<img src={foam} alt="foam" width="674px" height="350px" />
 				</Col>
 			</Row>
 		</section>
