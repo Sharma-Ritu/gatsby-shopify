@@ -450,6 +450,10 @@ body .container-large{
 	.px-xs-0,.pr-xs-0{
 		padding-right: 0!important;
 	}
+	body .homepage-slider-2 .container {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -585,11 +589,17 @@ body .container-large{
 .fs-lg-10{
 	font-size:5rem !important;
 }
+.navbar-nav .nav-link {
+    font-size: 12px;
+}
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	.navbar-nav .nav-link {
+    font-size: 13px;
+}
 .homepage-slider-2 .btn-cta.carousel-control-prev {
     left:15px;
 }

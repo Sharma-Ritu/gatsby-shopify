@@ -192,7 +192,7 @@ export default (props) => {
 		</div>
 		<section className="py-4 pt-sm-5 pb-sm-4 our-customer">
 				<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
-					<Col sm="6" className="pr-sm-2">
+					<Col sm="6" className="px-3">
 						<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
 							<h3 className="color-primary erbaum-bold lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text">WHAT OUR CUSTOMERS ARE SAYING ABOUT CHIROFOAM</h3>
 							<h5 className="filson-pro-reg color-primary pt-2 text-2">CUSTOMER REVIEW</h5>
