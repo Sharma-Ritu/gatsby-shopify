@@ -11,16 +11,23 @@ const Header = props => {
     removeLineItem,
     store: { client, checkout }
   } = useContext(StoreContext)
-  const [cartCount, setCartCount] = useState("")
+  const [cartCount, setCartCount] = useState(0)
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
   const getLineItemTotal = (quantity, variantPrice) => {
     const lineItemTotal = quantity * variantPrice
     return lineItemTotal.toFixed(2)
   }
+  const getCartCount = () =>{
+  	if(cartCount !== 0){
+  		return "(" + cartCount + ")"
+  	}else{
+  		return ""
+  	}
+  }
   const handleRemove = (event, lineItemId) => {
     removeLineItem(client, checkout.id, lineItemId).then(() => {
-      checkout.lineItems.length > 0 ? setCartCount("(" + checkout.lineItems.length + ")"):setCartCount("")
+      setCartCount(checkout.lineItems.length)
     });
   }
   const handleCheckout = () => {
@@ -30,7 +37,7 @@ const Header = props => {
   const subtotalPrice = checkout.subtotalPrice
   useEffect(() => {
     if (checkout.lineItems.length > 0) {
-      setCartCount("(" + checkout.lineItems.length + ")")
+      setCartCount(checkout.lineItems.length)
     }
   }, [checkout])
   return (
@@ -103,7 +110,7 @@ const Header = props => {
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" style={{ color: "#b2b2b2" }}>
                   <i className="fa fa-shopping-cart"></i>
-                  <span>{cartCount}</span>
+                  <span>{getCartCount()}</span>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-right rounded-0">
                   {lineItems.length > 0 ? (
