@@ -25,7 +25,7 @@ export default (props) => {
 				</Row>
 			</Container>
 		</section>
-    	<section className="mb-0 py-3 position-relative">
+    	<section className="mb-0 py-3 position-relative features">
       		<Container className="pt-5 five-key-features-outer">
 		        <Row className="mb-2 mb-sm-5 pb-0 pb-sm-5 mx-0 no-gutters">
 					<div className="col-12 col-sm-5 col-lg-5 col-xl-5 pt-2 mt-0 right-card d-flex mb-2 mb-sm-5 mb-md-0 mb-lg-0 mb-xl-0">
