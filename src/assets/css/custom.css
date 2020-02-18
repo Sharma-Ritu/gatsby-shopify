@@ -940,5 +940,12 @@ body .navbar {
 .homepage-slider-2 .btn-cta.carousel-control-next:hover::after{
 	left:-25px !important;
 }
+.five-key-features-outer .row p {
+    line-height: 25px;
+}
+.five-key-features-outer .row h3{
+    font-size:165px;
+    color:#bfbfbf;
+}
 
 
