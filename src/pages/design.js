@@ -46,7 +46,7 @@ export default (props) => {
 					<img src={latex} alt="latex" width="100%" height="350px" />
 				</Col>
 			</Row>
-			<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
+			<Row className="pb-3 pb-sm-0 no-gutters">
 				<Col sm="6">
 					<img src={support} alt="support" width="100%" height="350px" />
 				</Col>
