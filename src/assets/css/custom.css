@@ -227,8 +227,9 @@ p.cta.erbaum.position-absolute {
 	background-image: url('../img/feat5.jpg');
 }
 .card-layer {
-	background-color: rgba(7, 37, 97, 0.9);
+	/*background-color: rgba(7, 37, 97, 0.9);*/
 	/*background-color:#24336c !important;*/
+	background-color: rgba(0, 60, 140, 0.8);
 	height: 100%;
 	width: 100%;
 	position: absolute;
