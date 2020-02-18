@@ -14,20 +14,6 @@ const Header = props => {
   const [cartCount, setCartCount] = useState("");
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
-  const openDropdown = event => {
-    if (document.querySelector(".dropdown.show") !== null) {
-      document.querySelector(".dropdown.show").classList.toggle("show")
-    }
-    if (document.querySelector(".dropdown-menu.show") !== null) {
-      document.querySelector(".dropdown-menu.show").classList.toggle("show")
-    }
-    event.target.parentElement.classList.toggle("show")
-    event.target.nextSibling.classList.toggle("show")
-  };
-  const closeDropdown = event => {
-    event.target.classList.toggle("show")
-    event.target.parentElement.classList.toggle("show")
-  };
   const getLineItemTotal = (quantity, variantPrice) => {
     const lineItemTotal = quantity * variantPrice
     return lineItemTotal.toFixed(2)
@@ -65,7 +51,7 @@ const Header = props => {
                 <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{ color: "#b2b2b2" }}>
                   ORIGINAL LUXURY FIRM
                 </DropdownToggle>
-                <DropdownMenu className="dropdown-menu-center border-0 text-center"}>
+                <DropdownMenu className="dropdown-menu-center border-0 text-center">
                   <Link to="/5-key-features/" className="dropdown-item space-1">
                     5 Key Features
                   </Link>
