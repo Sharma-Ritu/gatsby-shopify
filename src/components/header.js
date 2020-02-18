@@ -10,29 +10,29 @@ const Header = props => {
   const {
     removeLineItem,
     store: { client, checkout }
-  } = useContext(StoreContext);
-  const [cartCount, setCartCount] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  } = useContext(StoreContext)
+  const [cartCount, setCartCount] = useState("")
+  const [isOpen, setIsOpen] = useState(false)
+  const toggle = () => setIsOpen(!isOpen)
   const getLineItemTotal = (quantity, variantPrice) => {
-    const lineItemTotal = quantity * variantPrice;
-    return lineItemTotal.toFixed(2);
-  };
+    const lineItemTotal = quantity * variantPrice
+    return lineItemTotal.toFixed(2)
+  }
   const handleRemove = (event, lineItemId) => {
     removeLineItem(client, checkout.id, lineItemId).then(() => {
-      setCartCount("(" + checkout.lineItems.length + ")");
+      checkout.lineItems.length > 0 ? setCartCount("(" + checkout.lineItems.length + ")"):setCartCount("")
     });
-  };
+  }
   const handleCheckout = () => {
-    window.open(checkout.webUrl);
-  };
-  const lineItems = checkout.lineItems;
-  const subtotalPrice = checkout.subtotalPrice;
+    window.open(checkout.webUrl)
+  }
+  const lineItems = checkout.lineItems
+  const subtotalPrice = checkout.subtotalPrice
   useEffect(() => {
     if (checkout.lineItems.length > 0) {
-      setCartCount("(" + checkout.lineItems.length + ")");
+      setCartCount("(" + checkout.lineItems.length + ")")
     }
-  }, [checkout]);
+  }, [checkout])
   return (
     <div className="bg-white pt-sm-2 header-part">
       <span className="position-absolute pt-2 pr-4" style={{ fontSize: "10px", color: "#b2b2b2", right: "0", top: "0", zIndex: 1 }}>
