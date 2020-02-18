@@ -48,7 +48,7 @@ const Header = props => {
           <Collapse isOpen={isOpen} navbar className="text-center text-lg-left">
             <Nav className="mr-0 ml-auto pb-2" navbar>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{ color: "#b2b2b2" }}>
+                <DropdownToggle caret nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{ color: "#b2b2b2" }}>
                   ORIGINAL LUXURY FIRM
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-center border-0 text-center">
@@ -67,7 +67,7 @@ const Header = props => {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{ color: "#b2b2b2" }}>
+                <DropdownToggle caret nav className="space-1 p-sm-0 p-lg-0 p-xl-0" style={{ color: "#b2b2b2" }}>
                   XF EXTRA FIRM
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-center border-0 text-center">
