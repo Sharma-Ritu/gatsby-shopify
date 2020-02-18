@@ -541,6 +541,9 @@ body .container-large{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
+.navbar-nav .media .media-body span {
+    white-space: pre;
+}
 .sub-lg-text{
 	font-size:1.20rem !important;
 }
