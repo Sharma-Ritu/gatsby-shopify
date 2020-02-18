@@ -422,6 +422,9 @@ body .container-large{
 }
 /* Medium devices (Tablets, 991.98px and down) */
 @media (max-width: 991.98px) {
+	.navbar-nav .nav-item {
+	    margin-right: 0;
+	}
 	.show .dropdown-menu-center.show {
 	    transform: none;
 	}
