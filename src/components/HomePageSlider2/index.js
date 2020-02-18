@@ -140,7 +140,7 @@ const slides = items.map((item, index) => {
                         <h4 className="lead-text-font text-white erbaum-bold display-5 position-relative text-center pb-5 d-none">ONDIMENTUM QUISBIBENDUM SED</h4>
                       </div>
                       <Col sm="6">
-                        <Media className="px-sm-5 px-0 pb-3 pb-sm-5">
+                        <Media className="px-2 px-sm-2 px-md-3 px-lg-5 px-xl-5 pb-3 pb-sm-5">
                             <Media left middle>
                               <img src={icon1} alt="icon1" width="85px"/>
                             </Media>
@@ -151,7 +151,7 @@ const slides = items.map((item, index) => {
                         </Media>
                       </Col>
                       <Col sm="6">
-                        <Media className="px-sm-5 px-0 pb-3 pb-sm-5">
+                        <Media className="px-2 px-sm-2 px-md-3 px-lg-5 px-xl-5 pb-3 pb-sm-5">
                             <Media left middle>
                               <img src={icon2} alt="icon2" width="85px"/>
                             </Media>
@@ -162,7 +162,7 @@ const slides = items.map((item, index) => {
                         </Media>
                       </Col>
                       <Col sm="6">
-                        <Media className="px-sm-5 px-0 pb-3 pb-sm-5">
+                        <Media className="px-2 px-sm-2 px-md-3 px-lg-5 px-xl-5 pb-3 pb-sm-5">
                             <Media left middle>
                               <img src={icon4} alt="icon4" width="85px"/>
                             </Media>
@@ -173,7 +173,7 @@ const slides = items.map((item, index) => {
                         </Media>
                       </Col>
                       <Col sm="6">
-                        <Media className="px-sm-5 px-0 pb-3 pb-sm-5">
+                        <Media className="px-2 px-sm-2 px-md-3 px-lg-5 px-xl-5 pb-3 pb-sm-5">
                             <Media left middle>
                               <img src={icon3} alt="icon3" width="85px"/>
                             </Media>
