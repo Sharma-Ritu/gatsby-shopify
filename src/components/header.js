@@ -27,7 +27,7 @@ const Header = props => {
   }
   const handleRemove = (event, lineItemId) => {
     removeLineItem(client, checkout.id, lineItemId).then(() => {
-      setCartCount(checkout.lineItems.length)
+      setCartCount(cartCount-1)
     });
   }
   const handleCheckout = () => {
