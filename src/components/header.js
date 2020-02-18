@@ -14,20 +14,6 @@ const Header = props => {
   const [cartCount, setCartCount] = useState("");
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
-  const openDropdown = event => {
-    if (document.querySelector(".dropdown.show") !== null) {
-      document.querySelector(".dropdown.show").classList.toggle("show")
-    }
-    if (document.querySelector(".dropdown-menu.show") !== null) {
-      document.querySelector(".dropdown-menu.show").classList.toggle("show")
-    }
-    event.target.parentElement.classList.toggle("show")
-    event.target.nextSibling.classList.toggle("show")
-  };
-  const closeDropdown = event => {
-    event.target.classList.toggle("show")
-    event.target.parentElement.classList.toggle("show")
-  };
   const getLineItemTotal = (quantity, variantPrice) => {
     const lineItemTotal = quantity * variantPrice
     return lineItemTotal.toFixed(2)
@@ -46,7 +32,7 @@ const Header = props => {
     if (checkout.lineItems.length > 0) {
       setCartCount("(" + checkout.lineItems.length + ")")
     }
-  });
+  }, [checkout]);
   return (
     <div className="bg-white pt-sm-2 header-part">
       <span className="position-absolute pt-2 pr-4" style={{ fontSize: "10px", color: "#b2b2b2", right: "0", top: "0", zIndex: 1 }}>
@@ -117,8 +103,7 @@ const Header = props => {
               <NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav className="space-1 p-sm-0 p-lg-0 p-xl-0 cart" style={{ color: "#b2b2b2" }}>
-                    <i className="fa fa-shopping-cart"></i>
-                    <span>{cartCount}</span>
+                    <i className="fa fa-shopping-cart"></i><span>{cartCount}</span>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-menu-right rounded-0">
                     {lineItems.length > 0 ? (
