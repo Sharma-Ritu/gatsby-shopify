@@ -544,6 +544,11 @@ body .container-large{
 .navbar-nav .media .media-body span {
     white-space: pre;
 }
+.test-slider-content {
+    min-width: 285px;
+    max-height: 285px;
+    padding: 25px 5px;
+}
 .sub-lg-text{
 	font-size:1.20rem !important;
 }

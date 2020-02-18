@@ -14,7 +14,7 @@ const Stickytest = () => {
 		<div className="sticky-test position-fixed">
 			<div className="test-content-slider-tab">
 				<div className="test-content-slider-title">
-					<button className="fs-1 fs-lg-2" onClick={openTakeTest}>Take The Chirofoam Test</button>
+					<button className="fs-1 fs-lg-2 py-1 px-2 py-lg-2 px-lg-3" onClick={openTakeTest}>Take The Chirofoam Test</button>
 				</div>
 				<div className="test-slider-content hidden">
 					<div className="text-center">
