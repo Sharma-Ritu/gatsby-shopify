@@ -978,4 +978,7 @@ body .navbar {
 	font-size:3rem;
 	
 }
+.key-features-inner .slick-slide.slick-active.slick-center.slick-current .card-layer p {
+    font-size: 0.7rem !important;
+}
 
