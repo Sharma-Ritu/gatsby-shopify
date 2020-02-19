@@ -7,6 +7,7 @@ import "../assets/css/bootstrap.min.css"
 import mattress1 from "../assets/img/mattress1.jpg"
 import product1 from "../assets/img/product1.jpg"
 import product2 from "../assets/img/product2.jpg"
+import blog1 from "../assets/img/blog1.jpg"
 import run from "../assets/img/run.png"
 import { Link } from "gatsby"
 import HomePageSlider2 from "../components/HomePageSlider2"
@@ -138,6 +139,7 @@ export default (props) => {
 			<HomePageSlider2 />
 		</div>
 		<section className="py-4 pt-sm-5 pb-sm-4 our-customer">
+			<div className="container-large">
 				<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
 					<Col sm="6" className="px-3">
 						<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
@@ -149,10 +151,11 @@ export default (props) => {
 							</p>
 						</div>
 					</Col>
-					<Col sm="6" className="align-middle customer bg-image">
-						
+					<Col sm="6" className="align-middle">
+						<img src={blog1} alt="blog1" width="100%"/>
 					</Col>
 				</Row>
+				</div>
 		</section>
 		<Footer />
 		</main>

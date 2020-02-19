@@ -10,7 +10,7 @@ import bbb from "../assets/img/bbb.png"
 const Footer = () => (
 	<footer className="footer py-0 py-sm-5" style={{ backgroundColor: '#243b6a', borderRadius: '0', color: '#fff' }}>
 		<Stickytest />
-		<div className="container-large px-0 px-sm-4 pt-0 pt-sm-2">
+		<div className="container-large px-sm-4 pt-0 pt-sm-2">
 			<Row className="proxima-r pt-5 pb-3 px-0 px-sm-2">
 				<Col md="3" className="widget-1 pt-0 pt-sm-1">
 					<strong className="proxima-r space-1 contact-us-title">CONNECT WITH US</strong>
