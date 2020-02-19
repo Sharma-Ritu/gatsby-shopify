@@ -417,6 +417,11 @@ body .container-large{
 	.show .dropdown-menu-center.show {
 	    transform: none;
 	}
+	.test-slider-content {
+	    min-width: 285px;
+	    max-height: 285px;
+	    padding: 25px 5px;
+	}
 }
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 767px) {
@@ -556,11 +561,6 @@ body .container-large{
 @media (min-width: 992px) {
 .navbar-nav .media .media-body span {
     white-space: pre;
-}
-.test-slider-content {
-    min-width: 285px;
-    max-height: 285px;
-    padding: 25px 5px;
 }
 .sub-lg-text{
 	font-size:1.20rem !important;
