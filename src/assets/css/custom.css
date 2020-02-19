@@ -196,7 +196,7 @@ p.cta.erbaum.position-absolute {
 }
 .home-banner {
 	background-image: url('../img/banner.jpg');
-	height: 110vh;
+	height:700px;
 }
 
 .banner-home .leads {
@@ -246,10 +246,6 @@ p.cta.erbaum.position-absolute {
     z-index: 999;
     position: relative;
     opacity: 1;
-}
-.key-features-inner .slick-slide {
-    transform: scale(1);
-    transition: all .5s ease-in;
 }
 .key-feature .slick-list{
 	overflow:unset !important;
@@ -985,7 +981,7 @@ body .navbar {
 .key-features-inner .slick-slide.slick-active.slick-center.slick-current .card-layer p {
     font-size: 0.7rem !important;
 }
-.key-features-inner .slick-slide {
-    transform: scale(1);
-    transition: all .5s ease-in;
+.key-features-inner .slick-slide {
+    transform: scale(1);
+    transition: all .5s ease-in;
 }

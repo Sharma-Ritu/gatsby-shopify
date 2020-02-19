@@ -9,7 +9,7 @@ const SlickSlider =()=> {
       dots:false,
       infinite: true,
       speed:1000,
-      autoplaySpeed:5000,
+      autoplaySpeed:10000,
       centerMode: true,
       focusOnSelect: true,
      centerPadding: '0px',
