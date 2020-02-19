@@ -69,7 +69,7 @@
 	}
 	.home-banner {
 	    background-position-x: 10%;
-		height:80vh;
+		height:450px;
 	}
 	.banner-home {
 		margin-top:140px;
@@ -299,7 +299,7 @@ body .container-large{
     left:10px;
 }
   .home-banner {
-    height: 55vh;
+    height:500px;
     background-position:unset;
 }
 .animation-box .five-key {
@@ -342,9 +342,7 @@ body .container-large{
 		font-size:70px;
 		line-height:80px;
 	}
-	body .container-large{
-	padding:0px 20px;
-}
+	
 .check-text p {
     font-size: 16px;
 }
@@ -359,15 +357,13 @@ body .container-large{
 	.shop-banner-title {
     font-size:50px;
 }
+ .home-banner {
+    height:500px;
+}
 	.contact-us-title{
 		font-size:15px;
 	}
-	body .container-large{
-	padding:0px 20px;
-}
-.home-banner {
-	height:55vh;
-}
+	
   
  .facilities span{
   	font-size:0.6rem !important;
