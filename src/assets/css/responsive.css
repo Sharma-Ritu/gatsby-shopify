@@ -19,9 +19,7 @@
 	.all-mattress .mattress-desc {
     font-size: 18px;
 }
-	body .container-large{
-		padding:0px 20px !important;
-}
+	
 .threeColDescColumn {
     text-align: center;
     font-size: 0.6rem;
@@ -80,17 +78,10 @@
 	    	font-size: 46px;
 		line-height:50px;
 	}
-	.card-bg{
+	/*.card-bg{
 		height:285px;
-	}
+	}*/
 	
-	.card-bg:hover{
-		transform:scale(1.2);
-	}
-	
-	.card-bg4{
-		margin-top:25px;
-	}
 	
 	.mattresses p.cta.erbaum.position-absolute {
 	    bottom:0px;
@@ -202,7 +193,7 @@ body .container-large{
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 576px) and (max-device-width: 1024px){ 
+@media (min-width: 576px) and (max-width: 1024px){ 
 	.home-banner {
     height:65vh;
   }
@@ -332,11 +323,9 @@ body .container-large{
   	font-size:0.6rem !important;
   }
   .card-bg .card-layer p{
-  	font-size:11px !important;
+  	font-size:10px !important;
   }
-  .card-bg .card-layer h4{
-  	font-size:20px !important;
-  }
+ 
   .card-bg .card-layer .display-3{
   	font-size:3.5rem !important;
   }
@@ -430,7 +419,17 @@ body .container-large{
 	}
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 767px) {
+	.key-features-inner .slick-slide.slick-active.slick-center.slick-current{
+	transform:scale(1.1);
+}
+.key-features-inner .slick-slide.slick-active.slick-center.slick-current h3{
+	font-size:3rem;
+	padding-right: 30px !important;
+}
+.key-features-inner .card-data {
+    width: 90%;
+}
 
 }
 @media (max-width: 575.98px) {
@@ -454,6 +453,15 @@ body .container-large{
     padding-left: 35px !important;
     padding-right: 35px !important;
 }
+.key-features-inner{
+	width:90%;
+}
+.key-features-inner .slick-slide.slick-active.slick-center.slick-current h3{
+	font-size:3rem;
+
+}
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -504,6 +512,7 @@ body .container-large{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+
 .sub-md-text{
 	font-size:1.15rem !important;
 }
