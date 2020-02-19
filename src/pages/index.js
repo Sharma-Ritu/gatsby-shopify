@@ -51,7 +51,7 @@ export default (props) => {
 				<Row className="pb-sm-3 pb-lg-4 pb-xl-3 pb-0 m-0">
 					<h3 className="text-center lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text color-primary erbaum-bold" style={{width:'100%'}}>5 KEY FEATURES IN EVERY CHIROFOAM MATTRESS</h3>
 					<p className="text-center pb-5 pb-sm-4 pt-2 mb-5 color-primary proxima-b m-auto col-12 col-sm-10 col-lg-8 space-1 sub-text sub-sm-text sub-md-text sub-xl-text">Designed by mattress experts with 5 key features that consumers voted most important for a comfortable sleep experience. (Most mattresses don’t succeed in all 5 areas.) </p>
-					<div style={{margin:'0px auto'}} className="key-features-inner py-5 overflow-hidden my-0 my-sm-0 my-md-3 my-lg-4 my-xl-5">
+					<div style={{margin:'0px auto'}} className="key-features-inner 5-key py-5 overflow-hidden my-0 my-sm-0 my-md-3 my-lg-4 my-xl-5">
 						<SlickSlider />
 					</div>
 				</Row>
