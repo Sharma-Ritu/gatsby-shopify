@@ -53,7 +53,7 @@
     width: 100%;
 }
 	.header-outer h2 {
-	    font-size: 46px;
+	    font-size: 40px;
 	}
 	.header-outer h3 {
 	    font-size: 22px;
@@ -276,6 +276,9 @@ body .container-large{
 	.navbar-nav li.nav-item {
     padding: 10px 0px;
 }
+.payment-gateway p img {
+    width: 80%;
+}
 	.shop-banner-title {
     font-size:50px;
 }
@@ -434,6 +437,10 @@ body .container-large{
 }
 .key-features-inner .card-data {
     width: 90%;
+}
+.banner-slider .carousel-control-prev,.banner-slider .carousel-control-next{
+	height:30px;
+	width:30px;
 }
 
 }
