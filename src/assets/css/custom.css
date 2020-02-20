@@ -268,6 +268,9 @@ p.cta.erbaum.position-absolute {
 .active-style .extra-link li a {
 	font-size: 13px;
 }
+.extra-link li{
+	display:inline-block;
+}
 .max-support {
 	background-image: url('../img/result.jpg');
 	background-position-x: 6%;
@@ -317,9 +320,7 @@ p.cta.erbaum.position-absolute {
 	background-image: url('../img/approved-banner.jpg');
 }
 .active-style h2 {
-	font-size: 108px;
 	font-weight: 1000 !important;
-	line-height: 115px;
 	letter-spacing: -3px;
 }
 .active-style p {

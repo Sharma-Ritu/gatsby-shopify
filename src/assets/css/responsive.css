@@ -273,6 +273,7 @@ body .container-large{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+	
 	.navbar-nav li.nav-item {
     padding: 10px 0px;
 }
@@ -520,6 +521,10 @@ body .container-large{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+	.active-style h2 {
+    font-size:65px;
+    line-height:70px;
+}
 
 .sub-md-text{
 	font-size:1.15rem !important;
@@ -604,11 +609,19 @@ body .container-large{
 .navbar-nav .nav-link {
     font-size: 11px;
 }
+.active-style h2 {
+    font-size:90px;
+    line-height:100px;
+}
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
+.active-style h2 {
+    font-size:106px;
+    line-height:115px;
+}
 	.navbar-nav .nav-link {
     font-size: 13px;
 }

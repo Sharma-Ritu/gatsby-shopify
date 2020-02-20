@@ -22,7 +22,7 @@ export default (props) => {
 		<section className="py-4 py-sm-4 py-lg-4 py-xl-4 active-style">
 			<div className="container-large py-0 py-sm-5 py-lg-5 py-xl-5 px-3 px-sm-3">
 				<Row className="pt-0 pt-sm-4 pt-lg-4 pt-xl-4 d-flex m-0">
-					<Col sm="12" className="pt-0 pt-sm-12 pt-lg-12 pt-xl-2 col-lg-6 col-xl-6">
+					<Col sm="12" className="pt-0 pt-sm-12 pt-lg-12 pt-xl-2 col-md-6 col-lg-6 col-xl-6">
 						<small className="filson-pro-reg color-primary space-4 pl-0 pl-sm-2 pl-lg-2 pl-xl-2" style={{fontSize:'18px'}}>DESIGNED FOR YOUR</small>
 						<h2 className="erbaum-bold color-primary pt-0 pt-sm-2 pt-lg-2 pt-xl-2">ACTIVE LIFESTYLE</h2>
 						<p className="proxima-eb color-primary space-1 pb-0 pb-sm-3 pb-lg-3 pb-xl-3 text-1">
@@ -36,12 +36,12 @@ export default (props) => {
 							<Link to="#" className="btn-cta color-primary erbaum-bold space-1">CALL TO ACTION </Link>
 						</p>
 					</Col>
-					<Col sm="12" className="col-lg-6 col-xl-6">
+					<Col sm="12" className="col-md-6 col-lg-6 col-xl-6 px-0 px-sm-0 px-md-2 px-lg-3 px-xl-4">
 						<img src={mattress1} alt="Mattress1" width="100%"/>
-						 <ul className="list-unstyled d-flex float-sm-left float-lg-right float-none mt-3 extra-link">
-							  <li className="mr-1 mr-sm-2 mr-lg-3"><Link to="/our-story/" className="mr-sm-3 mr-lg-3 mr-xl-3 color-primary erbaum-bold space-1 position-relative story">OUR STORY</Link></li>
-							  <li className="mr-1 mr-sm-2 mr-lg-3"><Link to="/locations/" className="mr-sm-3 mr-lg-3 mr-xl-3 color-primary erbaum-bold space-1 position-relative location">LOCATIONS</Link></li>
-							  <li className="mr-1 mr-sm-2 mr-lg-3"><Link to="/shop-chirofoam/" className="mr-sm-3 mr-lg-3 mr-xl-3 color-primary erbaum-bold space-1 position-relative online">BUY ONLINE</Link></li>
+						 <ul className="list-unstyled mt-3 extra-link text-center d-block text-lg-right text-xl-right text-md-right extra-link">
+							  <li className="mr-1 mr-sm-2 mr-lg-3"><Link to="/our-story/" className="mr-sm-3 mr-lg-3 mr-xl-3 color-primary erbaum-bold position-relative story">OUR STORY</Link></li>
+							  <li className="mr-1 mr-sm-2 mr-lg-3"><Link to="/locations/" className="mr-sm-3 mr-lg-3 mr-xl-3 color-primary erbaum-bold position-relative location">LOCATIONS</Link></li>
+							  <li className="mr-1 mr-sm-2 mr-lg-3"><Link to="/shop-chirofoam/" className="mr-sm-3 mr-lg-3 mr-xl-3 color-primary erbaum-bold position-relative online">BUY ONLINE</Link></li>
 						</ul> 
 					</Col>
 				</Row>
