@@ -1,4 +1,5 @@
 @media only screen and (max-width: 767px) {
+
 	.single-article-content h3 {
     font-size: 20px;
 }
@@ -72,7 +73,7 @@
 		height:450px;
 	}
 	.banner-home {
-		margin-top:140px;
+		margin-top:215px;
 	}
 	.active-style h2 {
 	    	font-size: 46px;
@@ -439,6 +440,23 @@ body .container-large{
 	height:30px;
 	width:30px;
 }
+body .products-outer .products {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: left;
+}
+.products-outer:nth-child(2) .products {
+    padding-left:0px;
+    border:none;
+    text-align:left;
+}
+body.container{
+	padding-left:30px !important;
+	padding-right:30px !important;
+}
+#tabs li.nav-item a {
+    padding: 0.5rem .5rem;
+}
 
 }
 @media (max-width: 575.98px) {
@@ -447,10 +465,6 @@ body .container-large{
 	}
 	.homepage-slider-2 .btn-cta.carousel-control-next {
 	    right:-50px;
-	}
-	.homepage-slider-2 section .container{
-		padding-right:20px !important;
-		padding-left:20px !important;
 	}
 	.px-xs-0,.pl-xs-0{
 		padding-left: 0!important;
@@ -524,6 +538,12 @@ body .container-large{
 	.active-style h2 {
     font-size:65px;
     line-height:70px;
+}
+.products-outer .products {
+    padding-right:40px;
+}
+.products-outer:nth-child(2) .products {
+    padding-left:40px;
 }
 
 .sub-md-text{
@@ -621,6 +641,12 @@ body .container-large{
 .active-style h2 {
     font-size:106px;
     line-height:115px;
+}
+.products-outer .products {
+    padding-right:70px;
+}
+.products-outer:nth-child(2) .products {
+    padding-left:70px;
 }
 	.navbar-nav .nav-link {
     font-size: 13px;

@@ -59,8 +59,8 @@ const ProductGrid = () => {
         <Row className="text-center no-gutters row-eq-height pb-5">
           {allShopifyProduct.edges
         ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
-          <Product key={id} className="col-12 col-sm-12 col-lg-6 col-xl-6">
-          <div className="products position-relative">
+          <Product key={id} className="col-12 col-sm-12 col-lg-6 col-xl-6 col-md-6 products-outer">
+          <div className="products shop-page-product position-relative">
             <div className="mr-0">
                 <Link to={`/product/${handle}/`}>
                 {firstImage && firstImage.localFile &&
@@ -70,7 +70,7 @@ const ProductGrid = () => {
                   width="auto"/>)}
               </Link>
                <Link to={`/product/${handle}/`}><h3 className="color-primary erbaum-bold pl-0">{title}</h3></Link>
-              <p className="color-primary proxima-eb space-1 pt-1 mb-0">
+              <p className="color-primary proxima-eb space-1 pt-1 mb-0 text-1">
                 <b className="proxima-eb">Our specilized layer of chirofoam<sup>TM</sup> lumbar support</b> provides an additional 20% of conforming support in the centre third of mattress for improved lumbar support and increased life span of the mattress. The majority of your body's weight rests in the centre third of the mattress where you need the most support to keep your spine in optimal alignment while relieving back pain. The pro Lumbar Support layer is also designed to resist sagging and keeps your mattress comfortable and more supportive even far boyond our 15 years warranty period.
               </p>
             </div>

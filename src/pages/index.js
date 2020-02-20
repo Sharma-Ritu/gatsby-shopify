@@ -59,8 +59,8 @@ export default (props) => {
 			</Container>
 		</section>
 		<section className="my-4 py-4 py-sm-5 max-support bg-image">
-			<Container className="p-0 pb-sm-5">
-				<Row className="">
+			<div className="container-large p-0 pb-sm-5">
+				<Row className="mx-0">
 					<Col sm="4">
 						<h2 className="erbaum-bold text-white ml-3">MAX SUPPORT MAX RESULTS</h2>
 						<p className="text-white proxima-r feat pt-0 pt-sm-1 ml-3 text-1">
@@ -74,7 +74,7 @@ export default (props) => {
 						</p>
 					</Col>
 				</Row>
-			</Container>
+			</div>
 		</section>
 
 		<section className="py-4 pt-sm-4 pt-lg-4 pt-xl-4 pb-sm-4 pb-lg-4 pb-xl-4 mb-0 mb-sm-3 mb-lg-3 mb-xl-3 mattresses">
@@ -138,10 +138,10 @@ export default (props) => {
 		<div className="homepage-slider-2">
 			<HomePageSlider2 />
 		</div>
-		<section className="py-4 pt-sm-5 pb-sm-4 our-customer">
+		<section className="py-4 pt-sm-5 pb-sm-4 px-0 our-customer">
 			<div className="container-large">
 				<Row className="pt-3 pb-3 pb-sm-0 no-gutters">
-					<Col sm="6" className="px-3">
+					<Col sm="6" className="px-0">
 						<div className="pl-0 pl-sm-4 pt-0 pt-sm-3" style={{width:'100%', maxWidth:'605px', float:'right'}}>
 							<h3 className="color-primary erbaum-bold lead-text lead-sm-text lead-md-text lead-lg-text lead-xl-text">WHAT OUR CUSTOMERS ARE SAYING ABOUT CHIROFOAM</h3>
 							<h5 className="filson-pro-reg color-primary pt-2 text-2">CUSTOMER REVIEW</h5>

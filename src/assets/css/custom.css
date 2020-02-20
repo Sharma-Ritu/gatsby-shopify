@@ -1,5 +1,6 @@
 body {
 	overflow-x: hidden !important;
+	box-sizing:border-box !important;
 	/*background-image:url('../img/home.png');*/
 	/*opacity:0.2;*/
 }
@@ -985,4 +986,13 @@ body .navbar {
 .key-features-inner .slick-slide {
     transform: scale(1);
     transition: all .5s ease-in;
+}
+.products-outer:nth-child(2) .products {
+    padding-right: 0;
+    padding-left: 70px;
+    text-align: left;
+    border-left:1px solid #efefef;
+}
+ul#tabs li.nav-item {
+    display: table-cell;
 }
