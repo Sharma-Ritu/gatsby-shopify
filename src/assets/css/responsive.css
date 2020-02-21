@@ -1,4 +1,10 @@
 @media only screen and (max-width: 767px) {
+	.v-size {
+    font-size: 14px;
+}
+.row-list ul li strong {
+    font-size: 24px;
+}
 
 	.single-article-content h3 {
     font-size: 20px;
@@ -457,6 +463,9 @@ body.container{
 #tabs li.nav-item a {
     padding: 0.5rem .5rem;
 }
+.table-rows {
+    overflow-x:scroll;
+}
 
 }
 @media (max-width: 575.98px) {
@@ -582,11 +591,17 @@ body.container{
 .fs-md-10{
 	font-size:5rem !important;
 }
+.table-rows {
+    overflow-x:scroll;
+}
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
+	.table-rows {
+    overflow-x:unset;
+}
 .navbar-nav .media .media-body span {
     white-space: pre;
 }
