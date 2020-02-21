@@ -21,7 +21,7 @@ export default (props) => {
 		</section>
 		<section className="py-3 py-sm-3 py-md-4 py-lg-5 py-xl-5">
 				<Container>
-						<Row className="">
+						<Row className="mx-0">
 								<p className="text-1 filson-pro-reg color-secondary text-center" style={{lineHeight:'30px'}}>
 									See how Chirofoam™ compares with the best memory foam mattresses available online today.&nbsp; Chirofoam™ memory foam mattresses are the only chiropractor recommended major online brand to offer dual comfort layers of memory foam and Chirofoam™ support foam, and a lumbar support, and a choice of comfort providing the ideal balance between comfort and support. &nbsp;With <strong className="color-primary">all these features for less than the competition</strong>, we have your back! We have compared the best-selling luxury online mattress brands against Chirofoam™ mattresses for you to see for yourself!
 								</p>
