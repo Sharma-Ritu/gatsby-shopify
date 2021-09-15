@@ -33,7 +33,7 @@
     "react-slick": "^0.25.2",
     "react-whirligig": "^6.6.1",
     "reactstrap": "^8.2.0",
-    "set-value": "^2.0.1",
+    "set-value": "^4.0.1",
     "shopify-buy": "^2.9.0",
     "slick-carousel": "^1.8.1"
   },
